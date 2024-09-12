@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import os
-os.environ["BLINKA_FT232H"]
+os.environ.get('BLINKA_FT232H', '1')
 
 import board
 
