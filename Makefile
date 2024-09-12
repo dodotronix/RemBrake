@@ -1,20 +1,30 @@
 # install all packages on Archlinux
 
-PACKAGE_NAME:=python-adafruit-blinka
-PACKAGE_VERSION:="8.47.0"
-DOWNLOAD_LINK:="https://aur.archlinux.org/cgit/aur.git/snapshot/${PACKAGE_NAME}.tar.gz"
-PKGVER:=$$(echo ${PACKAGE_VERSION} | sed 's/\./\\./g')
+PACKAGE_BLINKA:=python-adafruit-blinka
+PACKAGE_PLATFORMDETECT:=python-adafruit-platformdetect
+PACKAGE_VERSION_BLINKA:="8.47.0"
+PACKAGE_VERSION_PLATFORMDETECT:="3.74.0"
+BLINKA_URL:="https://aur.archlinux.org/cgit/aur.git/snapshot/${PACKAGE_BLINKA}.tar.gz"
+PLATFORMDETECT_URL="https://aur.archlinux.org/cgit/aur.git/snapshot/${PACKAGE_PLATFORMDETECT}.tar.gz"
+PKGVER_BLINKA:=$$(echo ${PACKAGE_VERSION_BLINKA} | sed 's/\./\\./g')
+PKGVER_PLATFORMDETECT:=$$(echo ${PACKAGE_VERSION_PLATFORMDETECT} | sed 's/\./\\./g')
 
 all: check_software install_dependencies
-	echo ${DOWNLOAD_LINK}
-	@wget ${DOWNLOAD_LINK} 
-	@tar -xvf ${PACKAGE_NAME}.tar.gz
-	@cd ${PACKAGE_NAME}; ls -l; echo ${PKGVER}; \
-		sed -i "s/\(pkgver\)=.*/\1=${PKGVER}/" PKGBUILD; \
+	@wget ${PLATFORMDETECT_URL}
+	@tar -xvf ${PACKAGE_PLATFORMDETECT}.tar.gz
+	@cd ${PACKAGE_PLATFORMDETECT}; \
+		sed -i "s/\(pkgver\)=.*/\1=${PKGVER_PLATFORMDETECT}/" PKGBUILD; \
+		sed -i "s/\(sha256sums\)=.*/\1=('SKIP')/" PKGBUILD; \
+		makepkg -si --noconfirm
+	@wget ${BLINKA_URL}
+	@tar -xvf ${PACKAGE_BLINKA}.tar.gz
+	@cd ${PACKAGE_BLINKA}; \
+		sed -i "s/\(pkgver\)=.*/\1=${PKGVER_BLINKA}/" PKGBUILD; \
 		sed -i "s/\(arch\)=\([^)]\+\)/\1=\2 'x86_64'/" PKGBUILD; \
 		sed -i "s/\(sha256sums\)=.*/\1=('SKIP')/" PKGBUILD; \
 		makepkg -si --noconfirm
-	@rm -rf ${PACKAGE_NAME}*
+	@rm -rf ${PACKAGE_BLINKA}*
+	@rm -rf ${PACKAGE_PLATFORMDETECT}*
 
 check_software:
 	echo "TODO is yay installed?"
@@ -26,6 +36,5 @@ install_dependencies:
 		--noconfirm
 	@yay -S --noconfirm \
 		python-sysv_ipc \
-		python-adafruit-platformdetect \
 		python-gpiod \
 		python-adafruit-pureio
