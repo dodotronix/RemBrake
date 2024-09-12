@@ -1,3 +1,3 @@
-# RemBreak - remotely controled breaking system
+# RemBreak - remotely controlled breaking system
 
 # NOTES
