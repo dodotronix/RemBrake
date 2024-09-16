@@ -10,7 +10,7 @@ m_bike = 25; % kg
 v = 25; % km/h
 fs = 1e1; % Hz
 t = 4; % s
-s_break = 4; % m
+s_break = 2; % m
 
 max_deg = 320; % deg
 bit_width = 8;
@@ -36,12 +36,13 @@ aa = break_factor/(servo_v*(m_person+m_bike))
 
 % calculate, when the acceleration is constant
 c = 4*v_ms/-aa+dt^2
-x_tmp = sqrt(c)
-x = x_tmp - mod(x_tmp, 2*Ts)
 
 if (c < 0)
     error("the break distance is too short for the given servo parameters and person weight")
 end
+
+x_tmp = sqrt(c)
+x = x_tmp - mod(x_tmp, 2*Ts)
 
 aa_new = v_ms*4/(dt^2-x^2)
 servo_v = break_factor/(aa_new*(m_person+m_bike))
