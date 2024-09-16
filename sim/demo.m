@@ -7,8 +7,8 @@ tolerance = 1e-10;
 
 m_person = 50; % kg (up to 90 kg)
 m_bike = 25; % kg
-v = 25; % km/h
-fs = 1e1; % Hz
+v = 15; % km/h
+fs = 2e1; % Hz
 t = 4; % s
 s_break = 2; % m
 
@@ -82,7 +82,7 @@ pwm = (f*max_deg)/(power(2,bit_width)*break_factor);
 s_break = (v_ms*dt)/2
 
 % check the result from the chart
-s0 = v_ms*t
+s0 = v_ms*t - mod(v_ms*t, tolerance)
 s_break_check = s_vec(end)-s0
 
 % Check of start of the breaking sequence
@@ -107,7 +107,7 @@ settings = [
     "Break distance: " num2str(s_break_new) " [m]\n" ...
     "Break time: " num2str(2*tt+x) " [s]\n" ]
 
-text (2*t+dt-4, 4, settings, 'fontsize', 20);
+text (2*t+dt-4, v_ms-2, settings, 'fontsize', 20);
 
 ylabel("velocity [m/s]")
 xlabel("time [s]")
