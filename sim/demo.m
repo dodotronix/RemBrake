@@ -2,17 +2,20 @@ clc
 close all
 clear all
 
+% computational tolerance
+tolerance = 1e-10;
+
 m_person = 50; % kg (up to 90 kg)
 m_bike = 25; % kg
 v = 25; % km/h
 fs = 1e1; % Hz
-t = 10; % s
-s_break = 9; % m
+t = 4; % s
+s_break = 4; % m
 
 max_deg = 320; % deg
 bit_width = 8;
 
-break_factor = 5; % N/deg
+break_factor = 40; % N/deg
 servo_v = 0.80/60; % s/deg (6V0) 
 % servo_v = 0.16/60; % s/deg (7V4) 
 
@@ -32,14 +35,13 @@ t1_vec = [0:Ts:dt];
 aa = break_factor/(servo_v*(m_person+m_bike))
 
 % calculate, when the acceleration is constant
-
 c = 4*v_ms/-aa+dt^2
+x_tmp = sqrt(c)
+x = x_tmp - mod(x_tmp, 2*Ts)
+
 if (c < 0)
     error("the break distance is too short for the given servo parameters and person weight")
 end
-
-x_tmp = sqrt(c)
-x = x_tmp - mod(x_tmp, Ts)
 
 aa_new = v_ms*4/(dt^2-x^2)
 servo_v = break_factor/(aa_new*(m_person+m_bike))
@@ -47,11 +49,14 @@ servo_v = break_factor/(aa_new*(m_person+m_bike))
 a_new = 2*v_ms/(x+dt)
 tt = (dt - x)/2
 
+% remove the precision error
+tt = round(tt/Ts)*Ts
+
 % linear breaking
 % a_decel = ((0 - v_ms)/dt);
 % a = ones(1,length(t1_vec))*a_decel;
 
-a = -1*[aa_new*[0:Ts:tt] a_new*ones(1, x/Ts-1) aa_new*[tt:-Ts:0]];
+a = -1*[aa_new*[0:Ts:tt] a_new*ones(1, floor(x/Ts)) aa_new*[tt-Ts:-Ts:0]];
 
 %-----------------------------------------------------------------------------%
 
@@ -65,7 +70,8 @@ v2_vec = zeros(1, length(t0_vec));
 v_vec = [v0_vec v1_vec v2_vec];
 t_vec = [0:length(v_vec)-1]*Ts;
 
-s_vec = cumtrapz(v_vec)*Ts;
+s_vec_tmp = cumtrapz(v_vec)*Ts;
+s_vec = s_vec_tmp - mod(s_vec_tmp, tolerance);
 
 a_vec = diff(v_vec)./diff(t_vec);
 f = abs(a_vec*(m_person+m_bike));
@@ -76,11 +82,10 @@ s_break = (v_ms*dt)/2
 
 % check the result from the chart
 s0 = v_ms*t
-s1 = v_ms*dt/2
 s_break_check = s_vec(end)-s0
 
 % Check of start of the breaking sequence
-touch_point_inx = find(s_vec >= (s0 + s1));
+touch_point_inx = find(s_vec >= (s0 + s_break_new));
 s_vec(touch_point_inx)(1)
 
 % here just for debugging purposes
@@ -98,10 +103,10 @@ settings = [
     "Decceleration: " num2str(a_new) " [m/s^2]\n" ...
     "weight: " num2str(m_person+m_bike) " [kg]\n" ...
     "Break factor: " num2str(break_factor) " [N/deg]\n" ...
-    "Break distance: " num2str(s_break) " [m]\n" ...
+    "Break distance: " num2str(s_break_new) " [m]\n" ...
     "Break time: " num2str(2*tt+x) " [s]\n" ]
 
-text (20, 4, settings, 'fontsize', 20);
+text (2*t+dt-4, 4, settings, 'fontsize', 20);
 
 ylabel("velocity [m/s]")
 xlabel("time [s]")
