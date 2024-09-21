@@ -6,16 +6,19 @@ os.environ['BLINKA_FT232H'] = "1"
 import board
 import digitalio
 
-from pyftdi.ftdi import Ftdi
 from time import sleep
-
-print(dir(board))
 
 led = digitalio.DigitalInOut(board.C0)
 led.direction = digitalio.Direction.OUTPUT
 
-while True:
-    led.value = True
-    sleep(0.5)
-    led.value = False
-    sleep(0.5)
+from_remote = digitalio.DigitalInOut(board.D7)
+from_remote.direction = digitalio.Direction.INPUT
+
+if __name__ == '__main__':
+
+    while True:
+        last_value = from_remote.value
+        if (from_remote.value == True) and (last_value == False):
+            led.value = not led.value
+            print("clicked")
+
