@@ -1,0 +1,53 @@
+# Maintainer: dodotronix
+
+
+pkgname=pololu-maestro
+pkgver=240814
+_fileid=0J315
+pkgrel=1
+pkgdesc="Pololu Maestro Control Center"
+arch=(i686 x86_64)
+url="http://www.pololu.com/docs/0J40/3.b"
+license=('unknown')
+depends=('mono')
+
+source=("maestro_linux_${pkgver}.tar.gz::https://www.pololu.com/file/${_fileid}/maestro-linux-${pkgver}.tar.gz"
+        "UscCmd"
+        "MaestroControlCenter" 
+        "pololu_logo.png")
+
+sha256sums=('615b6091cbf8e98f72fcb09be6a9a70bf69b8b9233f23f59d76aaf6a05a2db33'
+            '6d6b794b78e55809c6c6f71fa80c72ad88a012bce5eeb4d71c9eb93019fe3d1f'
+            'bec46aeaf69f6f547c867d8fc989eec3e43f8bce944d68ba99ad25e74581f641'
+            'SKIP')
+
+package() {
+  cd "$srcdir/maestro-linux"
+
+  # install icon
+  mkdir -p "${pkgdir}/usr/share/icons/hicolor/48x48/pololu/"
+  cp "${srcdir}/pololu_logo.png" "${pkgdir}/usr/share/icons/hicolor/48x48/pololu/pololu_logo.png"
+
+  # create desktop file
+  echo "[Desktop Entry]" > ${srcdir}/${pkgname}.desktop
+  echo "Encoding=UTF-8" >> ${srcdir}/${pkgname}.desktop
+  echo "Version= " ${pkgver} >> ${srcdir}/${pkgname}.desktop
+  echo "Type=Application" >> ${srcdir}/${pkgname}.desktop
+  echo "Exec=/usr/bin/MaestroControlCenter" >> ${srcdir}/${pkgname}.desktop
+  echo "Name=Maestro Control Center" >> ${srcdir}/${pkgname}.desktop
+  echo "Icon=pololu_logo" >> ${srcdir}/${pkgname}.desktop
+
+  install -Dm644 "${srcdir}/${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+
+  install -Dm644 "99-pololu.rules" "${pkgdir}/etc/udev/rules.d/99-pololu.rules"
+  rm "99-pololu.rules"
+
+  install -d "${pkgdir}/usr/lib/maestro_linux/"
+  install -t "${pkgdir}/usr/lib/maestro_linux/" *
+
+  install -d "${pkgdir}/usr/bin"
+  install -t "${pkgdir}/usr/bin" "${srcdir}/UscCmd"
+  install -t "${pkgdir}/usr/bin" "${srcdir}/MaestroControlCenter"
+}
+
+# vim:set ts=2 sw=2 et:
