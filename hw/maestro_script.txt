@@ -64,11 +64,13 @@ if return endif
 repeat
 
 sub move_servo
-1 get_position 0 equals
+1 get_position 4000 equals
 if
 8000 1 servo
+8000 2 servo
 else
-0 1 servo
+4000 1 servo
+4000 2 servo
 endif
 return
 
