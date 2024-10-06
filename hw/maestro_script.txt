@@ -12,9 +12,9 @@
     <!--Channel 0-->
     <Channel name="" mode="Input" min="0" max="1024" homemode="Ignore" home="0" speed="0" acceleration="0" neutral="1024" range="1905" />
     <!--Channel 1-->
-    <Channel name="" mode="Servo" min="4928" max="7552" homemode="Off" home="4928" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <Channel name="" mode="Servo" min="4928" max="6400" homemode="Off" home="4928" speed="0" acceleration="0" neutral="6000" range="1905" />
     <!--Channel 2-->
-    <Channel name="" mode="Servo" min="4928" max="7552" homemode="Off" home="4928" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <Channel name="" mode="Servo" min="4928" max="6400" homemode="Off" home="4928" speed="0" acceleration="0" neutral="6000" range="1905" />
     <!--Channel 3-->
     <Channel name="" mode="Servo" min="3968" max="9984" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
     <!--Channel 4-->
@@ -35,7 +35,7 @@
     <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
   </Channels>
   <Sequences />
-  <Script ScriptDone="true"># !!! Do not forget to set the Servo 0 as Input
+  <Script ScriptDone="false"># !!! Do not forget to set the Servo 0 as Input
 
 goto main_loop
 
@@ -66,8 +66,8 @@ repeat
 sub move_servo
 1 get_position 4928 equals
 if
-8600 1 servo
-8600 2 servo
+6300 1 servo
+6300 2 servo
 else
 4928 1 servo
 4928 2 servo
