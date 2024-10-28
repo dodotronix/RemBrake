@@ -578,14 +578,6 @@
     [
       "e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75",
       "Root"
-    ],
-    [
-      "923bb93e-74a9-4a09-8ba4-609f7aa5fb88",
-      "charging_module"
-    ],
-    [
-      "67ed9a60-54da-4507-9a18-b1771d7dc226",
-      "4ch_transmitter"
     ]
   ],
   "text_variables": {}
