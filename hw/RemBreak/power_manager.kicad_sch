@@ -2826,7 +2826,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 49.53) (xy 133.35 49.53)
+			(xy 252.73 45.72) (xy 133.35 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3216,7 +3216,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 49.53) (xy 133.35 58.42)
+			(xy 133.35 45.72) (xy 133.35 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3368,7 +3368,7 @@
 	)
 	(hierarchical_label "VBATT"
 		(shape output)
-		(at 252.73 49.53 0)
+		(at 252.73 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
