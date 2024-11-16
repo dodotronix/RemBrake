@@ -1,5 +1,5 @@
 (footprint "USBC_charger"
-	(version 20241010)
+	(version 20241030)
 	(generator "pcbnew")
 	(generator_version "8.99")
 	(layer "F.Cu")
@@ -101,15 +101,15 @@
 		(uuid "e6c81f01-54d6-44f9-a6db-a27eb38dc1a5")
 	)
 	(fp_rect
-		(start -15.5 -9)
-		(end 15.5 9)
+		(start -16.6 -10.6)
+		(end 16.6 10.6)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
 		(fill none)
-		(layer "Dwgs.User")
-		(uuid "1a878e1d-e312-4f39-8f6f-b7fc4fd9a51e")
+		(layer "F.CrtYd")
+		(uuid "4c27b8d8-bc06-44fa-8351-c99122050187")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
