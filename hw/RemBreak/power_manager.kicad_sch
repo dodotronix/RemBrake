@@ -4388,7 +4388,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "chinese_modules:USBC_charger"
 			(at 167.64 72.39 0)
 			(effects
 				(font
