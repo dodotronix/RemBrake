@@ -837,6 +837,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 87.63) (xy 199.39 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02650eaf-eff3-4184-93c3-c54f78278c3b")
+	)
+	(wire
+		(pts
 			(xy 74.93 97.79) (xy 74.93 100.33)
 		)
 		(stroke
@@ -877,6 +887,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 85.09) (xy 185.42 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "359797ac-17e5-41c9-a27c-664402bbd817")
+	)
+	(wire
+		(pts
 			(xy 72.39 50.8) (xy 88.9 50.8)
 		)
 		(stroke
@@ -897,7 +917,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 82.55) (xy 199.39 82.55)
+			(xy 156.21 85.09) (xy 171.45 85.09)
 		)
 		(stroke
 			(width 0)
@@ -917,7 +937,17 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 73.66) (xy 168.91 85.09)
+			(xy 185.42 85.09) (xy 185.42 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4657e93e-d72b-45ed-a91f-458961ca1e71")
+	)
+	(wire
+		(pts
+			(xy 168.91 73.66) (xy 168.91 82.55)
 		)
 		(stroke
 			(width 0)
@@ -937,7 +967,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 82.55) (xy 171.45 82.55)
+			(xy 156.21 87.63) (xy 171.45 87.63)
 		)
 		(stroke
 			(width 0)
@@ -947,13 +977,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 90.17) (xy 185.42 93.98)
+			(xy 168.91 82.55) (xy 171.45 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b62a8c1-942c-4fba-9cbf-9dbf75203fce")
+		(uuid "82131a87-f957-4f10-b8c9-ded1c9c4136d")
 	)
 	(wire
 		(pts
@@ -977,13 +1007,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 90.17) (xy 185.42 90.17)
+			(xy 184.15 82.55) (xy 186.69 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "97487526-81ce-49f5-9bd5-88d14d5d3518")
+		(uuid "93a2e969-fa3c-4dbe-8345-cd0739b6f86d")
 	)
 	(wire
 		(pts
@@ -1007,23 +1037,13 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 87.63) (xy 199.39 87.63)
+			(xy 184.15 90.17) (xy 199.39 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9e7e09de-c6ef-42c2-9137-7b2f1ceb96a5")
-	)
-	(wire
-		(pts
-			(xy 156.21 87.63) (xy 171.45 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b26d2759-44b2-4e87-80c2-0c39be25bb4d")
 	)
 	(wire
 		(pts
@@ -1037,27 +1057,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 85.09) (xy 184.15 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db816e97-05ae-4a9a-83b9-0268bc720a01")
-	)
-	(wire
-		(pts
-			(xy 168.91 85.09) (xy 171.45 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfa34767-04e2-4399-b401-9c04528d5346")
-	)
-	(wire
-		(pts
-			(xy 186.69 73.66) (xy 186.69 85.09)
+			(xy 186.69 73.66) (xy 186.69 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1096,13 +1096,13 @@
 		(uuid "f472cf59-4adb-45c9-b780-de5117b90208")
 	)
 	(label "VBATT"
-		(at 199.39 82.55 180)
+		(at 156.21 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "01dc5cf2-d942-43a7-af5b-9024fe25741c")
 	)
@@ -1162,13 +1162,13 @@
 		(uuid "24e64949-8e80-433b-927d-5b564e6a80bb")
 	)
 	(label "LED BLUE"
-		(at 199.39 87.63 180)
+		(at 156.21 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "31af7a7f-c707-4dad-b667-2476f6e0c0ec")
 	)
@@ -1184,13 +1184,13 @@
 		(uuid "3f1b69a5-f00c-4438-b3e7-52b524fb1e20")
 	)
 	(label "ONOFF"
-		(at 156.21 82.55 0)
+		(at 199.39 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "5b7204d5-933b-4f0a-b777-ca7c1c27c9b2")
 	)
@@ -1239,7 +1239,7 @@
 		(uuid "b75a0664-714c-4b14-85a5-ceb0ef5a9ec8")
 	)
 	(label "I2C.SCL"
-		(at 199.39 80.01 180)
+		(at 199.39 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1261,7 +1261,7 @@
 		(uuid "d56fce99-cd76-473d-a992-d83905930298")
 	)
 	(label "I2C.SDA"
-		(at 156.21 80.01 0)
+		(at 156.21 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1272,7 +1272,7 @@
 		(uuid "e4f46c02-7524-4d55-8815-709882689cf9")
 	)
 	(label "LED RED"
-		(at 156.21 90.17 0)
+		(at 156.21 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1283,13 +1283,13 @@
 		(uuid "e6e15ab8-c54c-4d10-ac5c-d8c3ec675760")
 	)
 	(label "LED GREEN"
-		(at 156.21 87.63 0)
+		(at 199.39 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f6694c91-e6c0-46fd-8adc-f50a315fa729")
 	)

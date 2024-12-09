@@ -710,22 +710,16 @@
 		(uuid "f7a0ba87-edb4-4240-ae01-0ece80db241b")
 	)
 	(junction
-		(at 234.95 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "04344d88-51af-4abe-9415-d6b40d21ffca")
-	)
-	(junction
 		(at 90.17 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d4b4697-a0b2-411d-81fa-9172c54de339")
 	)
 	(junction
-		(at 240.03 66.04)
+		(at 234.95 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6a56e5d6-fbbc-415e-8615-3465d99553ed")
+		(uuid "546b4081-3a57-476a-9120-b52bd72d1e8f")
 	)
 	(junction
 		(at 184.15 78.74)
@@ -746,10 +740,26 @@
 		(uuid "c63d4769-efe4-49d6-967e-8ed0473bac57")
 	)
 	(junction
+		(at 240.03 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1dc49a1-eed9-4bad-a681-f9b632d6cfc6")
+	)
+	(junction
 		(at 236.22 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1f98fd2-92db-4676-a6d5-fbe0eebb9d52")
+	)
+	(wire
+		(pts
+			(xy 208.28 134.62) (xy 241.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "012fa850-5bb9-440f-b715-b2cf753c13fd")
 	)
 	(wire
 		(pts
@@ -763,6 +773,16 @@
 	)
 	(wire
 		(pts
+			(xy 240.03 63.5) (xy 240.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c0e339c-abef-48cc-a7a1-2f1a0a0fede3")
+	)
+	(wire
+		(pts
 			(xy 82.55 129.54) (xy 161.29 129.54)
 		)
 		(stroke
@@ -770,16 +790,6 @@
 			(type default)
 		)
 		(uuid "196b50a5-8af9-415d-8604-aa4a99c47b63")
-	)
-	(wire
-		(pts
-			(xy 234.95 68.58) (xy 241.3 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e3faf73-83e6-49c7-b03b-d0846ad0b8d3")
 	)
 	(wire
 		(pts
@@ -803,26 +813,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 60.96) (xy 241.3 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2728c75c-2998-460a-a0e3-7af88bc8e709")
-	)
-	(wire
-		(pts
-			(xy 240.03 66.04) (xy 240.03 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "279728e2-40a9-4b76-a9b8-d1c58a5ca0ce")
-	)
-	(wire
-		(pts
 			(xy 236.22 127) (xy 241.3 127)
 		)
 		(stroke
@@ -830,6 +820,26 @@
 			(type default)
 		)
 		(uuid "322154ef-3ef5-4da3-92e2-c59744d62820")
+	)
+	(wire
+		(pts
+			(xy 236.22 66.04) (xy 236.22 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "362666a3-508e-4214-bb2b-10924d9bd5e1")
+	)
+	(wire
+		(pts
+			(xy 240.03 68.58) (xy 241.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3728be37-5bc0-44bf-9cf1-cfba1cb80daf")
 	)
 	(wire
 		(pts
@@ -873,13 +883,23 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 91.44) (xy 236.22 60.96)
+			(xy 234.95 60.96) (xy 241.3 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b14f003-3bc1-46a6-9a8f-b6b43b7c82b7")
+		(uuid "4de37d80-c53f-468a-8304-2fe3c6cd22c4")
+	)
+	(wire
+		(pts
+			(xy 237.49 132.08) (xy 237.49 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "519c5795-2c58-4e01-81e1-5141800a8076")
 	)
 	(wire
 		(pts
@@ -933,6 +953,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 60.96) (xy 234.95 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5da15990-ba97-4dba-acc6-764b19187435")
+	)
+	(wire
+		(pts
 			(xy 123.19 49.53) (xy 161.29 49.53)
 		)
 		(stroke
@@ -943,23 +973,33 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 132.08) (xy 241.3 132.08)
+			(xy 237.49 132.08) (xy 241.3 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "67449e82-97e5-42ab-9a7c-758fb60965e4")
+		(uuid "678aaa88-d81e-4f09-b959-cabdef39a0a8")
 	)
 	(wire
 		(pts
-			(xy 234.95 58.42) (xy 234.95 68.58)
+			(xy 234.95 58.42) (xy 234.95 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "681ab72c-939d-44dc-aea1-a19a35425685")
+	)
+	(wire
+		(pts
+			(xy 236.22 66.04) (xy 241.3 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c6d2be0-fb33-475a-b8f3-77f10b52eb04")
 	)
 	(bus
 		(pts
@@ -1003,16 +1043,6 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 134.62) (xy 241.3 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7fb4f1ba-d934-40ee-88ef-44472af098f3")
-	)
-	(wire
-		(pts
 			(xy 86.36 132.08) (xy 161.29 132.08)
 		)
 		(stroke
@@ -1020,6 +1050,16 @@
 			(type default)
 		)
 		(uuid "8adc4d3c-94d0-4ecc-b6bb-fb9be76f1134")
+	)
+	(wire
+		(pts
+			(xy 240.03 71.12) (xy 240.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a4e5084-b83c-4faf-ba28-e218a73e4fbc")
 	)
 	(wire
 		(pts
@@ -1040,16 +1080,6 @@
 			(type default)
 		)
 		(uuid "a27aa4a3-daf7-488f-896e-0e046f553dbf")
-	)
-	(wire
-		(pts
-			(xy 240.03 71.12) (xy 240.03 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4802760-3e0d-4776-a7de-22f839ae1e4c")
 	)
 	(wire
 		(pts
@@ -1113,16 +1143,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 66.04) (xy 241.3 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6762de0-e7f1-44ac-bac2-085a078407cb")
-	)
-	(wire
-		(pts
 			(xy 240.03 63.5) (xy 241.3 63.5)
 		)
 		(stroke
@@ -1183,7 +1203,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 134.62 0)
+		(at 237.49 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1192,7 +1212,7 @@
 		(fields_autoplaced yes)
 		(uuid "762c8d14-cab8-418b-be57-28b2e36ecf3b")
 		(property "Reference" "#PWR02"
-			(at 237.49 140.97 0)
+			(at 237.49 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1201,7 +1221,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 139.7 0)
+			(at 237.49 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1209,7 +1229,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 134.62 0)
+			(at 237.49 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1218,7 +1238,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 134.62 0)
+			(at 237.49 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1227,7 +1247,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 134.62 0)
+			(at 237.49 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1842,7 +1862,7 @@
 			(uuid "d2904149-f3cd-4688-ae7f-a633e5712ae9")
 		)
 		(pin "BUZZER" input
-			(at 208.28 132.08 0)
+			(at 208.28 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
