@@ -1967,7 +1967,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 86.36) (xy 140.97 86.36)
+			(xy 125.73 88.9) (xy 140.97 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1997,7 +1997,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 88.9) (xy 140.97 88.9)
+			(xy 127 86.36) (xy 140.97 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2538,7 +2538,7 @@
 		(uuid "72b28c2f-8d40-49a7-bfe3-82ed15e59ffc")
 	)
 	(label "RF SWITCH"
-		(at 127 88.9 0)
+		(at 127 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2695,7 +2695,7 @@
 	)
 	(hierarchical_label "BALARM"
 		(shape input)
-		(at 125.73 86.36 180)
+		(at 125.73 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
