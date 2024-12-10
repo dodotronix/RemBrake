@@ -1206,7 +1206,7 @@
 		(uuid "8825a4e3-e8b5-4de5-a746-1d03efd0cd19")
 	)
 	(label "DISPLAY.DCKI"
-		(at 156.21 92.71 0)
+		(at 156.21 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1217,7 +1217,7 @@
 		(uuid "8f922341-95ea-4761-8c00-40e26693fd85")
 	)
 	(label "DISPLAY.DI"
-		(at 199.39 92.71 180)
+		(at 199.39 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1239,7 +1239,7 @@
 		(uuid "b75a0664-714c-4b14-85a5-ceb0ef5a9ec8")
 	)
 	(label "I2C.SCL"
-		(at 199.39 90.17 180)
+		(at 199.39 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1261,7 +1261,7 @@
 		(uuid "d56fce99-cd76-473d-a992-d83905930298")
 	)
 	(label "I2C.SDA"
-		(at 156.21 90.17 0)
+		(at 156.21 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

@@ -1997,6 +1997,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 88.9) (xy 140.97 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a64c782-6b4b-484e-b6bd-481dd5a66a2b")
+	)
+	(wire
+		(pts
 			(xy 194.31 91.44) (xy 194.31 92.71)
 		)
 		(stroke
@@ -2167,23 +2177,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 99.06) (xy 171.45 99.06)
+			(xy 160.02 99.06) (xy 173.99 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7279f484-9c9c-4bc7-ab25-62ae8ada020e")
-	)
-	(wire
-		(pts
-			(xy 125.73 88.9) (xy 140.97 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7297abaa-cfa6-49e1-bf56-b36392287209")
 	)
 	(wire
 		(pts
@@ -2538,13 +2538,13 @@
 		(uuid "72b28c2f-8d40-49a7-bfe3-82ed15e59ffc")
 	)
 	(label "RF SWITCH"
-		(at 171.45 99.06 180)
+		(at 127 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "72bd9494-76e0-4ac0-876f-8e292d143485")
 	)
@@ -2671,7 +2671,7 @@
 	)
 	(hierarchical_label "BUTTON"
 		(shape input)
-		(at 173.99 96.52 0)
+		(at 173.99 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2707,13 +2707,13 @@
 	)
 	(hierarchical_label "CHARGING"
 		(shape input)
-		(at 125.73 88.9 180)
+		(at 173.99 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "799cd548-af17-41bf-8135-577ac5814d1a")
 	)
