@@ -220,4 +220,15 @@
 		(uuid "9571afc7-0f3b-447c-8cb2-a30523194f50")
 	)
 	(embedded_fonts no)
+	(model "/home/dodotronix/projects/RemBreak/design/RFController.step"
+		(offset
+			(xyz -144.15 96.15 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
