@@ -21473,6 +21473,78 @@
 			(justify left bottom)
 		)
 	)
+	(gr_text "ONOFF\nVBATT"
+		(at 159 99 90)
+		(layer "B.SilkS")
+		(uuid "03bb7501-c587-4434-976b-8729b74af1cf")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GREEN\nBLUE"
+		(at 159 109 90)
+		(layer "B.SilkS")
+		(uuid "37aa2d8b-7505-4813-8cdd-73952b29a0ba")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "SCL\nSDA"
+		(at 159 116 90)
+		(layer "B.SilkS")
+		(uuid "58af70e4-19c3-4abd-99bf-c6c5c08431bd")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "5V\n3V3"
+		(at 159 103 90)
+		(layer "B.SilkS")
+		(uuid "940c114c-e317-4429-9eb3-229310e9831a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "DI\nDCKI"
+		(at 159 113 90)
+		(layer "B.SilkS")
+		(uuid "9c16d9dd-2588-4021-9628-e9cc8b6f2d77")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND\nRED"
+		(at 159 106 90)
+		(layer "B.SilkS")
+		(uuid "fa244f5e-c2c7-4e3e-b789-ef9635c0a91a")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
+		)
+	)
 	(dimension
 		(type orthogonal)
 		(locked yes)
