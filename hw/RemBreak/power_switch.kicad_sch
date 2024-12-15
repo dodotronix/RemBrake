@@ -6,6 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Control")
+		(date "2024-12-15")
+		(rev "1.0")
 	)
 	(lib_symbols
 		(symbol "Analog_Switch:MAX40200AUK"
@@ -2370,10 +2372,12 @@
 	)
 	(text "VBUS > 3.5V -> VOUT = VBUS\nVBUS <3.0V -> VOUT = GND"
 		(exclude_from_sim no)
-		(at 167.894 132.842 0)
+		(at 162.56 132.334 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "14d54e28-0c7b-4753-80a4-9c1240bfb29a")
@@ -2384,6 +2388,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "5909fc74-e782-4705-945b-80ad9bcc27ff")
@@ -2394,6 +2400,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "ea81945e-7e95-4db8-be89-f1424fbd73b6")

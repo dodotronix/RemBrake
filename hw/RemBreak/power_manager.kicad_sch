@@ -4,6 +4,11 @@
 	(generator_version "8.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
 	(paper "A4")
+	(title_block
+		(title "Power Manager")
+		(date "2024-12-15")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Analog_Switch:MAX40200AUK"
 			(exclude_from_sim no)
@@ -2266,6 +2271,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "01749b95-07e0-4877-8b5c-3184cf3faaf3")
@@ -2276,6 +2283,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "0585c691-7ba8-498c-8017-85502ef6dc33")
@@ -2286,6 +2295,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "2bbe8b44-99b7-43b7-8fc4-a015adb1d2da")
@@ -2296,6 +2307,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "7a7e394f-25cc-479f-926f-0199b3eecccb")

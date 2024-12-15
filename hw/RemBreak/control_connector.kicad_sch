@@ -4,6 +4,11 @@
 	(generator_version "8.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
 	(paper "A4")
+	(title_block
+		(title "Control Connector")
+		(date "2024-12-15")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x06_Odd_Even"
 			(pin_names
@@ -789,12 +794,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "RGB LED is connected\nto the 3v3 pin"
+	(text "RGB LED (Common anode)\nconnected to 3V3"
 		(exclude_from_sim no)
-		(at 207.518 105.156 0)
+		(at 179.07 107.188 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "592c1129-b930-4960-8d6c-3a6da0c0ca7f")

@@ -4,6 +4,11 @@
 	(generator_version "8.99")
 	(uuid "6b3dd075-d496-4929-af5f-902e03d500ea")
 	(paper "A4")
+	(title_block
+		(title "Break Control")
+		(date "2024-12-15")
+		(rev "1.0")
+	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
@@ -1780,20 +1785,11 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "6a210751-7082-43cc-b39f-d7602caa5d18")
-	)
-	(text "TODO: Add zener \ndiode (3V3)"
-		(exclude_from_sim no)
-		(at 198.882 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "b7843d8c-ccc5-4128-af5d-edb818363a91")
 	)
 	(text "RF (BUTTON)\nCONTROL\n"
 		(exclude_from_sim no)
@@ -1801,6 +1797,8 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 		)
 		(uuid "d845b886-1444-4d15-9963-0081addc275f")
@@ -2435,7 +2433,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 82.55) (xy 189.23 85.09)
+			(xy 189.23 81.28) (xy 189.23 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4354,7 +4352,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 189.23 82.55 0)
+		(at 189.23 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4363,7 +4361,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb2a802f-15db-4942-a24c-1164654c6aa4")
 		(property "Reference" "#PWR045"
-			(at 189.23 86.36 0)
+			(at 189.23 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4372,7 +4370,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 189.23 77.47 0)
+			(at 189.23 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4380,7 +4378,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 82.55 0)
+			(at 189.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4389,7 +4387,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 82.55 0)
+			(at 189.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4398,7 +4396,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 189.23 82.55 0)
+			(at 189.23 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
