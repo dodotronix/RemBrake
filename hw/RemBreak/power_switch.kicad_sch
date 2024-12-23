@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241004)
+	(version 20241209)
 	(generator "eeschema")
 	(generator_version "8.99")
 	(uuid "2a7ff1cc-957c-43b3-8e70-6249f6aaf056")
@@ -4097,7 +4097,6 @@
 	(hierarchical_label "EN"
 		(shape output)
 		(at 266.7 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4109,7 +4108,6 @@
 	(hierarchical_label "RUNNIG (RED)"
 		(shape input)
 		(at 266.7 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4121,7 +4119,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 266.7 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4133,7 +4130,6 @@
 	(hierarchical_label "ON{slash}OFF"
 		(shape input)
 		(at 31.75 60.96 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4145,7 +4141,6 @@
 	(hierarchical_label "VBATT"
 		(shape input)
 		(at 31.75 38.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

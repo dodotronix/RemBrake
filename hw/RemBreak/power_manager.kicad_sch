@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241004)
+	(version 20241209)
 	(generator "eeschema")
 	(generator_version "8.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
@@ -3609,7 +3609,6 @@
 	)
 	(label "I2C.SDA"
 		(at 59.69 143.51 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3620,7 +3619,6 @@
 	)
 	(label "I2C.SCL"
 		(at 110.49 143.51 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3631,7 +3629,6 @@
 	)
 	(label "I2C.SCL"
 		(at 46.99 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3642,7 +3639,6 @@
 	)
 	(label "I2C.SCL"
 		(at 87.63 143.51 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3653,7 +3649,6 @@
 	)
 	(label "I2C.SDA"
 		(at 90.17 143.51 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3664,7 +3659,6 @@
 	)
 	(label "I2C.SDA"
 		(at 36.83 149.86 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3676,7 +3670,6 @@
 	(hierarchical_label "CHARGING (BLUE)"
 		(shape output)
 		(at 240.03 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3688,7 +3681,6 @@
 	(hierarchical_label "VBATT"
 		(shape output)
 		(at 223.52 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3700,7 +3692,6 @@
 	(hierarchical_label "VBUS"
 		(shape input)
 		(at 223.52 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3712,7 +3703,6 @@
 	(hierarchical_label "EN"
 		(shape input)
 		(at 223.52 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3724,7 +3714,6 @@
 	(hierarchical_label "CHARGED (GREEN)"
 		(shape output)
 		(at 240.03 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3736,7 +3725,6 @@
 	(hierarchical_label "BALARM"
 		(shape output)
 		(at 223.52 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3748,7 +3736,6 @@
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
 		(at 241.3 153.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

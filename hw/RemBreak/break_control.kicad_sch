@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241004)
+	(version 20241209)
 	(generator "eeschema")
 	(generator_version "8.99")
 	(uuid "6b3dd075-d496-4929-af5f-902e03d500ea")
@@ -2493,7 +2493,6 @@
 	)
 	(label "DISPLAY.DCKI"
 		(at 127 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2504,7 +2503,6 @@
 	)
 	(label "DISPLAY.DCKI"
 		(at 191.77 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2515,7 +2513,6 @@
 	)
 	(label "RF SWITCH"
 		(at 127 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2526,7 +2523,6 @@
 	)
 	(label "I2C.SCL"
 		(at 191.77 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2537,7 +2533,6 @@
 	)
 	(label "I2C.SCL"
 		(at 127 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2548,7 +2543,6 @@
 	)
 	(label "I2C.SDA"
 		(at 191.77 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2559,7 +2553,6 @@
 	)
 	(label "I2C.SDA"
 		(at 127 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2570,7 +2563,6 @@
 	)
 	(label "SERVO"
 		(at 182.88 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2581,7 +2573,6 @@
 	)
 	(label "DISPLAY.DI"
 		(at 191.77 33.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2592,7 +2583,6 @@
 	)
 	(label "RF SWITCH"
 		(at 105.41 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2603,7 +2593,6 @@
 	)
 	(label "BUZZ"
 		(at 59.69 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2614,7 +2603,6 @@
 	)
 	(label "DISPLAY.DI"
 		(at 127 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2625,7 +2613,6 @@
 	)
 	(label "SERVO"
 		(at 173.99 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2636,7 +2623,6 @@
 	)
 	(label "BUZZ"
 		(at 173.99 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2648,7 +2634,6 @@
 	(hierarchical_label "BUTTON"
 		(shape input)
 		(at 173.99 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2660,7 +2645,6 @@
 	(hierarchical_label "BUZZER"
 		(shape input)
 		(at 195.58 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2672,7 +2656,6 @@
 	(hierarchical_label "BALARM"
 		(shape input)
 		(at 125.73 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2684,7 +2667,6 @@
 	(hierarchical_label "CHARGING"
 		(shape input)
 		(at 173.99 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2696,7 +2678,6 @@
 	(hierarchical_label "VBUS"
 		(shape output)
 		(at 173.99 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2708,7 +2689,6 @@
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
 		(at 195.58 57.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2720,7 +2700,6 @@
 	(hierarchical_label "DISPLAY{DCKI DI}"
 		(shape input)
 		(at 195.58 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
