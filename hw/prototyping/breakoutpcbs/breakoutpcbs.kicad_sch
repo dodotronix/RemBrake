@@ -1,0 +1,96 @@
+(kicad_sch
+	(version 20241209)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "164def8b-47e5-45df-ad5a-f5307e8b0f23")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 93.98 71.12)
+		(size 26.67 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "718ddc52-fb82-424e-8990-6d0f460868bc")
+		(property "Sheetname" "power_switch_bb"
+			(at 100.33 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_switch_bb.kicad_sch"
+			(at 93.98 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "breakoutpcbs"
+				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 43.18 71.12)
+		(size 27.94 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "de052eed-e07d-4893-89f4-9fbd4b68c24b")
+		(property "Sheetname" "power_manager_bb"
+			(at 48.006 93.472 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_manager_bb.kicad_sch"
+			(at 43.18 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "breakoutpcbs"
+				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
