@@ -6,6 +6,47 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 138.43 71.12)
+		(size 30.48 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5053a29f-6eeb-465c-a8a6-1a14483ce333")
+		(property "Sheetname" "power_switch_bbA"
+			(at 143.764 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_switch_bbA.kicad_sch"
+			(at 138.43 113.6146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "breakoutpcbs"
+				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 93.98 71.12)
 		(size 26.67 41.91)
 		(exclude_from_sim no)
@@ -20,7 +61,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "718ddc52-fb82-424e-8990-6d0f460868bc")
-		(property "Sheetname" "power_switch_bb"
+		(property "Sheetname" "power_switch_bbB"
 			(at 100.33 93.472 0)
 			(effects
 				(font
@@ -29,7 +70,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power_switch_bb.kicad_sch"
+		(property "Sheetfile" "power_switch_bbB.kicad_sch"
 			(at 93.98 113.6146 0)
 			(effects
 				(font
