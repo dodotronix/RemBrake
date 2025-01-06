@@ -645,20 +645,20 @@
       "Root"
     ],
     [
-      "65dd8b54-1c0a-4683-aa46-51c439d49612",
-      "power_manager"
+      "2d0cc746-3115-4ebf-adba-86e7fd6ac8bd",
+      "power_switch"
     ],
     [
       "c6fda42a-9645-46e5-b66a-57cf8664dccf",
       "control_connector"
     ],
     [
-      "2d0cc746-3115-4ebf-adba-86e7fd6ac8bd",
-      "power_switch"
-    ],
-    [
       "4813b76c-f465-42f9-8515-5ce5d55b4403",
       "break_control"
+    ],
+    [
+      "65dd8b54-1c0a-4683-aa46-51c439d49612",
+      "power_manager"
     ]
   ],
   "text_variables": {}
