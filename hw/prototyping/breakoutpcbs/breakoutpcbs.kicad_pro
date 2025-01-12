@@ -642,6 +642,14 @@
     [
       "5053a29f-6eeb-465c-a8a6-1a14483ce333",
       "power_switch_bbA"
+    ],
+    [
+      "817be1f3-c263-499d-b078-8973b8115c19",
+      "battery_charger"
+    ],
+    [
+      "6473b973-a331-47c6-86ec-edf4d9af8870",
+      "break_control"
     ]
   ],
   "text_variables": {}
