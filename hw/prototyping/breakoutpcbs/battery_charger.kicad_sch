@@ -1566,25 +1566,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -11.43 -6.35 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 0 -12.7 90)
 					(length 2.54)
@@ -3314,90 +3295,6 @@
 		)
 	)
 	(symbol
-		(lib_id "chinese_modules:USBC_charger")
-		(at 77.47 46.99 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32576b3a-981e-4808-b5ce-fe292e7f4076")
-		(property "Reference" "M1"
-			(at 77.47 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 77.47 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "chinese_modules:USBC_charger"
-			(at 86.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 86.36 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "c302235a-5ff3-4b53-928a-c86dd0d6222a")
-		)
-		(pin "6"
-			(uuid "afb17f94-23a6-40f1-b9c3-99daa69f325c")
-		)
-		(pin "3"
-			(uuid "5441b67c-2d27-4e29-ac6c-86a435829a1c")
-		)
-		(pin "4"
-			(uuid "6383354d-030d-4178-8ff3-be8ca26d7292")
-		)
-		(pin "7"
-			(uuid "f2544b4f-01c2-4f4b-b731-9b63e5fd5a3d")
-		)
-		(pin "2"
-			(uuid "98c14744-f71b-4395-a8a3-f93a9620c9a3")
-		)
-		(pin "1"
-			(uuid "85520576-2f71-4b1b-8463-aef15dd79bbf")
-		)
-		(instances
-			(project "breakoutpcbs"
-				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23/817be1f3-c263-499d-b078-8973b8115c19"
-					(reference "M1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 40.64 27.94 180)
 		(unit 1)
@@ -3873,6 +3770,86 @@
 			(project "breakoutpcbs"
 				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23/817be1f3-c263-499d-b078-8973b8115c19"
 					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "chinese_modules:USBC_charger")
+		(at 77.47 46.99 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76bb1e3c-cbcf-4103-9200-79a6df5cb0fe")
+		(property "Reference" "M1"
+			(at 77.47 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 77.47 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "chinese_modules:USBC_charger"
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "ebaafd71-e33c-41e5-8570-16f7c4c0ace3")
+		)
+		(pin "5"
+			(uuid "0dd6d7fd-0928-4acd-bad3-7a01fe55ac56")
+		)
+		(pin "4"
+			(uuid "59dbae2a-4137-416b-864e-58764787d6be")
+		)
+		(pin "1"
+			(uuid "46826951-7642-478a-976a-ec6302989473")
+		)
+		(pin "3"
+			(uuid "c9717ce9-fc91-430c-8f61-034774d30314")
+		)
+		(pin "2"
+			(uuid "2a98d426-8302-4a35-b127-873ba7e13177")
+		)
+		(instances
+			(project ""
+				(path "/164def8b-47e5-45df-ad5a-f5307e8b0f23/817be1f3-c263-499d-b078-8973b8115c19"
+					(reference "M1")
 					(unit 1)
 				)
 			)
