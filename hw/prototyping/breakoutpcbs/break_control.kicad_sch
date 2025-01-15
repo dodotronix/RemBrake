@@ -2369,6 +2369,16 @@
 		)
 		(uuid "70db08d4-b8b9-4768-8690-491789bfa32f")
 	)
+	(text "TODO: \n- anode RGB led resistor 1k2\n- remove resistors at the cathodes on the RGB LED\n- 5V DC/DC convertor (stepdown)\n- connect ledbar to the 5v and make it use the 3v3 while the charging"
+		(exclude_from_sim no)
+		(at 237.49 56.134 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a8c07229-39b2-483c-9c25-88eb954ea5e8")
+	)
 	(junction
 		(at 85.09 91.44)
 		(diameter 0)
