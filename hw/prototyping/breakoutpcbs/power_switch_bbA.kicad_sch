@@ -2641,6 +2641,16 @@
 		)
 		(uuid "35cced0c-dcdf-481a-a0ab-e32638f98f53")
 	)
+	(label "RUNNING"
+		(at 193.04 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48f25fbc-71b6-4ec2-bdcc-4855785e968c")
+	)
 	(label "ONOFF"
 		(at 231.14 66.04 0)
 		(effects
@@ -3596,7 +3606,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "6d6aebe3-15d0-43c6-b6ac-287851691ebe")
 		(property "Reference" "R33"
@@ -3734,7 +3744,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f314c38-b703-4749-9526-f24ab6506de1")
 		(property "Reference" "R21"
@@ -3812,7 +3822,7 @@
 				)
 			)
 		)
-		(property "Value" "50k"
+		(property "Value" "91k"
 			(at 72.644 77.47 90)
 			(effects
 				(font
@@ -4642,7 +4652,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdaa0c27-20f8-4cbb-bb8a-16424fa55f92")
 		(property "Reference" "R17"
@@ -4786,7 +4796,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "67k"
 			(at 72.644 106.68 90)
 			(effects
 				(font
@@ -4980,7 +4990,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "ea62351f-cc0e-4d01-99dc-453e308b1b60")
 		(property "Reference" "R23"
 			(at 169.926 41.148 0)
