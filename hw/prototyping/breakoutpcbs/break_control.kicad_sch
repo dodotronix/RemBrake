@@ -2369,7 +2369,7 @@
 		)
 		(uuid "70db08d4-b8b9-4768-8690-491789bfa32f")
 	)
-	(text "TODO: \n- anode RGB led resistor 1k2\n- remove resistors at the cathodes on the RGB LED\n- 5V DC/DC convertor (stepdown)\n- connect ledbar to the 5v and make it use the 3v3 while the charging"
+	(text "TODO: \n- anode RGB led resistor 1k2\n- remove resistors at the cathodes on the RGB LED\n- 5V DC/DC convertor (stepdown)\n- connect ledbar to the 5v and make it use the 3v3 while the charging\n- remove reset circuit at the battery\n- add transistor controling the servo power to cut it if needed\n- add fuse (12V/5A) at the start of the circuit"
 		(exclude_from_sim no)
 		(at 237.49 56.134 0)
 		(effects
