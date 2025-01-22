@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20241209)
+	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "5b7bb277-5d28-4ea1-ad8c-55b65f776e9e")
@@ -1803,7 +1803,7 @@
 				)
 			)
 		)
-		(property "Value" "001R"
+		(property "Value" "002R"
 			(at 149.86 78.74 90)
 			(effects
 				(font
