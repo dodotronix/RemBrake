@@ -1,6 +1,8 @@
 
+import asyncio
 import pwmio
 import simpleio
+import keypad
 
 from time import sleep
 from adafruit_motor import servo
@@ -13,51 +15,49 @@ class BatteryMonitor():
         self.bms = bms
         self.display = display
         self.buzzer = buzzer
+        # simpleio.tone(board.D9, 440, duration=1.0)
         self._charging_pin = DigitalInOut(charging_pin)
         self._charging_pin.direction = Direction.INPUT
         self._number_of_steps = display.get_number_of_segments()
         self._charge_step = ((bms.charge_range[1] - bms.charge_range[0]) 
                             / self._number_of_steps)
-
         # DEBUG
         print("")
         print(self.bms.temperature)
         print(self.bms.accumulated_charge)
-        # self.start()
 
-    def start(self):
+        # INIT
         self.bms.adc_mode = Mode.AUTOMATIC
         self.bms.prescaler = Prescaler.PRES_M64
-        # TODO coroutine which periodically 
-        # checks the state of changing
-        if not self._charging_pin.value:
-            self.charging()
-        else:
-            self.discharging()
 
-    def charging(self):
-        self.display.bits = 0x3ff
-        for i in range(0, 255, 25):
-            self.display.intensity = i
-            sleep(0.05)
-        for i in range(255, 0, -25):
-            self.display.intensity = i
-            sleep(0.05)
-
-    def discharging(self):
-        self.display.bits = 0
-
+    async def status(self):
+        while True:
+            # LOCK the routine until it gets the data ?
+            cstatus = self.bms.accumulated_charge
+            level = int(cstatus / self._charge_step)
+            self.display.bits = 0x3ff >> (self._number_of_steps - level)
+            print(cstatus, self.bms.temperature, level, self.bms.current)
+            await asyncio.sleep(0.5)
 
 class BreakController():
-    def __init__(self, servo,  remote_button, wired_button) -> None:
-        pass
+    def __init__(self, servo_pin,  remote_button, wired_button, test_pin) -> None:
+        self._pwm = pwmio.PWMOut(servo_pin, duty_cycle=2 ** 15, frequency=50)
+        self._servo = servo.Servo(self._pwm)
+        self.test_pin = DigitalInOut(test_pin)
+        self.test_pin.direction = Direction.OUTPUT
+        self.test_pin.value = False
 
-# rembut = digitalio.DigitalInOut(board.D0)
-# rembut.direction = digitalio.Direction.INPUT
+        self._keys = keypad.Keys((remote_button, wired_button),
+                                 value_when_pressed=True, pull=False)
 
-# handbut = digitalio.DigitalInOut(board.SCK)
-# handbut.direction = digitalio.Direction.INPUT
+    # TODO reset servo position to the state, where it detects the pressure 
+    # TODO then define how the button 0 should behave
+    # TODO steps and intervals to break for the button 1???
 
-# pwm = pwmio.PWMOut(board.RX, duty_cycle=2 ** 15, frequency=50)
-# my_servo = servo.Servo(pwm)
-# simpleio.tone(board.D9, 440, duration=1.0)
+    async def active(self):
+        while True:
+            event = self._keys.events.get()
+            if event:
+                # print(event.pressed)
+                print(event)
+            await asyncio.sleep(0.1)
