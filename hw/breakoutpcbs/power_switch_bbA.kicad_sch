@@ -1541,6 +1541,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: here connect the buzzer"
+		(exclude_from_sim no)
+		(at 108.204 47.752 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e8972c05-26b9-41ef-8dc4-bae9be89d387")
+	)
 	(text "LOW VOLTAGE\nDETECTOR"
 		(exclude_from_sim no)
 		(at 98.806 119.38 0)
@@ -2698,7 +2708,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0240c242-bb39-41df-94c9-b04d4e291959")
 		(property "Reference" "U6"
@@ -3812,7 +3822,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "73c8b236-2c36-49d9-921b-1c8ff9dc8364")
 		(property "Reference" "R11"
 			(at 67.564 77.47 90)
@@ -4786,7 +4796,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "df83a8e7-77a9-4a21-8237-b1c7fb83a5a0")
 		(property "Reference" "R12"
 			(at 67.564 106.68 90)
