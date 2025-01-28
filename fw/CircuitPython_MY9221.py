@@ -11,7 +11,7 @@ class MY9221():
 
         self._di = DigitalOut(di)
         self._dcki = DigitalOut(dcki)
-        self.clear()
+        self.set_all(0)
 
     @property
     def data(self):
@@ -41,13 +41,17 @@ class MY9221():
         elif isinstance(config, list):
             for id, intensity in config:
                 self._register[id] = intensity
+        elif isinstance(config, list) and len(config) % 2 == 0:
+            for index, intensity in enumerate(config):
+                self._register[index] = intensity 
         else:
-            raise ValueError("Value has to be tuple or list of tuples")
+            raise ValueError("Value has to be tuple, list or list of tuples")
 
         self.refresh()
 
-    def clear(self):
-        self._register = [0] * self.WIDTH  
+    def set_all(self, value):
+        self._register = [value] * self.WIDTH  
+        self.refresh()
 
     def refresh(self):
         # CREATE MESSAGE
