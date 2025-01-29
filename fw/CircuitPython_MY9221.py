@@ -38,10 +38,10 @@ class MY9221():
         if isinstance(config, tuple):
             id, intensity = config
             self._register[id] = intensity
-        elif isinstance(config, list):
+        elif all(isinstance(item, tuple) for item in config):
             for id, intensity in config:
                 self._register[id] = intensity
-        elif isinstance(config, list) and len(config) % 2 == 0:
+        elif isinstance(config, list):
             for index, intensity in enumerate(config):
                 self._register[index] = intensity 
         else:
