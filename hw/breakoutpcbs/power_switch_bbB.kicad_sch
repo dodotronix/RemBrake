@@ -2235,6 +2235,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: signal \"plugged\" \nResistor ~18k in parallel with Q1\nconnect to MCU as charging pin"
+		(exclude_from_sim no)
+		(at 137.16 108.966 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "756b41dd-180d-48be-a460-ed293a9d4f4f")
+	)
+	(text "TODO: add shottky diode\n- maybe add bypass resistor\ndon't know if the DC/DC will have lower\nparallel resistance"
+		(exclude_from_sim no)
+		(at 90.17 24.638 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "88bc19de-1ce2-454a-8a0d-4b69d0492745")
+	)
 	(text "adjust the threshold\nto 4V"
 		(exclude_from_sim no)
 		(at 75.438 80.772 0)

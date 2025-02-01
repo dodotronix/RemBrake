@@ -1541,15 +1541,15 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "TODO: here connect the buzzer"
+	(text "TODO: here connect the DC/DC boost block\nthe backward current discharge with diode\n"
 		(exclude_from_sim no)
-		(at 108.204 47.752 0)
+		(at 183.388 25.146 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "e8972c05-26b9-41ef-8dc4-bae9be89d387")
+		(uuid "3f03f46c-7382-44fd-aea3-1c2e3879f111")
 	)
 	(text "LOW VOLTAGE\nDETECTOR"
 		(exclude_from_sim no)
@@ -1903,7 +1903,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 38.1) (xy 152.4 39.37)
+			(xy 152.4 38.1) (xy 152.4 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2523,7 +2523,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 46.99) (xy 152.4 69.85)
+			(xy 152.4 52.07) (xy 152.4 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2847,7 +2847,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 152.4 43.18 180)
+		(at 152.4 48.26 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2855,7 +2855,7 @@
 		(dnp yes)
 		(uuid "0f18d91f-7c1a-4d6f-b1bf-e6f7a253e608")
 		(property "Reference" "R30"
-			(at 155.956 41.148 0)
+			(at 155.956 46.228 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2863,7 +2863,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 156.21 43.18 0)
+			(at 156.21 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2871,7 +2871,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 154.178 43.18 90)
+			(at 154.178 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2880,7 +2880,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 152.4 43.18 0)
+			(at 152.4 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2889,7 +2889,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 152.4 43.18 0)
+			(at 152.4 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -1104,6 +1104,16 @@
 		)
 		(uuid "1dd8bd9e-9478-4bec-b67e-4265651e0ce0")
 	)
+	(text "TODO: disconnect balarm from MCU\nand connect it to test pin"
+		(exclude_from_sim no)
+		(at 71.882 46.482 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3bac1e47-9cea-4834-af94-f634e12c9720")
+	)
 	(text "CURRENT SENSOR\nI2C address: 0x40 + R/W"
 		(exclude_from_sim no)
 		(at 150.622 152.908 0)
