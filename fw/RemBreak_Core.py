@@ -70,11 +70,14 @@ class BreakController():
         # coroutines
         self.busy = None # break is in use
 
-        self.supervisor = False # remote button active 
-        self.level = 0 # actual breaking level
-        self.force = 0 # mA (force is proportional to force applied)
-        self.angle = 90
-        self.offset = 0
+        self.force = 0 # regulated force
+        self.active = False # PID active
+        self.angle = 90 # initial angle
+        self.max_force = -1 # 1 A
+        self.supervisor = False
+        self.user = False
+        self.debug = True
+
         self.active_keys = [False, False]
 
         self.red = 0
@@ -85,12 +88,13 @@ class BreakController():
 
     def start(self):
         async def main():
+            a = asyncio.create_task(self.breaking())
             b = asyncio.create_task(self.blink())
             c = asyncio.create_task(self.handle_led())
             d = asyncio.create_task(self.battery.start())
             e = asyncio.create_task(self.controller())
             f = asyncio.create_task(self.key_menu())
-            await asyncio.gather(b, c, d, e, f)
+            await asyncio.gather(a, b, c, d, e, f)
         asyncio.run(main())
 
     async def controller(self):
@@ -111,8 +115,13 @@ class BreakController():
 
     async def key_menu(self):
         while True:
+            # NOTE the system has to be on and connected to the usb
+            # then if you press both buttons and wait for at least 5s 
+            # it starts reset battery sequence and waits until the battery
+            # is fully charged, then it resets the internal charge counter
+
             if(isinstance(self.active_keys[0], float) 
-                   and isinstance(self.active_keys[1], float)):
+                   and isinstance(self.active_keys[1], float) and not self.plugged.value):
 
                     print("both keys are active")
 
@@ -120,53 +129,94 @@ class BreakController():
                     dt = [tmp - self.active_keys[0], tmp - self.active_keys[1]]
 
                     if (dt[0] > 5 and dt[1] > 5):
-                        if self.busy == None or self.busy.done():
-                            self.busy = asyncio.create_task(self.battery.reset())
-                            self.red = 10
+                        try:
+                            self.busy.cancel()
+                            self.user = False
+                            self.supervisor = False
+                            self.active = False
+                        except:
+                            pass
+                        self.busy = asyncio.create_task(self.battery.reset())
+                        self.red = 10
 
-            elif(isinstance(self.active_keys[0], float)):
-                # self.force = -0.2
-                # self.busy = asyncio.create_task(self.breaking_sequence(10))
-                # self.supervisor = True
+                        # wait until both keys are inactive
+                        while self.active_keys[0] or self.active_keys[1]:
+                            await asyncio.sleep(0.2)
+                        self.red = 0
+                        print("both were released")
 
-                if self.event: 
-                    print("this will run the breaking sequence")
+            if(isinstance(self.active_keys[0], float)):
+                print("running supervisor breaking")
+                if not self.supervisor:
+                    try:
+                        self.busy.cancel() # cancel old breaking
+                    except:
+                        pass
+                    self.busy = asyncio.create_task(self.supervisor_breaking(10))
 
-            elif(isinstance(self.active_keys[1], float)):
-                # TODO steps breaking when pressed for longer period
-                # self.busy = asyncio.create_task(self.breaking_sequence(2))
+            elif(isinstance(self.active_keys[1], float)) and not self.supervisor:
+                print("running handlebars breaking")
+                if not self.supervisor and not self.user:
+                    try:
+                        self.busy.cancel() # cancel old breaking
+                    except:
+                        pass
 
-                if self.event: 
-                    print("this will run the breaking sequence")
+                    self.busy = asyncio.create_task(self.handlebars_breaking(1, -0.1))
+
+            elif not self.active_keys[1] and self.user:
+                print("turn off handlebars task")
+                self.user = False
+                self.active = False
+                self.busy.cancel() # cancel old job
 
             await asyncio.sleep(0.2)
-        
-    async def breaking_sequence(self, timeout):
-        task = asyncio.create_task(self.squeez())
-        await asyncio.sleep(timeout)
-        self.angle = 90
-        print("canceling breaking sequence task")
-        task.cancel()
 
-    async def squeez(self):
+    async def handlebars_breaking(self, time_step, force_step):
+        self.active = True
+        self.user = True
+        while True:
+            tmp_force = self.force + force_step
+            if tmp_force > self.max_force:
+                self.force = tmp_force
+            elif tmp_force != self.max_force:
+                self.force = self.max_force
+            await asyncio.sleep(time_step)
+        
+    async def supervisor_breaking(self, timeout):
+        self.user = False
+        self.supervisor = True
+        self.force = -0.2
+        self.active = True
+        await asyncio.sleep(timeout)
+        self.active = False
+        self.supervisor = False
+        print("canceling supervisor breaking")
+
+    async def breaking(self):
         p = 10
         i = 5 
         d = 2
         sum_e = 0
         while True:
-            amps = self.battery.current
+            if self.active:
+                amps = self.battery.current
 
-            # PID regulator 
-            e = (self.force - amps[0])
-            sum_e += e
-            new_angle = self.angle + p*e + i*sum_e + d*(amps[0] - amps[1])
-            if (e > 0.01 or e < -0.01):
-                self.angle = new_angle
+                # PID regulator 
+                e = (self.force - amps[0])
+                sum_e += e
+                new_angle = self.angle + p*e + i*sum_e + d*(amps[0] - amps[1])
+                if self.debug:
+                    print("Your current force: ", self.force)
+                    # print(f"error:{e}, error sum: {sum_e}")
+                    # print(f"current:{amps[0]}, current_error: {amps[0] - amps[1]}")
+                    # print(f"angle:{self.angle}, new_angle: {new_angle}")
+                elif (e > 0.01 or e < -0.01):
+                    self.angle = new_angle
+            else:
+                self.angle = 90 # if PID is not active go to initial position
+                self.force = 0
 
-            # DEBUG
-            # print(f"error:{e}, error sum: {sum_e}")
-            # print(f"current:{amps[0]}, current_error: {amps[0] - amps[1]}")
-            # print(f"angle:{self.angle}, new_angle: {new_angle}")
             await asyncio.sleep(0.2)
 
     # DEBUGGING
