@@ -40,17 +40,14 @@ class Display:
 
                 if self.mode[0] == self.BLINK_ALL: 
                     self.busy = asyncio.create_task(self.blink_all())
-                if self.mode[0] == self.PONG: 
+                elif self.mode[0] == self.PONG: 
                     self.busy = asyncio.create_task(self.pong())
-                if self.mode[0] == self.CHARGE: 
+                elif self.mode[0] == self.CHARGE: 
                     self.busy = asyncio.create_task(self.charge())
                 else:
                     self.busy = asyncio.create_task(self.status())
 
-            await asyncio.sleep(0.1)
-
-    # TODO low battery flag, blink display remaining LEDs on the LEDbar
-    # TODO battery is reaching low battery state flag
+            await asyncio.sleep(1)
 
     async def welcome(self):
         asyncio.create_task(self._sound.play(self.WELCOME))
@@ -63,52 +60,44 @@ class Display:
         self._driver.set_all(0)
 
     async def blink_all(self):
-        self._driver.register = [100] * self._width
-        await asyncio.sleep(0.4)
-        self._driver.register = [0] * self._width
-        await asyncio.sleep(0.4)
-
-        # return to the status state
-        self.mode[0] = self.STATUS
+        while True:
+            self._driver.register = [100] * self._width
+            await asyncio.sleep(0.4)
+            self._driver.register = [0] * self._width
+            await asyncio.sleep(0.4)
 
     async def snake(self):
-        buf = [100]*3 + [0]*7
-        for i in range(100):
-            print(buf)
-            self._driver.register = buf
-            h = buf.pop(0)
-            buf.append(h)
-            await asyncio.sleep(0.1)
-
-        # return to the status state
-        self.mode[0] = self.STATUS
+        while True:
+            buf = [100]*3 + [0]*7
+            for i in range(100):
+                print(buf)
+                self._driver.register = buf
+                h = buf.pop(0)
+                buf.append(h)
+                await asyncio.sleep(0.1)
 
     async def pong(self):
-        buf = [100]*3 + [0]*7
-        for i in range(7):
-            z = buf.pop(9)
-            buf.insert(0, z)
-            self._driver.register = buf
-            await asyncio.sleep(0.1)
-        for i in range(7):
-            z = buf.pop(0)
-            buf.insert(9, z)
-            self._driver.register = buf
-            await asyncio.sleep(0.1)
-
-        # return to the status state
-        self.mode[0] = self.STATUS
+        while True:
+            buf = [100]*3 + [0]*7
+            for i in range(7):
+                z = buf.pop(9)
+                buf.insert(0, z)
+                self._driver.register = buf
+                await asyncio.sleep(0.1)
+            for i in range(7):
+                z = buf.pop(0)
+                buf.insert(9, z)
+                self._driver.register = buf
+                await asyncio.sleep(0.1)
 
     async def charge(self):
-        num = int(self.percentage*self._width)
-        buf = [100]*num + [0]*(9-num)
-        for i in range(9-num):
-            buf.append(100)
-            self._driver.register = buf 
-            await asyncio.sleep(0.3)
-
-        # return to the status state
-        self.mode[0] = self.STATUS
+        while True:
+            num = int(self.percentage*self._width)
+            buf = [100]*num + [0]*(9-num)
+            for i in range(9-num):
+                buf.append(100)
+                self._driver.register = buf 
+                await asyncio.sleep(0.3)
 
     # SHOW THE BATTERY STATUS
     async def status(self):

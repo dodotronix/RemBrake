@@ -27,10 +27,10 @@ class BatteryMonitor():
         self.charge_span = charge_rg[1] - charge_rg[0]
 
     async def start(self):
-        asyncio.create_task(self._display.start())
+        t = asyncio.create_task(self._display.start())
 
         while True:
-            print("battery fetch")
+
             self.current[1] = self.current[0] 
             self.current[0] = self._drv.current
             await asyncio.sleep(self.refresh_rate)
@@ -41,8 +41,15 @@ class BatteryMonitor():
             self.charge[0] = self._drv.accumulated_charge
             self.percentage = self.charge[0]/self.charge_span
             self._display.percentage = self.percentage
-            print(self.charge)
-            print(self.charge_span)
+
+            if not self._charging.value and not self._plugged.value:
+                self._display.mode[0] = self._display.PONG
+                if self.charge[1] > self.charge[0]:
+                    self._drv.accumulated_charge = self.charge[1]
+                    self.charge[0] = self.charge[1]
+            else:
+                self._display.mode[0] = self._display.STATUS
+
             await asyncio.sleep(self.refresh_rate)
             self.temperature = self._drv.temperature
             await asyncio.sleep(self.refresh_rate)
@@ -63,4 +70,5 @@ class BatteryMonitor():
 
         # reset the LTC2943 charge counter
         self._drv.accumulated_charge = 0xffff
+        self._display.mode[0] = self._display.STATUS
         print("charged")
