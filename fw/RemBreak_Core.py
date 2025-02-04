@@ -35,26 +35,28 @@ class RemBreakBoard():
 
         # ACTUATOR POWER SWITCH INIT
         self.actuator_switch = DigitalOut(lt["actuator_switch"])
+        print("\nTODO: cut servo power")
 
         # REMOTE SWITCH & HANDLEBARS BUTTON INIT AS KEYS
         self.keys = keypad.Keys((lt["remote_switch"], 
                                  lt["handlebars_button"]),
                                 value_when_pressed=True, pull=False)
 
+        # LEDBAR DISPLAY INIT
+        self._my9221 = MY9221(lt["ledbar_di"], lt["ledbar_dcki"])
+        self.display = Display(self._my9221)
+
         # SOUND MENU INIT
         pwm = pwmio.PWMOut(lt["buzzer"], variable_frequency=True)
         self.tones = Tones(pwm)
-
-        # LEDBAR DISPLAY INIT
-        self._my9221 = MY9221(lt["ledbar_di"], lt["ledbar_dcki"])
-        self.display = Display(self._my9221, self.tones)
 
         # BATTERY MANAGEMENT SYSTEM (BMS) + ALARM PIN INIT + CHANGING PIN INIT
         self._bms = LTC2943(board.I2C())
         self._charging = DigitalIn(lt["charging"])
         self.plugged = DigitalIn(lt["plugged"])
-        self.battery = BatteryMonitor(self._bms, self.display, 
-                                      self.plugged, self._charging)
+        self.battery = BatteryMonitor(self._bms, self.display, self.tones, 
+                                      self.actuator_switch, self.plugged, 
+                                      self._charging)
 
         # DEBUG STATE LED
         self.pixel = neopixel.NeoPixel(board.NEOPIXEL, 1)

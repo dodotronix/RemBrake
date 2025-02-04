@@ -7,19 +7,14 @@ from CircuitPython_MY9221 import MY9221
 
 class Display:
 
-    WELCOME = [("D4", 0.1), ("G4", 0.1), ("C5", 0.1), ("E5", 0.1)]
-    ERROR = [ ("E7", 0.5), ("-", 0.1),  ("E7", 0.5), ("-", 0.1)]
-    WARNING = [ ("G4", 0.3), ("-", 0.2), ("G4", 0.3), ("-", 0.2)]
-
     # MODES
     STATUS = 0
     BLINK_ALL = 1
     PONG = 2
     CHARGE = 3
 
-    def __init__(self, driver, sound):
+    def __init__(self, driver):
         self._driver = driver
-        self._sound = sound
         self._width = self._driver.WIDTH
         self.mode = [self.STATUS, -1]
 
@@ -50,9 +45,6 @@ class Display:
             await asyncio.sleep(1)
 
     async def welcome(self):
-        asyncio.create_task(self._sound.play(self.WELCOME))
-        # asyncio.create_task(self._sound.play(self.WARNING))
-        # asyncio.create_task(self._sound.play(self.ERROR))
 
         for i in range(0, 5):
             self._driver.register = [(4-i, 100), (5+i, 100)]
@@ -92,17 +84,19 @@ class Display:
 
     async def charge(self):
         while True:
+            await asyncio.sleep(0.2)
             num = int(self.percentage*self._width)
-            buf = [100]*num + [0]*(9-num)
-            for i in range(9-num):
-                buf.append(100)
+            buf = [100]*num + [0]*(10-num)
+            for i in range(10-num+1, 10):
+                buf[i] = 100
                 self._driver.register = buf 
-                await asyncio.sleep(0.3)
+                await asyncio.sleep(0.2)
 
     # SHOW THE BATTERY STATUS
     async def status(self):
         while True:
             num = int(self.percentage*self._width)
+            print(num)
             s = [100] * num + [0] * (9-num)
             self._driver.register = s
             await asyncio.sleep(2)
