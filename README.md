@@ -1,3 +1,5 @@
 # RemBreak - remotely controlled breaking system
 
-# NOTES
+[PCB picture](pics/introduction.png)
+
+## Introduction
