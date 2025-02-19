@@ -2265,6 +2265,16 @@
 		)
 		(uuid "bf420d06-782b-4cd6-a4aa-1120335c8ffc")
 	)
+	(text "disconnect"
+		(exclude_from_sim no)
+		(at 155.702 126.238 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "efd37be1-d5b4-4245-9772-d8c00e013ba5")
+	)
 	(junction
 		(at 100.33 48.26)
 		(diameter 0)
@@ -2715,6 +2725,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 74.93) (xy 107.95 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "478a0a7d-edcc-4ff1-9e29-23acf6be0b63")
+	)
+	(wire
+		(pts
 			(xy 67.31 87.63) (xy 67.31 119.38)
 		)
 		(stroke
@@ -2962,16 +2982,6 @@
 			(type default)
 		)
 		(uuid "843f7a8b-f5ea-4c7a-ac5a-b44eb14b3488")
-	)
-	(wire
-		(pts
-			(xy 107.95 74.93) (xy 107.95 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "851e2226-e732-40c4-9543-f384dce886a4")
 	)
 	(wire
 		(pts
@@ -3412,6 +3422,21 @@
 			(justify left bottom)
 		)
 		(uuid "ffe98155-61b6-4c63-8e80-5b1fbf18765d")
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 62.23 93.98) (xy 62.23 151.13) (xy 149.86 151.13) (xy 149.86 93.98)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 0a34d64f-0a26-4cda-84ab-090b908f4b7b)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")

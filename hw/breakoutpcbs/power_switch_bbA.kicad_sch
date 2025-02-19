@@ -1541,6 +1541,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "add pin for 5V and 12V DC/DC convertor"
+		(exclude_from_sim no)
+		(at 67.564 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3988d925-c7fd-4dc2-8535-fa03801c6ecf")
+	)
 	(text "TODO: here connect the DC/DC boost block\nthe backward current discharge with diode\n"
 		(exclude_from_sim no)
 		(at 183.388 25.146 0)
@@ -1550,6 +1560,26 @@
 			)
 		)
 		(uuid "3f03f46c-7382-44fd-aea3-1c2e3879f111")
+	)
+	(text "add Diode"
+		(exclude_from_sim no)
+		(at 59.944 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8a75a3f7-89a4-42b9-a3d6-40f7118eef22")
+	)
+	(text "add pin to connect to MCU"
+		(exclude_from_sim no)
+		(at 136.398 72.644 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f1a15cce-40ef-4351-94f1-bf2fe4dbe46a")
 	)
 	(text "LOW VOLTAGE\nDETECTOR"
 		(exclude_from_sim no)
@@ -4662,7 +4692,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cdaa0c27-20f8-4cbb-bb8a-16424fa55f92")
 		(property "Reference" "R17"
