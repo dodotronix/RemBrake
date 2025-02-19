@@ -1,5 +1,5 @@
 (footprint "USBC_charger"
-	(version 20241129)
+	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "1342bae4-22ef-4aba-9a3a-bf7cd8c1d524")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -67,8 +55,8 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -16.9 -9.4)
-		(end -14.4 -9.4)
+		(start -15.8 -9.3)
+		(end -12.7 -9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -77,8 +65,8 @@
 		(uuid "129ef990-5c44-431c-8087-39f9bd1e6c6c")
 	)
 	(fp_line
-		(start -16.9 -6.9)
-		(end -16.9 -9.4)
+		(start -15.8 -6.8)
+		(end -15.8 -9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -87,8 +75,8 @@
 		(uuid "f5d94024-c28c-453e-8f22-b7dba7f91c04")
 	)
 	(fp_line
-		(start -16.9 6.9)
-		(end -16.9 9.4)
+		(start -15.8 6.8)
+		(end -15.8 9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -97,8 +85,8 @@
 		(uuid "eb4a2164-d107-4b7f-95e7-92d4598b2931")
 	)
 	(fp_line
-		(start -14.4 9.4)
-		(end -16.9 9.4)
+		(start -12.7 9.3)
+		(end -15.8 9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -107,8 +95,8 @@
 		(uuid "96c9220f-acbf-491d-bcf8-c7b111072637")
 	)
 	(fp_line
-		(start 14.4 -9.4)
-		(end 16.9 -9.4)
+		(start 12.4 -9.3)
+		(end 15.8 -9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -117,8 +105,8 @@
 		(uuid "13b6ed87-a407-4b5d-b0ab-5ff7cfc747c7")
 	)
 	(fp_line
-		(start 14.4 9.4)
-		(end 16.9 9.4)
+		(start 12.4 9.3)
+		(end 15.8 9.3)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -127,8 +115,8 @@
 		(uuid "251d807a-d226-4c8c-8230-edbf7313e7b4")
 	)
 	(fp_line
-		(start 16.9 -9.4)
-		(end 16.9 -6.9)
+		(start 15.8 -9.3)
+		(end 15.8 -6.4)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -137,8 +125,8 @@
 		(uuid "d7c60983-f564-4254-a9d9-b6e01872fd44")
 	)
 	(fp_line
-		(start 16.9 9.4)
-		(end 16.9 6.9)
+		(start 15.8 9.3)
+		(end 15.8 6.4)
 		(stroke
 			(width 0.12)
 			(type default)
@@ -169,8 +157,8 @@
 		(uuid "e6c81f01-54d6-44f9-a6db-a27eb38dc1a5")
 	)
 	(fp_rect
-		(start -17 -9.5)
-		(end 17 9.8)
+		(start -15.9 -9.4)
+		(end 15.9 9.4)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -192,21 +180,21 @@
 		)
 	)
 	(pad "1" smd rect
-		(at -15 -8)
-		(size 3.2 2.2)
+		(at -14.1 -8)
+		(size 3 2.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "b98da15a-f025-4daa-8315-f1ad6a63d1c4")
 	)
 	(pad "2" smd rect
-		(at -15 8)
-		(size 3.2 2.2)
+		(at -14.1 8)
+		(size 3 2.2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "10159912-6153-4cae-a1fb-3d5376437f63")
 	)
 	(pad "2" smd roundrect
-		(at 1.555 8.2 90)
+		(at 1.555 7.6 90)
 		(size 3 2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
@@ -214,14 +202,14 @@
 		(uuid "417f79e4-63d3-4ad3-a4cb-76af98a03c22")
 	)
 	(pad "3" smd rect
-		(at 14.75 7.75)
-		(size 3.7 2.7)
+		(at 14 7.75)
+		(size 3.2 2.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "272caac4-470a-4033-85ca-47a4c5973f61")
 	)
 	(pad "3" smd roundrect
-		(at 14.765 2.54 90)
+		(at 14.1 2.54 90)
 		(size 2 3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
@@ -229,7 +217,7 @@
 		(uuid "fe226f4c-6a50-4cf2-9cc3-1471d305f80b")
 	)
 	(pad "4" smd roundrect
-		(at 14.765 0 90)
+		(at 14.1 0 90)
 		(size 2 3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
@@ -237,14 +225,14 @@
 		(uuid "d70438af-10f9-4fdc-8980-bc49acc3882c")
 	)
 	(pad "5" smd rect
-		(at 14.75 -7.75)
-		(size 3.7 2.7)
+		(at 14 -7.75)
+		(size 3.2 2.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "2c64acf1-d279-46e3-95b8-60ece6ac3218")
 	)
 	(pad "5" smd roundrect
-		(at 14.765 -2.54 90)
+		(at 14.1 -2.54 90)
 		(size 2 3)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)
@@ -252,7 +240,7 @@
 		(uuid "5592ae94-c89f-41e9-9f28-f66f345f9052")
 	)
 	(pad "6" smd roundrect
-		(at -3.525 8.2 90)
+		(at -3.525 7.6 90)
 		(size 3 2)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.15)

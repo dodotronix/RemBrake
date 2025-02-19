@@ -181,196 +181,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Screw_Terminal_01x02"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "screw terminal"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TerminalBlock*:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Screw_Terminal_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint_Probe"
 			(pin_numbers
 				(hide yes)
@@ -491,24 +301,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic_MountingPin:Conn_01x03_MountingPin"
-			(pin_names
-				(offset 1.016)
+		(symbol "Device:C"
+			(pin_numbers
 				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Conn_01x03_MountingPin"
-				(at 1.27 -5.08 0)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -517,7 +330,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 0 0)
+				(at 0.9652 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -534,7 +347,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -543,7 +356,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "connector"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -552,7 +365,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -561,45 +374,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_MountingPin_1_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -608,188 +389,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 -4.572) (xy 1.016 -4.572)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Mounting"
-					(at 0 -4.191 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 3.048)
-					(name "MountPin"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Fuse"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse"
-				(at -1.905 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fuse_0_1"
-				(rectangle
-					(start -0.762 -2.54)
-					(end 0.762 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -797,10 +400,10 @@
 					)
 				)
 			)
-			(symbol "Fuse_1_1"
+			(symbol "C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
-					(length 1.27)
+					(length 2.794)
 					(name "~"
 						(effects
 							(font
@@ -818,7 +421,7 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 1.27)
+					(length 2.794)
 					(name "~"
 						(effects
 							(font
@@ -1449,25 +1052,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -11.43 -6.35 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2192,30 +1776,6 @@
 		)
 		(uuid "2bbe8b44-99b7-43b7-8fc4-a015adb1d2da")
 	)
-	(text "Overcurrent protection"
-		(exclude_from_sim no)
-		(at 123.698 94.742 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "42323658-283d-49de-9f9b-2bd60eb83c06")
-	)
-	(text "BATTERY"
-		(exclude_from_sim no)
-		(at 26.67 84.328 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "7a7e394f-25cc-479f-926f-0199b3eecccb")
-	)
 	(junction
 		(at 212.09 137.16)
 		(diameter 0)
@@ -2229,22 +1789,22 @@
 		(uuid "01f2aa9a-a591-40dd-b3e9-dc01688071a9")
 	)
 	(junction
-		(at 39.37 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02dad5ad-2381-4500-a100-6e702c004bb0")
-	)
-	(junction
-		(at 34.29 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ad5f319-23d7-4707-af9b-ba160f16ab5e")
-	)
-	(junction
 		(at 228.6 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1602f49f-b158-4ea9-9998-4671b24bf72f")
+	)
+	(junction
+		(at 44.45 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1906e49b-c9dc-4755-98a1-862e9c9ea9df")
+	)
+	(junction
+		(at 43.18 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "192a2de9-a456-4beb-82e9-65c499b86d16")
 	)
 	(junction
 		(at 101.6 87.63)
@@ -2301,10 +1861,10 @@
 		(uuid "9bd24f5e-94ef-4dc5-9ed2-b9e5c684e98a")
 	)
 	(junction
-		(at 34.29 66.04)
+		(at 101.6 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b667b6e5-b583-4d16-87ce-445b873a54a5")
+		(uuid "af76fc1a-edc2-454f-81e6-c943c2d36b50")
 	)
 	(junction
 		(at 200.66 132.08)
@@ -2325,10 +1885,10 @@
 		(uuid "dc650e95-cc30-425e-ad7a-bb8b2c67a9fa")
 	)
 	(junction
-		(at 39.37 92.71)
+		(at 41.91 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e14645eb-abd0-4d72-a6bd-96e9eb6f2549")
+		(uuid "e7685d17-a130-48f1-8d6b-beab164889f1")
 	)
 	(junction
 		(at 66.04 87.63)
@@ -2337,22 +1897,10 @@
 		(uuid "f44c7119-0530-4451-b301-e3c982709a32")
 	)
 	(junction
-		(at 36.83 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f72c6c16-ce9a-4ebb-acbb-d2e5184385a2")
-	)
-	(junction
 		(at 193.04 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7d8789b-a00a-439c-b5b4-6c9bbc93615a")
-	)
-	(junction
-		(at 39.37 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fb55304d-626e-474c-a269-0b9fb04a0cf1")
 	)
 	(junction
 		(at 200.66 92.71)
@@ -2428,7 +1976,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 90.17) (xy 135.89 90.17)
+			(xy 39.37 90.17) (xy 43.18 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2455,16 +2003,6 @@
 			(type default)
 		)
 		(uuid "12750249-be12-4a97-8801-fc1536ef985c")
-	)
-	(wire
-		(pts
-			(xy 31.75 90.17) (xy 36.83 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "132d47d0-6f6d-458c-b537-4c49a94e1c7e")
 	)
 	(wire
 		(pts
@@ -2528,16 +2066,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 73.66) (xy 34.29 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "288011c9-9aa6-4447-91c1-d9689f50e15c")
-	)
-	(wire
-		(pts
 			(xy 181.61 113.03) (xy 177.8 113.03)
 		)
 		(stroke
@@ -2558,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 60.96) (xy 106.68 63.5)
+			(xy 106.68 60.96) (xy 106.68 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2575,16 +2103,6 @@
 			(type default)
 		)
 		(uuid "3137dc08-1e16-4bc3-84ec-3880413a56b7")
-	)
-	(wire
-		(pts
-			(xy 39.37 66.04) (xy 34.29 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "348210c4-d722-4849-99fd-7691de5b5c53")
 	)
 	(bus
 		(pts
@@ -2658,6 +2176,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 63.5) (xy 113.03 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42fb97c2-6b13-4031-ae4e-4e448f0226af")
+	)
+	(wire
+		(pts
 			(xy 44.45 49.53) (xy 44.45 58.42)
 		)
 		(stroke
@@ -2675,6 +2203,16 @@
 			(type default)
 		)
 		(uuid "4fa7418a-5cdf-45e3-8c93-3efff1834251")
+	)
+	(wire
+		(pts
+			(xy 41.91 82.55) (xy 41.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5223c3b7-f602-4d09-8eb7-d36b2d8435ca")
 	)
 	(wire
 		(pts
@@ -2705,6 +2243,16 @@
 			(type default)
 		)
 		(uuid "5863542f-87c7-488b-be1d-6415e565fc2f")
+	)
+	(wire
+		(pts
+			(xy 43.18 80.01) (xy 43.18 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59ec6550-17a8-409b-a41e-a58356adb91c")
 	)
 	(wire
 		(pts
@@ -2748,16 +2296,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 87.63) (xy 34.29 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6052b6b0-3587-4399-8023-cfd2a992d83a")
-	)
-	(wire
-		(pts
 			(xy 177.8 69.85) (xy 201.93 69.85)
 		)
 		(stroke
@@ -2798,26 +2336,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 66.04) (xy 34.29 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ce72b70-e0f6-469b-9e0a-e3d2cbfdc5d1")
-	)
-	(wire
-		(pts
-			(xy 31.75 92.71) (xy 39.37 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f1000c2-2fea-42dd-bf34-114b2340bf61")
-	)
-	(wire
-		(pts
 			(xy 101.6 55.88) (xy 110.49 55.88)
 		)
 		(stroke
@@ -2828,23 +2346,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 87.63) (xy 66.04 87.63)
+			(xy 39.37 87.63) (xy 44.45 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f9477ca-63a6-4bd5-a6d1-9cae768822a8")
+		(uuid "6fc537de-1678-46c8-b924-a12349d4d4b3")
 	)
 	(wire
 		(pts
-			(xy 39.37 97.79) (xy 39.37 99.06)
+			(xy 44.45 87.63) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7239f888-523a-488b-b620-f8ec22abe86c")
+		(uuid "71f4e1a3-c1a7-4942-b990-3c74eccb1a11")
 	)
 	(wire
 		(pts
@@ -2865,6 +2383,16 @@
 			(type default)
 		)
 		(uuid "81abde0a-d7e7-42dc-b30b-5c950db5af93")
+	)
+	(wire
+		(pts
+			(xy 43.18 90.17) (xy 135.89 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d2c7ff9-e628-4537-8560-0b63d783deaf")
 	)
 	(wire
 		(pts
@@ -2898,23 +2426,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 63.5) (xy 36.83 63.5)
+			(xy 120.65 63.5) (xy 121.92 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "990baf81-8085-43ec-b71e-e0aa5ca862b3")
-	)
-	(wire
-		(pts
-			(xy 34.29 87.63) (xy 45.72 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9de32b8a-44b3-4bd7-88b0-818190104090")
+		(uuid "9da186ff-d03f-4445-af27-77e68c60ddc5")
 	)
 	(wire
 		(pts
@@ -2935,6 +2453,16 @@
 			(type default)
 		)
 		(uuid "a44b11d3-5b04-4b7d-a91a-7efcfdb01e39")
+	)
+	(wire
+		(pts
+			(xy 40.64 77.47) (xy 44.45 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a55dc649-9997-4139-b46a-463bcd3279a8")
 	)
 	(wire
 		(pts
@@ -2988,7 +2516,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 92.71) (xy 138.43 92.71)
+			(xy 39.37 92.71) (xy 41.91 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3038,13 +2566,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 68.58) (xy 39.37 92.71)
+			(xy 40.64 82.55) (xy 41.91 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7a5b157-282f-4c9b-acdf-5349c18a9d6c")
+		(uuid "b6c48170-09e9-4da2-9b11-6b72dee28fbd")
 	)
 	(wire
 		(pts
@@ -3055,16 +2583,6 @@
 			(type default)
 		)
 		(uuid "b96fe56f-bebb-45c7-a093-3b9fa835b8c6")
-	)
-	(wire
-		(pts
-			(xy 36.83 63.5) (xy 36.83 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd5a51e0-eaa4-4462-aefc-224db3e1fe76")
 	)
 	(wire
 		(pts
@@ -3088,6 +2606,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 77.47) (xy 44.45 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1446a20-1292-4f5c-a0d3-db0f8a2b9665")
+	)
+	(wire
+		(pts
 			(xy 181.61 132.08) (xy 177.8 132.08)
 		)
 		(stroke
@@ -3105,16 +2633,6 @@
 			(type default)
 		)
 		(uuid "c543ec97-b9ac-4a4c-8640-90644359e835")
-	)
-	(wire
-		(pts
-			(xy 26.67 97.79) (xy 39.37 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c54cc710-9949-4010-9816-41e76481edd6")
 	)
 	(wire
 		(pts
@@ -3178,6 +2696,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 80.01) (xy 43.18 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d496e49a-82d0-47d0-8e5b-6c04f268bcd8")
+	)
+	(wire
+		(pts
 			(xy 200.66 118.11) (xy 200.66 132.08)
 		)
 		(stroke
@@ -3205,16 +2733,6 @@
 			(type default)
 		)
 		(uuid "d8d32eab-f59f-4389-a626-6c504f43cf53")
-	)
-	(wire
-		(pts
-			(xy 31.75 68.58) (xy 39.37 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da145ce9-a4ab-4113-a45d-515a1b28906d")
 	)
 	(wire
 		(pts
@@ -3265,6 +2783,16 @@
 			(type default)
 		)
 		(uuid "e3770b3e-66be-4856-8b91-ae697b16530a")
+	)
+	(wire
+		(pts
+			(xy 41.91 92.71) (xy 138.43 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3f630a8-efa6-4fac-8185-400d2871619d")
 	)
 	(wire
 		(pts
@@ -3328,16 +2856,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 87.63) (xy 34.29 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebed538c-2714-4b4d-aa23-918d2effed46")
-	)
-	(wire
-		(pts
 			(xy 210.82 93.98) (xy 210.82 92.71)
 		)
 		(stroke
@@ -3368,17 +2886,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 92.71) (xy 39.37 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f61acdd7-8ab8-42ac-a56e-084212ea4ea4")
-	)
-	(wire
-		(pts
-			(xy 210.82 92.71) (xy 232.41 92.71)
+			(xy 210.82 92.71) (xy 261.62 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3405,6 +2913,16 @@
 			(type default)
 		)
 		(uuid "fc4e285d-d129-47e1-a509-444e868242ce")
+	)
+	(wire
+		(pts
+			(xy 121.92 63.5) (xy 121.92 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf74c30-0ce6-48d9-964d-aac87624fb08")
 	)
 	(label "I2C.SDA"
 		(at 59.69 143.51 90)
@@ -3446,9 +2964,20 @@
 		)
 		(uuid "9ecca1e4-db9f-4d24-92a5-9b32844bdbff")
 	)
+	(hierarchical_label "BM"
+		(shape input)
+		(at 39.37 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "14329b89-323b-4928-810e-edc480dc5acc")
+	)
 	(hierarchical_label "CHARGING (BLUE)"
 		(shape output)
-		(at 232.41 92.71 0)
+		(at 261.62 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3501,6 +3030,28 @@
 		)
 		(uuid "a7e27149-2a09-4158-a4c7-543d1b734f48")
 	)
+	(hierarchical_label "BAT+"
+		(shape input)
+		(at 39.37 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b8ceb554-1120-4a17-b08c-bf68aaf13e3a")
+	)
+	(hierarchical_label "BAT-"
+		(shape input)
+		(at 39.37 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee175031-7737-4eed-bba1-4dab4aab353d")
+	)
 	(hierarchical_label "I2C{SDA SCL}"
 		(shape bidirectional)
 		(at 241.3 153.67 0)
@@ -3522,7 +3073,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "026e130d-0c2f-40a6-b360-3358858ab356")
-		(property "Reference" "R12"
+		(property "Reference" "R53"
 			(at 214.63 140.9699 0)
 			(effects
 				(font
@@ -3574,9 +3125,76 @@
 			(uuid "097db77a-dbbd-40fb-8924-6e72cc45d3c2")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R12")
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 116.84 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "04c21175-62ac-40d6-b463-9ea9e67f9890")
+		(property "Reference" "C11"
+			(at 120.396 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1u"
+			(at 119.634 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 113.03 64.4652 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 116.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c22c41cb-aaee-4eae-a2d9-d86a9a26eadc")
+		)
+		(pin "1"
+			(uuid "a99f88f4-6872-4c34-98e6-d56f28f1d21f")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -3592,7 +3210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b6bd244-f487-422e-a814-384775706f44")
-		(property "Reference" "R6"
+		(property "Reference" "R46"
 			(at 85.09 81.28 90)
 			(effects
 				(font
@@ -3644,74 +3262,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 39.37 66.04 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c3e691e-af55-40ce-94b7-6fb1b0ec15f7")
-		(property "Reference" "#FLG02"
-			(at 41.275 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 43.18 66.0399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a9e7aa35-070e-4fed-90f9-266e7b8f78cf")
-		)
-		(instances
-			(project "RemBreak"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#FLG02")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3727,7 +3278,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d9fd0db-6194-495c-8e2e-a9d3815904f6")
-		(property "Reference" "R10"
+		(property "Reference" "R51"
 			(at 203.2 86.3599 0)
 			(effects
 				(font
@@ -3736,7 +3287,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "625k"
 			(at 203.2 88.8999 0)
 			(effects
 				(font
@@ -3779,9 +3330,9 @@
 			(uuid "b2318c44-755b-420d-b489-106bcbdac57f")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R10")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -3797,7 +3348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fb15ac1-47ec-4fc2-8f0f-109350af3507")
-		(property "Reference" "R14"
+		(property "Reference" "R50"
 			(at 195.58 96.5199 0)
 			(effects
 				(font
@@ -3849,9 +3400,9 @@
 			(uuid "5323799c-8772-461c-a44a-c0a506b590f5")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R14")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -3859,7 +3410,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 63.5 0)
+		(at 106.68 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3867,8 +3418,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1570cb99-0783-451b-99a8-bfa52030ac44")
-		(property "Reference" "#PWR010"
-			(at 106.68 69.85 0)
+		(property "Reference" "#PWR051"
+			(at 106.68 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3428,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 68.58 0)
+			(at 106.68 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3885,7 +3436,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 63.5 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +3445,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 63.5 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3903,7 +3454,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 63.5 0)
+			(at 106.68 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3915,9 +3466,9 @@
 			(uuid "ed5da4ff-5c25-4413-a993-4aa74ef15080")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR010")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3932,7 +3483,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "178dcb83-4f5e-4d9b-9a03-c02c92f512a9")
-		(property "Reference" "R4"
+		(property "Reference" "R45"
 			(at 49.276 136.398 0)
 			(effects
 				(font
@@ -3984,86 +3535,9 @@
 			(uuid "655495cc-32ba-47d5-a79d-3ea6157bfdca")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 49.53 87.63 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1abfda37-1708-4409-9105-002c36c86f8c")
-		(property "Reference" "F1"
-			(at 49.53 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10A / 24V"
-			(at 49.53 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 49.53 89.408 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MP005472"
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 49.53 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "547e02d2-485f-4e78-b382-c7d44f47db49")
-		)
-		(pin "2"
-			(uuid "e1d49d2c-c30f-4042-86b7-0859093bbdc7")
-		)
-		(instances
-			(project ""
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "F1")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -4079,7 +3553,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c3e7ffb-d5c0-49df-896e-db758f7628af")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR055"
 			(at 212.09 86.36 0)
 			(effects
 				(font
@@ -4127,9 +3601,9 @@
 			(uuid "9038b90f-d53d-42e2-9b7f-ebfef14afd5d")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR046")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -4145,7 +3619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21cafec3-afe2-4ff1-b8bf-4198161c7708")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR056"
 			(at 212.09 152.4 0)
 			(effects
 				(font
@@ -4193,77 +3667,9 @@
 			(uuid "0fc87e40-d58f-4790-b13c-4dc39605c5c9")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 26.67 68.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "342b15ea-cd79-481a-96ec-d4602e080b52")
-		(property "Reference" "J3"
-			(at 23.622 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x02"
-			(at 26.67 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
-			(at 26.67 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 26.67 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08ec9534-929a-4f35-98c7-da6712d8b7a5")
-		)
-		(pin "2"
-			(uuid "0781aff1-402d-4d65-bf6d-46cb501728e2")
-		)
-		(instances
-			(project "RemBreak"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "J3")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -4279,7 +3685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fd3c652-2808-4270-be2e-f678c9df4bc9")
-		(property "Reference" "R11"
+		(property "Reference" "R44"
 			(at 46.99 44.4499 0)
 			(effects
 				(font
@@ -4331,9 +3737,9 @@
 			(uuid "016b4d76-3e73-4548-b468-67c9d6e183bd")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R11")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -4349,7 +3755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fdacbdb-a6d9-44c5-94c2-488cf27ab058")
-		(property "Reference" "R17"
+		(property "Reference" "R47"
 			(at 185.42 96.52 90)
 			(effects
 				(font
@@ -4399,9 +3805,9 @@
 			(uuid "b45f6514-dc0b-4753-88ee-499a1d385c53")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R17")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -4417,7 +3823,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4226b2cd-fe8a-4055-8204-dd5d52d63637")
-		(property "Reference" "R13"
+		(property "Reference" "R54"
 			(at 224.79 125.73 90)
 			(effects
 				(font
@@ -4467,93 +3873,9 @@
 			(uuid "2dacbd06-141c-419b-991d-4242f64496d3")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "chinese_modules:USBC_charger")
-		(at 158.75 58.42 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44466751-0900-4d3a-9813-297025edf89c")
-		(property "Reference" "M1"
-			(at 158.75 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 158.75 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "chinese_modules:USBC_charger"
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 167.64 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "a41d62ae-6432-43b6-955c-2c8fd95397a8")
-		)
-		(pin "6"
-			(uuid "46e4d6a2-278f-47d1-867a-fb5ac93ff815")
-		)
-		(pin "3"
-			(uuid "ed184c72-009a-44e1-b0a5-7ec77ca27cbc")
-		)
-		(pin "4"
-			(uuid "16ea0e44-c7ba-4e3d-82a8-777d072eff49")
-		)
-		(pin "7"
-			(uuid "e3e85e76-2804-4363-94bc-b037eb84d686")
-		)
-		(pin "2"
-			(uuid "9ef4e068-d683-469d-921b-fd901f76e2cc")
-		)
-		(pin "1"
-			(uuid "3a1df0e3-fc45-400e-b10b-c00ea1950fb2")
-		)
-		(instances
-			(project ""
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "M1")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -4569,7 +3891,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "55b0fdc6-813a-423f-b231-cfa1d0a73d0b")
-		(property "Reference" "R8"
+		(property "Reference" "R48"
 			(at 185.42 106.68 90)
 			(effects
 				(font
@@ -4619,9 +3941,9 @@
 			(uuid "6ade5909-ddae-4904-b69f-f9195552f3da")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R8")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -4637,7 +3959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57c02479-72ed-4990-9341-c6bf858f6fae")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR058"
 			(at 246.38 68.58 0)
 			(effects
 				(font
@@ -4687,7 +4009,73 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR012")
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "587fd981-0dca-485a-97a5-dd329a9dfba4")
+		(property "Reference" "#PWR052"
+			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "075e0de8-87e3-4ea4-803a-a6269d6a040a")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -4703,7 +4091,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5eb0809d-4251-4087-b448-033d7b78c5fc")
-		(property "Reference" "Q2"
+		(property "Reference" "Q9"
 			(at 238.76 111.7599 0)
 			(effects
 				(font
@@ -4761,9 +4149,9 @@
 			(uuid "b4df2a1d-8c5c-4336-805d-c2860ae5e531")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "Q2")
+					(reference "Q9")
 					(unit 1)
 				)
 			)
@@ -4779,7 +4167,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65f6b8ab-1b6a-410e-af1e-9f50b51ee449")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR054"
 			(at 200.66 87.63 0)
 			(effects
 				(font
@@ -4829,7 +4217,87 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR013")
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "chinese_modules:USBC_charger")
+		(at 158.75 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "734dbc3c-7f98-4271-938f-221d4e11b20d")
+		(property "Reference" "M2"
+			(at 158.75 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 158.75 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "chinese_modules:USBC_charger"
+			(at 167.64 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "a70e527f-f171-4aaf-852c-f3b9f5c8818a")
+		)
+		(pin "6"
+			(uuid "025e024d-c5f1-4856-b371-8571dc7cda1b")
+		)
+		(pin "4"
+			(uuid "e73b78d4-0e06-4403-84a2-53e42b7abd27")
+		)
+		(pin "3"
+			(uuid "b38a5c70-6d3e-4612-9664-64d8eba3caf7")
+		)
+		(pin "2"
+			(uuid "b1a5aba2-1afb-482e-9dd6-eb366937574b")
+		)
+		(pin "1"
+			(uuid "3646cca1-9499-459d-b543-d73aae09ee10")
+		)
+		(instances
+			(project ""
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "M2")
 					(unit 1)
 				)
 			)
@@ -4968,7 +4436,7 @@
 			(uuid "cad5e7b8-533b-47ca-a1e8-6a4c6c88ae47")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
 					(reference "IC1")
 					(unit 1)
@@ -4986,7 +4454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b5bc4f2-653c-456a-9994-6ef810441a4a")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR050"
 			(at 73.66 39.37 0)
 			(effects
 				(font
@@ -5034,9 +4502,9 @@
 			(uuid "f826f11d-152f-4ff6-a4e4-0b7c2c45cc5d")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR07")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5052,7 +4520,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "817f61d9-9e90-4aeb-8d65-4334976dd274")
-		(property "Reference" "U2"
+		(property "Reference" "U7"
 			(at 246.38 43.18 0)
 			(effects
 				(font
@@ -5111,86 +4579,9 @@
 			(uuid "d8009cfe-f965-4fb9-a569-22a8d4aeeb95")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x03_MountingPin")
-		(at 26.67 90.17 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "82822fff-c61a-4f9f-8c6e-a048a15027ac")
-		(property "Reference" "J4"
-			(at 24.892 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x03_MountingPin"
-			(at 25.4 89.2557 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-SM4-TB_1x03-1MP_P2.50mm_Horizontal"
-			(at 26.67 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 26.67 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 26.67 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "d37e670b-824b-445f-b3d4-fe7fe091e703")
-		)
-		(pin "2"
-			(uuid "3b015b46-8dc5-492e-98d6-e6180aa967f9")
-		)
-		(pin "1"
-			(uuid "b3526817-80f9-438a-9388-8dd231372eab")
-		)
-		(pin "MP"
-			(uuid "3867a58d-f57a-4955-a19c-11bde5ad3e07")
-		)
-		(instances
-			(project ""
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "J4")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -5206,7 +4597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83eae13a-29f2-484b-a76d-6fc88c832b45")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR049"
 			(at 62.23 71.12 0)
 			(effects
 				(font
@@ -5254,9 +4645,9 @@
 			(uuid "d2f826d4-a9e7-45d7-9d77-6e546e582a93")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR06")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5264,16 +4655,16 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 39.37 68.58 270)
+		(at 40.64 80.01 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9b558915-9522-4b08-87c0-2c1ab9c12a74")
-		(property "Reference" "#FLG03"
-			(at 41.275 68.58 0)
+		(uuid "8e20d24a-e64e-4799-ab99-d4e05f2e57b6")
+		(property "Reference" "#FLG07"
+			(at 38.735 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5282,7 +4673,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 43.18 68.5799 90)
+			(at 36.83 80.0099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,7 +4682,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 68.58 0)
+			(at 40.64 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5300,7 +4691,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 68.58 0)
+			(at 40.64 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +4700,74 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 68.58 0)
+			(at 40.64 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca201e37-719e-4e7c-bd70-936ba5101db7")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 40.64 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b558915-9522-4b08-87c0-2c1ab9c12a74")
+		(property "Reference" "#FLG06"
+			(at 38.735 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.83 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 40.64 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,9 +4779,9 @@
 			(uuid "605999ab-f796-4b30-9a8d-d673ab0f5965")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#FLG03")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -5339,7 +4797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dfce51a-fef7-4151-ac5c-0df936425f61")
-		(property "Reference" "Q1"
+		(property "Reference" "Q8"
 			(at 203.2 111.7599 0)
 			(effects
 				(font
@@ -5397,9 +4855,9 @@
 			(uuid "8bb07ce4-cef8-4d6a-8860-08dbceb9bef0")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "Q1")
+					(reference "Q8")
 					(unit 1)
 				)
 			)
@@ -5415,7 +4873,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a19eae45-11df-48c3-b376-23a670a9d95e")
-		(property "Reference" "R15"
+		(property "Reference" "R52"
 			(at 213.36 96.5199 0)
 			(effects
 				(font
@@ -5467,9 +4925,76 @@
 			(uuid "4238f857-1198-4742-8813-b04cf75a66e1")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R15")
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 40.64 82.55 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a55201a4-a6b1-4d4c-b552-00cc5a189175")
+		(property "Reference" "#FLG08"
+			(at 38.735 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 36.83 82.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9c40f01-ab28-4278-9bf9-50285ccd1db8")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -5485,7 +5010,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ad869519-6e9e-47a5-a14f-1491593047ed")
-		(property "Reference" "R9"
+		(property "Reference" "R49"
 			(at 185.42 125.73 90)
 			(effects
 				(font
@@ -5535,87 +5060,9 @@
 			(uuid "ce99609b-8db1-4753-b72f-5876a5d8534b")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse")
-		(at 34.29 77.47 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "af70131d-278a-462f-bd9f-059cd7ee73e3")
-		(property "Reference" "F2"
-			(at 26.416 76.708 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10A / 24V"
-			(at 21.844 78.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 36.068 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 34.29 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MP005472"
-			(at 34.29 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 34.29 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "beb54195-612c-4d67-96e9-52167b71f7b1")
-		)
-		(pin "2"
-			(uuid "6e1611c8-5128-4fba-b27e-0bc96ecdf02f")
-		)
-		(instances
-			(project "RemBreak"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "F2")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -5631,7 +5078,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5b94642-9591-4d05-8753-3ef6dae0d9d8")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR048"
 			(at 44.45 39.37 0)
 			(effects
 				(font
@@ -5679,9 +5126,9 @@
 			(uuid "f4a9f4b0-10e4-49eb-a089-604c849a1fdd")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR014")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5697,7 +5144,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c177b3ef-46ca-45c2-b161-dc6a7a50644b")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR053"
 			(at 158.75 77.47 0)
 			(effects
 				(font
@@ -5745,9 +5192,9 @@
 			(uuid "82e681b5-8b90-4751-a704-861bea962c5f")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR011")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5763,7 +5210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3b92c8e-7a5f-467d-8605-0e40062fcfe2")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 35.56 55.5624 0)
 			(effects
 				(font
@@ -5782,7 +5229,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 36.83 58.42 0)
 			(effects
 				(font
@@ -5815,74 +5262,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "TP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 39.37 63.5 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c459bf7a-b930-4e30-899c-4e3fecb82298")
-		(property "Reference" "#FLG01"
-			(at 41.275 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 43.18 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26ca2bc6-7867-42a4-8b42-acb3499d86f9")
-		)
-		(instances
-			(project "RemBreak"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#FLG01")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -5898,7 +5278,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1d4fe09-821e-4682-a3e8-98ba7d8eaeba")
-		(property "Reference" "U9"
+		(property "Reference" "U6"
 			(at 212.09 62.23 0)
 			(effects
 				(font
@@ -5957,9 +5337,9 @@
 			(uuid "49b03fb4-3476-49a3-88f1-766a3683f651")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "U9")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5974,7 +5354,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2e32823-76e1-4cab-b7da-9a34584baffd")
-		(property "Reference" "R3"
+		(property "Reference" "R43"
 			(at 38.608 135.89 0)
 			(effects
 				(font
@@ -6026,75 +5406,9 @@
 			(uuid "fd563fb9-6839-4599-b603-5d01c516a387")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 39.37 99.06 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3889d54-898e-4832-9250-2640037e043f")
-		(property "Reference" "#PWR04"
-			(at 39.37 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 39.37 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "895c8401-33b5-469c-b531-10cb3565fe94")
-		)
-		(instances
-			(project ""
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR04")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -6110,7 +5424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f081a751-882c-40ff-abf7-d8378a85bbc0")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR047"
 			(at 41.91 134.62 0)
 			(effects
 				(font
@@ -6158,9 +5472,9 @@
 			(uuid "88cb5678-29a0-40ed-af4d-ff365bce527c")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR05")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6176,7 +5490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7015aa1-f46d-4204-a6bb-89147c904b2b")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR057"
 			(at 236.22 152.4 0)
 			(effects
 				(font
@@ -6224,9 +5538,9 @@
 			(uuid "fcea409f-c1e9-47c5-bafe-aaa213d21ca2")
 		)
 		(instances
-			(project "RemBreak"
+			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR016")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
