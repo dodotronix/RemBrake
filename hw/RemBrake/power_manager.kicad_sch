@@ -1,7 +1,7 @@
 (kicad_sch
 	(version 20250114)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "9.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
 	(paper "A4")
 	(title_block
@@ -32,47 +32,47 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 				(at 0 12.7 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf"
 				(at 0 12.7 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "current switch"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "MAX40200AUK_1_1"
@@ -210,47 +210,47 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "~"
 				(at 5.08 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "test point (alternative probe-style design)"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TestPoint_Probe_0_1"
@@ -331,47 +331,47 @@
 			)
 			(property "Footprint" ""
 				(at 0.9652 -3.81 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "~"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "C_0_1"
@@ -468,47 +468,47 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "~"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -592,50 +592,50 @@
 			)
 			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 				(at 5.08 -1.905 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, TO-92"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "NPN Transistor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TO?92*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "BC337_0_1"
@@ -797,50 +797,50 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "NPN Small Signal Transistor"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "BC847_0_1"
@@ -984,29 +984,29 @@
 			)
 			(property "Footprint" ""
 				(at -8.89 -6.35 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at -8.89 -6.35 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at -8.89 -6.35 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "USBC_charger_0_1"
@@ -1158,81 +1158,81 @@
 			)
 			(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm"
 				(at 31.75 -94.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "https://www.mouser.in/datasheet/2/609/2943fa-1271567.pdf"
 				(at 31.75 -194.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Description" "Battery Management 20V Battery Gas Gauge with Voltage, Current & Temperature Measurement"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Height" "0.8"
 				(at 31.75 -394.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Mouser Part Number" "584-LTC2943IDD#TRPBF"
 				(at 31.75 -494.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC2943IDDTRPBF?qs=hVkxg5c3xu8j%252BJ6DK3jV8w%3D%3D"
 				(at 31.75 -594.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Manufacturer_Name" "Analog Devices"
 				(at 31.75 -694.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Manufacturer_Part_Number" "LTC2943IDD#TRPBF"
 				(at 31.75 -794.92 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(symbol "LTC2943IDD#TRPBF_1_1"
@@ -1426,11 +1426,11 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "+3V3"
@@ -1443,38 +1443,38 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"+3V3\""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "+3V3_0_1"
@@ -1551,11 +1551,11 @@
 			(on_board yes)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
@@ -1568,38 +1568,38 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -1652,11 +1652,11 @@
 			(on_board yes)
 			(property "Reference" "#FLG"
 				(at 0 1.905 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "PWR_FLAG"
@@ -1669,38 +1669,38 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "~"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Special symbol for telling ERC where power comes from"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "flag power"
 				(at 0 0 0)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "PWR_FLAG_0_0"
@@ -1789,12 +1789,6 @@
 		(uuid "01f2aa9a-a591-40dd-b3e9-dc01688071a9")
 	)
 	(junction
-		(at 228.6 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1602f49f-b158-4ea9-9998-4671b24bf72f")
-	)
-	(junction
 		(at 44.45 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1861,6 +1855,12 @@
 		(uuid "9bd24f5e-94ef-4dc5-9ed2-b9e5c684e98a")
 	)
 	(junction
+		(at 233.68 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a40f87e5-4736-4369-880f-b2e68896f806")
+	)
+	(junction
 		(at 101.6 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1871,6 +1871,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b74b45f9-c251-481c-94bc-25f5b792a1d8")
+	)
+	(junction
+		(at 224.79 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c93d68a1-c897-47a3-bf94-8b0798b9d81b")
 	)
 	(junction
 		(at 200.66 102.87)
@@ -1996,13 +2002,23 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 69.85) (xy 261.62 69.85)
+			(xy 222.25 69.85) (xy 224.79 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "12750249-be12-4a97-8801-fc1536ef985c")
+	)
+	(wire
+		(pts
+			(xy 224.79 67.31) (xy 224.79 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "169bf127-7978-42bf-89aa-4cd5476dc3f8")
 	)
 	(wire
 		(pts
@@ -2016,7 +2032,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 74.93) (xy 228.6 74.93)
+			(xy 222.25 74.93) (xy 233.68 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2046,7 +2062,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 74.93) (xy 228.6 50.8)
+			(xy 233.68 74.93) (xy 233.68 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2196,6 +2212,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 50.8) (xy 236.22 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e6814cb-24fa-4603-ba29-c494c52faa79")
+	)
+	(wire
+		(pts
 			(xy 36.83 133.35) (xy 36.83 132.08)
 		)
 		(stroke
@@ -2336,6 +2362,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 50.8) (xy 233.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6955ef35-df13-428f-8118-808e3bd0ff31")
+	)
+	(wire
+		(pts
 			(xy 101.6 55.88) (xy 110.49 55.88)
 		)
 		(stroke
@@ -2403,6 +2439,16 @@
 			(type default)
 		)
 		(uuid "8fa8e639-aa49-4df5-bd52-c5c955e2e17c")
+	)
+	(wire
+		(pts
+			(xy 233.68 59.69) (xy 233.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90cec7f3-ee62-4c41-9170-091ce449ef07")
 	)
 	(wire
 		(pts
@@ -2476,16 +2522,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 50.8) (xy 228.6 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6d5411d-6d4c-4bed-91bf-9ee7038ccfb3")
-	)
-	(wire
-		(pts
 			(xy 189.23 102.87) (xy 200.66 102.87)
 		)
 		(stroke
@@ -2526,16 +2562,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 50.8) (xy 236.22 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad94852d-e5c9-4ab0-bf16-78e6423cbebb")
-	)
-	(wire
-		(pts
 			(xy 59.69 55.88) (xy 59.69 151.13)
 		)
 		(stroke
@@ -2543,6 +2569,16 @@
 			(type default)
 		)
 		(uuid "af4df051-e019-418d-b19d-1ae370334852")
+	)
+	(wire
+		(pts
+			(xy 224.79 69.85) (xy 261.62 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1591e8a-b6bb-4c2a-83e6-7984ba97df00")
 	)
 	(bus
 		(pts
@@ -2683,6 +2719,16 @@
 			(type default)
 		)
 		(uuid "d2a1cfdc-e723-4f1b-9557-a8f2c9ff4012")
+	)
+	(wire
+		(pts
+			(xy 224.79 48.26) (xy 224.79 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c723c4-cdc7-4eab-823f-d1b9e5e9aa08")
 	)
 	(wire
 		(pts
@@ -3064,6 +3110,72 @@
 		(uuid "fdf0fab9-fa5f-4b03-9ca1-d1396bfb8d9a")
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 224.79 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0237585a-4b66-4cbd-b6b1-2040a33b0d48")
+		(property "Reference" "#PWR058"
+			(at 224.79 52.07 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 224.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 224.79 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "75efb4f7-e347-48e8-b7fc-ee8adf115628")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 212.09 142.24 180)
 		(unit 1)
@@ -3073,7 +3185,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "026e130d-0c2f-40a6-b360-3358858ab356")
-		(property "Reference" "R53"
+		(property "Reference" "R54"
 			(at 214.63 140.9699 0)
 			(effects
 				(font
@@ -3093,29 +3205,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 213.868 142.24 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 212.09 142.24 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 212.09 142.24 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3127,7 +3239,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R53")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -3160,29 +3272,29 @@
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 113.03 64.4652 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 116.84 63.5 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 116.84 63.5 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3210,7 +3322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b6bd244-f487-422e-a814-384775706f44")
-		(property "Reference" "R46"
+		(property "Reference" "R47"
 			(at 85.09 81.28 90)
 			(effects
 				(font
@@ -3228,29 +3340,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_2512_6332Metric_Pad1.40x3.35mm_HandSolder"
 			(at 85.09 89.408 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 85.09 87.63 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 85.09 87.63 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3262,7 +3374,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R46")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -3278,7 +3390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d9fd0db-6194-495c-8e2e-a9d3815904f6")
-		(property "Reference" "R51"
+		(property "Reference" "R52"
 			(at 203.2 86.3599 0)
 			(effects
 				(font
@@ -3298,29 +3410,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 198.882 87.63 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 200.66 87.63 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 200.66 87.63 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3332,7 +3444,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R51")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -3348,7 +3460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0fb15ac1-47ec-4fc2-8f0f-109350af3507")
-		(property "Reference" "R50"
+		(property "Reference" "R51"
 			(at 195.58 96.5199 0)
 			(effects
 				(font
@@ -3368,29 +3480,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 191.262 97.79 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 193.04 97.79 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 193.04 97.79 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3402,7 +3514,77 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R50")
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 233.68 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12eb556a-b980-4424-ac52-6b2a294b93cf")
+		(property "Reference" "R57"
+			(at 236.22 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 236.22 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 231.902 63.5 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 233.68 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 233.68 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2689de3b-fb75-4786-95cd-9d7827ffd3ae")
+		)
+		(pin "1"
+			(uuid "ee21aa44-18eb-4879-b7cc-fa28c19adcf1")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -3418,13 +3600,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1570cb99-0783-451b-99a8-bfa52030ac44")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR052"
 			(at 106.68 72.39 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -3437,29 +3619,29 @@
 		)
 		(property "Footprint" ""
 			(at 106.68 66.04 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 106.68 66.04 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 106.68 66.04 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3468,7 +3650,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR051")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -3483,7 +3665,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "178dcb83-4f5e-4d9b-9a03-c02c92f512a9")
-		(property "Reference" "R45"
+		(property "Reference" "R46"
 			(at 49.276 136.398 0)
 			(effects
 				(font
@@ -3503,29 +3685,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 45.212 137.16 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 46.99 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 46.99 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3537,7 +3719,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R45")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3553,13 +3735,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c3e7ffb-d5c0-49df-896e-db758f7628af")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR056"
 			(at 212.09 86.36 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -3572,29 +3754,29 @@
 		)
 		(property "Footprint" ""
 			(at 212.09 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 212.09 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 212.09 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3603,7 +3785,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR055")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -3619,13 +3801,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21cafec3-afe2-4ff1-b8bf-4198161c7708")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR057"
 			(at 212.09 152.4 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -3638,29 +3820,29 @@
 		)
 		(property "Footprint" ""
 			(at 212.09 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 212.09 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 212.09 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3669,7 +3851,77 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR056")
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 224.79 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e0894a2-aab8-4b2a-834a-3f23bf80493e")
+		(property "Reference" "R55"
+			(at 227.33 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 227.33 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 223.012 63.5 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 224.79 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bec41ae6-86ca-4b56-a3c5-f79a9b359b88")
+		)
+		(pin "1"
+			(uuid "52be20f4-360f-4681-a509-0252ed1350af")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -3685,7 +3937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fd3c652-2808-4270-be2e-f678c9df4bc9")
-		(property "Reference" "R44"
+		(property "Reference" "R45"
 			(at 46.99 44.4499 0)
 			(effects
 				(font
@@ -3705,29 +3957,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 42.672 45.72 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 44.45 45.72 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 44.45 45.72 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3739,7 +3991,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R44")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -3755,7 +4007,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3fdacbdb-a6d9-44c5-94c2-488cf27ab058")
-		(property "Reference" "R47"
+		(property "Reference" "R48"
 			(at 185.42 96.52 90)
 			(effects
 				(font
@@ -3773,29 +4025,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 185.42 104.648 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 185.42 102.87 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 185.42 102.87 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3807,7 +4059,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R47")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -3823,7 +4075,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4226b2cd-fe8a-4055-8204-dd5d52d63637")
-		(property "Reference" "R54"
+		(property "Reference" "R56"
 			(at 224.79 125.73 90)
 			(effects
 				(font
@@ -3841,29 +4093,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 224.79 130.302 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 224.79 132.08 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 224.79 132.08 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3875,7 +4127,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R54")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -3891,7 +4143,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "55b0fdc6-813a-423f-b231-cfa1d0a73d0b")
-		(property "Reference" "R48"
+		(property "Reference" "R49"
 			(at 185.42 106.68 90)
 			(effects
 				(font
@@ -3909,29 +4161,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 185.42 114.808 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 185.42 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 185.42 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -3943,7 +4195,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R48")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -3959,13 +4211,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57c02479-72ed-4990-9341-c6bf858f6fae")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 246.38 68.58 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -3978,29 +4230,29 @@
 		)
 		(property "Footprint" ""
 			(at 246.38 62.23 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 246.38 62.23 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 246.38 62.23 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4009,7 +4261,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4025,13 +4277,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "587fd981-0dca-485a-97a5-dd329a9dfba4")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR053"
 			(at 121.92 73.66 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -4044,29 +4296,29 @@
 		)
 		(property "Footprint" ""
 			(at 121.92 67.31 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 121.92 67.31 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 121.92 67.31 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4075,7 +4327,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR052")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -4111,32 +4363,32 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 238.76 114.935 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657"
 			(at 233.68 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
 			(at 233.68 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4167,13 +4419,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65f6b8ab-1b6a-410e-af1e-9f50b51ee449")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR055"
 			(at 200.66 87.63 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
@@ -4186,29 +4438,29 @@
 		)
 		(property "Footprint" ""
 			(at 200.66 83.82 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 200.66 83.82 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 200.66 83.82 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4217,7 +4469,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR054")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -4251,29 +4503,29 @@
 		)
 		(property "Footprint" "chinese_modules:USBC_charger"
 			(at 167.64 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 167.64 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 167.64 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "5"
@@ -4331,81 +4583,81 @@
 		)
 		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm"
 			(at 52.07 -37.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.mouser.in/datasheet/2/609/2943fa-1271567.pdf"
 			(at 52.07 -137.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Description" "Battery Management 20V Battery Gas Gauge with Voltage, Current & Temperature Measurement"
 			(at 83.82 57.15 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Height" "0.8"
 			(at 52.07 -337.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Mouser Part Number" "584-LTC2943IDD#TRPBF"
 			(at 52.07 -437.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC2943IDDTRPBF?qs=hVkxg5c3xu8j%252BJ6DK3jV8w%3D%3D"
 			(at 52.07 -537.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" "Analog Devices"
 			(at 52.07 -637.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Part_Number" "LTC2943IDD#TRPBF"
 			(at 52.07 -737.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "6"
@@ -4454,13 +4706,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b5bc4f2-653c-456a-9994-6ef810441a4a")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR051"
 			(at 73.66 39.37 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -4473,29 +4725,29 @@
 		)
 		(property "Footprint" ""
 			(at 73.66 33.02 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 73.66 33.02 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 33.02 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4504,7 +4756,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR050")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4538,29 +4790,29 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 246.38 40.64 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf"
 			(at 246.38 40.64 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
 			(at 246.38 53.34 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4597,13 +4849,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83eae13a-29f2-484b-a76d-6fc88c832b45")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR050"
 			(at 62.23 71.12 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -4616,29 +4868,29 @@
 		)
 		(property "Footprint" ""
 			(at 62.23 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 62.23 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 62.23 64.77 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4647,7 +4899,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR049")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4665,11 +4917,11 @@
 		(uuid "8e20d24a-e64e-4799-ab99-d4e05f2e57b6")
 		(property "Reference" "#FLG07"
 			(at 38.735 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "PWR_FLAG"
@@ -4683,29 +4935,29 @@
 		)
 		(property "Footprint" ""
 			(at 40.64 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 40.64 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 40.64 80.01 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4732,11 +4984,11 @@
 		(uuid "9b558915-9522-4b08-87c0-2c1ab9c12a74")
 		(property "Reference" "#FLG06"
 			(at 38.735 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "PWR_FLAG"
@@ -4750,29 +5002,29 @@
 		)
 		(property "Footprint" ""
 			(at 40.64 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 40.64 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 40.64 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4817,32 +5069,32 @@
 		)
 		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
 			(at 203.2 114.935 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf"
 			(at 198.12 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, TO-92"
 			(at 198.12 113.03 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4873,7 +5125,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "a19eae45-11df-48c3-b376-23a670a9d95e")
-		(property "Reference" "R52"
+		(property "Reference" "R53"
 			(at 213.36 96.5199 0)
 			(effects
 				(font
@@ -4893,29 +5145,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 209.042 97.79 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 210.82 97.79 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 210.82 97.79 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -4927,7 +5179,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R52")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -4945,11 +5197,11 @@
 		(uuid "a55201a4-a6b1-4d4c-b552-00cc5a189175")
 		(property "Reference" "#FLG08"
 			(at 38.735 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "PWR_FLAG"
@@ -4963,29 +5215,29 @@
 		)
 		(property "Footprint" ""
 			(at 40.64 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 40.64 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 40.64 82.55 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5010,7 +5262,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ad869519-6e9e-47a5-a14f-1491593047ed")
-		(property "Reference" "R49"
+		(property "Reference" "R50"
 			(at 185.42 125.73 90)
 			(effects
 				(font
@@ -5028,29 +5280,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 185.42 133.858 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 185.42 132.08 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 185.42 132.08 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5062,7 +5314,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R49")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -5078,13 +5330,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5b94642-9591-4d05-8753-3ef6dae0d9d8")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR049"
 			(at 44.45 39.37 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
@@ -5097,29 +5349,29 @@
 		)
 		(property "Footprint" ""
 			(at 44.45 35.56 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 44.45 35.56 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 44.45 35.56 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5128,7 +5380,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR048")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -5144,13 +5396,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c177b3ef-46ca-45c2-b161-dc6a7a50644b")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR054"
 			(at 158.75 77.47 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -5163,29 +5415,29 @@
 		)
 		(property "Footprint" ""
 			(at 158.75 71.12 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 158.75 71.12 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 158.75 71.12 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5194,7 +5446,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR053")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5221,39 +5473,39 @@
 		)
 		(property "Value" "TestPoint_Probe"
 			(at 35.56 58.1024 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 36.83 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 36.83 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
 			(at 31.75 58.42 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5296,29 +5548,29 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 212.09 59.69 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX40200.pdf"
 			(at 212.09 59.69 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
 			(at 212.09 72.39 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5354,7 +5606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2e32823-76e1-4cab-b7da-9a34584baffd")
-		(property "Reference" "R43"
+		(property "Reference" "R44"
 			(at 38.608 135.89 0)
 			(effects
 				(font
@@ -5374,29 +5626,29 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 35.052 137.16 90)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
 			(at 36.83 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 36.83 137.16 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "2"
@@ -5408,7 +5660,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R43")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -5424,13 +5676,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f081a751-882c-40ff-abf7-d8378a85bbc0")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR048"
 			(at 41.91 134.62 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "+3V3"
@@ -5443,29 +5695,29 @@
 		)
 		(property "Footprint" ""
 			(at 41.91 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 41.91 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
 			(at 41.91 130.81 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5474,7 +5726,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR047")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5490,13 +5742,13 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7015aa1-f46d-4204-a6bb-89147c904b2b")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR059"
 			(at 236.22 152.4 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
@@ -5509,29 +5761,29 @@
 		)
 		(property "Footprint" ""
 			(at 236.22 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 236.22 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 236.22 146.05 0)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5540,7 +5792,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR057")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
