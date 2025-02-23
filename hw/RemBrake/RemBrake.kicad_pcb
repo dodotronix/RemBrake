@@ -26522,8 +26522,8 @@
 		(uuid "74a14749-333a-426d-84d5-71f120b20d61")
 	)
 	(gr_rect
-		(start 122.794 107.869)
-		(end 131.557 116.886)
+		(start 122.9845 108.4405)
+		(end 131.7475 117.4575)
 		(stroke
 			(width 0.3)
 			(type solid)
@@ -26657,7 +26657,7 @@
 		(uuid "d76df19b-46aa-433f-afa7-fc936991493c")
 	)
 	(gr_text "PB"
-		(at 127.112 110.409 0)
+		(at 127.366 111.1075 0)
 		(layer "F.SilkS")
 		(uuid "0d6c067c-c999-47b7-9ad2-986c04e745c9")
 		(effects
@@ -26746,8 +26746,8 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "Pacner \nBros\nTech"
-		(at 127.112 115.997 0)
+	(gr_text "Pacner\nBros\nTech"
+		(at 127.366 116.6955 0)
 		(layer "F.SilkS")
 		(uuid "ca42b3eb-c4aa-4592-8556-0dbc1345495d")
 		(effects
@@ -34717,6 +34717,12 @@
 	(group ""
 		(uuid "129153a9-5436-4403-a335-fd403aded463")
 		(members "0c20f45a-9dc3-457f-9078-8600cbaf4606" "74a14749-333a-426d-84d5-71f120b20d61")
+	)
+	(group ""
+		(uuid "c0e309db-064f-468d-9e58-72057fa13dc5")
+		(members "0d6c067c-c999-47b7-9ad2-986c04e745c9" "b1a19087-0192-4dba-9367-e26e3758dea2"
+			"ca42b3eb-c4aa-4592-8556-0dbc1345495d"
+		)
 	)
 	(group ""
 		(uuid "a2845e1e-815d-42e5-85ee-d3432f5e359f")
