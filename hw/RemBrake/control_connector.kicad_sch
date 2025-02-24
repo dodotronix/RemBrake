@@ -2302,7 +2302,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0611070e-631e-4863-ab84-5fbccd6087e1")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR027"
 			(at 96.52 146.05 0)
 			(hide yes)
 			(effects
@@ -2352,7 +2352,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR062")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2367,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c164d6b-9393-441f-ad26-2d28cffcf4fe")
-		(property "Reference" "R24"
+		(property "Reference" "R28"
 			(at 92.456 67.31 90)
 			(effects
 				(font
@@ -2376,7 +2376,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 98.298 69.088 90)
+			(at 92.71 69.596 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2419,7 +2419,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "R24")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -2435,7 +2435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "124d0d74-ce02-49f5-8866-5da8f11a14ee")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR030"
 			(at 196.85 99.06 0)
 			(hide yes)
 			(effects
@@ -2486,7 +2486,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR026")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -2501,7 +2501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1501fec4-3e36-4e43-80d8-dcbd4ad1aafe")
-		(property "Reference" "R25"
+		(property "Reference" "R29"
 			(at 92.71 72.39 90)
 			(effects
 				(font
@@ -2510,7 +2510,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 98.298 74.168 90)
+			(at 92.71 74.676 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2553,7 +2553,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "R25")
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -2661,7 +2661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4384831c-198b-4249-b0db-8e470340d3f7")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR032"
 			(at 217.17 120.65 0)
 			(hide yes)
 			(effects
@@ -2711,7 +2711,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR028")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -2727,7 +2727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56c9e8c4-90c7-4ce8-8e49-2270f773abc6")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR031"
 			(at 217.17 90.17 0)
 			(hide yes)
 			(effects
@@ -2777,7 +2777,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR027")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -2793,7 +2793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ac520f4-d582-478b-96e6-5e7b1c7708a7")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 100.33 136.8424 0)
 			(effects
 				(font
@@ -2845,7 +2845,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -2937,7 +2937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "91974a1b-5a33-45a1-9410-a7a4e8c70ac0")
-		(property "Reference" "R26"
+		(property "Reference" "R30"
 			(at 92.71 77.47 90)
 			(effects
 				(font
@@ -2946,7 +2946,7 @@
 			)
 		)
 		(property "Value" "100R"
-			(at 98.298 79.248 90)
+			(at 92.71 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2989,7 +2989,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "R26")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -3005,7 +3005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1718af4-d4cc-45d5-a89e-225581a12e0d")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR026"
 			(at 86.36 146.05 0)
 			(hide yes)
 			(effects
@@ -3055,7 +3055,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR061")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3151,7 +3151,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc9d83fb-0d42-41b1-897f-74cea0f1e82a")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR033"
 			(at 217.17 144.78 0)
 			(hide yes)
 			(effects
@@ -3201,7 +3201,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR029")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -3217,7 +3217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da26a971-da12-4b96-8044-adb2a9d5196f")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR028"
 			(at 194.31 58.42 0)
 			(hide yes)
 			(effects
@@ -3268,7 +3268,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR024")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -3284,7 +3284,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df618a72-84d8-403b-aef8-960b6e2c0367")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 90.17 136.8424 0)
 			(effects
 				(font
@@ -3336,7 +3336,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -3352,7 +3352,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e71f71d2-f323-47d0-9140-6c07c1033448")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR029"
 			(at 194.31 68.58 0)
 			(hide yes)
 			(effects
@@ -3403,7 +3403,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR025")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)

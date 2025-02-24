@@ -2473,7 +2473,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 63.5) (xy 121.92 63.5)
+			(xy 120.65 63.5) (xy 124.46 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2963,7 +2963,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 63.5) (xy 121.92 67.31)
+			(xy 124.46 63.5) (xy 124.46 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3120,7 +3120,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0237585a-4b66-4cbd-b6b1-2040a33b0d48")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR062"
 			(at 224.79 52.07 0)
 			(hide yes)
 			(effects
@@ -3170,7 +3170,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR058")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -3181,12 +3181,11 @@
 		(at 212.09 142.24 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "026e130d-0c2f-40a6-b360-3358858ab356")
-		(property "Reference" "R54"
+		(property "Reference" "R58"
 			(at 214.63 140.9699 0)
 			(effects
 				(font
@@ -3195,13 +3194,12 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4k2"
-			(at 214.63 143.5099 0)
+		(property "Value" "0R"
+			(at 212.09 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3240,7 +3238,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R54")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -3263,8 +3261,8 @@
 				)
 			)
 		)
-		(property "Value" "1u"
-			(at 119.634 64.77 90)
+		(property "Value" "1uF"
+			(at 120.396 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3323,7 +3321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b6bd244-f487-422e-a814-384775706f44")
-		(property "Reference" "R47"
+		(property "Reference" "R51"
 			(at 85.09 81.28 90)
 			(effects
 				(font
@@ -3331,7 +3329,7 @@
 				)
 			)
 		)
-		(property "Value" "50mR"
+		(property "Value" "10mR"
 			(at 85.09 83.82 90)
 			(effects
 				(font
@@ -3375,7 +3373,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R47")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -3389,24 +3387,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0d9fd0db-6194-495c-8e2e-a9d3815904f6")
-		(property "Reference" "R52"
-			(at 203.2 86.3599 0)
+		(property "Reference" "R56"
+			(at 203.2 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "625k"
-			(at 203.2 88.8999 0)
+		(property "Value" "590k"
+			(at 200.66 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3445,7 +3440,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R52")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -3459,24 +3454,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0fb15ac1-47ec-4fc2-8f0f-109350af3507")
-		(property "Reference" "R51"
-			(at 195.58 96.5199 0)
+		(property "Reference" "R55"
+			(at 195.58 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "0R"
-			(at 195.58 99.0599 0)
+			(at 193.04 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3515,7 +3507,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R51")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -3529,24 +3521,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "12eb556a-b980-4424-ac52-6b2a294b93cf")
-		(property "Reference" "R57"
-			(at 236.22 62.2299 0)
+		(property "Reference" "R61"
+			(at 236.22 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 236.22 64.7699 0)
+			(at 233.68 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3585,7 +3574,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R57")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -3601,7 +3590,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1570cb99-0783-451b-99a8-bfa52030ac44")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR056"
 			(at 106.68 72.39 0)
 			(hide yes)
 			(effects
@@ -3651,7 +3640,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR052")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -3666,22 +3655,20 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "178dcb83-4f5e-4d9b-9a03-c02c92f512a9")
-		(property "Reference" "R46"
-			(at 49.276 136.398 0)
+		(property "Reference" "R50"
+			(at 49.53 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 49.53 138.4299 0)
+			(at 46.99 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3720,7 +3707,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R46")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -3736,7 +3723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c3e7ffb-d5c0-49df-896e-db758f7628af")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR060"
 			(at 212.09 86.36 0)
 			(hide yes)
 			(effects
@@ -3786,7 +3773,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR056")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -3802,7 +3789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21cafec3-afe2-4ff1-b8bf-4198161c7708")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR061"
 			(at 212.09 152.4 0)
 			(hide yes)
 			(effects
@@ -3852,7 +3839,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR057")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -3866,24 +3853,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e0894a2-aab8-4b2a-834a-3f23bf80493e")
-		(property "Reference" "R55"
-			(at 227.33 62.2299 0)
+		(property "Reference" "R59"
+			(at 227.33 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 227.33 64.7699 0)
+			(at 224.79 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3922,7 +3906,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R55")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -3936,24 +3920,21 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3fd3c652-2808-4270-be2e-f678c9df4bc9")
-		(property "Reference" "R45"
-			(at 46.99 44.4499 0)
+		(property "Reference" "R49"
+			(at 46.99 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 46.99 46.9899 0)
+			(at 44.45 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -3992,7 +3973,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R45")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -4006,18 +3987,17 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3fdacbdb-a6d9-44c5-94c2-488cf27ab058")
-		(property "Reference" "R48"
-			(at 185.42 96.52 90)
+		(property "Reference" "R52"
+			(at 185.42 100.584 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4k2"
-			(at 185.42 99.06 90)
+		(property "Value" "5k"
+			(at 185.42 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4060,7 +4040,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R48")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -4074,10 +4054,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4226b2cd-fe8a-4055-8204-dd5d52d63637")
-		(property "Reference" "R56"
-			(at 224.79 125.73 90)
+		(property "Reference" "R60"
+			(at 224.79 129.794 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4085,7 +4064,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 224.79 128.27 90)
+			(at 224.79 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4128,7 +4107,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R56")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -4139,21 +4118,20 @@
 		(at 185.42 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "55b0fdc6-813a-423f-b231-cfa1d0a73d0b")
-		(property "Reference" "R49"
-			(at 185.42 106.68 90)
+		(property "Reference" "R53"
+			(at 185.42 110.744 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4k2"
-			(at 185.42 109.22 90)
+		(property "Value" "5k"
+			(at 185.42 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4196,7 +4174,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R49")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -4212,7 +4190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "57c02479-72ed-4990-9341-c6bf858f6fae")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR064"
 			(at 246.38 68.58 0)
 			(hide yes)
 			(effects
@@ -4262,7 +4240,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR060")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4270,7 +4248,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 121.92 67.31 0)
+		(at 124.46 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4278,8 +4256,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "587fd981-0dca-485a-97a5-dd329a9dfba4")
-		(property "Reference" "#PWR053"
-			(at 121.92 73.66 0)
+		(property "Reference" "#PWR057"
+			(at 124.46 73.66 0)
 			(hide yes)
 			(effects
 				(font
@@ -4288,7 +4266,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 121.92 72.39 0)
+			(at 124.46 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4296,7 +4274,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 67.31 0)
+			(at 124.46 67.31 0)
 			(hide yes)
 			(effects
 				(font
@@ -4305,7 +4283,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 67.31 0)
+			(at 124.46 67.31 0)
 			(hide yes)
 			(effects
 				(font
@@ -4314,7 +4292,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 121.92 67.31 0)
+			(at 124.46 67.31 0)
 			(hide yes)
 			(effects
 				(font
@@ -4328,7 +4306,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR053")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -4339,7 +4317,7 @@
 		(at 233.68 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -4420,7 +4398,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65f6b8ab-1b6a-410e-af1e-9f50b51ee449")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR059"
 			(at 200.66 87.63 0)
 			(hide yes)
 			(effects
@@ -4470,7 +4448,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR055")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4707,7 +4685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b5bc4f2-653c-456a-9994-6ef810441a4a")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR055"
 			(at 73.66 39.37 0)
 			(hide yes)
 			(effects
@@ -4757,7 +4735,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR051")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -4850,7 +4828,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83eae13a-29f2-484b-a76d-6fc88c832b45")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR054"
 			(at 62.23 71.12 0)
 			(hide yes)
 			(effects
@@ -4900,7 +4878,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR050")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5121,27 +5099,24 @@
 		(at 210.82 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "a19eae45-11df-48c3-b376-23a670a9d95e")
-		(property "Reference" "R53"
-			(at 213.36 96.5199 0)
+		(property "Reference" "R57"
+			(at 213.36 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "0R"
-			(at 213.36 99.0599 0)
+			(at 210.82 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -5180,7 +5155,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R53")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -5258,21 +5233,20 @@
 		(at 185.42 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "ad869519-6e9e-47a5-a14f-1491593047ed")
-		(property "Reference" "R50"
-			(at 185.42 125.73 90)
+		(property "Reference" "R54"
+			(at 185.42 129.794 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4k2"
-			(at 185.42 128.27 90)
+		(property "Value" "5k"
+			(at 185.42 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5315,7 +5289,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R50")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -5331,7 +5305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5b94642-9591-4d05-8753-3ef6dae0d9d8")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR053"
 			(at 44.45 39.37 0)
 			(hide yes)
 			(effects
@@ -5381,7 +5355,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR049")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5397,7 +5371,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c177b3ef-46ca-45c2-b161-dc6a7a50644b")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR058"
 			(at 158.75 77.47 0)
 			(hide yes)
 			(effects
@@ -5447,7 +5421,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR054")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -5463,7 +5437,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3b92c8e-7a5f-467d-8605-0e40062fcfe2")
-		(property "Reference" "TP2"
+		(property "Reference" "TP4"
 			(at 35.56 55.5624 0)
 			(effects
 				(font
@@ -5515,7 +5489,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "TP2")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -5607,22 +5581,20 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2e32823-76e1-4cab-b7da-9a34584baffd")
-		(property "Reference" "R44"
-			(at 38.608 135.89 0)
+		(property "Reference" "R48"
+			(at 39.37 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 38.354 138.43 0)
+			(at 36.83 137.16 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
@@ -5661,7 +5633,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "R44")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -5677,7 +5649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f081a751-882c-40ff-abf7-d8378a85bbc0")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR052"
 			(at 41.91 134.62 0)
 			(hide yes)
 			(effects
@@ -5727,7 +5699,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR048")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -5743,7 +5715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7015aa1-f46d-4204-a6bb-89147c904b2b")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR063"
 			(at 236.22 152.4 0)
 			(hide yes)
 			(effects
@@ -5793,7 +5765,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "#PWR059")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
