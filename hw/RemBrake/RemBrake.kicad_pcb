@@ -1540,6 +1540,7 @@
 		(property "Value" "MBR0520"
 			(at 0 2.1 0)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "6f51340e-ea96-4aa2-8260-916a392a6c96")
 			(effects
 				(font
@@ -17387,6 +17388,7 @@
 		(property "Value" "MBR0520"
 			(at 0 -2.1 270)
 			(layer "B.Fab")
+			(hide yes)
 			(uuid "8fd264c2-7d32-4c2d-91c5-39df8d87f134")
 			(effects
 				(font
