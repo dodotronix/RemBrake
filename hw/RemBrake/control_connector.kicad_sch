@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250114)
+	(version 20250222)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
@@ -2375,7 +2375,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "110R"
 			(at 92.71 69.596 90)
 			(effects
 				(font
@@ -2509,7 +2509,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "110R"
 			(at 92.71 74.676 90)
 			(effects
 				(font
@@ -2945,7 +2945,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "110R"
 			(at 92.71 80.01 90)
 			(effects
 				(font
