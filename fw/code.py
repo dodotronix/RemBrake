@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT
 
-# RemBreak main application
-from RemBreak_Core import BreakController, RemBreakBoard
+# RemBrake main application
+from RemBrake_Core import BrakeController, RemBrakeBoard
 
 brd_layout = {
     "actuator":          "RX",
@@ -15,6 +15,6 @@ brd_layout = {
     "actuator_switch":   "TX"}
 
 # INITIALIZE REMBREAK BOARD
-rb_brd = RemBreakBoard(brd_layout)
-rb = BreakController(rb_brd)
+rb_brd = RemBrakeBoard(brd_layout)
+rb = BrakeController(rb_brd)
 rb.start()

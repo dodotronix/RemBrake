@@ -14,11 +14,11 @@ from simpleio import DigitalOut, DigitalIn
 
 from CircuitPython_MY9221 import MY9221
 from CircuitPython_LTC2943 import LTC2943
-from RemBreak_Battery import BatteryMonitor
-from RemBreak_Display import Display
-from RemBreak_Wavekit import Tones
+from RemBrake_Battery import BatteryMonitor
+from RemBrake_Display import Display
+from RemBrake_Wavekit import Tones
 
-class RemBreakBoard():
+class RemBrakeBoard():
     def __init__(self, layout) -> None:
 
         def create_layout(d):
@@ -61,8 +61,8 @@ class RemBreakBoard():
         # DEBUG STATE LED
         self.pixel = neopixel.NeoPixel(board.NEOPIXEL, 1)
 
-class BreakController():
-    def __init__(self, brd: RemBreakBoard) -> None:
+class BrakeController():
+    def __init__(self, brd: RemBrakeBoard) -> None:
         self._pixel = brd.pixel
         self.battery = brd.battery
         self.actuator = brd.actuator
@@ -70,7 +70,7 @@ class BreakController():
         self.plugged = brd.plugged
 
         # coroutines
-        self.busy = None # break is in use
+        self.busy = None # brake is in use
 
         self.force = 0 # regulated force
         self.active = False # PID active
@@ -90,7 +90,7 @@ class BreakController():
 
     def start(self):
         async def main():
-            a = asyncio.create_task(self.breaking())
+            a = asyncio.create_task(self.braking())
             b = asyncio.create_task(self.blink())
             c = asyncio.create_task(self.handle_led())
             d = asyncio.create_task(self.battery.start())
@@ -100,7 +100,7 @@ class BreakController():
         asyncio.run(main())
 
     async def controller(self):
-        """ monitors the key presses and invokes breaking sequence """
+        """ monitors the key presses and invokes braking sequence """
         while True:
             self.actuator.angle = self.angle
             self.event = self.keys.events.get()
@@ -148,23 +148,23 @@ class BreakController():
                         print("both were released")
 
             if(isinstance(self.active_keys[0], float)):
-                print("running supervisor breaking")
+                print("running supervisor braking")
                 if not self.supervisor:
                     try:
-                        self.busy.cancel() # cancel old breaking
+                        self.busy.cancel() # cancel old braking
                     except:
                         pass
-                    self.busy = asyncio.create_task(self.supervisor_breaking(10))
+                    self.busy = asyncio.create_task(self.supervisor_braking(10))
 
             elif(isinstance(self.active_keys[1], float)) and not self.supervisor:
-                print("running handlebars breaking")
+                print("running handlebars braking")
                 if not self.supervisor and not self.user:
                     try:
-                        self.busy.cancel() # cancel old breaking
+                        self.busy.cancel() # cancel old braking
                     except:
                         pass
 
-                    self.busy = asyncio.create_task(self.handlebars_breaking(1, -0.1))
+                    self.busy = asyncio.create_task(self.handlebars_braking(1, -0.1))
 
             elif not self.active_keys[1] and self.user:
                 print("turn off handlebars task")
@@ -174,7 +174,7 @@ class BreakController():
 
             await asyncio.sleep(0.2)
 
-    async def handlebars_breaking(self, time_step, force_step):
+    async def handlebars_braking(self, time_step, force_step):
         self.active = True
         self.user = True
         while True:
@@ -185,7 +185,7 @@ class BreakController():
                 self.force = self.max_force
             await asyncio.sleep(time_step)
         
-    async def supervisor_breaking(self, timeout):
+    async def supervisor_braking(self, timeout):
         self.user = False
         self.supervisor = True
         self.force = -0.2
@@ -193,9 +193,9 @@ class BreakController():
         await asyncio.sleep(timeout)
         self.active = False
         self.supervisor = False
-        print("canceling supervisor breaking")
+        print("canceling supervisor braking")
 
-    async def breaking(self):
+    async def braking(self):
         p = 10
         i = 5 
         d = 2
