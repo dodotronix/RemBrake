@@ -84,6 +84,10 @@ prepare: $(LIB_NAME) clone
 	cp -r $(LOCAL_SOURCES) $(TARGET); \
 	cp -r $(GIT_MODULES)/*.py $(TARGET);
 
+upload: prepare
+	@printf "[INFO] Uploading $(TARGET) to $(DEVICE)\n"
+	@cp -r $(TARGET)/* $(DEVICE)
+
 .PHONY: clean prepare clone 
 
 clean:
