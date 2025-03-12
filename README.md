@@ -1,4 +1,4 @@
-# RemBreak - remote break system for handbikes 
+# RemBrake - remote brake system for handbikes 
 
 ![PCB picture](pics/introduction.png)
 
