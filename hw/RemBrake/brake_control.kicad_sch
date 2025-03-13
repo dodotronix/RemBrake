@@ -2380,7 +2380,7 @@
 	)
 	(text "When something happend with the 3V3 power supply or the MCU \nstopped responding for some reason, this generates beeping \nsignal, if we want to reset the delay capacitor, plug it to USB"
 		(exclude_from_sim no)
-		(at 74.93 152.146 0)
+		(at 75.946 145.288 0)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -3317,6 +3317,16 @@
 		)
 		(uuid "aeb315a9-bdb8-4704-80ac-b5c3897d71db")
 	)
+	(text "TODO: replace with\ngeneral transistor"
+		(exclude_from_sim no)
+		(at 112.014 44.196 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aff84221-d8d5-41b5-861c-b07a3c6a8f26")
+	)
 	(text "SWITCH\nON/OFF\n"
 		(exclude_from_sim no)
 		(at 42.164 36.068 0)
