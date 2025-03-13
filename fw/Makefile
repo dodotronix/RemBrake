@@ -28,6 +28,7 @@ ADAFRUIT_MPYS := "adafruit_ticks.mpy" \
 				 "simpleio.mpy" 
 
 ADAFRUIT_FOLDER_LIBS := "adafruit_motor" \
+						"asyncio" \
 						"adafruit_register" 
 
 ADAFRUIT_BUNDLE_FOLDER := $(ROOT)/$(LIB_NAME)/lib
