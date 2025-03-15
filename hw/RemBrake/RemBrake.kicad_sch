@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250222)
+	(version 20250227)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75")
@@ -844,7 +844,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -1070,6 +1070,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 127) (xy 187.96 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "161c4c3b-fccc-44be-b0dd-7d058f45040b")
+	)
+	(wire
+		(pts
 			(xy 246.38 54.61) (xy 250.19 54.61)
 		)
 		(stroke
@@ -1117,6 +1127,16 @@
 			(type default)
 		)
 		(uuid "283df6b3-53c8-4584-9b38-9656fbdd7088")
+	)
+	(wire
+		(pts
+			(xy 177.8 106.68) (xy 184.15 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f4b73dd-7347-421e-a53b-8ac4199e1149")
 	)
 	(wire
 		(pts
@@ -1250,16 +1270,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 95.25) (xy 181.61 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68d25440-399d-438c-9d83-6f0161a3457f")
-	)
-	(wire
-		(pts
 			(xy 220.98 76.2) (xy 220.98 114.3)
 		)
 		(stroke
@@ -1287,26 +1297,6 @@
 			(type default)
 		)
 		(uuid "711d16be-b3a4-473e-9884-5d02ad28e2f2")
-	)
-	(wire
-		(pts
-			(xy 181.61 60.96) (xy 187.96 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a188a8-5eb4-4e33-8d2a-9e2090d801d3")
-	)
-	(wire
-		(pts
-			(xy 181.61 95.25) (xy 181.61 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "771d5ea0-8214-479d-922e-e73752e44ba5")
 	)
 	(wire
 		(pts
@@ -1507,6 +1497,16 @@
 			(type default)
 		)
 		(uuid "e646ac14-b77c-4d8b-8455-e5455b170629")
+	)
+	(wire
+		(pts
+			(xy 184.15 106.68) (xy 184.15 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec19852-b3a1-4809-9503-fa09e6660308")
 	)
 	(wire
 		(pts
@@ -2167,16 +2167,6 @@
 				(justify left)
 			)
 		)
-		(pin "RUNNIG (RED)" input
-			(at 187.96 60.96 180)
-			(uuid "98df0d05-4a09-472a-a6ea-29499352849e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "ON{slash}OFF" input
 			(at 234.95 52.07 0)
 			(uuid "ed5ca001-e1da-4cf8-9ce7-5d8e83de7575")
@@ -2337,6 +2327,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "RUNNIG (RED)" input
+			(at 187.96 127 180)
+			(uuid "51a05988-5d94-4955-8f11-1e60b596c0eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2524,7 +2524,7 @@
 			)
 		)
 		(pin "LED RED" input
-			(at 177.8 95.25 0)
+			(at 177.8 106.68 0)
 			(uuid "379b4dc9-9363-4a49-8db7-7b449958cbbc")
 			(effects
 				(font
