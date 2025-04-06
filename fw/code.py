@@ -1,20 +1,19 @@
 # SPDX-License-Identifier: MIT
 
 # RemBrake main application
-from RemBrake_Core import BrakeController, RemBrakeBoard
+from RemBrake_Core import BrakeCore
 
-brd_layout = {
-    "actuator":          "RX",
-    "buzzer":            "SCK",
-    "handlebars_button": "MISO",
-    "charging":          "MOSI",
-    "ledbar_di":         "D2",
-    "ledbar_dcki":       "D3",
-    "plugged":           "D1",
-    "remote_switch":     "D0",
-    "actuator_switch":   "TX"}
+layout = {
+    "ready":        "D0",
+    "enable":       "D1",
+    "power":        "D2",
+    "servo":        "D3",
+    "remote":       "TX",
+    "buzz":         "MOSI",
+    "handlebars":   "MISO",
+    "display_di":   "SCK",
+    "display_dcki": "RX"}
 
 # INITIALIZE REMBREAK BOARD
-rb_brd = RemBrakeBoard(brd_layout)
-rb = BrakeController(rb_brd)
-rb.start()
+core = BrakeCore(layout)
+core.start()
