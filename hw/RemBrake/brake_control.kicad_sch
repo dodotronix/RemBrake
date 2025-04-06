@@ -611,157 +611,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2483,6 +2332,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VDD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VDD"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDD\""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VDD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(bus_alias "DISPLAY"
 		(members "DISP_DI" "DISP_DCKI")
@@ -2555,7 +2530,7 @@
 		(uuid "fc58bbe9-c1ad-4416-a03e-c929988b7ef7")
 	)
 	(junction
-		(at 252.73 27.94)
+		(at 248.92 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c9b08f1-8e76-4e13-bc83-7653f2abf46f")
@@ -2705,12 +2680,6 @@
 		(uuid "c609c060-588b-4664-b91b-3955f081296f")
 	)
 	(junction
-		(at 245.11 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c76c3d22-8022-4edb-bdd2-df7c07e77e1a")
-	)
-	(junction
 		(at 86.36 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2835,16 +2804,6 @@
 			(type default)
 		)
 		(uuid "01d0e917-6420-4c08-b2d4-8916dde91a6e")
-	)
-	(wire
-		(pts
-			(xy 218.44 27.94) (xy 245.11 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02b5a701-bb0a-4e59-8e0b-454006d7b893")
 	)
 	(wire
 		(pts
@@ -3238,7 +3197,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 27.94) (xy 257.81 27.94)
+			(xy 248.92 39.37) (xy 252.73 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3368,16 +3327,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 29.21) (xy 86.36 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c05d37d-baf7-4188-b1f0-da2a8996f1c5")
-	)
-	(wire
-		(pts
 			(xy 115.57 71.12) (xy 115.57 90.17)
 		)
 		(stroke
@@ -3395,16 +3344,6 @@
 			(type default)
 		)
 		(uuid "5f129d78-7d6b-4ec1-aceb-590572e8c9e1")
-	)
-	(wire
-		(pts
-			(xy 240.03 34.29) (xy 245.11 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "612d913f-0630-4cb4-aa9d-80b0b07f36b7")
 	)
 	(wire
 		(pts
@@ -4218,7 +4157,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 27.94) (xy 252.73 27.94)
+			(xy 240.03 39.37) (xy 248.92 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4275,26 +4214,6 @@
 			(type default)
 		)
 		(uuid "e104b8db-c862-4cec-90a9-853f2f1ff822")
-	)
-	(wire
-		(pts
-			(xy 223.52 34.29) (xy 232.41 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1fc451e-64ba-4c7e-9e55-87070a50e487")
-	)
-	(wire
-		(pts
-			(xy 245.11 34.29) (xy 245.11 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e27d9394-3853-4b94-882e-ca4804860d93")
 	)
 	(wire
 		(pts
@@ -4428,7 +4347,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 24.13) (xy 252.73 27.94)
+			(xy 248.92 35.56) (xy 248.92 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4477,7 +4396,7 @@
 		(uuid "0e4c8bd2-7fb2-4847-9abd-95ae43ee1a4e")
 	)
 	(label "VBUS"
-		(at 218.44 27.94 0)
+		(at 240.03 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4545,16 +4464,6 @@
 			(justify right bottom)
 		)
 		(uuid "4e893071-8915-4a14-8108-dcb81c99dca7")
-	)
-	(label "VBUS"
-		(at 86.36 29.21 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "525c1594-f279-461c-819c-86fc2c8d860d")
 	)
 	(label "STATUS"
 		(at 240.03 46.99 0)
@@ -4832,7 +4741,7 @@
 	)
 	(hierarchical_label "VBUS"
 		(shape output)
-		(at 257.81 27.94 0)
+		(at 252.73 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5188,7 +5097,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07534d17-e9fb-4e59-a108-7d2adcecf40e")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR056"
 			(at 190.5 124.46 0)
 			(hide yes)
 			(effects
@@ -5238,7 +5147,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR053")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -5254,7 +5163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "082090b4-7402-44bc-980f-0455c0c4f255")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR043"
 			(at 83.82 130.81 0)
 			(hide yes)
 			(effects
@@ -5304,7 +5213,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR040")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -5607,7 +5516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18c2f929-c828-4f28-a87a-6a068d888536")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR047"
 			(at 148.59 180.34 0)
 			(hide yes)
 			(effects
@@ -5657,7 +5566,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR044")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -5807,7 +5716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28cf5d0f-3a6e-49d7-9619-fd59c5e2e3ae")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR046"
 			(at 115.57 111.76 0)
 			(hide yes)
 			(effects
@@ -5857,7 +5766,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR043")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5941,7 +5850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fd93e3d-6356-4bca-a8c1-6069186c61aa")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR052"
 			(at 165.1 26.67 0)
 			(hide yes)
 			(effects
@@ -5991,7 +5900,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR049")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -6353,7 +6262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bff0911-cf61-4975-b067-8bee42154d63")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR038"
 			(at 44.45 60.96 0)
 			(hide yes)
 			(effects
@@ -6403,7 +6312,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR036")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -6638,7 +6547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41c03f66-d9c3-47a4-929b-867fb3bfd284")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR055"
 			(at 182.88 161.29 0)
 			(hide yes)
 			(effects
@@ -6688,7 +6597,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR052")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -6704,7 +6613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f1dbeb7-8102-4398-a0ff-122da96df12b")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR050"
 			(at 157.48 161.29 0)
 			(hide yes)
 			(effects
@@ -6754,7 +6663,73 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR047")
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 59.69 29.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b00f4d9-42c6-4f50-a08f-3f1c765515e0")
+		(property "Reference" "#PWR039"
+			(at 59.69 33.02 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 59.69 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 29.21 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 29.21 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 59.69 29.21 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91d45a19-d943-41f2-962a-fbcf622e5dfa")
+		)
+		(instances
+			(project ""
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6770,7 +6745,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63183088-2c52-4bae-bf12-ec62dd09a212")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR035"
 			(at 27.94 143.51 0)
 			(hide yes)
 			(effects
@@ -6820,7 +6795,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -7057,7 +7032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72a9e29f-3966-4322-a5bf-5946abdaa8e8")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 41.91 187.96 0)
 			(hide yes)
 			(effects
@@ -7107,7 +7082,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7123,7 +7098,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "837caee2-7609-4a48-af4d-c27f109b60ef")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR059"
 			(at 245.11 151.13 0)
 			(hide yes)
 			(effects
@@ -7173,7 +7148,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR057")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -7189,7 +7164,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8789df2b-41ac-4315-8be2-36144a53ae50")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR044"
 			(at 86.36 67.31 0)
 			(hide yes)
 			(effects
@@ -7239,7 +7214,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR041")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -7307,83 +7282,6 @@
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
 					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 236.22 34.29 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a5cdce0-1520-494c-8e8f-9c43d37cbc27")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 236.22 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Reference" "D4"
-			(at 236.22 37.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MBR0520"
-			(at 236.5375 38.1 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 236.22 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 236.22 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4980f1d5-086c-4313-85d7-e92a01279159")
-		)
-		(pin "2"
-			(uuid "6629af8b-174d-4ded-8418-35963735da06")
-		)
-		(instances
-			(project "RemBrake"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -7764,7 +7662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9774a336-4154-48c2-b93e-700105bf9189")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR057"
 			(at 222.25 74.93 0)
 			(hide yes)
 			(effects
@@ -7814,7 +7712,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR054")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7982,7 +7880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aadb6205-5fa1-47f8-9dab-cd82ab9a069c")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR053"
 			(at 177.8 111.76 0)
 			(hide yes)
 			(effects
@@ -8032,7 +7930,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR050")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -8115,7 +8013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0a1eaa8-dc87-4976-b087-7fd1a9d6f040")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR051"
 			(at 160.02 53.34 0)
 			(hide yes)
 			(effects
@@ -8165,7 +8063,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR048")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8316,7 +8214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4fe4cd1-d584-49e6-881f-912160a185d2")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR054"
 			(at 177.8 161.29 0)
 			(hide yes)
 			(effects
@@ -8366,7 +8264,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR051")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -8374,7 +8272,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 252.73 24.13 0)
+		(at 248.92 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8383,7 +8281,7 @@
 		(fields_autoplaced yes)
 		(uuid "bcd3a9ad-83fb-4102-977d-8553f7155517")
 		(property "Reference" "#FLG05"
-			(at 252.73 22.225 0)
+			(at 248.92 33.655 0)
 			(hide yes)
 			(effects
 				(font
@@ -8392,7 +8290,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 255.27 22.8599 0)
+			(at 251.46 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8401,7 +8299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 24.13 0)
+			(at 248.92 35.56 0)
 			(hide yes)
 			(effects
 				(font
@@ -8410,7 +8308,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 24.13 0)
+			(at 248.92 35.56 0)
 			(hide yes)
 			(effects
 				(font
@@ -8419,7 +8317,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 252.73 24.13 0)
+			(at 248.92 35.56 0)
 			(hide yes)
 			(effects
 				(font
@@ -8449,7 +8347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be8fe6dc-5bb9-491b-bc5c-d2d34d822a79")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR042"
 			(at 71.12 187.96 0)
 			(hide yes)
 			(effects
@@ -8499,7 +8397,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR039")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8515,7 +8413,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf83841f-7686-4c1c-b62a-40887417e732")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR045"
 			(at 101.6 177.8 0)
 			(hide yes)
 			(effects
@@ -8565,7 +8463,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR042")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -8648,7 +8546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c14094fc-3e24-465c-b55e-4267c299f6f4")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR040"
 			(at 66.04 130.81 0)
 			(hide yes)
 			(effects
@@ -8698,7 +8596,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR037")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8849,7 +8747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2738af4-11d0-4ccd-a66c-3589994c1824")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR049"
 			(at 153.67 111.76 0)
 			(hide yes)
 			(effects
@@ -8899,74 +8797,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 223.52 34.29 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c5a26c84-8ebb-40c6-827d-93b009d97c8e")
-		(property "Reference" "#PWR055"
-			(at 227.33 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 219.71 34.2899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 223.52 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 223.52 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 223.52 34.29 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8601e049-bf79-4b20-84a0-c1ae912c8662")
-		)
-		(instances
-			(project "RemBrake"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR055")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -9049,7 +8880,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4007eae-5e38-4ed6-b502-3bce57dc5e98")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR048"
 			(at 148.59 193.04 0)
 			(hide yes)
 			(effects
@@ -9099,7 +8930,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR045")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -9183,7 +9014,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d76edabd-8047-4204-b1f2-534ea79d68a8")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 27.94 187.96 0)
 			(hide yes)
 			(effects
@@ -9233,7 +9064,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -9451,7 +9282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e406aaa6-58a9-4069-a527-da06239fce20")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR058"
 			(at 242.57 137.16 0)
 			(hide yes)
 			(effects
@@ -9501,7 +9332,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR056")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -9651,7 +9482,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edb01acb-7585-4f45-9c13-ccae887e3aa5")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR041"
 			(at 71.12 152.4 0)
 			(hide yes)
 			(effects
@@ -9701,7 +9532,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR038")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)

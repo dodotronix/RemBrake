@@ -158,7 +158,7 @@
 	(net 14 "Net-(Q4-E)")
 	(net 15 "/brake_control/BUZZ")
 	(net 16 "Net-(Q1-G)")
-	(net 17 "Net-(D2-A)")
+	(net 17 "Net-(D2-K)")
 	(net 18 "/power_switch/BOOST")
 	(net 19 "Net-(J2-Pin_1)")
 	(net 20 "Net-(J1-Pin_2)")
@@ -217,6 +217,7 @@
 	(net 73 "Net-(U7-EN)")
 	(net 74 "unconnected-(U6-N.C.-Pad4)")
 	(net 75 "unconnected-(U8-NC-Pad4)")
+	(net 76 "VDD")
 	(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm"
 		(layer "F.Cu")
 		(uuid "0046454c-5d18-4c72-91ed-5a601af183da")
@@ -279,7 +280,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr exclude_from_pos_files)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -446,7 +447,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end -0.65 1.56)
@@ -717,7 +718,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -952,7 +953,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -1165,7 +1166,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -1376,7 +1377,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -1672,7 +1673,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 -1.56)
 			(end -0.65 -1.56)
@@ -1942,7 +1943,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -2155,7 +2156,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -2379,7 +2380,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.9 1.61)
 			(end 0.9 1.61)
@@ -2835,7 +2836,7 @@
 		(at 137.993 100.884)
 		(descr "SOD-123")
 		(tags "SOD-123")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at -1.61 -1.905 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -2904,7 +2905,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.36 -1)
 			(end -2.36 1)
@@ -3101,7 +3102,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 2 "+5V")
+			(net 76 "VDD")
 			(pinfunction "K")
 			(pintype "passive")
 			(tenting
@@ -3115,7 +3116,7 @@
 			(size 0.9 1.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pinfunction "A")
 			(pintype "passive")
 			(tenting
@@ -3412,7 +3413,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.635 -1.635)
 			(end 1.635 -1.45)
@@ -3743,7 +3744,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -3860,7 +3861,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 18 "/power_switch/BOOST")
+			(net 17 "Net-(D2-K)")
 			(pintype "passive")
 			(tenting
 				(front none)
@@ -3954,7 +3955,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -4253,7 +4254,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -4465,7 +4466,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -4678,7 +4679,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr exclude_from_pos_files)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -4836,7 +4837,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -5047,7 +5048,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 -1.56)
 			(end 0.65 -1.56)
@@ -5319,7 +5320,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.18 -3.16)
 			(end 9.18 3.16)
@@ -5707,6 +5708,312 @@
 			)
 		)
 	)
+	(footprint "Diode_SMD:D_SOD-123"
+		(layer "F.Cu")
+		(uuid "39685369-561f-43d9-8dbd-e339b66cf4d3")
+		(at 107.6556 77.1406)
+		(descr "SOD-123")
+		(tags "SOD-123")
+		(property "Reference" "D1"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "4810a34f-41ca-4b22-b8e7-e8ab4833204d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 0 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86754ac4-8d91-4d54-83f6-194b2f443adc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4f47aeb-7925-423c-a094-e2e6b5b91c95")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b72a844-9011-4aa2-a722-f67cc24aaca3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5cc9644e-01f8-44ee-85e1-3d8187a452d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/bab0286a-4071-4328-b3b4-8c195ef9afeb")
+		(sheetname "/power_switch/")
+		(sheetfile "power_switch.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.36 -1)
+			(end -2.36 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "befdad65-0801-4f79-9f09-63edf0277218")
+		)
+		(fp_line
+			(start -2.36 -1)
+			(end 1.65 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "76d7ac20-f6ac-40e4-8725-c7079d0bd497")
+		)
+		(fp_line
+			(start -2.36 1)
+			(end 1.65 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96a10512-6f23-4493-8190-5414dcab8c3d")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5d7e8246-79e8-4c32-b5e5-f817114f6206")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end 2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c0b768f2-ed04-4d7a-bb59-161507b13a29")
+		)
+		(fp_line
+			(start 2.35 -1.15)
+			(end 2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "03e07136-0aab-4006-8bc6-c2d7c7a6213a")
+		)
+		(fp_line
+			(start 2.35 1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8d8b3ff6-aafa-46f7-ab8d-14f910d16b7b")
+		)
+		(fp_line
+			(start -1.4 -0.9)
+			(end 1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8aaf6562-498a-4592-be63-3aeb8a065839")
+		)
+		(fp_line
+			(start -1.4 0.9)
+			(end -1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7cc6b486-bcc4-41ba-9186-bdbabe1d5ea8")
+		)
+		(fp_line
+			(start -0.75 0)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fbe75cc2-b0b9-4d5c-b540-de17f3919041")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 -0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7bb8d2e3-6a96-4715-b2e1-11bfa5f1c1a6")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0900b11d-4fc9-4ca9-a794-97b1fcbba5bc")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end 0.25 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0d4ca2db-dd16-4946-9426-1ad8698bddfb")
+		)
+		(fp_line
+			(start 0.25 -0.4)
+			(end 0.25 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9cff44bd-2be3-47ed-8c53-68b7c47b82d7")
+		)
+		(fp_line
+			(start 0.25 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "39f40289-3e6d-4008-8956-9238383e28cf")
+		)
+		(fp_line
+			(start 0.25 0.4)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "55576d71-4ab3-4b4c-b0bc-bb8fc5ae89a8")
+		)
+		(fp_line
+			(start 1.4 -0.9)
+			(end 1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1e881321-63a8-4c94-9ce4-edb24d68b075")
+		)
+		(fp_line
+			(start 1.4 0.9)
+			(end -1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "93d83ea1-0e2c-4a56-baed-7a3d7712ec8f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "41be6e45-427c-4320-b0a4-ff53aca819c6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "/power_switch/BOOST")
+			(pinfunction "K")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "3e6c0d7a-a373-4fbb-a892-b7b800ccae1b")
+		)
+		(pad "2" smd roundrect
+			(at 1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 11 "/power_switch/ON{slash}OFF")
+			(pinfunction "A")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "45f87204-9cee-4b6a-abb2-39a886899b6a")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "398e19a3-f710-43a9-a6aa-a8f71d1e7f79")
@@ -5769,7 +6076,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -5981,7 +6288,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -6427,7 +6734,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -6739,7 +7046,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.602064 -0.91)
 			(end 0.602064 -0.91)
@@ -6952,7 +7259,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -7069,7 +7376,7 @@
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pintype "passive")
 			(tenting
 				(front none)
@@ -7165,7 +7472,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 10.11 -1.91)
 			(end 7.76 -1.91)
@@ -7371,7 +7678,7 @@
 			(size 1 2.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 2 "+5V")
+			(net 76 "VDD")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(tenting
@@ -7581,7 +7888,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -7794,7 +8101,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -8005,7 +8312,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 -1.56)
 			(end 0.65 -1.56)
@@ -8217,10 +8524,10 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "56f21231-ffbf-4190-8036-ab6a44db596a")
-		(at 112.761 125.649 -90)
+		(at 103.1344 108.3731 -90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C7"
+		(property "Reference" "C9"
 			(at 0 -1.68 270)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -8275,7 +8582,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -8429,11 +8736,11 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "59b0b6f2-1bd0-46ba-9b39-7a9716f2fbd2")
-		(at 107.046 125.776 180)
+		(at 100.569 108.1484 90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R63"
-			(at -2.778 -0.762 90)
+			(at -2.778 -0.762 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ee1f4b50-acb3-45bf-b0c9-fa200b03d0f0")
@@ -8445,7 +8752,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.65 0)
+			(at 0 1.65 270)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8458,7 +8765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 180)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8471,7 +8778,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 180)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8488,17 +8795,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
-		(fp_line
-			(start -0.227064 0.735)
-			(end 0.227064 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "44b37703-4938-4f18-b81d-7a596f27e833")
-		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -8510,14 +8807,14 @@
 			(uuid "a23c8c60-01a5-4720-9f8d-96f9d2b48ed3")
 		)
 		(fp_line
-			(start 1.85 0.95)
-			(end -1.85 0.95)
+			(start -0.227064 0.735)
+			(end 0.227064 0.735)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "d543cc39-1b5c-42ce-8614-8f908cc4b3bf")
+			(layer "F.SilkS")
+			(uuid "44b37703-4938-4f18-b81d-7a596f27e833")
 		)
 		(fp_line
 			(start 1.85 -0.95)
@@ -8530,16 +8827,6 @@
 			(uuid "fe4dbab8-e36f-4c9a-8a93-82bb999cb81e")
 		)
 		(fp_line
-			(start -1.85 0.95)
-			(end -1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8d77b428-d636-4262-a9ee-fede56c17c12")
-		)
-		(fp_line
 			(start -1.85 -0.95)
 			(end 1.85 -0.95)
 			(stroke
@@ -8550,14 +8837,24 @@
 			(uuid "eda9172a-b4cd-4419-a8b1-4ab410319a98")
 		)
 		(fp_line
-			(start 1 0.625)
-			(end -1 0.625)
+			(start 1.85 0.95)
+			(end -1.85 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "830f2de8-bc8c-4f70-bc96-b7f0276a37c8")
+			(layer "F.CrtYd")
+			(uuid "d543cc39-1b5c-42ce-8614-8f908cc4b3bf")
+		)
+		(fp_line
+			(start -1.85 0.95)
+			(end -1.85 -0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8d77b428-d636-4262-a9ee-fede56c17c12")
 		)
 		(fp_line
 			(start 1 -0.625)
@@ -8570,16 +8867,6 @@
 			(uuid "f9de3c13-6cfe-40e4-b0af-6b1cda4ffaa2")
 		)
 		(fp_line
-			(start -1 0.625)
-			(end -1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "77250250-9ded-4b70-b416-e761d61e58e7")
-		)
-		(fp_line
 			(start -1 -0.625)
 			(end 1 -0.625)
 			(stroke
@@ -8589,8 +8876,28 @@
 			(layer "F.Fab")
 			(uuid "beb308b0-cee9-47e8-9045-669792528724")
 		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "830f2de8-bc8c-4f70-bc96-b7f0276a37c8")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77250250-9ded-4b70-b416-e761d61e58e7")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "06c6762c-f000-42bb-ad0d-6028264e1753")
 			(effects
@@ -8601,7 +8908,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1 0 180)
+			(at -1 0 90)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
@@ -8614,7 +8921,7 @@
 			(uuid "84c7721c-ef60-4167-bff6-69740cb2e04a")
 		)
 		(pad "2" smd roundrect
-			(at 1 0 180)
+			(at 1 0 90)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
@@ -8645,7 +8952,7 @@
 		(at 136.2345 125.014 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C10"
+		(property "Reference" "C7"
 			(at 3.048 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -8701,7 +9008,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -8858,7 +9165,7 @@
 		(at 135.24 64.308 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R24"
+		(property "Reference" "R22"
 			(at 0.762 1.397 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -8914,7 +9221,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -9128,7 +9435,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 7.56 -5.261)
 			(end 7.56 4.66)
@@ -9612,7 +9919,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -9848,7 +10155,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr exclude_from_pos_files)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -10007,7 +10314,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.54 -8.38)
 			(end -1.33 -8.38)
@@ -10549,7 +10856,7 @@
 		(at 136.2345 127.3 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C11"
+		(property "Reference" "C8"
 			(at 3.048 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -10605,7 +10912,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -10759,11 +11066,11 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "8078e637-7cad-467a-9447-cbea1beaf366")
-		(at 117.587 137.841 -90)
+		(at 106.2586 112.9236 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C9"
-			(at 0 -1.68 270)
+		(property "Reference" "C12"
+			(at 0 -1.68 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "b462c3ae-6c8e-40a4-b0db-f9104dd0f77b")
@@ -10787,7 +11094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 270)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10800,7 +11107,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 270)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -10817,17 +11124,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
-		(fp_line
-			(start -0.261252 0.735)
-			(end 0.261252 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8b2ce500-3cb9-4f2a-aa4b-cecc7a6b9c1a")
-		)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -10839,34 +11136,14 @@
 			(uuid "8566ab53-de08-4d05-8264-607a408fe0ed")
 		)
 		(fp_line
-			(start -1.88 0.98)
-			(end -1.88 -0.98)
+			(start -0.261252 0.735)
+			(end 0.261252 0.735)
 			(stroke
-				(width 0.05)
+				(width 0.12)
 				(type solid)
 			)
-			(layer "F.CrtYd")
-			(uuid "e32062ac-68d6-4b5e-9b8b-86f513266641")
-		)
-		(fp_line
-			(start 1.88 0.98)
-			(end -1.88 0.98)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "c44f981d-1183-439f-b770-54360898f851")
-		)
-		(fp_line
-			(start -1.88 -0.98)
-			(end 1.88 -0.98)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8ce5633f-d20c-4fde-8efe-2d9dea419b54")
+			(layer "F.SilkS")
+			(uuid "8b2ce500-3cb9-4f2a-aa4b-cecc7a6b9c1a")
 		)
 		(fp_line
 			(start 1.88 -0.98)
@@ -10879,24 +11156,44 @@
 			(uuid "fd6edd2a-8ffd-42b5-b59f-a7d7aee28abf")
 		)
 		(fp_line
-			(start -1 0.625)
-			(end -1 -0.625)
+			(start -1.88 -0.98)
+			(end 1.88 -0.98)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "43f0d841-9206-4c73-af2a-7366c1fdab2a")
+			(layer "F.CrtYd")
+			(uuid "8ce5633f-d20c-4fde-8efe-2d9dea419b54")
 		)
 		(fp_line
-			(start 1 0.625)
-			(end -1 0.625)
+			(start 1.88 0.98)
+			(end -1.88 0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c44f981d-1183-439f-b770-54360898f851")
+		)
+		(fp_line
+			(start -1.88 0.98)
+			(end -1.88 -0.98)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e32062ac-68d6-4b5e-9b8b-86f513266641")
+		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f6435a05-ff11-45f3-8455-2d064e2b3655")
+			(uuid "954d69a9-1e86-4b24-9487-a3e84045436f")
 		)
 		(fp_line
 			(start -1 -0.625)
@@ -10909,14 +11206,24 @@
 			(uuid "a28e45dd-2803-4a1b-9ec5-c1b658fd8605")
 		)
 		(fp_line
-			(start 1 -0.625)
-			(end 1 0.625)
+			(start 1 0.625)
+			(end -1 0.625)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "954d69a9-1e86-4b24-9487-a3e84045436f")
+			(uuid "f6435a05-ff11-45f3-8455-2d064e2b3655")
+		)
+		(fp_line
+			(start -1 0.625)
+			(end -1 -0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "43f0d841-9206-4c73-af2a-7366c1fdab2a")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 90)
@@ -10930,7 +11237,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1.0375 0 270)
+			(at -1.0375 0 90)
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
@@ -10943,7 +11250,7 @@
 			(uuid "59554d29-8b8f-40b4-b789-b10197be5cc1")
 		)
 		(pad "2" smd roundrect
-			(at 1.0375 0 270)
+			(at 1.0375 0 90)
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
@@ -10971,10 +11278,10 @@
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "874eab71-0e7f-47cc-8901-b23bb70685d8")
-		(at 115.555 138.095 90)
+		(at 103.0836 112.8943 90)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C8"
+		(property "Reference" "C11"
 			(at 0 -1.68 90)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -11029,7 +11336,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -11242,7 +11549,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -11359,7 +11666,7 @@
 			(size 1.175 1.45)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.212766)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pintype "passive")
 			(tenting
 				(front none)
@@ -11399,7 +11706,7 @@
 		(at 124.699 93.28 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at -0.016 1.524 90)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -11455,7 +11762,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -11681,7 +11988,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.602064 0.91)
 			(end 0.602064 0.91)
@@ -11894,7 +12201,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -12432,7 +12739,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pinfunction "FSW")
 			(pintype "input")
 			(tenting
@@ -12474,7 +12781,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "/power_switch/BOOST")
+			(net 17 "Net-(D2-K)")
 			(pinfunction "VIN")
 			(pintype "power_in")
 			(tenting
@@ -12488,7 +12795,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "/power_switch/BOOST")
+			(net 17 "Net-(D2-K)")
 			(pinfunction "VIN")
 			(pintype "passive")
 			(tenting
@@ -12502,7 +12809,7 @@
 			(size 0.825 0.25)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "/power_switch/BOOST")
+			(net 17 "Net-(D2-K)")
 			(pinfunction "VIN")
 			(pintype "passive")
 			(tenting
@@ -12516,7 +12823,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "/power_switch/BOOST")
+			(net 11 "/power_switch/ON{slash}OFF")
 			(pinfunction "EN")
 			(pintype "input")
 			(tenting
@@ -12530,7 +12837,7 @@
 			(size 0.25 0.825)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pinfunction "VOS")
 			(pintype "input")
 			(tenting
@@ -13106,7 +13413,7 @@
 		(at 136.2345 129.459 180)
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
-		(property "Reference" "C12"
+		(property "Reference" "C10"
 			(at 3.302 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -13162,7 +13469,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -14230,7 +14537,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -14441,7 +14748,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -14740,7 +15047,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -14953,7 +15260,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -15166,7 +15473,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -15379,7 +15686,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -15827,7 +16134,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 5.56 -1.81)
 			(end 3.41 -1.81)
@@ -16074,7 +16381,7 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c85af732-c0ea-40e7-a9bb-9a072927bf08")
-		(at 116.698 130.602 -90)
+		(at 106.2078 108.3262 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R27"
@@ -16133,7 +16440,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -16346,7 +16653,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.177064 1.71)
 			(end 2.177064 1.71)
@@ -16559,7 +16866,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.33 -3.87)
 			(end 1.33 -0.76)
@@ -16872,6 +17179,312 @@
 			)
 		)
 	)
+	(footprint "Diode_SMD:D_SOD-123"
+		(layer "F.Cu")
+		(uuid "cadbce52-72dc-4c1d-9dd4-51fdc8542159")
+		(at 107.6556 80.4906)
+		(descr "SOD-123")
+		(tags "SOD-123")
+		(property "Reference" "D4"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "9c1fc404-254f-48c1-8ca5-8ae9f8fc92dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 0 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6e8c45c2-e841-4029-bdba-d1d90b0fdbe5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1438343e-264f-4d5e-8331-3dac09c9355c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "37e41833-6bb3-43bb-b195-eb780d91b901")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "723df60a-5f73-401f-81aa-022720407f5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/27f0a268-55a7-4a2d-a101-2539c7501d4b")
+		(sheetname "/power_switch/")
+		(sheetfile "power_switch.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.36 -1)
+			(end -2.36 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6871bc92-7c8e-4eff-b41f-d16f57d21780")
+		)
+		(fp_line
+			(start -2.36 -1)
+			(end 1.65 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "05f2a82a-6366-46b0-9e55-a7711abdbf4a")
+		)
+		(fp_line
+			(start -2.36 1)
+			(end 1.65 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ae1586b0-cfa5-44e9-8bd2-aa3ae3909d1e")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9c17eb3c-f340-43e8-86d6-7f855f17040a")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end 2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2ce7b948-0463-4d15-af80-c691885a39a7")
+		)
+		(fp_line
+			(start 2.35 -1.15)
+			(end 2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "66799c18-e802-4463-a8dc-8d29dbfa09a4")
+		)
+		(fp_line
+			(start 2.35 1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "004b3ba0-bbdc-4564-8ff8-a9905ff741c8")
+		)
+		(fp_line
+			(start -1.4 -0.9)
+			(end 1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e0bfd759-9d23-47b9-b5bb-004da8486900")
+		)
+		(fp_line
+			(start -1.4 0.9)
+			(end -1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "49b0e72a-0a90-41fa-ac6d-faa049253b5f")
+		)
+		(fp_line
+			(start -0.75 0)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a5fbca4e-a219-46ba-a378-f56ad08eb1f8")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 -0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b0d92b3a-1797-4655-87e2-90f71a8e692b")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4d90ae91-b89a-43c4-9231-c061128983b6")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end 0.25 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "528172f9-2e8c-47c2-8721-435ccb90eb48")
+		)
+		(fp_line
+			(start 0.25 -0.4)
+			(end 0.25 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "df7ede89-4dd3-4a2f-b0ad-2a3504cefd16")
+		)
+		(fp_line
+			(start 0.25 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ef4d2c06-12ad-4bc2-b499-fff95d7552d2")
+		)
+		(fp_line
+			(start 0.25 0.4)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b099c53c-4c52-4764-b65f-c295a02c9414")
+		)
+		(fp_line
+			(start 1.4 -0.9)
+			(end 1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ffcad992-766e-4fb4-a759-7f51a488efb5")
+		)
+		(fp_line
+			(start 1.4 0.9)
+			(end -1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e309af3f-1b39-45c3-b69b-b08dac110a6b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "ca2b15e6-ee8b-4c7e-88cd-22ae1a62ce40")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 18 "/power_switch/BOOST")
+			(pinfunction "K")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "a71a6b1e-45e5-43df-9192-9fbcfe231bf2")
+		)
+		(pad "2" smd roundrect
+			(at 1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 9 "/brake_control/VBUS")
+			(pinfunction "A")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "57b14913-0955-44bd-8b5b-9362729a53d3")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "cd800a6e-4a05-4a51-9079-12bf8c3e5ce3")
@@ -16933,7 +17546,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -17144,7 +17757,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end 0.8 1.56)
@@ -17375,6 +17988,312 @@
 			)
 		)
 	)
+	(footprint "Diode_SMD:D_SOD-123"
+		(layer "F.Cu")
+		(uuid "d5e530a9-f2b4-477f-876f-6887b5abf8d8")
+		(at 107.6556 83.8406)
+		(descr "SOD-123")
+		(tags "SOD-123")
+		(property "Reference" "D5"
+			(at 0 -2 0)
+			(layer "F.SilkS")
+			(uuid "cb1c18b4-c86c-4168-b512-0226994dba57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 0 2.1 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a780ee69-b2f5-4e20-9c04-54b5ea821485")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "672b67fe-d406-4b16-8cc9-1fcdc3ef29dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "81c240bb-3eec-4366-9f0e-74cece7c47c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "825ff3a5-982c-4c96-92b5-b40cc2958ed6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/ef03b650-6a8e-48cb-9691-d96645b5280a")
+		(sheetname "/power_switch/")
+		(sheetfile "power_switch.kicad_sch")
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.36 -1)
+			(end -2.36 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f6690ba4-5eb8-452b-acf3-482eede2b036")
+		)
+		(fp_line
+			(start -2.36 -1)
+			(end 1.65 -1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "16b7f49b-80d9-4911-adaf-a82427dd4b62")
+		)
+		(fp_line
+			(start -2.36 1)
+			(end 1.65 1)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "12f96841-72cd-41d2-b4db-d3f999014fd7")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "81fda221-0213-46f9-9031-d366d85114f7")
+		)
+		(fp_line
+			(start -2.35 -1.15)
+			(end 2.35 -1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "70225d61-55e7-42c3-a786-7f7364e17f86")
+		)
+		(fp_line
+			(start 2.35 -1.15)
+			(end 2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3bdb007b-9f9c-412f-9a7b-5dd8985bc7b1")
+		)
+		(fp_line
+			(start 2.35 1.15)
+			(end -2.35 1.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ee4d92db-5035-49ee-925f-deb08efa8883")
+		)
+		(fp_line
+			(start -1.4 -0.9)
+			(end 1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ace12c76-89bc-4874-8a23-41a164cddaa9")
+		)
+		(fp_line
+			(start -1.4 0.9)
+			(end -1.4 -0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77e04e7e-f5b2-4544-a8ac-a2549b137071")
+		)
+		(fp_line
+			(start -0.75 0)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "56efd9d5-05c3-413f-a63f-4e49dbdd0a15")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 -0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a33056df-4bb6-4be5-8238-cbb56578687b")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end -0.35 0.55)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ac2ce681-5b4e-4ea5-a148-e1560aa1f6b4")
+		)
+		(fp_line
+			(start -0.35 0)
+			(end 0.25 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a0ee83ae-ae5b-41f4-9f09-86af2403db7a")
+		)
+		(fp_line
+			(start 0.25 -0.4)
+			(end 0.25 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "743c786e-6b13-44a1-bca2-5245886e8935")
+		)
+		(fp_line
+			(start 0.25 0)
+			(end 0.75 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "33c32d06-05e1-4922-886d-4977056ce29c")
+		)
+		(fp_line
+			(start 0.25 0.4)
+			(end -0.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2fc215c4-c682-4d4f-965d-94aee323ac5a")
+		)
+		(fp_line
+			(start 1.4 -0.9)
+			(end 1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0c34d887-0c1a-426b-83bb-3da663b02268")
+		)
+		(fp_line
+			(start 1.4 0.9)
+			(end -1.4 0.9)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "20996a22-c08f-4c0c-8902-108f75378437")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2 0)
+			(layer "F.Fab")
+			(uuid "9746c434-0147-41b9-9536-413b78b760cb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 76 "VDD")
+			(pinfunction "K")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "0cd767cf-7aef-4068-bab7-0b8eaeb78fda")
+		)
+		(pad "2" smd roundrect
+			(at 1.65 0)
+			(size 0.9 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net 9 "/brake_control/VBUS")
+			(pinfunction "A")
+			(pintype "passive")
+			(tenting
+				(front none)
+				(back none)
+			)
+			(uuid "a5c71986-dd91-4c40-b4c8-2c8204c3ea2f")
+		)
+		(embedded_fonts no)
+		(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "d738cb9d-4209-47f3-a1f8-fdef368eb641")
@@ -17437,7 +18356,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -17594,7 +18513,7 @@
 		(at 131.176 64.308 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R22"
+		(property "Reference" "R20"
 			(at 0.762 1.397 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -17650,7 +18569,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -17863,7 +18782,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -18076,7 +18995,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.16 -1.33)
 			(end 1.16 8.95)
@@ -18434,7 +19353,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr through_hole)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -18670,7 +19589,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -18883,7 +19802,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -19097,7 +20016,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.54 -8.38)
 			(end -1.33 -8.38)
@@ -19708,7 +20627,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 1.11)
 			(end 0.261252 1.11)
@@ -19839,7 +20758,7 @@
 			(size 1.425 2.2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.175439)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pinfunction "2")
 			(pintype "passive")
 			(tenting
@@ -19923,7 +20842,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20136,7 +21055,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20353,7 +21272,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20571,7 +21490,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20947,7 +21866,7 @@
 		(at 150.48 103.043 90)
 		(descr "SOD-123")
 		(tags "SOD-123")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at -3.175 -0.127 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -21021,7 +21940,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -2.36 -1)
 			(end 1.65 -1)
@@ -21219,7 +22138,7 @@
 			(size 0.9 1.2)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net 18 "/power_switch/BOOST")
+			(net 17 "Net-(D2-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(tenting
@@ -21321,7 +22240,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -21539,7 +22458,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -22031,7 +22950,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -22249,7 +23168,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -22467,7 +23386,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -22686,7 +23605,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -22904,7 +23823,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -23121,7 +24040,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -23339,7 +24258,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -5.11 1.91)
 			(end -2.76 1.91)
@@ -23712,7 +24631,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -23930,7 +24849,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24148,7 +25067,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24584,7 +25503,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24802,7 +25721,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -25020,7 +25939,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -25238,7 +26157,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -25730,7 +26649,7 @@
 		(at 127.096 92.756 180)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 3.032 -0.127 0)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -25790,7 +26709,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -26008,7 +26927,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -26226,7 +27145,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -26384,7 +27303,7 @@
 		(at 129.271 83.612 -90)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 0 1.524 270)
 			(unlocked yes)
 			(layer "B.SilkS")
@@ -26880,7 +27799,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr exclude_from_pos_files)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0.95 0.95)
 			(end 0.95 -0.95)
@@ -27054,7 +27973,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -27708,7 +28627,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -28144,7 +29063,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -6.11 1.91)
 			(end -3.76 1.91)
@@ -28531,7 +29450,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -28749,7 +29668,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -28967,7 +29886,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -29185,7 +30104,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -29403,7 +30322,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -29619,7 +30538,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 10.9 -6.4)
 			(end 14.4 -6.4)
@@ -29785,7 +30704,7 @@
 			(size 1.7 3)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1470588235)
-			(net 2 "+5V")
+			(net 76 "VDD")
 			(pinfunction "V+")
 			(pintype "passive")
 			(tenting
@@ -29901,7 +30820,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -30019,7 +30938,7 @@
 			(size 1.2 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.208333)
-			(net 17 "Net-(D2-A)")
+			(net 2 "+5V")
 			(pintype "passive")
 			(tenting
 				(front none)
@@ -30119,7 +31038,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
-		(duplicate_pad_numbers_are_jumpers yes)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -31695,6 +32614,14 @@
 		(uuid "3a1d1a48-5a9a-476e-b744-0b8b8ff53f0f")
 	)
 	(segment
+		(start 145.65 103.6125)
+		(end 145.65 102.539)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "45b64954-c84d-46bf-9d17-d7f49e115dfb")
+	)
+	(segment
 		(start 130.16 132.814)
 		(end 130.16 133.65)
 		(width 1)
@@ -31711,6 +32638,14 @@
 		(uuid "6e174690-ae84-4212-8f72-fdacaee6ba5f")
 	)
 	(segment
+		(start 145.65 107.484)
+		(end 145.654 107.488)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "7ab4d26e-059e-48e7-ac8b-9ed217b8cd8c")
+	)
+	(segment
 		(start 148.829 133.142)
 		(end 148.067 133.142)
 		(width 1)
@@ -31719,12 +32654,72 @@
 		(uuid "90bee3a5-db03-419f-a82e-a5e3bdc16490")
 	)
 	(segment
+		(start 145.65 102.539)
+		(end 145.654 102.535)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "b6bfdcdb-a0d1-4cca-93df-9ace8eaab9ae")
+	)
+	(segment
+		(start 145.65 106.5375)
+		(end 145.65 107.484)
+		(width 0.25)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "b7a24100-d9bd-4210-9422-f8cd6fb4f156")
+	)
+	(segment
 		(start 130.16 133.65)
 		(end 132.446 135.936)
 		(width 1)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "c31e929b-8b42-4ef1-8695-8b70c3fb0602")
+	)
+	(via
+		(at 145.654 107.488)
+		(size 0.7)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(tenting
+			(front none)
+			(back none)
+		)
+		(capping none)
+		(covering
+			(front none)
+			(back none)
+		)
+		(plugging
+			(front none)
+			(back none)
+		)
+		(filling none)
+		(net 2)
+		(uuid "24b37a7d-8dd1-4b94-9403-4f5d30f8928b")
+	)
+	(via
+		(at 140.447 102.535)
+		(size 0.7)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(tenting
+			(front none)
+			(back none)
+		)
+		(capping none)
+		(covering
+			(front none)
+			(back none)
+		)
+		(plugging
+			(front none)
+			(back none)
+		)
+		(filling none)
+		(net 2)
+		(uuid "2af8f913-19b5-4033-9761-3e7bf56b6b98")
 	)
 	(via
 		(at 130.16 132.814)
@@ -31748,6 +32743,28 @@
 		(net 2)
 		(uuid "9f6ddc02-9ecb-4a3e-ae5c-7235de53b3a1")
 	)
+	(via
+		(at 145.654 102.535)
+		(size 0.7)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(tenting
+			(front none)
+			(back none)
+		)
+		(capping none)
+		(covering
+			(front none)
+			(back none)
+		)
+		(plugging
+			(front none)
+			(back none)
+		)
+		(filling none)
+		(net 2)
+		(uuid "ce9cccf3-45b6-46f9-9055-6881d851f045")
+	)
 	(segment
 		(start 134.351 98.36)
 		(end 135.002 98.36)
@@ -31763,6 +32780,22 @@
 		(layer "B.Cu")
 		(net 2)
 		(uuid "08520dfc-0ceb-4fe0-8317-bb551aa0cc93")
+	)
+	(segment
+		(start 145.654 107.488)
+		(end 144.853 108.289)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "0f680e75-2403-4d9a-b7f1-bf0ad81c28a0")
+	)
+	(segment
+		(start 144.853 108.289)
+		(end 140.849768 108.289)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "2011a523-ccc3-42a8-aa05-1f235095eab3")
 	)
 	(segment
 		(start 124.699 113.4316)
@@ -31789,6 +32822,14 @@
 		(uuid "442015ba-8c7a-4362-89ec-96565ae82ad7")
 	)
 	(segment
+		(start 145.654 102.535)
+		(end 140.447 102.535)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "4836ad9d-53fd-41bc-91fa-cc5eea803396")
+	)
+	(segment
 		(start 135.002 98.36)
 		(end 138.169 101.527)
 		(width 1)
@@ -31803,6 +32844,14 @@
 		(layer "B.Cu")
 		(net 2)
 		(uuid "772c3249-1cd0-45d5-b902-8d160441f481")
+	)
+	(segment
+		(start 140.849768 108.289)
+		(end 140.066 107.505232)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "7fadfab8-df6d-4d38-be90-31c2059e2ff3")
 	)
 	(segment
 		(start 138.169 110.932156)
@@ -31821,12 +32870,52 @@
 		(uuid "8596817b-f6f4-48f8-a1bb-2152299ed682")
 	)
 	(segment
+		(start 140.066 107.505232)
+		(end 140.066 104.44)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "90afd298-3c46-44c3-b775-2a99e53f8f63")
+	)
+	(segment
+		(start 140.701 102.535)
+		(end 140.447 102.789)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "b44a6ebb-0dc0-45b0-b17b-b3153a150ade")
+	)
+	(segment
+		(start 140.066 104.44)
+		(end 140.447 104.059)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "b6760885-c64d-4bba-96a0-4e215d6904c7")
+	)
+	(segment
+		(start 145.654 102.535)
+		(end 140.701 102.535)
+		(width 0.25)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "ba56226e-f53c-40f5-a526-428136dfb716")
+	)
+	(segment
 		(start 131.954 98.36)
 		(end 131.938 98.344)
 		(width 1)
 		(layer "B.Cu")
 		(net 2)
 		(uuid "cbb68278-79cf-4c3a-898d-3b32d5b6a5bd")
+	)
+	(segment
+		(start 140.447 102.535)
+		(end 140.447 104.059)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 2)
+		(uuid "d8a9deb8-d94a-46df-8281-439f4a3c3368")
 	)
 	(segment
 		(start 131.176 131.03)
@@ -33119,176 +34208,6 @@
 		(layer "B.Cu")
 		(net 15)
 		(uuid "9ae4b21f-e150-4dcf-b2a3-1c98d8e8822c")
-	)
-	(segment
-		(start 145.65 103.6125)
-		(end 145.65 102.539)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 17)
-		(uuid "45b64954-c84d-46bf-9d17-d7f49e115dfb")
-	)
-	(segment
-		(start 145.65 107.484)
-		(end 145.654 107.488)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 17)
-		(uuid "7ab4d26e-059e-48e7-ac8b-9ed217b8cd8c")
-	)
-	(segment
-		(start 145.65 102.539)
-		(end 145.654 102.535)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 17)
-		(uuid "b6bfdcdb-a0d1-4cca-93df-9ace8eaab9ae")
-	)
-	(segment
-		(start 145.65 106.5375)
-		(end 145.65 107.484)
-		(width 0.25)
-		(layer "F.Cu")
-		(net 17)
-		(uuid "b7a24100-d9bd-4210-9422-f8cd6fb4f156")
-	)
-	(via
-		(at 145.654 107.488)
-		(size 0.7)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(tenting
-			(front none)
-			(back none)
-		)
-		(capping none)
-		(covering
-			(front none)
-			(back none)
-		)
-		(plugging
-			(front none)
-			(back none)
-		)
-		(filling none)
-		(net 17)
-		(uuid "24b37a7d-8dd1-4b94-9403-4f5d30f8928b")
-	)
-	(via
-		(at 140.447 102.535)
-		(size 0.7)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(tenting
-			(front none)
-			(back none)
-		)
-		(capping none)
-		(covering
-			(front none)
-			(back none)
-		)
-		(plugging
-			(front none)
-			(back none)
-		)
-		(filling none)
-		(net 17)
-		(uuid "2af8f913-19b5-4033-9761-3e7bf56b6b98")
-	)
-	(via
-		(at 145.654 102.535)
-		(size 0.7)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(tenting
-			(front none)
-			(back none)
-		)
-		(capping none)
-		(covering
-			(front none)
-			(back none)
-		)
-		(plugging
-			(front none)
-			(back none)
-		)
-		(filling none)
-		(net 17)
-		(uuid "ce9cccf3-45b6-46f9-9055-6881d851f045")
-	)
-	(segment
-		(start 145.654 107.488)
-		(end 144.853 108.289)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "0f680e75-2403-4d9a-b7f1-bf0ad81c28a0")
-	)
-	(segment
-		(start 144.853 108.289)
-		(end 140.849768 108.289)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "2011a523-ccc3-42a8-aa05-1f235095eab3")
-	)
-	(segment
-		(start 145.654 102.535)
-		(end 140.447 102.535)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "4836ad9d-53fd-41bc-91fa-cc5eea803396")
-	)
-	(segment
-		(start 140.849768 108.289)
-		(end 140.066 107.505232)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "7fadfab8-df6d-4d38-be90-31c2059e2ff3")
-	)
-	(segment
-		(start 140.066 107.505232)
-		(end 140.066 104.44)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "90afd298-3c46-44c3-b775-2a99e53f8f63")
-	)
-	(segment
-		(start 140.701 102.535)
-		(end 140.447 102.789)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "b44a6ebb-0dc0-45b0-b17b-b3153a150ade")
-	)
-	(segment
-		(start 140.066 104.44)
-		(end 140.447 104.059)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "b6760885-c64d-4bba-96a0-4e215d6904c7")
-	)
-	(segment
-		(start 145.654 102.535)
-		(end 140.701 102.535)
-		(width 0.25)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "ba56226e-f53c-40f5-a526-428136dfb716")
-	)
-	(segment
-		(start 140.447 102.535)
-		(end 140.447 104.059)
-		(width 0.3)
-		(layer "B.Cu")
-		(net 17)
-		(uuid "d8a9deb8-d94a-46df-8281-439f4a3c3368")
 	)
 	(segment
 		(start 146.8625 105.325)
@@ -35956,8 +36875,8 @@
 		)
 	)
 	(zone
-		(net 17)
-		(net_name "Net-(D2-A)")
+		(net 2)
+		(net_name "+5V")
 		(layer "F.Cu")
 		(uuid "8d9e198c-9168-4317-b648-dfbe8b374a75")
 		(hatch edge 0.5)

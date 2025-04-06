@@ -2791,6 +2791,132 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VDD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VDD"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDD\""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VDD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "VBUS > 3.5V -> VOUT = VBUS\nVBUS <3.0V -> VOUT = GND"
 		(exclude_from_sim no)
@@ -2806,7 +2932,7 @@
 	)
 	(text "Divider for lower \nthreshold voltage \ndetectors"
 		(exclude_from_sim no)
-		(at 263.652 89.154 0)
+		(at 228.6 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2815,6 +2941,16 @@
 			)
 		)
 		(uuid "532af961-dbca-4626-a17e-dd3fd5ef982f")
+	)
+	(text "TODO: remove the diode \non the current layout\n"
+		(exclude_from_sim no)
+		(at 138.938 139.446 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "795b303d-b6fd-4da2-9edb-ac013ef39c83")
 	)
 	(text "replace with\nAPX803L-40W5-7"
 		(exclude_from_sim no)
@@ -2837,6 +2973,16 @@
 			)
 		)
 		(uuid "96e51a86-9bdd-47e1-86f2-b712805a795f")
+	)
+	(text "TODO: solder this on \nthe current layout"
+		(exclude_from_sim no)
+		(at 252.222 83.566 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "97a076ed-9d60-4100-a823-3322ee24eb38")
 	)
 	(text "Isolation from the 3V3 LDO\non the RP2040 QtPy"
 		(exclude_from_sim no)
@@ -2882,18 +3028,6 @@
 			)
 		)
 		(uuid "ea81945e-7e95-4db8-be89-f1424fbd73b6")
-	)
-	(text "important diode\nto power the LED bar"
-		(exclude_from_sim no)
-		(at 251.46 72.136 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "fa05b695-3df4-47fa-be0b-20b83dc28efe")
 	)
 	(text_box "NOTE: Output of the DC/DC\ngives 5.5V and the voltage\ndrop on the diode is ~0.5V"
 		(exclude_from_sim no)
@@ -2965,22 +3099,10 @@
 		(uuid "2a5b7871-6ece-4b7d-8f39-be0dfba101a2")
 	)
 	(junction
-		(at 137.16 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3245dedb-c101-43cb-a0cf-1e0f0ccd0ea2")
-	)
-	(junction
 		(at 209.55 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "348d4458-0ee4-4618-8156-a010ef14c8ba")
-	)
-	(junction
-		(at 54.61 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35b80d0d-0461-46eb-863f-c506e4011962")
 	)
 	(junction
 		(at 106.68 175.26)
@@ -3007,6 +3129,12 @@
 		(uuid "616a74bf-19b2-4475-b94f-40ec31c1bfd8")
 	)
 	(junction
+		(at 152.4 171.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c3b928d-7044-47f8-9ad9-5f7263e02692")
+	)
+	(junction
 		(at 181.61 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3025,7 +3153,7 @@
 		(uuid "78590cae-43b6-408e-b440-d1f0df3594c2")
 	)
 	(junction
-		(at 248.92 80.01)
+		(at 213.36 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c1e9e06-4643-43a4-a490-dea77a4b92d4")
@@ -3047,12 +3175,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8670c38c-77c3-46f8-ba4a-c6dbdd3251f7")
-	)
-	(junction
-		(at 265.43 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8937d630-a754-47e2-9225-2d5f557f4208")
 	)
 	(junction
 		(at 245.11 138.43)
@@ -3109,6 +3231,12 @@
 		(uuid "cdfcada9-affe-433b-a52e-d4f9783c569a")
 	)
 	(junction
+		(at 123.19 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd0fa917-bc45-4f17-9e2d-97a734b5556c")
+	)
+	(junction
 		(at 214.63 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3125,6 +3253,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3648e79-b934-4af8-8feb-d3cf68eb790b")
+	)
+	(junction
+		(at 54.61 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e68be80d-d807-48ca-8068-1d36029c6af2")
 	)
 	(junction
 		(at 106.68 151.13)
@@ -3149,6 +3283,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "feaab606-c505-4979-93ca-646dab1bc28a")
+	)
+	(wire
+		(pts
+			(xy 24.13 124.46) (xy 26.67 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0073cd25-4e95-4cff-9e0e-13717fcc0eb6")
 	)
 	(wire
 		(pts
@@ -3262,16 +3406,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 151.13) (xy 133.35 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1cde71fd-36ae-4fba-a810-13047a5697b5")
-	)
-	(wire
-		(pts
 			(xy 181.61 138.43) (xy 181.61 124.46)
 		)
 		(stroke
@@ -3299,6 +3433,16 @@
 			(type default)
 		)
 		(uuid "1f31ad2b-d993-4ef7-bf9c-1c83de6a0e5d")
+	)
+	(wire
+		(pts
+			(xy 157.48 181.61) (xy 170.18 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "208665f3-5a84-49db-bd24-b4e0591eef66")
 	)
 	(wire
 		(pts
@@ -3339,6 +3483,16 @@
 			(type default)
 		)
 		(uuid "2a006580-74f9-425a-91fc-e845986a5071")
+	)
+	(wire
+		(pts
+			(xy 149.86 171.45) (xy 152.4 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a695590-373b-41c4-9d2a-e7b863980cc5")
 	)
 	(wire
 		(pts
@@ -3452,6 +3606,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 124.46) (xy 38.1 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3accf3eb-014b-4fb3-af34-f4e0f4b15ba0")
+	)
+	(wire
+		(pts
 			(xy 100.33 151.13) (xy 106.68 151.13)
 		)
 		(stroke
@@ -3482,7 +3646,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 80.01) (xy 255.27 80.01)
+			(xy 213.36 80.01) (xy 219.71 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3492,7 +3656,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 132.08) (xy 38.1 124.46)
+			(xy 38.1 124.46) (xy 38.1 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3622,16 +3786,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 151.13) (xy 125.73 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55f7cac8-41b9-4518-984f-ab1c1729b2b7")
-	)
-	(wire
-		(pts
 			(xy 60.96 184.15) (xy 60.96 170.18)
 		)
 		(stroke
@@ -3672,7 +3826,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 148.59) (xy 54.61 148.59)
+			(xy 38.1 148.59) (xy 73.66 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3712,16 +3866,6 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 80.01) (xy 267.97 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63f7175a-da52-42a0-80ab-53801f135692")
-	)
-	(wire
-		(pts
 			(xy 73.66 157.48) (xy 73.66 148.59)
 		)
 		(stroke
@@ -3739,6 +3883,16 @@
 			(type default)
 		)
 		(uuid "64f17cfb-1e16-4721-834b-1c987459cd0d")
+	)
+	(wire
+		(pts
+			(xy 132.08 181.61) (xy 149.86 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6516467a-2e56-49a6-b4d5-e2d4bbcfabd8")
 	)
 	(wire
 		(pts
@@ -3802,16 +3956,6 @@
 	)
 	(wire
 		(pts
-			(xy 265.43 77.47) (xy 265.43 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d7b59a3-8e82-441f-b1d3-4ca3a60bd031")
-	)
-	(wire
-		(pts
 			(xy 214.63 33.02) (xy 214.63 41.91)
 		)
 		(stroke
@@ -3862,6 +4006,26 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 144.78) (xy 123.19 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a8d1cc-5085-4019-8a7a-7ddeed3f7281")
+	)
+	(wire
+		(pts
+			(xy 138.43 171.45) (xy 142.24 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a19c41b-c071-4df2-b697-03f435a389a0")
+	)
+	(wire
+		(pts
 			(xy 201.93 80.01) (xy 201.93 86.36)
 		)
 		(stroke
@@ -3892,16 +4056,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 148.59) (xy 54.61 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87a353da-e510-4688-8aed-0f7a1333a674")
-	)
-	(wire
-		(pts
 			(xy 57.15 26.67) (xy 80.01 26.67)
 		)
 		(stroke
@@ -3909,6 +4063,16 @@
 			(type default)
 		)
 		(uuid "8863e53f-ec51-48e9-8fc4-921e7883a91f")
+	)
+	(wire
+		(pts
+			(xy 54.61 124.46) (xy 181.61 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88783cab-1c2d-47be-841c-ac5195e94af5")
 	)
 	(wire
 		(pts
@@ -3922,7 +4086,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 142.24) (xy 137.16 144.78)
+			(xy 123.19 142.24) (xy 123.19 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3982,7 +4146,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 80.01) (xy 248.92 85.09)
+			(xy 213.36 80.01) (xy 213.36 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4019,6 +4183,16 @@
 			(type default)
 		)
 		(uuid "9ee092e6-461c-4e29-a55d-35bf468d4afe")
+	)
+	(wire
+		(pts
+			(xy 152.4 168.91) (xy 152.4 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a000822f-61d9-4c34-a642-6e2bad9cd5f4")
 	)
 	(wire
 		(pts
@@ -4102,16 +4276,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 80.01) (xy 265.43 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab9a9dfa-2b99-49c1-813b-f8dd6ec40546")
-	)
-	(wire
-		(pts
 			(xy 214.63 33.02) (xy 217.17 33.02)
 		)
 		(stroke
@@ -4182,16 +4346,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 144.78) (xy 137.16 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7f64ec4-e93e-4a83-aa66-e2e12a64d45d")
-	)
-	(wire
-		(pts
 			(xy 66.04 85.09) (xy 73.66 85.09)
 		)
 		(stroke
@@ -4199,6 +4353,16 @@
 			(type default)
 		)
 		(uuid "b825122b-feb8-4150-914c-d699c7abc881")
+	)
+	(wire
+		(pts
+			(xy 54.61 124.46) (xy 54.61 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcf224f3-a5c6-421d-b51c-84666cb424b5")
 	)
 	(wire
 		(pts
@@ -4232,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 80.01) (xy 248.92 80.01)
+			(xy 201.93 80.01) (xy 213.36 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4249,6 +4413,16 @@
 			(type default)
 		)
 		(uuid "c0f278b7-dd70-4134-837c-80d43c4a4a42")
+	)
+	(wire
+		(pts
+			(xy 162.56 171.45) (xy 170.18 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0fad1f4-e785-446c-80da-4b86743876d8")
 	)
 	(wire
 		(pts
@@ -4292,23 +4466,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 124.46) (xy 181.61 124.46)
+			(xy 38.1 124.46) (xy 54.61 124.46)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c81f6c09-63a1-4edc-8f32-075ca8ae4a80")
-	)
-	(wire
-		(pts
-			(xy 137.16 144.78) (xy 137.16 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9f76a72-24a2-4fe6-adbb-c05d6aec6f4a")
 	)
 	(wire
 		(pts
@@ -4359,6 +4523,16 @@
 			(type default)
 		)
 		(uuid "d1317973-b856-4e8e-bf23-213ae88a0e9a")
+	)
+	(wire
+		(pts
+			(xy 152.4 171.45) (xy 154.94 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d58b5a84-caec-446a-bffa-5b7434c69b24")
 	)
 	(wire
 		(pts
@@ -4419,6 +4593,16 @@
 			(type default)
 		)
 		(uuid "def76c37-d96d-4ef6-877f-b6e31b1295c0")
+	)
+	(wire
+		(pts
+			(xy 227.33 80.01) (xy 267.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1ed122d-f98a-46cf-8035-00fbf89c4086")
 	)
 	(wire
 		(pts
@@ -4542,6 +4726,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 144.78) (xy 124.46 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5ae09ad-6d7d-413f-8339-1fa76bd91f3a")
+	)
+	(wire
+		(pts
 			(xy 227.33 44.45) (xy 227.33 43.18)
 		)
 		(stroke
@@ -4559,16 +4753,6 @@
 			(type default)
 		)
 		(uuid "f73d8aab-b4bb-47e6-b9f1-0c6768368fa6")
-	)
-	(wire
-		(pts
-			(xy 27.94 148.59) (xy 38.1 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7529fe8-9643-4cbb-be14-0998b5ca92c5")
 	)
 	(wire
 		(pts
@@ -4620,19 +4804,39 @@
 		)
 		(uuid "fabaf1f4-874f-4150-aec1-3cf53c4ab214")
 	)
-	(wire
-		(pts
-			(xy 54.61 148.59) (xy 73.66 148.59)
+	(label "VBUS"
+		(at 170.18 181.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "9495aa22-e636-460f-a146-03ab59d8e58b")
+	)
+	(label "BOOST"
+		(at 132.08 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
 		)
-		(uuid "faff0742-fd37-4eb4-abb3-cb01c3f90512")
+		(uuid "a9669f4c-9274-4e9e-bff8-ce52d89b8d73")
+	)
+	(label "VBUS"
+		(at 170.18 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b66d1578-2b79-4e6f-87f7-3d200426fdc1")
 	)
 	(hierarchical_label "BOOST"
 		(shape output)
-		(at 27.94 148.59 180)
+		(at 24.13 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4706,7 +4910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02a4c8fa-070b-4e7c-ad64-033a224e3fdb")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR023"
 			(at 227.33 50.8 0)
 			(hide yes)
 			(effects
@@ -4756,7 +4960,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR020")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5059,7 +5263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d0cbb6c-17b2-4fbb-b4ab-ae466e3af421")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 260.35 30.48 0)
 			(hide yes)
 			(effects
@@ -5109,7 +5313,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5125,7 +5329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1d391533-3395-41d2-ab4a-50c343172a9f")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR019"
 			(at 199.39 52.07 0)
 			(hide yes)
 			(effects
@@ -5175,7 +5379,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR017")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -5326,7 +5530,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2704cb5e-f72a-4f8e-8666-757402ed618b")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR016"
 			(at 170.18 118.11 0)
 			(hide yes)
 			(effects
@@ -5376,7 +5580,84 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR014")
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 153.67 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27f0a268-55a7-4a2d-a101-2539c7501d4b")
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 153.67 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "D4"
+			(at 153.67 178.562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 153.3525 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 153.67 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 153.67 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5be289dd-f64f-4444-8579-5ceb9a13e205")
+		)
+		(pin "2"
+			(uuid "f0621dfa-3241-488a-a86f-aed7afc013f7")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5392,7 +5673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a447a0c-a8bf-417e-9955-0383908714fa")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR012"
 			(at 123.19 190.5 0)
 			(hide yes)
 			(effects
@@ -5442,7 +5723,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR011")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5917,7 +6198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "43eea609-16c9-44f2-8ade-46ebd9ea1c01")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR018"
 			(at 181.61 160.02 0)
 			(hide yes)
 			(effects
@@ -5967,7 +6248,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR016")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -6127,7 +6408,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 265.43 69.85 0)
+		(at 138.43 171.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6135,8 +6416,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "466d472c-ecf6-4152-94fa-972e0ee7f143")
-		(property "Reference" "#PWR025"
-			(at 265.43 73.66 0)
+		(property "Reference" "#PWR014"
+			(at 142.24 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -6145,15 +6426,16 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 265.43 64.77 0)
+			(at 134.62 171.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 265.43 69.85 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -6162,7 +6444,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 69.85 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -6171,7 +6453,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 265.43 69.85 0)
+			(at 138.43 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -6185,7 +6467,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR025")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -6491,7 +6773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64890cff-a325-443f-99eb-e37809c222bf")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR013"
 			(at 128.27 106.68 0)
 			(hide yes)
 			(effects
@@ -6541,7 +6823,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR012")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -6565,7 +6847,7 @@
 				)
 			)
 		)
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 35.052 135.89 0)
 			(effects
 				(font
@@ -6618,7 +6900,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -6626,7 +6908,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 137.16 142.24 0)
+		(at 123.19 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6634,8 +6916,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c31a7fa-e0fa-4c0e-928a-6b8c8793a571")
-		(property "Reference" "#PWR013"
-			(at 137.16 146.05 0)
+		(property "Reference" "#PWR011"
+			(at 123.19 146.05 0)
 			(hide yes)
 			(effects
 				(font
@@ -6644,7 +6926,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.16 137.16 0)
+			(at 123.19 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6652,7 +6934,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 142.24 0)
+			(at 123.19 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -6661,7 +6943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 142.24 0)
+			(at 123.19 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -6670,7 +6952,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 142.24 0)
+			(at 123.19 142.24 0)
 			(hide yes)
 			(effects
 				(font
@@ -6684,7 +6966,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -6765,7 +7047,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7247e43c-def0-4142-aa0b-b55a2c4b8dfb")
-		(property "Reference" "R23"
+		(property "Reference" "R24"
 			(at 255.524 129.54 90)
 			(effects
 				(font
@@ -6817,7 +7099,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "R23")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -7100,7 +7382,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cf3634a-223d-4899-a354-6fa11a6f55c6")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 233.68 136.144 90)
 			(effects
 				(font
@@ -7152,7 +7434,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -7168,7 +7450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "813947ba-a3c6-4f12-b519-9978889fef7f")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR021"
 			(at 214.63 55.88 0)
 			(hide yes)
 			(effects
@@ -7218,7 +7500,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR018")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -7432,15 +7714,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 259.08 80.01 270)
+		(at 223.52 80.01 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "92dbc83c-fa61-422d-8273-b0e9604f1619")
-		(property "Reference" "R24"
-			(at 259.08 82.55 90)
+		(property "Reference" "R22"
+			(at 223.52 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7448,7 +7730,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 259.08 77.216 90)
+			(at 223.52 77.216 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7456,7 +7738,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 259.08 78.232 90)
+			(at 223.52 78.232 90)
 			(hide yes)
 			(effects
 				(font
@@ -7465,7 +7747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 80.01 0)
+			(at 223.52 80.01 0)
 			(hide yes)
 			(effects
 				(font
@@ -7474,7 +7756,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 259.08 80.01 0)
+			(at 223.52 80.01 0)
 			(hide yes)
 			(effects
 				(font
@@ -7491,7 +7773,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "R24")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -7499,15 +7781,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 248.92 88.9 0)
+		(at 213.36 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "93d9226b-7842-4ec4-a34a-4af507eb7be9")
-		(property "Reference" "R22"
-			(at 251.46 88.9 90)
+		(property "Reference" "R20"
+			(at 215.9 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7515,7 +7797,7 @@
 			)
 		)
 		(property "Value" "0R"
-			(at 248.92 88.9 90)
+			(at 213.36 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7523,7 +7805,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 247.142 88.9 90)
+			(at 211.582 88.9 90)
 			(hide yes)
 			(effects
 				(font
@@ -7532,7 +7814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 88.9 0)
+			(at 213.36 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -7541,7 +7823,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 248.92 88.9 0)
+			(at 213.36 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -7558,7 +7840,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "R22")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -7834,6 +8116,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 152.4 168.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b33bb149-247b-4d63-b248-5b7c7bff4a04")
+		(property "Reference" "#PWR015"
+			(at 152.4 172.72 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 152.4 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 168.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 168.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 152.4 168.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0388c82-a1cd-44a4-9ac3-faeac8eff0d7")
+		)
+		(instances
+			(project ""
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 48.26 184.15 0)
 		(unit 1)
@@ -7894,6 +8242,83 @@
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 30.48 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bab0286a-4071-4328-b3b4-8c195ef9afeb")
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "D1"
+			(at 30.48 121.412 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 30.1625 120.65 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "18c09dde-c4fd-4962-a856-28eba1a78072")
+		)
+		(pin "2"
+			(uuid "42abfb62-a2d6-42bc-b5ed-61ae96b403e0")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -7975,7 +8400,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "bf5a162b-fe97-4484-b183-b7dff0195793")
-		(property "Reference" "R20"
+		(property "Reference" "R21"
 			(at 223.52 149.86 90)
 			(effects
 				(font
@@ -8027,7 +8452,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "R20")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -8043,7 +8468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2ddacac-289a-49e8-adcb-7a99ffc4aac6")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR017"
 			(at 176.53 31.75 0)
 			(hide yes)
 			(effects
@@ -8093,7 +8518,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR015")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -8109,7 +8534,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c54f01ed-4f61-404e-977c-eb7f2dad7c88")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR022"
 			(at 220.98 160.02 0)
 			(hide yes)
 			(effects
@@ -8159,7 +8584,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR019")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -8310,7 +8735,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 248.92 92.71 0)
+		(at 213.36 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8318,8 +8743,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cbcefc2a-c7c8-41bb-a8e7-74c392bf2d86")
-		(property "Reference" "#PWR022"
-			(at 248.92 99.06 0)
+		(property "Reference" "#PWR020"
+			(at 213.36 99.06 0)
 			(hide yes)
 			(effects
 				(font
@@ -8328,7 +8753,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 248.92 97.79 0)
+			(at 213.36 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8336,7 +8761,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 92.71 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(effects
 				(font
@@ -8345,7 +8770,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 92.71 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(effects
 				(font
@@ -8354,7 +8779,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 248.92 92.71 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(effects
 				(font
@@ -8368,7 +8793,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -8384,7 +8809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cce0c854-564d-4966-b08c-5eff03751d69")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 257.81 160.02 0)
 			(hide yes)
 			(effects
@@ -8434,7 +8859,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -8575,7 +9000,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 129.54 151.13 180)
+		(at 146.05 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8583,7 +9008,7 @@
 		(dnp no)
 		(uuid "d3397ddc-c9a2-453f-9a38-504fe5d754ae")
 		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 129.54 151.13 0)
+			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -8591,8 +9016,8 @@
 				)
 			)
 		)
-		(property "Reference" "D2"
-			(at 129.54 154.178 0)
+		(property "Reference" "D3"
+			(at 146.05 174.498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,7 +9025,7 @@
 			)
 		)
 		(property "Value" "MBR0520"
-			(at 129.8575 154.94 0)
+			(at 146.3675 175.26 0)
 			(hide yes)
 			(effects
 				(font
@@ -8609,7 +9034,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 129.54 151.13 0)
+			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -8618,7 +9043,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 151.13 0)
+			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -8627,7 +9052,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 129.54 151.13 0)
+			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -8644,7 +9069,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8719,7 +9144,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 133.35 144.78 90)
+		(at 124.46 144.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8728,7 +9153,7 @@
 		(fields_autoplaced yes)
 		(uuid "dbd76f00-568b-44f3-b652-93736e743429")
 		(property "Reference" "#FLG03"
-			(at 131.445 144.78 0)
+			(at 126.365 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -8737,7 +9162,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 129.54 144.7799 90)
+			(at 128.27 144.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8746,7 +9171,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 144.78 0)
+			(at 124.46 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -8755,7 +9180,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 144.78 0)
+			(at 124.46 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -8764,7 +9189,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 133.35 144.78 0)
+			(at 124.46 144.78 0)
 			(hide yes)
 			(effects
 				(font
@@ -8986,7 +9411,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 265.43 73.66 270)
+		(at 158.75 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8994,7 +9419,7 @@
 		(dnp no)
 		(uuid "ef03b650-6a8e-48cb-9691-d96645b5280a")
 		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 265.43 73.66 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -9002,8 +9427,8 @@
 				)
 			)
 		)
-		(property "Reference" "D3"
-			(at 268.478 73.66 0)
+		(property "Reference" "D5"
+			(at 158.75 168.402 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9011,7 +9436,7 @@
 			)
 		)
 		(property "Value" "MBR0520"
-			(at 269.24 73.3425 0)
+			(at 158.4325 167.64 0)
 			(hide yes)
 			(effects
 				(font
@@ -9020,7 +9445,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 265.43 73.66 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -9029,7 +9454,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 265.43 73.66 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -9038,7 +9463,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 265.43 73.66 0)
+			(at 158.75 171.45 0)
 			(hide yes)
 			(effects
 				(font
@@ -9055,7 +9480,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D3")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -9138,7 +9563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f445ea54-53ac-455b-89a7-37d90707a9f8")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR024"
 			(at 245.11 160.02 0)
 			(hide yes)
 			(effects
@@ -9188,7 +9613,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR021")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
