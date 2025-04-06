@@ -1,5 +1,5 @@
 (kicad_pcb
-	(version 20250302)
+	(version 20250324)
 	(generator "pcbnew")
 	(generator_version "9.99")
 	(general
@@ -279,6 +279,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -445,6 +446,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end -0.65 1.56)
@@ -715,6 +717,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -949,6 +952,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -1161,6 +1165,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -1371,6 +1376,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -1666,6 +1672,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 -1.56)
 			(end -0.65 -1.56)
@@ -1935,6 +1942,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -2147,6 +2155,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -2370,6 +2379,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.9 1.61)
 			(end 0.9 1.61)
@@ -2668,6 +2678,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -2893,6 +2904,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.36 -1)
 			(end -2.36 1)
@@ -3187,6 +3199,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -3399,6 +3412,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 1.635 -1.635)
 			(end 1.635 -1.45)
@@ -3729,6 +3743,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -3939,6 +3954,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -4237,6 +4253,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -4448,6 +4465,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -4660,6 +4678,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -4817,6 +4836,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -5027,6 +5047,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 -1.56)
 			(end 0.65 -1.56)
@@ -5298,6 +5319,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 9.18 -3.16)
 			(end 9.18 3.16)
@@ -5747,6 +5769,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -5958,6 +5981,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -6192,6 +6216,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -6402,6 +6427,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -6713,6 +6739,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.602064 -0.91)
 			(end 0.602064 -0.91)
@@ -6925,6 +6952,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -7137,6 +7165,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 10.11 -1.91)
 			(end 7.76 -1.91)
@@ -7552,6 +7581,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -7764,6 +7794,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -7974,6 +8005,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 -1.56)
 			(end 0.65 -1.56)
@@ -8243,6 +8275,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -8455,6 +8488,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -8667,6 +8701,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -8879,6 +8914,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -9092,6 +9128,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 7.56 -5.261)
 			(end 7.56 4.66)
@@ -9575,6 +9612,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -9810,6 +9848,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.95 -0.95)
 			(end 0.95 -0.95)
@@ -9968,6 +10007,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.54 -8.38)
 			(end -1.33 -8.38)
@@ -10565,6 +10605,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -10776,6 +10817,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -10987,6 +11029,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -11199,6 +11242,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -11411,6 +11455,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -11636,6 +11681,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.602064 0.91)
 			(end 0.602064 0.91)
@@ -11848,6 +11894,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -12058,6 +12105,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.61 -1.135)
 			(end -1.61 -1.37)
@@ -12688,6 +12736,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -12900,6 +12949,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -13112,6 +13162,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -13324,6 +13375,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -13600,6 +13652,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.5 -1.61)
 			(end 1.5 -1.61)
@@ -13906,11 +13959,11 @@
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "a7c03732-6ab1-412e-85f3-41587ddd43ef")
-		(at 116.952 125.522 90)
+		(at 131.684 125.141)
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R52"
-			(at 0 -1.65 90)
+			(at 0 -1.65 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c66b1daa-aad3-431b-adeb-9551b47b4d8e")
@@ -13922,7 +13975,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 0 1.65 90)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1ab2ce69-df45-4789-be0b-d672df8d9219")
@@ -13934,7 +13987,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13947,7 +14000,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 0 0 90)
+			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -13964,6 +14017,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -13985,16 +14039,6 @@
 			(uuid "260b09f9-c534-4bdc-8276-2afeca5cc7ae")
 		)
 		(fp_line
-			(start 1.85 -0.95)
-			(end 1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "3add0c75-e434-4ab6-85eb-0f63bff86416")
-		)
-		(fp_line
 			(start -1.85 -0.95)
 			(end 1.85 -0.95)
 			(stroke
@@ -14003,16 +14047,6 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "e35a7334-88b4-4460-a830-947e5335b1ff")
-		)
-		(fp_line
-			(start 1.85 0.95)
-			(end -1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "be89907f-4e10-48ca-b7ab-10470202b545")
 		)
 		(fp_line
 			(start -1.85 0.95)
@@ -14025,14 +14059,24 @@
 			(uuid "cbaca597-9d72-4bd4-942f-7bd225469db0")
 		)
 		(fp_line
-			(start 1 -0.625)
-			(end 1 0.625)
+			(start 1.85 -0.95)
+			(end 1.85 0.95)
 			(stroke
-				(width 0.1)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "2ee638fd-9a2f-43a2-b497-0839966e30a6")
+			(layer "F.CrtYd")
+			(uuid "3add0c75-e434-4ab6-85eb-0f63bff86416")
+		)
+		(fp_line
+			(start 1.85 0.95)
+			(end -1.85 0.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "be89907f-4e10-48ca-b7ab-10470202b545")
 		)
 		(fp_line
 			(start -1 -0.625)
@@ -14045,16 +14089,6 @@
 			(uuid "1c3bfdb9-097a-49f6-9721-4d34e693280c")
 		)
 		(fp_line
-			(start 1 0.625)
-			(end -1 0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "da59fcf8-a169-420e-ba98-29936f953df2")
-		)
-		(fp_line
 			(start -1 0.625)
 			(end -1 -0.625)
 			(stroke
@@ -14064,8 +14098,28 @@
 			(layer "F.Fab")
 			(uuid "dd659023-fb45-4417-a9ac-b729fbb10679")
 		)
+		(fp_line
+			(start 1 -0.625)
+			(end 1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2ee638fd-9a2f-43a2-b497-0839966e30a6")
+		)
+		(fp_line
+			(start 1 0.625)
+			(end -1 0.625)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "da59fcf8-a169-420e-ba98-29936f953df2")
+		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 90)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7109be95-bc79-4c4d-a4df-74d17df9d702")
 			(effects
@@ -14076,7 +14130,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -1 0 90)
+			(at -1 0)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
@@ -14089,7 +14143,7 @@
 			(uuid "8b41ed65-2025-44c8-a894-582a116d1b0f")
 		)
 		(pad "2" smd roundrect
-			(at 1 0 90)
+			(at 1 0)
 			(size 1.2 1.4)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.208333)
@@ -14176,6 +14230,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -14386,6 +14441,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end -0.8 1.56)
@@ -14684,6 +14740,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -14896,6 +14953,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -15108,6 +15166,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -15320,6 +15379,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -15555,6 +15615,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -15766,6 +15827,7 @@
 		(sheetname "/")
 		(sheetfile "RemBrake.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 5.56 -1.81)
 			(end 3.41 -1.81)
@@ -16071,6 +16133,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -16283,6 +16346,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.177064 1.71)
 			(end 2.177064 1.71)
@@ -16495,6 +16559,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 1.33 -3.87)
 			(end 1.33 -0.76)
@@ -16868,6 +16933,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -17078,6 +17144,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0 1.56)
 			(end 0.8 1.56)
@@ -17370,6 +17437,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -17582,6 +17650,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -17794,6 +17863,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -18006,6 +18076,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 1.16 -1.33)
 			(end 1.16 8.95)
@@ -18363,6 +18434,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.53 1.85)
 			(end 3.07 1.85)
@@ -18598,6 +18670,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -18810,6 +18883,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -19023,6 +19097,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.54 -8.38)
 			(end -1.33 -8.38)
@@ -19633,6 +19708,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 1.11)
 			(end 0.261252 1.11)
@@ -19847,6 +19923,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20059,6 +20136,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20275,6 +20353,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20492,6 +20571,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20709,6 +20789,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -20940,6 +21021,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -2.36 -1)
 			(end 1.65 -1)
@@ -21239,6 +21321,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -21456,6 +21539,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -21671,6 +21755,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 0 1.56)
 			(end 0.65 1.56)
@@ -21946,6 +22031,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -22163,6 +22249,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -22380,6 +22467,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -22598,6 +22686,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -22815,6 +22904,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -23031,6 +23121,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -23248,6 +23339,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -5.11 1.91)
 			(end -2.76 1.91)
@@ -23620,6 +23712,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -23837,6 +23930,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24054,6 +24148,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24271,6 +24366,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -24488,6 +24584,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -24705,6 +24802,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -24922,6 +25020,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -25139,6 +25238,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -25353,6 +25453,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -15.8 9.3)
 			(end -12.7 9.3)
@@ -25689,6 +25790,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -25906,6 +26008,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 -0.735)
 			(end 0.261252 -0.735)
@@ -26123,6 +26226,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -26340,6 +26444,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -26557,6 +26662,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -26774,6 +26880,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr exclude_from_pos_files)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 0.95 0.95)
 			(end 0.95 -0.95)
@@ -26947,6 +27054,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -27164,6 +27272,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -27381,6 +27490,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -27598,6 +27708,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -27815,6 +27926,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -28032,6 +28144,7 @@
 		(sheetname "/control_connector/")
 		(sheetfile "control_connector.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -6.11 1.91)
 			(end -3.76 1.91)
@@ -28418,6 +28531,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd exclude_from_bom dnp)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -28635,6 +28749,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd exclude_from_bom)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)
@@ -28852,6 +28967,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.261252 0.735)
 			(end 0.261252 0.735)
@@ -29069,6 +29185,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -29286,6 +29403,7 @@
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -29501,6 +29619,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start 10.9 -6.4)
 			(end 14.4 -6.4)
@@ -29782,6 +29901,7 @@
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 -0.735)
 			(end 0.227064 -0.735)
@@ -29999,6 +30119,7 @@
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
 		(attr smd)
+		(duplicate_pad_numbers_are_jumpers yes)
 		(fp_line
 			(start -0.227064 0.735)
 			(end 0.227064 0.735)

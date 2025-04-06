@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250227)
+	(version 20250318)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "2a7ff1cc-957c-43b3-8e70-6249f6aaf056")
@@ -15,6 +15,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -6.35 6.35 0)
 				(effects
@@ -193,6 +194,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 1.651 5.842 0)
 				(effects
@@ -218,7 +220,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 5.08 0 0)
 				(hide yes)
 				(effects
@@ -312,6 +314,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
 				(at 0.635 2.54 0)
 				(effects
@@ -339,7 +342,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(hide yes)
 				(effects
@@ -405,7 +408,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -423,7 +426,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.794)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -452,6 +455,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at 0 2.54 0)
 				(effects
@@ -477,7 +481,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(hide yes)
 				(effects
@@ -602,6 +606,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "L"
 				(at -1.27 0 90)
 				(effects
@@ -627,7 +632,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(hide yes)
 				(effects
@@ -763,6 +768,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
 				(effects
@@ -788,7 +794,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(hide yes)
 				(effects
@@ -841,7 +847,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -859,7 +865,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -884,6 +890,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -3.81 6.35 0)
 				(effects
@@ -1019,6 +1026,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 0 8.89 0)
 				(effects
@@ -1195,6 +1203,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at 3.81 13.97 0)
 				(effects
@@ -1597,6 +1606,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.905 0)
 				(effects
@@ -1802,6 +1812,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.905 0)
 				(effects
@@ -1994,6 +2005,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.905 0)
 				(effects
@@ -2335,6 +2347,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(hide yes)
@@ -2430,7 +2443,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2460,6 +2473,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -3.81 0)
 				(hide yes)
@@ -2555,7 +2569,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2585,6 +2599,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
 				(hide yes)
@@ -2656,7 +2671,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2686,6 +2701,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#FLG"
 				(at 0 1.905 0)
 				(hide yes)
@@ -2712,7 +2728,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(hide yes)
 				(effects
@@ -2743,7 +2759,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2866,6 +2882,18 @@
 			)
 		)
 		(uuid "ea81945e-7e95-4db8-be89-f1424fbd73b6")
+	)
+	(text "important diode\nto power the LED bar"
+		(exclude_from_sim no)
+		(at 251.46 72.136 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "fa05b695-3df4-47fa-be0b-20b83dc28efe")
 	)
 	(text_box "NOTE: Output of the DC/DC\ngives 5.5V and the voltage\ndrop on the diode is ~0.5V"
 		(exclude_from_sim no)
@@ -3019,6 +3047,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8670c38c-77c3-46f8-ba4a-c6dbdd3251f7")
+	)
+	(junction
+		(at 265.43 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8937d630-a754-47e2-9225-2d5f557f4208")
 	)
 	(junction
 		(at 245.11 138.43)
@@ -3678,6 +3712,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 80.01) (xy 267.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63f7175a-da52-42a0-80ab-53801f135692")
+	)
+	(wire
+		(pts
 			(xy 73.66 157.48) (xy 73.66 148.59)
 		)
 		(stroke
@@ -3755,6 +3799,16 @@
 			(type default)
 		)
 		(uuid "6d5dc14a-5728-4a57-a35a-aa341634dae5")
+	)
+	(wire
+		(pts
+			(xy 265.43 77.47) (xy 265.43 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d7b59a3-8e82-441f-b1d3-4ca3a60bd031")
 	)
 	(wire
 		(pts
@@ -4048,7 +4102,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 80.01) (xy 267.97 80.01)
+			(xy 262.89 80.01) (xy 265.43 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4818,7 +4872,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 104.14 96.52 0)
 			(hide yes)
 			(effects
@@ -4886,7 +4940,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 194.31 116.84 0)
 			(hide yes)
 			(effects
@@ -5161,7 +5215,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 176.53 43.18 0)
 			(hide yes)
 			(effects
@@ -5229,7 +5283,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 201.93 111.76 0)
 			(hide yes)
 			(effects
@@ -5504,7 +5558,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 63.5 36.83 0)
 			(hide yes)
 			(effects
@@ -5574,7 +5628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 256.54 27.94 0)
 			(hide yes)
 			(effects
@@ -5820,7 +5874,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 194.31 124.46 0)
 			(hide yes)
 			(effects
@@ -6038,7 +6092,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 95.25 157.48 0)
 			(hide yes)
 			(effects
@@ -6066,6 +6120,72 @@
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 265.43 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "466d472c-ecf6-4152-94fa-972e0ee7f143")
+		(property "Reference" "#PWR071"
+			(at 265.43 73.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 265.43 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 265.43 69.85 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7281208f-a4b7-4600-81da-18570fe6ab48")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -6328,7 +6448,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 106.68 158.75 0)
 			(hide yes)
 			(effects
@@ -6471,7 +6591,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 38.1 135.89 0)
 			(hide yes)
 			(effects
@@ -6670,7 +6790,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 257.81 129.54 0)
 			(hide yes)
 			(effects
@@ -6738,7 +6858,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 209.55 111.76 0)
 			(hide yes)
 			(effects
@@ -6805,7 +6925,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 66.04 0)
 			(hide yes)
 			(effects
@@ -6872,7 +6992,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 181.61 144.78 0)
 			(hide yes)
 			(effects
@@ -7005,7 +7125,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 233.68 138.43 0)
 			(hide yes)
 			(effects
@@ -7210,7 +7330,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 128.27 44.45 0)
 			(hide yes)
 			(effects
@@ -7277,7 +7397,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 116.84 85.09 0)
 			(hide yes)
 			(effects
@@ -7344,7 +7464,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 259.08 80.01 0)
 			(hide yes)
 			(effects
@@ -7411,7 +7531,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 248.92 88.9 0)
 			(hide yes)
 			(effects
@@ -7478,7 +7598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 53.34 0)
 			(hide yes)
 			(effects
@@ -7545,7 +7665,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 194.31 138.43 0)
 			(hide yes)
 			(effects
@@ -7613,7 +7733,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 167.64 0)
 			(hide yes)
 			(effects
@@ -7680,7 +7800,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 123.19 162.56 0)
 			(hide yes)
 			(effects
@@ -7816,7 +7936,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 100.33 26.67 0)
 			(hide yes)
 			(effects
@@ -7880,7 +8000,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 220.98 149.86 0)
 			(hide yes)
 			(effects
@@ -8155,7 +8275,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 106.68 180.34 0)
 			(hide yes)
 			(effects
@@ -8354,7 +8474,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 48.26 177.8 0)
 			(hide yes)
 			(effects
@@ -8423,7 +8543,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 31.75 63.5 0)
 			(hide yes)
 			(effects
@@ -8497,7 +8617,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 129.54 151.13 0)
 			(hide yes)
 			(effects
@@ -8564,7 +8684,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 201.93 90.17 0)
 			(hide yes)
 			(effects
@@ -8634,7 +8754,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 133.35 144.78 0)
 			(hide yes)
 			(effects
@@ -8698,7 +8818,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 77.47 85.09 0)
 			(hide yes)
 			(effects
@@ -8765,7 +8885,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 38.1 170.18 0)
 			(hide yes)
 			(effects
@@ -8865,6 +8985,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 265.43 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ef03b650-6a8e-48cb-9691-d96645b5280a")
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
+			(at 265.43 73.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reference" "D3"
+			(at 268.478 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 269.24 73.3425 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 265.43 73.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 73.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 265.43 73.66 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d99f61f1-51fb-435d-b19c-7c1bc180a557")
+		)
+		(pin "2"
+			(uuid "72dd7fc4-1455-43a3-b7c5-376ebfeb3f65")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 214.63 45.72 0)
 		(unit 1)
@@ -8898,7 +9095,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 214.63 45.72 0)
 			(hide yes)
 			(effects
@@ -9101,7 +9298,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 219.71 25.4 0)
 			(hide yes)
 			(effects
@@ -9165,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 85.09 45.72 0)
 			(hide yes)
 			(effects
