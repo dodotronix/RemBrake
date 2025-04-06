@@ -3,13 +3,12 @@
 
 import asyncio
 import keypad
-import pwmio
 import neopixel
 import board
+import pwmio
 
 from adafruit_motor import servo
 from digitalio import DigitalInOut, Direction
-from simpleio import DigitalOut, DigitalIn
 
 from CircuitPython_MY9221 import MY9221
 from CircuitPython_LTC2943 import LTC2943, ALCC, Mode, Prescaler
@@ -30,7 +29,9 @@ class DebuggingIndicator():
                              asyncio.create_task(self._info()))
     async def _info(self):
         while True:
-            print(self.message.msg)
+            for k,v in self.message.msg.items():
+                print(f"{k} : {v}")
+            print("")
             await asyncio.sleep(5*self.period)
 
     async def _alive(self):
@@ -70,6 +71,7 @@ class BrakeCore():
         self.display = Display(
             lt['display_di'], 
             lt['display_dcki'], 
+            lt['buzz'],
             self.message)
 
         self.brake = BrakeControl(
@@ -102,15 +104,43 @@ class Message():
         }
 
         self.msg = {
-            'angle' : self.config['servo_default'],
-            'charge' : 0,
-            'current' : 0,
-            'status' : 0,
-            'percentage' : 0,
+            'angle': self.config['servo_default'],
+            'charge': 0,
+            'current': 0,
+            'status': 0,
+            'percentage': 0,
             'alarm': None,
-            'charging' : None,
-            'bms_reset' : False
+            'charging': None,
+            'boot': True,
+            'active_animation': "welcome",
+            'next_animation': "welcome",
+            'bms_reset': False
         }
+
+    @property
+    def next(self) -> string:
+        return self.msg['next_animation']
+
+    @next.setter
+    def next(self, value: string) -> None:
+        self.msg['next_animation'] = value
+
+    @property
+    def active(self) -> string:
+        return self.msg['active_animation']
+
+    @active.setter
+    def active(self, value: string) -> None:
+        self.msg['active_animation'] = value
+
+    @property
+    def boot(self) -> bool:
+        return self.msg['boot']
+
+    @boot.setter
+    def boot(self, value: bool) -> None:
+        self.msg['boot'] = value
+
     @property
     def default(self) -> list:
         return self.config['servo_default']
@@ -199,7 +229,6 @@ class Message():
 
 class IOs():
     def __init__(self, rdy, ena, message: Message) -> None:
-        self.period = 0.2
         self.message = message
 
         self.enable = DigitalInOut(ena)
@@ -221,7 +250,7 @@ class IOs():
                     self.message.charging = None
                     self.ready.direction = Direction.OUTPUT
                 self.ready.value = False
-            await asyncio.sleep(self.period)
+            await asyncio.sleep(0.2)
 
 class BatteryMonitor():
 
@@ -232,7 +261,6 @@ class BatteryMonitor():
         self.drv.prescaler = Prescaler.PRES_M64
         self.drv.alcc = ALCC.DISABLE
         self.message = message
-        self.period = 0.2
 
         # set limits
         self.drv.voltage_range = (7.0, 8.5)
@@ -268,20 +296,26 @@ class BatteryMonitor():
                 if (self.message.status & 0x06):
                     self.message.alarm = True
 
-            await asyncio.sleep(self.period)
+            await asyncio.sleep(0.2)
 
 class Display:
-    def __init__(self, di, dcki, message: Message):
+
+    # Sounds
+    WELCOME_MELODY = [("C4", 0.3), ("E4", 0.3), ("G4", 0.3), ("C5", 0.5), 
+                      ("-", 0.2), ("C4", 0.4)]
+    WARNING_MELODY = [("G4", 0.2), ("-", 0.1), ("G4", 0.2), ("-", 0.1)]
+    ERROR_MELODY   = [("C4", 0.3), ("D#4", 0.3), ("C4", 0.3)]
+
+    def __init__(self, di, dcki, buzz, message: Message):
         self.drv = MY9221(di, dcki)
+        self.sound = Composer(buzz)
         # self.drv = MY9221_dummy()
 
         self.width = self.drv.WIDTH
         self.message = message
         self.level = 0
         self.nlevel = 0
-        self.boot = True 
-        self.active = 'welcome'
-        self.next = 'welcome'
+        self.speed = 0.2
 
         self.animations = {
             'alarm': self.alarm,
@@ -302,29 +336,35 @@ class Display:
             self.level = int(self.message.percentage*self.width + 0.5)
             self.nlevel = self.width - self.level
 
-            if not self.boot:
+            if not self.message.boot:
                 if self.message.reset:
-                    self.next = 'reset'
+                    self.message.next = 'reset'
                 elif self.message.alarm:
-                    self.next = 'alarm'
+                    self.message.next = 'alarm'
                 elif self.message.charging:
-                    self.next = 'charging'
+                    self.message.next = 'charging'
                 else:
-                    self.next = 'indicator'
+                    self.message.next = 'indicator'
             await asyncio.sleep(0.2)
 
-    async def refresher(self, period=0.2):
+    async def refresher(self):
         anim = self.animations['welcome']()
+        # sound test
+        await asyncio.create_task(self.sound.play(self.WELCOME_MELODY))
+
         while True:
             try:
-                if (self.active != self.next):
-                    anim = self.animations[self.next]()
-                    self.active = self.next
+                # TODO the program does do the welcome sequence
+                # every time the usb gets disconnected
+                if (self.message.active != self.message.next):
+                    self.speed = 0.2 # default animation speed
+                    anim = self.animations[self.message.next]()
+                    self.message.active = self.message.next
                 self.drv.register = next(anim)
             except Exception:
-                self.boot = False
-                anim = self.animations[self.active]()
-            await asyncio.sleep(period)
+                self.message.boot = False
+                anim = self.animations[self.message.active]()
+            await asyncio.sleep(self.speed)
 
     def welcome(self, intensity=100):
         yield [0] * self.width
@@ -346,6 +386,16 @@ class Display:
         yield [intensity]*self.level + [0]*self.nlevel
         for i in range(self.level, self.width):
             yield (i, intensity)
+
+    def pong(self, intensity=100):
+        self.speed = 0.1
+        buf = [100]*3 + [0]*7
+        for i in range(7):
+            buf.insert(0, buf.pop(9))
+            yield buf
+        for i in range(7):
+            buf.insert(9, buf.pop(0))
+            yield buf
 
 class MY9221_dummy:
 

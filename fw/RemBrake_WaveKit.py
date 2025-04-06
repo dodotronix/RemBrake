@@ -3,7 +3,7 @@
 import pwmio
 import asyncio
 
-class Tones():
+class Composer():
 
     NOTES = {
             "C2": 65,
@@ -82,8 +82,8 @@ class Tones():
             "-": 0
         }
 
-    def __init__(self, pwm) -> None:
-        self._pwm = pwm
+    def __init__(self, buzz) -> None:
+        self._pwm = pwmio.PWMOut(buzz, variable_frequency=True)
         self.notes = None
         self.playing = None
 
