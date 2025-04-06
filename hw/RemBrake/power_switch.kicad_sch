@@ -6135,7 +6135,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "466d472c-ecf6-4152-94fa-972e0ee7f143")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR025"
 			(at 265.43 73.66 0)
 			(hide yes)
 			(effects
@@ -6185,7 +6185,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "#PWR071")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)

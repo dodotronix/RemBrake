@@ -1190,132 +1190,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1875,7 +1749,17 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 58.42) (xy 212.09 58.42)
+			(xy 77.47 52.07) (xy 114.3 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4deb7f1-1ccf-4647-b028-c2edf53e25b7")
+	)
+	(wire
+		(pts
+			(xy 181.61 58.42) (xy 212.09 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2043,6 +1927,16 @@
 		)
 		(uuid "f472cf59-4adb-45c9-b780-de5117b90208")
 	)
+	(label "VBUS"
+		(at 114.3 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04f60583-d056-4527-a735-7c2ebc65082b")
+	)
 	(label "BLUE"
 		(at 114.3 77.47 180)
 		(effects
@@ -2183,6 +2077,16 @@
 		)
 		(uuid "c16a3f2f-b256-4e42-a5f2-adc26379055b")
 	)
+	(label "VBUS"
+		(at 181.61 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ceaf1152-f36e-4e38-ad38-18a78e387a15")
+	)
 	(label "I2C.SDA"
 		(at 199.39 104.14 0)
 		(effects
@@ -2267,6 +2171,17 @@
 		)
 		(uuid "675628fa-9ca0-4977-bd7c-5e8d672d6695")
 	)
+	(hierarchical_label "VBUS"
+		(shape input)
+		(at 77.47 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aa1a4def-ebe4-4767-9482-f78a32e9ee18")
+	)
 	(hierarchical_label "LED GREEN"
 		(shape input)
 		(at 77.47 72.39 180)
@@ -2310,7 +2225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0611070e-631e-4863-ab84-5fbccd6087e1")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR027"
 			(at 96.52 146.05 0)
 			(hide yes)
 			(effects
@@ -2360,7 +2275,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR026")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -3013,7 +2928,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1718af4-d4cc-45d5-a89e-225581a12e0d")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR026"
 			(at 86.36 146.05 0)
 			(hide yes)
 			(effects
@@ -3063,7 +2978,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR025")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -3210,73 +3125,6 @@
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
 					(reference "#PWR032")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 190.5 58.42 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da26a971-da12-4b96-8044-adb2a9d5196f")
-		(property "Reference" "#PWR027"
-			(at 194.31 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 186.69 58.4199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 190.5 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93bff515-7d38-4177-a27a-6ac6cea8a33d")
-		)
-		(instances
-			(project "RemBrake"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/c6fda42a-9645-46e5-b66a-57cf8664dccf"
-					(reference "#PWR027")
 					(unit 1)
 				)
 			)
