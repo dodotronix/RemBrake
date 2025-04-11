@@ -736,6 +736,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:SS1200"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SS1200"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 0 -4.445 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.wontop.com/uploadfiles/56/sort_excel/pdf/ss1150.pdf"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "200V 1A Schottky Diode, SMA"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*SMA*"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SS1200_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SS1200_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Timer:LM555xN"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2542,6 +2693,12 @@
 		(uuid "171c987c-e2d4-414c-9199-8aa948905deb")
 	)
 	(junction
+		(at 245.11 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19777e36-38e0-4462-932b-db5afba1c708")
+	)
+	(junction
 		(at 86.36 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2618,6 +2775,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61d01879-14e5-465e-9c71-d4991bbc0814")
+	)
+	(junction
+		(at 242.57 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6855f110-0556-4ae7-ac80-b31d96e7c1d5")
 	)
 	(junction
 		(at 66.04 115.57)
@@ -2857,6 +3020,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 154.94) (xy 245.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c079de-6a0e-45f5-9982-f4e975119086")
+	)
+	(wire
+		(pts
 			(xy 82.55 39.37) (xy 86.36 39.37)
 		)
 		(stroke
@@ -2954,6 +3127,16 @@
 			(type default)
 		)
 		(uuid "17e90739-9aa1-47e1-a7b7-1b07b949e0ad")
+	)
+	(wire
+		(pts
+			(xy 242.57 139.7) (xy 242.57 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1893f381-358f-413f-893c-9dd5e6e49660")
 	)
 	(wire
 		(pts
@@ -3257,6 +3440,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 152.4) (xy 245.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0e1a71-5d94-4453-8a5e-0434a05178dd")
+	)
+	(wire
+		(pts
 			(xy 54.61 180.34) (xy 54.61 172.72)
 		)
 		(stroke
@@ -3317,7 +3510,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 144.78) (xy 245.11 137.16)
+			(xy 245.11 152.4) (xy 245.11 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3337,7 +3530,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 142.24) (xy 248.92 142.24)
+			(xy 226.06 142.24) (xy 248.92 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3614,6 +3807,16 @@
 			(type default)
 		)
 		(uuid "81a2786a-8091-4793-838f-a7d5185af1f0")
+	)
+	(wire
+		(pts
+			(xy 242.57 151.13) (xy 242.57 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81cecdee-7661-4083-93e5-7338f4832758")
 	)
 	(wire
 		(pts
@@ -4546,7 +4749,7 @@
 		(uuid "9e8e3f2f-9227-4e8f-8820-1394e63cefbd")
 	)
 	(label "SERVO"
-		(at 233.68 142.24 0)
+		(at 226.06 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7090,7 +7293,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 245.11 144.78 0)
+		(at 245.11 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7099,7 +7302,7 @@
 		(fields_autoplaced yes)
 		(uuid "837caee2-7609-4a48-af4d-c27f109b60ef")
 		(property "Reference" "#PWR059"
-			(at 245.11 151.13 0)
+			(at 245.11 161.29 0)
 			(hide yes)
 			(effects
 				(font
@@ -7108,7 +7311,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 245.11 149.86 0)
+			(at 245.11 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7116,7 +7319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 144.78 0)
+			(at 245.11 154.94 0)
 			(hide yes)
 			(effects
 				(font
@@ -7125,7 +7328,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 144.78 0)
+			(at 245.11 154.94 0)
 			(hide yes)
 			(effects
 				(font
@@ -7134,7 +7337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 245.11 144.78 0)
+			(at 245.11 154.94 0)
 			(hide yes)
 			(effects
 				(font
@@ -9333,6 +9536,76 @@
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS1200")
+		(at 242.57 147.32 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5c3e740-6f36-43b2-96cc-4df5fed0a2e7")
+		(property "Reference" "D6"
+			(at 238.252 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS1200"
+			(at 245.11 148.2724 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 238.125 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.wontop.com/uploadfiles/56/sort_excel/pdf/ss1150.pdf"
+			(at 242.57 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200V 1A Schottky Diode, SMA"
+			(at 242.57 147.32 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "768ab84f-1cbe-4605-bbcf-977117fd0362")
+		)
+		(pin "1"
+			(uuid "79b6fc62-5217-47c6-ad85-cc1ccda55085")
+		)
+		(instances
+			(project ""
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
+					(reference "D6")
 					(unit 1)
 				)
 			)
