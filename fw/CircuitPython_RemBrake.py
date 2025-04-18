@@ -4,7 +4,6 @@ import pwmio
 import simpleio
 import keypad
 
-from time import sleep
 from adafruit_motor import servo
 from digitalio import DigitalInOut, Direction
 
