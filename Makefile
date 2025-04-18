@@ -1,5 +1,5 @@
 # install all packages on Archlinux
-
+ROOT:=$(PWD)
 PACKAGE_BLINKA:=python-adafruit-blinka
 PACKAGE_PLATFORMDETECT:=python-adafruit-platformdetect
 PACKAGE_VERSION_BLINKA:="8.47.0"
@@ -38,3 +38,8 @@ install_dependencies:
 		python-sysv_ipc \
 		python-gpiod \
 		python-adafruit-pureio
+
+unittest:
+	@export PYTHONPATH=$$PYTHONPATH::$(ROOT)/fw/tests/mocks::$(ROOT)/fw && \
+		python -m unittest discover -s $(ROOT)/fw/tests
+
