@@ -2,96 +2,17 @@
 # SPDX-License-Identifier: MIT
 
 import asyncio
-import keypad
-import neopixel
 import board
+import neopixel
 import pwmio
+import keypad
 
 from adafruit_motor import servo
 from digitalio import DigitalInOut, Direction
 
 from CircuitPython_MY9221 import MY9221
 from CircuitPython_LTC2943 import LTC2943, ALCC, Mode, Prescaler
-from RemBrake_Wavekit import Composer
-
-class DebuggingIndicator():
-    def __init__(self, pin, message: Message, period=0.2):
-        self.indicator = neopixel.NeoPixel(pin, 1)
-        self.message = message
-        self.red = 0
-        self.green = 0
-        self.blue = 0
-        self.period = period
-
-    async def tasks(self):
-        await asyncio.gather(asyncio.create_task(self._refresher()), 
-                             asyncio.create_task(self._alive()),
-                             asyncio.create_task(self._info()))
-    async def _info(self):
-        while True:
-            for k,v in self.message.msg.items():
-                print(f"{k} : {v}")
-            print("")
-            await asyncio.sleep(5*self.period)
-
-    async def _alive(self):
-        while True:
-            self.blue = 1
-            await asyncio.sleep(self.period)
-            self.blue = 0
-            await asyncio.sleep(self.period)
-
-    async def _refresher(self):
-        while True:
-            self.indicator.fill((self.red, self.green, self.blue))
-            await asyncio.sleep(self.period)
-
-class BrakeCore():
-    def __init__(self, layout) -> None:
-
-        # matches each pin with corresponding
-        # board attribute
-        def create_layout(d):
-            tmp = {}
-            for k,v in d.items():
-                tmp[k] = getattr(board, v)
-            return tmp
-
-        lt = create_layout(layout)
-
-        self.message = Message()
-        self.debug = DebuggingIndicator(board.NEOPIXEL, self.message)
-        self.battery = BatteryMonitor(board.I2C(), self.message)
-
-        self.ios = IOs(
-            lt['ready'],
-            lt['enable'],
-            self.message)
-
-        self.display = Display(
-            lt['display_di'], 
-            lt['display_dcki'], 
-            lt['buzz'],
-            self.message)
-
-        self.brake = BrakeControl(
-            lt['servo'],
-            lt['power'],
-            lt['remote'],
-            lt['handlebars'],
-            self.message)
-
-    def start(self):
-        async def main():
-            await asyncio.gather(
-                self.display.tasks(),
-                self.battery.tasks(),
-                self.debug.tasks(),
-                self.brake.tasks(),
-                self.ios.task()
-            )
-        print("run program")
-        asyncio.run(main())
+from RemBrake_WaveKit import Composer
 
 class Message():
     def __init__(self):
@@ -118,19 +39,19 @@ class Message():
         }
 
     @property
-    def next(self) -> string:
+    def next(self) -> str:
         return self.msg['next_animation']
 
     @next.setter
-    def next(self, value: string) -> None:
+    def next(self, value: str) -> None:
         self.msg['next_animation'] = value
 
     @property
-    def active(self) -> string:
+    def active(self) -> str:
         return self.msg['active_animation']
 
     @active.setter
-    def active(self, value: string) -> None:
+    def active(self, value: str) -> None:
         self.msg['active_animation'] = value
 
     @property
@@ -226,6 +147,86 @@ class Message():
     @current.setter
     def current(self, value: float) -> None:
         self.msg['current'] = value
+
+class DebuggingIndicator():
+    def __init__(self, pin, message: Message, period=0.2):
+        self.indicator = neopixel.NeoPixel(pin, 1)
+        self.message = message
+        self.red = 0
+        self.green = 0
+        self.blue = 0
+        self.period = period
+
+    async def tasks(self):
+        await asyncio.gather(asyncio.create_task(self._refresher()), 
+                             asyncio.create_task(self._alive()),
+                             asyncio.create_task(self._info()))
+    async def _info(self):
+        while True:
+            for k,v in self.message.msg.items():
+                print(f"{k} : {v}")
+            print("")
+            await asyncio.sleep(5*self.period)
+
+    async def _alive(self):
+        while True:
+            self.blue = 1
+            await asyncio.sleep(self.period)
+            self.blue = 0
+            await asyncio.sleep(self.period)
+
+    async def _refresher(self):
+        while True:
+            self.indicator.fill((self.red, self.green, self.blue))
+            await asyncio.sleep(self.period)
+
+class BrakeCore():
+    def __init__(self, layout) -> None:
+
+        # matches each pin with corresponding
+        # board attribute
+        def create_layout(d):
+            tmp = {}
+            for k,v in d.items():
+                tmp[k] = getattr(board, v)
+            return tmp
+
+        lt = create_layout(layout)
+
+        self.message = Message()
+        self.debug = DebuggingIndicator(board.NEOPIXEL, self.message)
+        self.battery = BatteryMonitor(board.I2C(), self.message)
+
+        self.ios = IOs(
+            lt['ready'],
+            lt['enable'],
+            self.message)
+
+        self.display = Display(
+            lt['display_di'], 
+            lt['display_dcki'], 
+            lt['buzz'],
+            self.message)
+
+        self.brake = BrakeControl(
+            lt['servo'],
+            lt['power'],
+            lt['remote'],
+            lt['handlebars'],
+            self.message)
+
+    def start(self):
+        async def main():
+            await asyncio.gather(
+                self.display.tasks(),
+                self.battery.tasks(),
+                self.debug.tasks(),
+                self.brake.tasks(),
+                self.ios.task()
+            )
+        print("run program")
+        asyncio.run(main())
+
 
 class IOs():
     def __init__(self, rdy, ena, message: Message) -> None:
@@ -325,7 +326,7 @@ class Display:
             'welcome': self.welcome
         }
 
-    def tasks(self):
+    async def tasks(self):
         await asyncio.gather(
             asyncio.create_task(self.selector()),
             asyncio.create_task(self.refresher())
@@ -397,42 +398,6 @@ class Display:
             buf.insert(9, buf.pop(0))
             yield buf
 
-class MY9221_dummy:
-
-    WIDTH = 10 # Number of LEDs
-
-    def __init__(self):
-        self.leds = [" "]*self.WIDTH 
-        self.set_all(0)
-
-    @property
-    def register(self):
-        return self._register
-
-    @register.setter
-    def register(self, config):
-        if isinstance(config, tuple):
-            id, intensity = config
-            self._register[id] = intensity
-        elif all(isinstance(item, tuple) for item in config):
-            for id, intensity in config:
-                self._register[id] = intensity
-        elif isinstance(config, list):
-            for index, intensity in enumerate(config):
-                self._register[index] = intensity 
-        else:
-            raise ValueError("Value has to be tuple, list or list of tuples")
-        self.refresh()
-
-    def set_all(self, value):
-        self._register = [value] * self.WIDTH  
-        self.refresh()
-
-    def refresh(self):
-        for k,v in enumerate(self._register):
-            self.leds[k] = "#" if v > 0 else " "
-        print(f'|{''.join(self.leds)}|' + ' '*30 + '\r', end=" ")
-
 class BrakeControl():
     def __init__(self, srv, pwr, remote, handlebars, message: Message) -> None:
         self.keys = keypad.Keys((remote, handlebars), 
@@ -449,7 +414,7 @@ class BrakeControl():
         self.active_keys = [False, False]
         self.both = False
 
-    def tasks(self):
+    async def tasks(self):
         await asyncio.gather(
             asyncio.create_task(self.key_menu()),
             asyncio.create_task(self.driver())
