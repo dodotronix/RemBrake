@@ -19,9 +19,9 @@ class Message():
         self.config = {
             'charge_range' : (0x00ff, 0xffff),
             'voltage_range' : (6.2, 8.5),
-            'servo_default' : 105,
-            'user_braking' : [(85, 2), (60, 4), (90, 15)],
-            'assistant_braking' : [(65, 2), (90, 2)]
+            'servo_default' : 100,
+            'user_braking' : [(45, 2), (30, 4), (45, 30)],
+            'assistant_braking' : [(25, 5), (45, 10)]
         }
 
         self.msg = {
@@ -281,12 +281,14 @@ class BatteryMonitor():
             # NOTE the chinese module doesn't stop 
             # always at the 0xffff value so we have 
             # to limit the value manually.
-            if ((self.message.status & 0x20) or self.message.reset)\
-                and self.message.charging is not None:
-                if not self.message.charging:
+            if (self.message.charging is not None):
+                if (self.message.status & 0x20) or \
+                    (self.message.reset and not self.message.charging): 
                     self.message.reset = False
-                self.message.charge = 0xffff
-                self.drv.accumulated_charge = self.message.charge
+                    self.message.charge = 0xffff
+                    self.drv.accumulated_charge = self.message.charge
+            else:
+                self.message.reset = False
 
             # NOTE this means the cable is plugged 
             # and either it is charging or it is 
@@ -460,21 +462,26 @@ class BrakeControl():
             self.message.angle = self.message.default
 
     async def reset_timeout(self):
-        # NOTE if the reset is already 
-        # active, there nothing to do
-        if self.message.reset:
-            self.message.reset = False
-            return
-
-        # NOTE wait for 5s and check, if 
-        # the both keys are still pressed
-        for i in range(25):
-            await asyncio.sleep(0.2)
-            if not self.both:
+        try:
+            # NOTE if the reset is already 
+            # active, there nothing to do
+            if self.message.reset:
+                self.message.reset = False
                 return
 
-        self.message.reset = True
-        print(f"reset timeout success")
+            # NOTE wait for 5s and check, if 
+            # the both keys are still pressed
+            for i in range(25):
+                await asyncio.sleep(0.2)
+                if not self.both:
+                    return
+
+            self.message.reset = True
+            print(f"reset timeout success")
+
+        except asyncio.CancelledError:
+            self.both = False
+            print(f"reset timeout canceled")
 
     async def key_menu(self):
 
@@ -491,14 +498,19 @@ class BrakeControl():
                 if self.event.pressed:
                     self.active_keys[self.event.key_number] = True
                     print("pressed button")
-
-                    if self.active_keys[0] and self.active_keys[1]:
-                        self.both = True
-                        if bms_reset.done():
+                    if (self.message.charging is not None):
+                        # turn off the braking 
+                        # sequence if needed
+                        if not assistante.done():
                             user.cancel()
+                        if not user.done():
                             assistant.cancel()
-                            bms_reset = asyncio.create_task(
-                                self.reset_timeout())
+
+                        if self.active_keys[0] and self.active_keys[1]:
+                            self.both = True
+                            if bms_reset.done():
+                                bms_reset = asyncio.create_task(
+                                    self.reset_timeout())
 
                     elif self.active_keys[0]:
                         if assistant.done(): 
@@ -515,4 +527,5 @@ class BrakeControl():
                     bms_reset.cancel() # cancels the reset timeout
                     user.cancel() # it cancels the user's brake
                     self.active_keys[self.event.key_number] = False
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.001)
+
