@@ -41,5 +41,6 @@ install_dependencies:
 
 unittest:
 	@export PYTHONPATH=$$PYTHONPATH::$(ROOT)/fw/tests/mocks::$(ROOT)/fw && \
-		python -m unittest discover -s $(ROOT)/fw/tests
+		python -m unittest discover -v -s $(ROOT)/fw/tests
+
 
