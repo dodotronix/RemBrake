@@ -1,6 +1,6 @@
 
-class servo:
-    def Servo(self, pwm):
+class Servo:
+    def __init__(self, pwm):
         self._pwm = pwm
         self._angle = 100
 

@@ -30,7 +30,7 @@ class DigitalInOut:
 
     @value.setter
     def value(self, value):
-        assert self._direction == "INPUT"
+        assert self._direction == "OUTPUT"
         lg.info(f"Value of {self.pin} set to {value}")
         self._value = value
 
