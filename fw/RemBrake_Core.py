@@ -458,7 +458,7 @@ class BrakeControl():
             self.message.angle = self.message.default
 
         except asyncio.CancelledError:
-            print(f"gradient braking stopped")
+            print(f"braking until still")
             self.message.angle = self.message.default
 
     async def reset_timeout(self):
@@ -488,9 +488,9 @@ class BrakeControl():
         async def dummy_task():
             await asyncio.sleep(0)
 
-        user = asyncio.create_task(dummy_task())
-        assistant = asyncio.create_task(dummy_task())
-        bms_reset = asyncio.create_task(dummy_task())
+        self.user = asyncio.create_task(dummy_task())
+        self.assistant = asyncio.create_task(dummy_task())
+        self.bms_reset = asyncio.create_task(dummy_task())
 
         while True:
             self.event = self.keys.events.get()
@@ -501,31 +501,31 @@ class BrakeControl():
                     if (self.message.charging is not None):
                         # turn off the braking 
                         # sequence if needed
-                        if not assistante.done():
-                            user.cancel()
-                        if not user.done():
-                            assistant.cancel()
+                        if not self.assistant.done():
+                            self.user.cancel()
+                        if not self.user.done():
+                            self.assistant.cancel()
 
                         if self.active_keys[0] and self.active_keys[1]:
                             self.both = True
-                            if bms_reset.done():
-                                bms_reset = asyncio.create_task(
+                            if self.bms_reset.done():
+                                self.bms_reset = asyncio.create_task(
                                     self.reset_timeout())
 
                     elif self.active_keys[0]:
-                        if assistant.done(): 
-                            user.cancel() # it cancels the user
-                            assistant = asyncio.create_task(
+                        if self.assistant.done(): 
+                            self.user.cancel() # it cancels the user
+                            self.assistant = asyncio.create_task(
                                 self.braking_until_still())
                     else:
-                        if assistant.done():
-                            user = asyncio.create_task(
+                        if self.assistant.done():
+                            self.user = asyncio.create_task(
                                 self.braking_gradientally())
                     
                 elif self.event.released:
                     print("released button")
-                    bms_reset.cancel() # cancels the reset timeout
-                    user.cancel() # it cancels the user's brake
+                    self.bms_reset.cancel() # cancels the reset timeout
+                    self.user.cancel() # it cancels the user's brake
                     self.active_keys[self.event.key_number] = False
             await asyncio.sleep(0.001)
 
