@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250318)
+	(version 20250513)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "d4fa6268-98ca-46aa-b77c-24db96a9e1d8")
@@ -3472,9 +3472,9 @@
 		(at 193.04 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0fb15ac1-47ec-4fc2-8f0f-109350af3507")
 		(property "Reference" "R62"
 			(at 195.58 97.79 90)
@@ -4005,9 +4005,9 @@
 		(at 185.42 102.87 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3fdacbdb-a6d9-44c5-94c2-488cf27ab058")
 		(property "Reference" "R59"
 			(at 185.42 100.584 90)
@@ -4139,9 +4139,9 @@
 		(at 185.42 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "55b0fdc6-813a-423f-b231-cfa1d0a73d0b")
 		(property "Reference" "R60"
 			(at 185.42 110.744 90)
@@ -4565,6 +4565,51 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "793b258c-74fb-435e-9f79-cf487d0c7673")
+		(property "Reference" "IC1"
+			(at 83.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LTC2943IDD#TRPBF"
+			(at 83.82 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm"
+			(at 52.07 -37.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.in/datasheet/2/609/2943fa-1271567.pdf"
+			(at 52.07 -137.77 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "Battery Management 20V Battery Gas Gauge with Voltage, Current & Temperature Measurement"
+			(at 83.82 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Height" "0.8"
 			(at 52.07 -337.77 0)
 			(hide yes)
@@ -4613,51 +4658,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(property "Reference" "IC1"
-			(at 83.82 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LTC2943IDD#TRPBF"
-			(at 83.82 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm"
-			(at 52.07 -37.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.in/datasheet/2/609/2943fa-1271567.pdf"
-			(at 52.07 -137.77 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Battery Management 20V Battery Gas Gauge with Voltage, Current & Temperature Measurement"
-			(at 83.82 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "6"
@@ -5120,9 +5120,9 @@
 		(at 210.82 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "a19eae45-11df-48c3-b376-23a670a9d95e")
 		(property "Reference" "R64"
 			(at 213.36 97.79 90)

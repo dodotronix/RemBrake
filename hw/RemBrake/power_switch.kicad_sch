@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250318)
+	(version 20250513)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "2a7ff1cc-957c-43b3-8e70-6249f6aaf056")
@@ -5115,9 +5115,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "0e25eff6-c20c-4392-88dd-9dd2e8480e59")
 		(property "Reference" "R14"
 			(at 194.31 114.554 90)
@@ -5458,9 +5458,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "24f8e753-e7dc-4117-8012-116bf2d4f8dc")
 		(property "Reference" "R18"
 			(at 204.216 111.76 90)
@@ -5595,15 +5595,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27f0a268-55a7-4a2d-a101-2539c7501d4b")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 153.67 181.61 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "D4"
 			(at 153.67 178.562 0)
 			(effects
@@ -5640,6 +5631,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 153.67 181.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
 			(at 153.67 181.61 0)
 			(hide yes)
 			(effects
@@ -6126,9 +6126,9 @@
 		(at 194.31 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "40a93032-5fc4-4e61-b566-a9a776f90663")
 		(property "Reference" "R15"
 			(at 194.31 122.174 90)
@@ -6339,15 +6339,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46257fef-47a5-47d1-ada3-808b4362efab")
-		(property "Purchase" "https://cz.farnell.com/murata/dfe252012p-2r2m-p2/inductor-2-2uh-20-2-6a-shld-1008/dp/2530074"
-			(at 95.25 157.48 90)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "L1"
 			(at 95.25 153.67 90)
 			(effects
@@ -6384,6 +6375,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 95.25 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/murata/dfe252012p-2r2m-p2/inductor-2-2uh-20-2-6a-shld-1008/dp/2530074"
+			(at 95.25 157.48 90)
 			(hide yes)
 			(effects
 				(font
@@ -6838,15 +6838,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66692cc7-ef32-415b-b1d5-d792aa3b7cf6")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 38.1 135.89 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "D2"
 			(at 35.052 135.89 0)
 			(effects
@@ -6883,6 +6874,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 38.1 135.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
 			(at 38.1 135.89 0)
 			(hide yes)
 			(effects
@@ -7111,9 +7111,9 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "77411b36-d466-4378-a822-1e8d020129fb")
 		(property "Reference" "R19"
 			(at 211.836 111.76 90)
@@ -7180,7 +7180,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "7a897b5d-1037-4bdb-8d6f-e63cee02aea0")
 		(property "Reference" "R3"
 			(at 77.47 63.754 90)
@@ -7583,9 +7583,9 @@
 		(at 128.27 44.45 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "81e38d5f-2006-4031-983a-672156644fbf")
 		(property "Reference" "R11"
 			(at 125.984 44.45 90)
@@ -7851,9 +7851,9 @@
 		(at 77.47 53.34 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9771f203-e6ae-42fa-81e0-701e54205b42")
 		(property "Reference" "R2"
 			(at 77.47 51.054 90)
@@ -8256,15 +8256,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bab0286a-4071-4328-b3b4-8c195ef9afeb")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 30.48 124.46 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "D1"
 			(at 30.48 121.412 0)
 			(effects
@@ -8301,6 +8292,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
 			(at 30.48 124.46 0)
 			(hide yes)
 			(effects
@@ -9007,15 +9007,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3397ddc-c9a2-453f-9a38-504fe5d754ae")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 146.05 171.45 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "D3"
 			(at 146.05 174.498 0)
 			(effects
@@ -9052,6 +9043,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 146.05 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
 			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
@@ -9418,15 +9418,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef03b650-6a8e-48cb-9691-d96645b5280a")
-		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
-			(at 158.75 171.45 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "D5"
 			(at 158.75 168.402 0)
 			(effects
@@ -9463,6 +9454,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 158.75 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/diodes-inc/mbr230s1f-7/schottky-rectifier-30v-2a-sod/dp/3405045"
 			(at 158.75 171.45 0)
 			(hide yes)
 			(effects
@@ -9758,9 +9758,9 @@
 		(at 85.09 45.72 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fef72ba9-0d9e-4f38-9246-a565be4ce1bb")
 		(property "Reference" "R5"
 			(at 82.804 45.72 90)

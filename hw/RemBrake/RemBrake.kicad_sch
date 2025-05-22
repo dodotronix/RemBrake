@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250318)
+	(version 20250513)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75")
@@ -1618,15 +1618,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1abfda37-1708-4409-9105-002c36c86f8c")
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 55.88 88.9 90)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "F2"
 			(at 55.88 82.55 90)
 			(effects
@@ -1663,6 +1654,15 @@
 		)
 		(property "Description" "MP005472"
 			(at 55.88 88.9 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
+			(at 55.88 88.9 90)
 			(hide yes)
 			(effects
 				(font
@@ -1839,15 +1839,6 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "af70131d-278a-462f-bd9f-059cd7ee73e3")
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 43.18 71.12 90)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Reference" "F1"
 			(at 35.306 70.358 0)
 			(effects
@@ -1886,6 +1877,15 @@
 		)
 		(property "Description" "MP005472"
 			(at 43.18 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
+			(at 43.18 71.12 90)
 			(hide yes)
 			(effects
 				(font
