@@ -1075,16 +1075,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 127) (xy 187.96 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "161c4c3b-fccc-44be-b0dd-7d058f45040b")
-	)
-	(wire
-		(pts
 			(xy 246.38 54.61) (xy 250.19 54.61)
 		)
 		(stroke
@@ -1135,13 +1125,13 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 106.68) (xy 184.15 106.68)
+			(xy 205.74 76.2) (xy 205.74 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f4b73dd-7347-421e-a53b-8ac4199e1149")
+		(uuid "2be7675b-91be-46d9-991b-e4fd8f4f1801")
 	)
 	(wire
 		(pts
@@ -1505,16 +1495,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 106.68) (xy 184.15 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eec19852-b3a1-4809-9503-fa09e6660308")
-	)
-	(wire
-		(pts
 			(xy 120.65 101.6) (xy 113.03 101.6)
 		)
 		(stroke
@@ -1542,6 +1522,16 @@
 			(type default)
 		)
 		(uuid "fcbe79db-113e-4ee7-864d-a749c5a016e8")
+	)
+	(wire
+		(pts
+			(xy 177.8 95.25) (xy 205.74 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffdc2d7c-3bf8-4eec-ac58-0f0fb7f75acf")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2212,6 +2202,16 @@
 				(justify right)
 			)
 		)
+		(pin "RUNNIG (RED)" input
+			(at 205.74 76.2 270)
+			(uuid "f2595c93-e073-4e4a-9b16-a58f963e8deb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
@@ -2332,16 +2332,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "RUNNIG (RED)" input
-			(at 187.96 127 180)
-			(uuid "51a05988-5d94-4955-8f11-1e60b596c0eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
@@ -2529,7 +2519,7 @@
 			)
 		)
 		(pin "LED RED" input
-			(at 177.8 106.68 0)
+			(at 177.8 95.25 0)
 			(uuid "379b4dc9-9363-4a49-8db7-7b449958cbbc")
 			(effects
 				(font
