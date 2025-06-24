@@ -32,9 +32,9 @@ check_software:
 install_dependencies:
 	@sudo pacman -S \
 		libusb \
-		python-pyftdi \
 		--noconfirm
 	@yay -S --noconfirm \
+		python-pyftdi \
 		python-sysv_ipc \
 		python-gpiod \
 		python-adafruit-pureio
