@@ -949,21 +949,135 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VDD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VDD"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDD\""
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VDD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(bus_alias "I2C"
 		(members "SDA" "SCL")
-	)
-	(text "Potentially connect MPU6050\nI2C address: 0x68 + R/W"
-		(exclude_from_sim no)
-		(at 170.434 141.478 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "101ef897-3da2-4d01-a672-bab8a15f7982")
 	)
 	(text "BATTERY"
 		(exclude_from_sim no)
@@ -989,17 +1103,47 @@
 		)
 		(uuid "2d16cddd-0717-460e-a56c-5412ebd5595f")
 	)
-	(text "Connect Switch\nand DC/DC Boost"
+	(text_box "Potentially connect MPU6050\nI2C address: 0x68 + R/W"
 		(exclude_from_sim no)
-		(at 255.016 71.12 0)
+		(at 133.985 140.335 0)
+		(size 34.29 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
 			)
 		)
-		(uuid "f837e7cd-47f8-46a4-9439-389736503d9b")
+		(uuid "56138ba0-2dfe-405a-aa08-760ec337f487")
+	)
+	(text_box "Connect Switch\nand DC/DC Boost"
+		(exclude_from_sim no)
+		(at 259.08 50.165 0)
+		(size 20.32 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c7d5304a-1652-4943-9523-a24795d7c84d")
 	)
 	(junction
 		(at 116.84 138.43)
@@ -1265,6 +1409,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 57.15) (xy 248.92 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba4c761-aa99-4dfb-b289-e7c10f88b38d")
+	)
+	(wire
+		(pts
 			(xy 220.98 76.2) (xy 220.98 114.3)
 		)
 		(stroke
@@ -1383,16 +1537,6 @@
 		)
 		(uuid "a74152b1-7938-4db9-99a6-0d34069ee666")
 	)
-	(wire
-		(pts
-			(xy 234.95 57.15) (xy 250.19 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b03248eb-2ec9-4e85-831d-c4b970ce1547")
-	)
 	(bus
 		(pts
 			(xy 181.61 115.57) (xy 177.8 115.57)
@@ -1502,6 +1646,16 @@
 			(type default)
 		)
 		(uuid "f23972a8-5e4a-4040-88e6-54139961270d")
+	)
+	(wire
+		(pts
+			(xy 248.92 44.45) (xy 248.92 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2872620-d8f6-44cc-885c-c9a0365736b9")
 	)
 	(wire
 		(pts
@@ -1642,17 +1796,8 @@
 				)
 			)
 		)
-		(property "Description" "MP005472"
+		(property "Description" "Fuse"
 			(at 55.88 88.9 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 55.88 88.9 90)
 			(hide yes)
 			(effects
 				(font
@@ -1865,17 +2010,8 @@
 				)
 			)
 		)
-		(property "Description" "MP005472"
+		(property "Description" "Fuse"
 			(at 43.18 71.12 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Purchase" "https://cz.farnell.com/multicomp-pro/mp005472/fuse-fast-acting-10a-24vdc-1206/dp/3564732"
-			(at 43.18 71.12 90)
 			(hide yes)
 			(effects
 				(font
@@ -1960,6 +2096,72 @@
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 248.92 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d926179e-1cba-4b1f-a159-6d72dee177f4")
+		(property "Reference" "#PWR04"
+			(at 248.92 48.26 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 248.92 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 248.92 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb64c7ef-1744-4078-a9eb-2db0f838a1f5")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2190,16 +2392,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "BOOST" output
-			(at 234.95 57.15 0)
-			(uuid "bce17ad3-30a9-4699-a893-424ca952dda0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "RUNNIG (RED)" input
