@@ -2,7 +2,6 @@
 # SPDX-License-Identifier: MIT
 
 import logging as lg
-
 import board
 
 class ALCC:
@@ -26,11 +25,11 @@ class Prescaler:
     PRES_M4096 = 0x06
 
 class LTC2943:
-    def __init__(self, i2c: board.I2C, addr=0x64, res=2e-3) -> None:
+    def __init__(self, i2c_bus: board.I2C, addr=0x64, res=2e-3) -> None:
         lg.info(f"Initializing LTC2943's I2C on address {addr},"
                 f"with resistor value {res}")
         self.resistor = res
-        self.i2c_bus = i2c
+        self.i2c_bus = i2c_bus
         self.i2c_addr = addr
         self.reset()
 
@@ -51,10 +50,19 @@ class LTC2943:
         self._accumulated_charge = 0xffff
         self._charge_threshold_low = 0
         self._charge_threshold_high = 0xffff
+        self._status = 0x00
 
-    # TODO set generators of noise, and charging and discharging profiles
-    def testbench(self, ):
-        pass
+    @property
+    def status(self):
+        tmp = self._status
+        # overflow flag clear 
+        # when it has been read
+        self._status &= ~0x20
+        return tmp
+
+    @status.setter
+    def status(self, value):
+        self._status = value
 
     # Here are the functions of the real LTC2943
     @property
@@ -72,10 +80,8 @@ class LTC2943:
             return int(0xffff*v/23.6)
 
         low, high = rg
-        print(tf(low), tf(high))
         self._voltage_threshold_low = tf(low)
         self._voltage_threshold_high = tf(high)
-
 
     @property
     def temperature(self) -> float:
@@ -133,4 +139,17 @@ class LTC2943:
         low, high = rg
         self._charge_threshold_low = low 
         self._charge_threshold_high = high 
+
+    # simulation purpose
+    def set_current(self, value):
+        self._current_raw = value
+
+    def set_accumulated_charge(self, value):
+        self._accumulated_charge = value
+
+    def set_voltage(self, value):
+        self._voltage_raw = value
+
+    def set_temperature(self, value):
+        self._current_raw = value
 

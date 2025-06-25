@@ -9,15 +9,15 @@ _pins = ["D0", "D1",  "D2", "D3", "TX", "MOSI", "MISO", "SCK", "RX"]
 
 class Pin:
     def __init__(self, name):
-        lg.info(f"Initializing pin {name}")
+        lg.info(f"MOCK initializing pin {name}")
         self.name = name
 
     def __repr__(self):
-        return f"<Pin {self.name}>"
+        return f"<MOCK_PIN {self.name}>"
 
 class I2C:
     def __init__(self):
-        lg.info(f"Initializing I2C")
+        lg.info(f"MOCK initializing I2C")
 
 # generate pin attributes of the board module
 module = sys.modules[__name__]

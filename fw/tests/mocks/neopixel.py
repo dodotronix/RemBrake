@@ -7,7 +7,5 @@ class NeoPixel:
         self.green = 0
         self.blue = 0
 
-    def fill(self, red, green, blue):
-        self.red = red
-        self.green = green
-        self.blue = blue
+    def fill(self, tuple):
+        self.red, self.green, self.blue = tuple
