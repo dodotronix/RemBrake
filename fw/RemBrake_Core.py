@@ -1,4 +1,3 @@
-
 # SPDX-License-Identifier: MIT
 
 import asyncio
@@ -14,78 +13,94 @@ from CircuitPython_MY9221 import MY9221
 from CircuitPython_LTC2943 import LTC2943, ALCC, Mode, Prescaler
 from RemBrake_WaveKit import Composer
 
+try:
+    import adafruit_logging as lg
+except:
+    import logging as lg
+
+log = lg.getLogger(__name__)
+log.setLevel(lg.INFO)
+
 class Message():
     def __init__(self):
         self.config = {
             'charge_range' : (0x00ff, 0xffff),
             'voltage_range' : (6.2, 8.5),
-            'servo_default' : 105,
-            'user_braking' : [(85, 2), (60, 4), (90, 15)],
-            'assistant_braking' : [(65, 2), (90, 2)]
+            'servo_default' : 100,
+            'led_intensity' : 100,
+            'user_braking' : [(130, 2), (150, 4), (130, 30)],
+            'assistant_braking' : [(150, 5), (135, 10)]
         }
+
+        self.sounds = { "welcome"  : [("C5", 0.15),
+                                      ("E5", 0.15),
+                                      ("G5", 0.15),
+                                      ("C6", 0.15),],
+
+                       "plugged"   : [("E5", 0.12),
+                                      ("G5", 0.2),
+                                      ("-", 0.2)],
+
+                       "unplugged" : [("G5", 0.2),
+                                      ("E5", 0.12),
+                                      ("-", 0.2)],
+
+                       "charged" : [("C5", 0.12),
+                                    ("E5", 0.12),
+                                    ("G5", 0.12),
+                                    ("C6", 0.3),],
+
+                       "reset" : [("C5", 0.08),
+                                  ("D5", 0.08),
+                                  ("E5", 0.08),
+                                  ("G5", 0.08),
+                                  ("C6", 0.08),
+                                  ("-", 0.04)],
+
+                       "alarm" : [("H6", 0.15),
+                                  ("-", 0.1),
+                                  ("H6", 0.15)]}
 
         self.msg = {
             'angle': self.config['servo_default'],
             'charge': 0,
             'current': 0,
+            'kalman': 0,
+            'pid_angle': 0,
             'status': 0,
             'percentage': 0,
-            'alarm': None,
-            'charging': None,
-            'boot': True,
-            'active_animation': "welcome",
-            'next_animation': "welcome",
-            'bms_reset': False
+            'alarm': False
         }
 
-    @property
-    def next(self) -> str:
-        return self.msg['next_animation']
-
-    @next.setter
-    def next(self, value: str) -> None:
-        self.msg['next_animation'] = value
+        # kalman init
+        self.P = 0
+        self.r = 100
+        self.q = 0.1
 
     @property
-    def active(self) -> str:
-        return self.msg['active_animation']
-
-    @active.setter
-    def active(self, value: str) -> None:
-        self.msg['active_animation'] = value
-
-    @property
-    def boot(self) -> bool:
-        return self.msg['boot']
-
-    @boot.setter
-    def boot(self, value: bool) -> None:
-        self.msg['boot'] = value
+    def light(self) -> bool:
+        return self.config['led_intensity']
 
     @property
     def default(self) -> list:
         return self.config['servo_default']
 
     @property
-    def assistant(self) -> list:
-        return self.config['assistant_braking']
-
-    @property
-    def user(self) -> list:
-        return self.config['user_braking']
-
-    @property
     def charge_range(self) -> tuple:
-        return self.config['change_range']
+        return self.config['charge_range']
 
     @property
     def voltage_range(self) -> tuple:
         return self.config['voltage_range']
 
     @property
-    def percentage(self) -> float:
-        return self.msg['percentage']
+    def user(self) -> int:
+        return self.config['user_braking']
 
+    @property
+    def assistant(self) -> int:
+        return self.config['assistant_braking']
+    
     @property
     def status(self) -> int:
         return self.msg['status']
@@ -111,14 +126,6 @@ class Message():
         self.msg['alarm'] = value
 
     @property
-    def charging(self) -> bool:
-        return self.msg['charging']
-
-    @charging.setter
-    def charging(self, value: bool) -> None:
-        self.msg['charging'] = value
-
-    @property
     def charge(self) -> int:
         return self.msg['charge']
 
@@ -133,14 +140,6 @@ class Message():
         self.msg['percentage'] = (value - low)/(high - low)
 
     @property
-    def reset(self) -> bool:
-        return self.msg['bms_reset']
-
-    @reset.setter
-    def reset(self, value: bool) -> None:
-        self.msg['bms_reset'] = value
-
-    @property
     def current(self) -> float:
         return self.msg['current']
 
@@ -148,43 +147,63 @@ class Message():
     def current(self, value: float) -> None:
         self.msg['current'] = value
 
+        # kalman filter
+        P_pred = self.P + self.q
+        K = P_pred/(P_pred + self.r)
+        self.msg['kalman'] += K*(value - self.msg['kalman'])
+        self.P = (1 - K)*P_pred
+
+    @property
+    def pid(self) -> float:
+        return self.msg['pid_angle']
+
+    @pid.setter
+    def pid(self, value) -> None:
+        self.msg['pid_angle'] = value
+
+    @property
+    def kalman(self) -> float:
+        return self.msg['kalman']
+
 class DebuggingIndicator():
     def __init__(self, pin, message: Message, period=0.2):
-        self.indicator = neopixel.NeoPixel(pin, 1)
+        self._indicator = neopixel.NeoPixel(pin, 1)
         self.message = message
-        self.red = 0
-        self.green = 0
-        self.blue = 0
         self.period = period
+        self._instance0 = None
+        self._instance1 = None
 
-    async def tasks(self):
-        await asyncio.gather(asyncio.create_task(self._refresher()), 
-                             asyncio.create_task(self._alive()),
-                             asyncio.create_task(self._info()))
-    async def _info(self):
+    def run(self):
+        if not self._instance0:
+            self._instance0 = asyncio.create_task(self._alive())
+        if not self._instance1:
+            self._instance1 = asyncio.create_task(self._info())
+
+    async def _info_current(self):
         while True:
-            for k,v in self.message.msg.items():
-                print(f"{k} : {v}")
-            print("")
+            print(f"{self.message.kalman}, {self.message.current}, {self.message.pid}")
             await asyncio.sleep(5*self.period)
+
+    async def _info(self):
+        t = 5*self.period # 1s
+        while True:
+            string = "MESSAGE -> ["
+            for k,v in self.message.msg.items():
+                string = f"{string}{k}:{v}, "
+            log.info(f"{string[:-2]}]")
+            await asyncio.sleep(t)
 
     async def _alive(self):
         while True:
-            self.blue = 1
+            self._indicator.fill((0, 0, 10))
             await asyncio.sleep(self.period)
-            self.blue = 0
-            await asyncio.sleep(self.period)
-
-    async def _refresher(self):
-        while True:
-            self.indicator.fill((self.red, self.green, self.blue))
+            self._indicator.fill((0, 0, 0))
             await asyncio.sleep(self.period)
 
 class BrakeCore():
     def __init__(self, layout) -> None:
 
-        # matches each pin with corresponding
-        # board attribute
+        # matches pins with board attributes
         def create_layout(d):
             tmp = {}
             for k,v in d.items():
@@ -193,361 +212,429 @@ class BrakeCore():
 
         lt = create_layout(layout)
 
-        self.message = Message()
-        self.debug = DebuggingIndicator(board.NEOPIXEL, self.message)
-        self.battery = BatteryMonitor(board.I2C(), self.message)
+        # main FSM states
+        self._waiting = None
+        self.state = None
+        self.next_state = "boot"
 
-        self.ios = IOs(
-            lt['ready'],
-            lt['enable'],
-            self.message)
+        self.state_handlers = {
+            "boot" : self.boot,
+            "running": self.running, 
+            "user" : self.user,
+            "assistant" : self.assistant,
+            "plugged" : self.plugged,
+            "charging": self.charging,
+            "idle" : self.idle,
+            "unplugged" : self.unplugged,
+            "reset": self.reset,
+            "alarm": self.alarm}
 
-        self.display = Display(
-            lt['display_di'], 
-            lt['display_dcki'], 
-            lt['buzz'],
-            self.message)
+        self.msg = Message()
+        self.ready = DigitalInOut(lt['ready']) 
+        self.debug = DebuggingIndicator(
+            board.NEOPIXEL, self.msg)
+
+        # TODO can initial states of keys
+        keys = (lt['enable'],
+                lt['handlebars'], 
+                lt['remote'])
+
+        # find initial states of the pins before 
+        # switching to the boot state
+        self.hold = 0
+        for n,k in enumerate(keys):
+            pin = DigitalInOut(k)
+            pin.direction = Direction.INPUT
+            self.hold |= (pin.value << n)
+            pin.deinit()
+
+        self.keys = keypad.Keys(keys, 
+                                value_when_pressed=True, 
+                                pull=False)
 
         self.brake = BrakeControl(
             lt['servo'],
             lt['power'],
-            lt['remote'],
-            lt['handlebars'],
-            self.message)
+            self.msg)
 
-    def start(self):
-        async def main():
-            await asyncio.gather(
-                self.display.tasks(),
-                self.battery.tasks(),
-                self.debug.tasks(),
-                self.brake.tasks(),
-                self.ios.task()
-            )
-        print("run program")
-        asyncio.run(main())
+        self.battery = BatteryMonitor(
+            board.I2C(), self.msg)
 
-class IOs():
-    def __init__(self, rdy, ena, message: Message) -> None:
-        self.message = message
+        self.player = Composer(lt['buzz'])
 
-        self.enable = DigitalInOut(ena)
-        self.enable.direction = Direction.INPUT
-        self.ready = DigitalInOut(rdy) 
-        self.ready.direction = Direction.OUTPUT
+        self.display = Display(
+            lt['display_di'], 
+            lt['display_dcki'],
+            self.msg)
+        
+        self.transitions = {"boot"      : {0 : "running",
+                                           1 : "plugged"},
+                            "running"   : {1 : "plugged",
+                                           2 : "user",
+                                           4 : "assistant"},
+                            "plugged"   : {0 : "unplugged"},
+                            "charging"  : {0 : "unplugged"},
+                            "idle"      : {0 : "unplugged",
+                                           7 : "reset"},
+                            "unplugged" : {0 : "running",
+                                           1 : "plugged"},
+                            "assistant" : {0 : "running",
+                                           2 : "user",
+                                           5 : "plugged",
+                                           7 : "plugged"},
+                            "user"      : {0 : "running", 
+                                           3 : "plugged",
+                                           6 : "assistant"},
+                            "reset"     : {0 : "running", 
+                                           3 : "idle",
+                                           5 : "idle"},
+                            "alarm"     : {1 : "plugged"}}
 
-    async def task(self):
-        await asyncio.create_task(self.start())
+    def run(self):
+        log.info("launching main program")
+        asyncio.run(self.main())
 
-    async def start(self):
-        while True:
-            if self.enable.value:
-                if self.message.charging is None:
-                    self.ready.direction = Direction.INPUT
-                self.message.charging = not self.ready.value
-            else:
-                if self.message.charging is not None:
-                    self.message.charging = None
-                    self.ready.direction = Direction.OUTPUT
-                self.ready.value = False
-            await asyncio.sleep(0.2)
+    async def main(self):
+        while(True):
+            if self.next_state:
+                try :
+                    handler = self.state_handlers[self.next_state]
+                except:
+                    handler = self.state_handlers["boot"]
+                    self.next_state = "boot"
+                if self.state != self.next_state:
+                    log.info(f"State: {self.next_state}")
+                    self.state = self.next_state
+                self.next_state = await handler()
+
+            # NOTE the key changes will never happen 
+            # concurently due to the readout from 
+            # queue of events, this reduces number 
+            # of posibilities in state transitions
+            # in the Finite State Machine (FSM)
+            e = self.keys.events.get()
+            if e:
+                if e.pressed:
+                    self.hold |= (1 << e.key_number)
+                elif e.released:
+                    self.hold &= ~(1 << e.key_number)
+                self.next_state = \
+                self.transitions[self.state].get(
+                    self.hold, self.next_state)
+
+            # check for alarm in running state
+            if self.msg.alarm and not (self.hold & 0x01):
+                self.next_state = "alarm"
+
+            await asyncio.sleep(0.001)
+
+    async def boot(self):
+        sound = self.player(self.msg.sounds["welcome"])
+        animation = self.display("welcome")
+        await asyncio.gather(sound(), animation())
+
+        self.debug.run()
+        self.battery.run()
+        self.brake.run()
+        return self.transitions["boot"][self.hold]
+
+    async def running(self):
+        self.brake.handler.try_cancel("user")
+        if self.ready.direction != Direction.OUTPUT:
+            self.ready.direction = Direction.OUTPUT
+            self.ready.value = True # system running 
+
+        animation = self.display("indicator")
+        await animation()
+        return "running" 
+
+    async def user(self):
+        self.brake.handler.try_run("user")
+        return None
+
+    async def assistant(self):
+        self.brake.handler.force_run("assistant")
+        return None
+
+    async def plugged(self):
+        self.brake.deactivate()
+        if self.ready.direction != Direction.INPUT:
+            self.ready.direction = Direction.INPUT
+
+        sound = self.player(self.msg.sounds["plugged"])
+        await asyncio.gather(sound())
+        return "charging"
+
+    async def charging(self):
+        if not self.ready.value:
+            animation = self.display("charging")
+            await animation()
+            return "charging"
+        else:
+            sound = self.player(self.msg.sounds["charged"])
+            animation = self.display("indicator")
+            await asyncio.gather(sound(), animation())
+            return "idle"
+
+    async def idle(self):
+        if self._waiting:
+            self._waiting.cancel()
+
+        animation = self.display("indicator")
+        await animation()
+        return "idle"
+
+    async def unplugged(self):
+        self.brake.run()
+        sound = self.player(self.msg.sounds["unplugged"])
+        await asyncio.gather(sound())
+        return "running"
+
+    async def reset(self):
+        # NOTE you won't leave this state until you release 
+        # one button, switching the on/off switch won't work 
+        # until you release both buttons.
+        async def timeout(t):
+            try:
+                await asyncio.sleep(t)
+                log.info(f"Timeout counter finished")
+
+                self.battery.reset()
+                sound = self.player(self.msg.sounds["reset"])
+                animation = self.display("reset")
+                await asyncio.gather(sound(), animation())
+                self.next_state = "idle"
+
+            except asyncio.CancelledError:
+                log.info(f"Timeout counter canceled")
+
+        self._waiting = asyncio.create_task(timeout(2))
+
+        # this has to return None otherwise the _waiting 
+        # instance timeout is going to be overwritten
+        # in the next call of the handle reset
+        return None
+
+    async def alarm(self):
+        self.brake.deactivate()
+
+        sound = self.player(self.msg.sounds["alarm"])
+        animation = self.display("alarm")
+        await asyncio.gather(sound(), animation())
+        return "alarm"
+
+class AsyncHandler():
+    def __init__(self, functions):
+        self._function_dict = functions
+        self._instance = None
+        self._name = None
+
+    def __call__(self, name):
+        self._name = name
+        log.info(f"Launching instance: {self._name}")
+        self._instance = asyncio.create_task(
+            self._function_dict[name]())
+
+    def try_run(self, name):
+        if self.done():
+            self.__call__(name)
+
+    def try_cancel(self, name):
+        if name == self._name:
+            self.cancel()
+
+    def force_run(self, name):
+        if (name != self._name):
+            self.cancel()
+        elif not self.done():
+            return
+        self.__call__(name)
+
+    def cancel(self):
+        if self._instance and not self._instance.done():
+            log.info(f"Cancelling instance: {self._name}")
+            self._instance.cancel()
+
+    def done(self):
+        if self._instance:
+            return self._instance.done()
+        else:
+            return 1
+
+class Display:
+
+    def __init__(self, di, dcki, message: Message):
+        self.ledbar = MY9221(di, dcki)
+
+        self.msg = message
+        self.animations = {"welcome" : self.welcome,
+                           "charging" : self.charging,
+                           "indicator" : self.indicator,
+                           "reset" : self.reset,
+                           "alarm" : self.alarm}
+
+    def __call__(self, name):
+        return self.animations.get(name, self.indicator)
+
+    async def welcome(self):
+        self.ledbar(0)
+        for i in range(5):
+            self.ledbar[i] = self.msg.light
+            self.ledbar[9-i] = self.msg.light
+            self.ledbar.refresh()
+            await asyncio.sleep(0.15)
+    
+    async def charging(self):
+        tmp = int(self.msg.percentage*len(self.ledbar))
+        self.ledbar(0)
+        for i in range(tmp):
+            self.ledbar[i] = self.msg.light
+            self.ledbar.refresh()
+            await asyncio.sleep(0.1)
+
+    async def indicator(self):
+        tmp = int(self.msg.percentage*len(self.ledbar))
+        self.ledbar([self.msg.light]*tmp)
+
+    async def reset(self):
+        for _ in range(3):
+            self.ledbar(0)
+            await asyncio.sleep(0.15)
+            self.ledbar(self.msg.light)
+            await asyncio.sleep(0.15)
+
+    async def alarm(self):
+        self.ledbar(0)
+        await asyncio.sleep(0.3)
+
+        self.ledbar(self.msg.light)
+        await asyncio.sleep(0.08)
+
+        self.ledbar(0)
+        await asyncio.sleep(0.08)
+
+        self.ledbar(self.msg.light)
+        await asyncio.sleep(0.08)
 
 class BatteryMonitor():
 
     def __init__(self, i2c, message: Message) -> None:
         self.drv = LTC2943(i2c_bus=i2c, res=10e-3)
+        self._instance = None
 
         self.drv.adc_mode = Mode.AUTOMATIC
         self.drv.prescaler = Prescaler.PRES_M64
         self.drv.alcc = ALCC.DISABLE
-        self.message = message
+        self.msg = message
 
         # set limits
-        self.drv.voltage_range = (7.0, 8.5)
-        self.drv.charge_range = (0x00ff, 0xffff)
+        self.drv.voltage_range = message.voltage_range
+        self.drv.charge_range = message.charge_range
 
-    async def tasks(self):
-        await asyncio.gather(
-            asyncio.create_task(self.refresher())
-        )
+    def reset(self):
+        self.msg.charge = 0xffff
+        self.drv.accumulated_charge = self.msg.charge
 
-    async def refresher(self): 
-        while True:
-            self.message.status = self.drv.status
-            self.message.current = self.drv.current
-            self.message.charge = self.drv.accumulated_charge
-
-            # NOTE the chinese module doesn't stop 
-            # always at the 0xffff value so we have 
-            # to limit the value manually.
-            if ((self.message.status & 0x20) or self.message.reset)\
-                and self.message.charging is not None:
-                if not self.message.charging:
-                    self.message.reset = False
-                self.message.charge = 0xffff
-                self.drv.accumulated_charge = self.message.charge
-
-            # NOTE this means the cable is plugged 
-            # and either it is charging or it is 
-            # waiting to be disconnected from the 
-            # charger
-            self.message.alarm = False
-            if self.message.charging is None:
-                if (self.message.status & 0x06):
-                    self.message.alarm = True
-
-            await asyncio.sleep(0.2)
-
-class Display:
-
-    # Sounds
-    WELCOME_MELODY = [("C4", 0.3), ("E4", 0.3), ("G4", 0.3), ("C5", 0.5), 
-                      ("-", 0.2), ("C4", 0.4)]
-    WARNING_MELODY = [("G4", 0.2), ("-", 0.1), ("G4", 0.2), ("-", 0.1)]
-    ERROR_MELODY   = [("C4", 0.3), ("D#4", 0.3), ("C4", 0.3)]
-
-    def __init__(self, di, dcki, buzz, message: Message):
-        self.drv = MY9221(di, dcki)
-        self.sound = Composer(buzz)
-        # self.drv = MY9221_dummy()
-
-        self.width = self.drv.WIDTH
-        self.message = message
-        self.level = 0
-        self.nlevel = 0
-        self.speed = 0.2
-
-        self.animations = {
-            'alarm': self.alarm,
-            'reset': self.reset,
-            'charging': self.charging,
-            'indicator': self.indicator,
-            'welcome': self.welcome
-        }
-
-    async def tasks(self):
-        await asyncio.gather(
-            asyncio.create_task(self.selector()),
-            asyncio.create_task(self.refresher())
-        )
-
-    async def selector(self):
-        while True:
-            self.level = int(self.message.percentage*self.width + 0.5)
-            self.nlevel = self.width - self.level
-
-            if not self.message.boot:
-                if self.message.reset:
-                    self.message.next = 'reset'
-                elif self.message.alarm:
-                    self.message.next = 'alarm'
-                elif self.message.charging:
-                    self.message.next = 'charging'
-                else:
-                    self.message.next = 'indicator'
-            await asyncio.sleep(0.2)
-
-    async def refresher(self):
-        anim = self.animations['welcome']()
-        # sound test
-        await asyncio.create_task(self.sound.play(self.WELCOME_MELODY))
-
-        while True:
+    def run(self):
+        async def driver(): 
             try:
-                # TODO the program does do the welcome sequence
-                # every time the usb gets disconnected
-                if (self.message.active != self.message.next):
-                    self.speed = 0.2 # default animation speed
-                    anim = self.animations[self.message.next]()
-                    self.message.active = self.message.next
-                self.drv.register = next(anim)
-            except Exception:
-                self.message.boot = False
-                anim = self.animations[self.message.active]()
-            await asyncio.sleep(self.speed)
+                while True:
+                    self.msg.status = self.drv.status
+                    self.msg.current = self.drv.current
+                    self.msg.charge = self.drv.accumulated_charge
 
-    def welcome(self, intensity=100):
-        yield [0] * self.width
-        for i in range(0, 5):
-            yield [(4-i, intensity), (5+i, intensity)]
+                    # Here we set alarm flag when
+                    # the BMS detects undervoltage
+                    if (self.msg.status & 0x06):
+                        self.msg.alarm = True
+                    elif self.msg.alarm:
+                        self.msg.alarm = False
 
-    def indicator(self, intensity=100):
-        yield [intensity]*self.level + [0]*(self.width - self.level)
+                    # NOTE the chinese module does 
+                    # not stop always at the 0xffff 
+                    # value so we have to limit the 
+                    # value manually.
+                    if (self.msg.status & 0x20):
+                        self.reset()
 
-    def reset(self, intensity=100):
-        yield [intensity] * self.width
-        yield [0] * self.width
+                    await asyncio.sleep(0.2)
 
-    def alarm(self, intensity=100):
-        for i in range(10):
-            yield [int(255/10*i-0.5)] * self.width
+            except asyncio.CancelledError:
+                log.info(f"Stopping battery monitor")
 
-    def charging(self, intensity=100):
-        yield [intensity]*self.level + [0]*self.nlevel
-        for i in range(self.level, self.width):
-            yield (i, intensity)
+        if not self._instance or self._instance.done():
+            self._instance = asyncio.create_task(driver())
 
-    def pong(self, intensity=100):
-        self.speed = 0.1
-        buf = [100]*3 + [0]*7
-        for i in range(7):
-            buf.insert(0, buf.pop(9))
-            yield buf
-        for i in range(7):
-            buf.insert(9, buf.pop(0))
-            yield buf
-
-class MY9221_dummy:
-
-    WIDTH = 10 # Number of LEDs
-
-    def __init__(self):
-        self.leds = [" "]*self.WIDTH 
-        self.set_all(0)
-
-    @property
-    def register(self):
-        return self._register
-
-    @register.setter
-    def register(self, config):
-        if isinstance(config, tuple):
-            id, intensity = config
-            self._register[id] = intensity
-        elif all(isinstance(item, tuple) for item in config):
-            for id, intensity in config:
-                self._register[id] = intensity
-        elif isinstance(config, list):
-            for index, intensity in enumerate(config):
-                self._register[index] = intensity 
-        else:
-            raise ValueError("Value has to be tuple, list or list of tuples")
-        self.refresh()
-
-    def set_all(self, value):
-        self._register = [value] * self.WIDTH  
-        self.refresh()
-
-    def refresh(self):
-        for k,v in enumerate(self._register):
-            self.leds[k] = "#" if v > 0 else " "
-        print(f'|{''.join(self.leds)}|' + ' '*30 + '\r', end=" ")
+    def cancel(self):
+        if self._instance:
+            self._instance.cancel()
 
 class BrakeControl():
-    def __init__(self, srv, pwr, remote, handlebars, message: Message) -> None:
-        self.keys = keypad.Keys((remote, handlebars), 
-                                value_when_pressed=True, 
-                                pull=False)
-
-        self.servo = servo.Servo(
-            pwmio.PWMOut(srv, duty_cycle=2 ** 15, frequency=50)
-        )
+    def __init__(self, srv, pwr, message: Message) -> None:
 
         self.power = DigitalInOut(pwr)
         self.power.direction = Direction.OUTPUT 
-        self.message = message
-        self.active_keys = [False, False]
-        self.both = False
 
-    async def tasks(self):
-        await asyncio.gather(
-            asyncio.create_task(self.key_menu()),
-            asyncio.create_task(self.driver())
-        )
+        self.msg = message
+        self.handler = AsyncHandler({
+            "user" : self.user_braking,
+            "assistant" : self.assistant_braking})
 
-    async def driver(self):
-        while True:
-            if self.message.charging is None and not self.message.alarm:
+        self._instance = None
+        self._angle = self.msg.default
+        self._pwm = pwmio.PWMOut(srv, duty_cycle=2**15, frequency=50) 
+        self._servo = servo.Servo(self._pwm)
+
+    def run(self):
+        async def driver():
+            try:
+                # enable servo power
                 self.power.value = True
-                self.servo.angle = self.message.angle
-            else:
-                self.servo.angle = self.message.default
+                last_angle = 0
+                while True:
+                    # TODO PID regulator
+                    if last_angle != self._angle:
+                        self._servo.angle = self._angle
+                        last_angle = self._angle
+                    await asyncio.sleep(0.001)
+            except asyncio.CancelledError:
+                log.info(f"Stopping servo driver")
+                self._angle = self.msg.default
                 self.power.value = False
-            await asyncio.sleep(0.1)
 
-    async def braking_gradientally(self):
+        if not self._instance or self._instance.done():
+            self._instance = asyncio.create_task(driver())
+
+    def deactivate(self):
+        self.handler.cancel()
+        if self.done():
+            self._instance.cancel()
+
+    def done(self):
+        if self._instance:
+            return self._instance.done()
+        return 0
+
+    async def braking_sequence(self, sequence, infinite=False):
         try:
-            for l in self.message.user:
-                self.message.angle, period = l
-                print(f"braking angle: {self.message.angle}")
+            for l in sequence:
+                self._angle, period = l
+                log.info(f"braking angle: {self._angle}")
                 await asyncio.sleep(period)
 
             # wait until the task is deactivated
-            while True:
+            while infinite:
                 await asyncio.sleep(0.2)
 
-        except asyncio.CancelledError:
-            print(f"gradient braking stopped")
-            self.message.angle = self.message.default
-
-    async def braking_until_still(self):
-        try:
-            for l in self.message.assistant:
-                self.message.angle, period = l
-                print(f"braking angle: {self.message.angle}")
-                await asyncio.sleep(period)
-
-            print(f"braking until still stopped")
-            self.message.angle = self.message.default
+            log.info("braking sequence finished")
+            self._angle = self.msg.default
 
         except asyncio.CancelledError:
-            print(f"gradient braking stopped")
-            self.message.angle = self.message.default
+            log.info(f"Stopping braking sequence")
+            self._angle = self.msg.default
 
-    async def reset_timeout(self):
-        # NOTE if the reset is already 
-        # active, there nothing to do
-        if self.message.reset:
-            self.message.reset = False
-            return
+    def user_braking(self):
+        return self.braking_sequence(self.msg.user, True)
 
-        # NOTE wait for 5s and check, if 
-        # the both keys are still pressed
-        for i in range(25):
-            await asyncio.sleep(0.2)
-            if not self.both:
-                return
-
-        self.message.reset = True
-        print(f"reset timeout success")
-
-    async def key_menu(self):
-
-        async def dummy_task():
-            await asyncio.sleep(0)
-
-        self.user = asyncio.create_task(dummy_task())
-        self.assistant = asyncio.create_task(dummy_task())
-        self.bms_reset = asyncio.create_task(dummy_task())
-
-        while True:
-            self.event = self.keys.events.get()
-            if self.event:
-                if self.event.pressed:
-                    self.active_keys[self.event.key_number] = True
-                    print("pressed button")
-
-                    if self.active_keys[0] and self.active_keys[1]:
-                        self.both = True
-                        if self.bms_reset.done():
-                            self.user.cancel()
-                            self.assistant.cancel()
-                            self.bms_reset = asyncio.create_task(
-                                self.reset_timeout())
-
-                    elif self.active_keys[0]:
-                        if self.assistant.done(): 
-                            self.user.cancel() # it cancels the user
-                            self.assistant = asyncio.create_task(
-                                self.braking_until_still())
-                    else:
-                        if self.assistant.done():
-                            self.user = asyncio.create_task(
-                                self.braking_gradientally())
-                    
-                elif self.event.released:
-                    print("released button")
-                    self.bms_reset.cancel() # cancels the reset timeout
-                    self.user.cancel() # it cancels the user's brake
-                    self.active_keys[self.event.key_number] = False
-            await asyncio.sleep(0.01)
+    def assistant_braking(self):
+        return self.braking_sequence(self.msg.assistant)
