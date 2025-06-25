@@ -6,7 +6,7 @@ ROOT := $(shell pwd)
 LIB_VERSION   := 20250121
 LIB_NAME 	  := adafruit-circuitpython-bundle-9.x-mpy-$(LIB_VERSION)
 ADAFRUIT_LIBS := "https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/$(LIB_VERSION)/$(LIB_NAME).zip"
-GIT_LOCATIONS := "git@github.com:dodotronix/CircuitPython_LTC2943.git"
+GIT_LOCATIONS := "git@github.com:dodotronix/CircuitPython_LTC2943.git" "git@github.com:dodotronix/CircuitPython_MY9221.git"
 GIT_FOLDER 	  := $(ROOT)/git_repos
 GIT_MODULES   := $(ROOT)/git_modules
 
@@ -14,16 +14,13 @@ TARGET := $(ROOT)/target
 TARGET_LIB_FOLDER := $(TARGET)/lib 
 
 
-LOCAL_MODULES := "CircuitPython_MY9221.py" \
-			     "CircuitPython_RemBrake.py" \
-			     "RemBrake_Battery.py" \
-			     "RemBrake_Core.py" \
-			     "RemBrake_Display.py" \
+LOCAL_MODULES := "RemBrake_Core.py" \
 			     "RemBrake_WaveKit.py" \
 			     "code.py"
 
 
 ADAFRUIT_MPYS := "adafruit_ticks.mpy" \
+				 "adafruit_logging.mpy" \
 				 "neopixel.mpy" \
 				 "simpleio.mpy" 
 
