@@ -585,6 +585,9 @@ class BrakeControl():
         self._pwm = pwmio.PWMOut(srv, duty_cycle=2**15, frequency=50) 
         self._servo = servo.Servo(self._pwm)
 
+    # TODO don't create this as a standalone 
+    # create, put it in the main loop, because
+    # cancellation takes too long
     def run(self):
         async def driver():
             try:
