@@ -27,6 +27,11 @@
 - TODO how the PCB behaves (charging, running, error)
 - TODO what the different colors mean
 
+## About the system
+### System's Block Diagram (BD) 
+### System's Finite State Machine (FSM)
+![FSM Diagram](doc/pictures/FSM_diagram.drawio.svg)
+
 ## Possible further development
 - Bidirectional remote contoller that the assistant can see the battery status
 - Accelerometer feedback, to adjust braking power according to the situation
