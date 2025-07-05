@@ -18,5 +18,5 @@ class PWMOut():
 
     def __repr__(self):
         return (f"PWM: [{self._pin}," 
-        " <Duty Cycle: {self._duty_cycle}>,"
-        " <Frequency: {self._frequency}>]")
+        f" <Duty Cycle: {self._duty_cycle}>,"
+        f" <Frequency: {self._frequency}>]")
