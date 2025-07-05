@@ -610,7 +610,7 @@ class BrakeControl():
 
     def deactivate(self):
         self.handler.cancel()
-        if self.done():
+        if not self.done():
             self._instance.cancel()
 
     def done(self):
