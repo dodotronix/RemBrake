@@ -6644,7 +6644,7 @@
 		(dnp no)
 		(uuid "a9a2364b-c6ca-4b04-82c3-b13ed911ef09")
 		(property "Reference" "RN4"
-			(at 201.676 66.04 90)
+			(at 197.358 66.294 90)
 			(effects
 				(font
 					(size 1.27 1.27)
