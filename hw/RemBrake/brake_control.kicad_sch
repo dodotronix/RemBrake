@@ -5026,7 +5026,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07534d17-e9fb-4e59-a108-7d2adcecf40e")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR059"
 			(at 224.79 125.73 0)
 			(hide yes)
 			(effects
@@ -5076,7 +5076,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR061")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -5092,7 +5092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "082090b4-7402-44bc-980f-0455c0c4f255")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR064"
 			(at 260.35 87.63 0)
 			(hide yes)
 			(effects
@@ -5142,8 +5142,95 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR066")
+					(reference "#PWR064")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 224.79 130.81 180)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0a58b4d4-d5a2-4e36-b8fb-dad4beba5e1b")
+		(property "Reference" "RN2"
+			(at 222.504 128.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 224.79 129.032 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 226.822 130.81 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 224.79 130.81 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "1f096266-95b2-4938-a4dc-6523a5afe057")
+		)
+		(pin "8"
+			(uuid "1d6753a3-7067-4ac6-985a-954364bbb065")
+		)
+		(pin "2"
+			(uuid "6c4757cb-ecf6-439e-a312-99a95f82653c")
+		)
+		(pin "1"
+			(uuid "161bc734-1ceb-416a-8590-ae0a2af5044a")
+		)
+		(pin "6"
+			(uuid "f0911267-347f-49a5-8369-5b7d16dafe46")
+		)
+		(pin "3"
+			(uuid "4b38d1eb-81b2-4cc9-b19c-a0f33c1f9212")
+		)
+		(pin "4"
+			(uuid "02d894a2-dbe3-4119-aff6-0992824a965b")
+		)
+		(pin "7"
+			(uuid "da43c1f6-ff0d-4dbd-899f-bd5421196f0c")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
+					(reference "RN2")
+					(unit 4)
 				)
 			)
 		)
@@ -5157,7 +5244,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b863499-06bd-4e4b-9155-790bc1406fde")
-		(property "Reference" "RN1"
+		(property "Reference" "RN3"
 			(at 125.476 160.274 90)
 			(effects
 				(font
@@ -5229,7 +5316,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "RN1")
+					(reference "RN3")
 					(unit 1)
 				)
 			)
@@ -5330,7 +5417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "137a9508-b06f-4882-bcf2-9169b9405dda")
-		(property "Reference" "R41"
+		(property "Reference" "R42"
 			(at 220.98 45.974 90)
 			(effects
 				(font
@@ -5382,7 +5469,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R41")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -5397,7 +5484,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "1898898f-b274-4202-8cdc-6898134de280")
-		(property "Reference" "R42"
+		(property "Reference" "R43"
 			(at 220.98 53.594 90)
 			(effects
 				(font
@@ -5449,7 +5536,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R42")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -5465,7 +5552,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18c2f929-c828-4f28-a87a-6a068d888536")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR050"
 			(at 83.82 93.98 0)
 			(hide yes)
 			(effects
@@ -5515,95 +5602,8 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR052")
+					(reference "#PWR050")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 49.53 146.05 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1904091b-533d-4322-9164-fde3fcfeae7d")
-		(property "Reference" "RN2"
-			(at 51.816 148.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 49.53 147.828 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 47.498 146.05 90)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 146.05 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4 resistor network, parallel topology, split"
-			(at 49.53 146.05 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "7efd3475-c4fc-4b62-b8fc-9d068d77f6c3")
-		)
-		(pin "4"
-			(uuid "ba322164-d807-4ffe-a678-e4e83ed31cd8")
-		)
-		(pin "8"
-			(uuid "1b801907-27b6-4a2d-85fe-4adbaee18003")
-		)
-		(pin "6"
-			(uuid "237ef775-7067-4225-8ec8-c649eb3527c2")
-		)
-		(pin "7"
-			(uuid "fd6de412-d95c-4db7-973a-df7b8477a595")
-		)
-		(pin "1"
-			(uuid "5ddd7ca4-9db3-4f1b-be8d-7e9a1c2b4fe6")
-		)
-		(pin "2"
-			(uuid "59855386-19df-46f0-9eea-100d3039d9de")
-		)
-		(pin "3"
-			(uuid "2fc7ba61-d7c7-49af-a38c-19bdeae380d8")
-		)
-		(instances
-			(project "RemBrake"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "RN2")
-					(unit 3)
 				)
 			)
 		)
@@ -5685,7 +5685,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "2b4e8ce0-e5fb-491b-a180-c0c55497a834")
-		(property "Reference" "R35"
+		(property "Reference" "R36"
 			(at 67.31 45.466 90)
 			(effects
 				(font
@@ -5737,7 +5737,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R35")
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -5753,7 +5753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fd93e3d-6356-4bca-a8c1-6069186c61aa")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR058"
 			(at 158.75 88.9 0)
 			(hide yes)
 			(effects
@@ -5803,7 +5803,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR060")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -5894,7 +5894,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "368caf6f-6140-4e90-a75c-9f4dd69a871e")
-		(property "Reference" "R40"
+		(property "Reference" "R41"
 			(at 218.44 121.92 90)
 			(effects
 				(font
@@ -5946,7 +5946,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R40")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -6030,7 +6030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3bff0911-cf61-4975-b067-8bee42154d63")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR043"
 			(at 39.37 60.96 0)
 			(hide yes)
 			(effects
@@ -6080,7 +6080,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR045")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -6181,7 +6181,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41c03f66-d9c3-47a4-929b-867fb3bfd284")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR060"
 			(at 232.41 162.56 0)
 			(hide yes)
 			(effects
@@ -6231,7 +6231,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR062")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -6248,7 +6248,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f1dbeb7-8102-4398-a0ff-122da96df12b")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR063"
 			(at 257.81 162.56 0)
 			(hide yes)
 			(effects
@@ -6298,8 +6298,95 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR065")
+					(reference "#PWR063")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Pack04_Split")
+		(at 49.53 146.05 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "539bfe11-a43f-4b1a-9771-1f1e4cdb399e")
+		(property "Reference" "RN2"
+			(at 51.816 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 49.53 147.828 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
+			(at 47.498 146.05 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "4 resistor network, parallel topology, split"
+			(at 49.53 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "e15d4218-ad6c-4a3d-9cc5-c83303b5d3a6")
+		)
+		(pin "8"
+			(uuid "1d6753a3-7067-4ac6-985a-954364bbb064")
+		)
+		(pin "2"
+			(uuid "6c4757cb-ecf6-439e-a312-99a95f82653b")
+		)
+		(pin "1"
+			(uuid "161bc734-1ceb-416a-8590-ae0a2af50449")
+		)
+		(pin "6"
+			(uuid "b2a2e032-b2bd-4a72-b289-bb99aa58257e")
+		)
+		(pin "3"
+			(uuid "654c3435-76b6-4c0c-8eb4-d8e8caf183e4")
+		)
+		(pin "4"
+			(uuid "dbad19e4-dc3d-4bc4-b359-e759a0e3de06")
+		)
+		(pin "7"
+			(uuid "da43c1f6-ff0d-4dbd-899f-bd5421196f0b")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
+					(reference "RN2")
+					(unit 3)
 				)
 			)
 		)
@@ -6314,7 +6401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b00f4d9-42c6-4f50-a08f-3f1c765515e0")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR047"
 			(at 54.61 33.02 0)
 			(hide yes)
 			(effects
@@ -6364,7 +6451,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR049")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6380,7 +6467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63183088-2c52-4bae-bf12-ec62dd09a212")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR045"
 			(at 49.53 133.35 0)
 			(hide yes)
 			(effects
@@ -6430,7 +6517,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR047")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6445,7 +6532,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "643f081a-9012-46e8-9c4f-74e2dff4d543")
-		(property "Reference" "R45"
+		(property "Reference" "R46"
 			(at 238.506 40.64 90)
 			(effects
 				(font
@@ -6497,7 +6584,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R45")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -6599,7 +6686,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "697bec3b-bd13-4a6b-8dbe-de49bed8d7ab")
-		(property "Reference" "R47"
+		(property "Reference" "R48"
 			(at 252.73 65.024 90)
 			(effects
 				(font
@@ -6651,7 +6738,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R47")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -6667,7 +6754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72a9e29f-3966-4322-a5bf-5946abdaa8e8")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR048"
 			(at 63.5 177.8 0)
 			(hide yes)
 			(effects
@@ -6717,7 +6804,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR050")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -6733,7 +6820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "837caee2-7609-4a48-af4d-c27f109b60ef")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR056"
 			(at 124.46 60.96 0)
 			(hide yes)
 			(effects
@@ -6783,7 +6870,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR058")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -6799,7 +6886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8789df2b-41ac-4315-8be2-36144a53ae50")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR049"
 			(at 81.28 67.31 0)
 			(hide yes)
 			(effects
@@ -6849,7 +6936,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR051")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -6864,7 +6951,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "89e6d990-54d7-4eb2-8f26-75d2e60cb85e")
-		(property "Reference" "R43"
+		(property "Reference" "R44"
 			(at 220.98 65.024 90)
 			(effects
 				(font
@@ -6916,7 +7003,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R43")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -7019,7 +7106,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93a57697-f907-42d1-9cd4-095f60b11646")
-		(property "Reference" "R44"
+		(property "Reference" "R45"
 			(at 226.314 40.64 90)
 			(effects
 				(font
@@ -7071,7 +7158,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R44")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -7154,7 +7241,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "9761780f-c850-481d-9d1b-cf82d705684d")
-		(property "Reference" "R37"
+		(property "Reference" "R38"
 			(at 73.66 41.656 90)
 			(effects
 				(font
@@ -7206,7 +7293,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R37")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -7222,7 +7309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9774a336-4154-48c2-b93e-700105bf9189")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR044"
 			(at 40.64 107.95 0)
 			(hide yes)
 			(effects
@@ -7272,7 +7359,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR046")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -7373,7 +7460,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0a1eaa8-dc87-4976-b087-7fd1a9d6f040")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR057"
 			(at 156.21 115.57 0)
 			(hide yes)
 			(effects
@@ -7423,7 +7510,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR059")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -7439,7 +7526,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3f7624f-6e1e-456f-84dc-1b27ba5906c1")
-		(property "Reference" "R32"
+		(property "Reference" "R33"
 			(at 43.18 97.79 90)
 			(effects
 				(font
@@ -7491,7 +7578,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R32")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -7508,7 +7595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4fe4cd1-d584-49e6-881f-912160a185d2")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR061"
 			(at 237.49 162.56 0)
 			(hide yes)
 			(effects
@@ -7558,7 +7645,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR063")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -7574,7 +7661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be8fe6dc-5bb9-491b-bc5c-d2d34d822a79")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR053"
 			(at 92.71 177.8 0)
 			(hide yes)
 			(effects
@@ -7624,7 +7711,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR055")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -7640,7 +7727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf83841f-7686-4c1c-b62a-40887417e732")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR055"
 			(at 123.19 167.64 0)
 			(hide yes)
 			(effects
@@ -7690,7 +7777,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR057")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -7706,7 +7793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c14094fc-3e24-465c-b55e-4267c299f6f4")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR062"
 			(at 246.38 87.63 0)
 			(hide yes)
 			(effects
@@ -7756,7 +7843,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR064")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -7771,7 +7858,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "c1759214-bf42-4d46-9c1e-d9c4745c5efa")
-		(property "Reference" "R46"
+		(property "Reference" "R47"
 			(at 248.92 77.47 90)
 			(effects
 				(font
@@ -7823,7 +7910,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R46")
+					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -7839,7 +7926,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "c188a2b3-ac02-4ade-995a-90757c5daa52")
-		(property "Reference" "R38"
+		(property "Reference" "R39"
 			(at 73.66 49.276 90)
 			(effects
 				(font
@@ -7891,7 +7978,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R38")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -7906,7 +7993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c48b8cb1-7ae1-4e32-851f-e855a0b151f4")
-		(property "Reference" "RN1"
+		(property "Reference" "RN3"
 			(at 53.34 89.154 90)
 			(effects
 				(font
@@ -7978,7 +8065,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "RN1")
+					(reference "RN3")
 					(unit 2)
 				)
 			)
@@ -8061,7 +8148,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "d6a51f5e-e148-4c21-80a2-55c2d0f02fa9")
-		(property "Reference" "R34"
+		(property "Reference" "R35"
 			(at 67.31 37.846 90)
 			(effects
 				(font
@@ -8113,7 +8200,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R34")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -8129,7 +8216,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d76edabd-8047-4204-b1f2-534ea79d68a8")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR046"
 			(at 49.53 177.8 0)
 			(hide yes)
 			(effects
@@ -8179,7 +8266,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR048")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -8253,93 +8340,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 81.28 57.15 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d8ced836-87cb-425f-95ec-d2be14435863")
-		(property "Reference" "RN1"
-			(at 83.566 59.69 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 81.28 58.928 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 79.248 57.15 90)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "4 resistor network, parallel topology, split"
-			(at 81.28 57.15 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "76349990-19f9-4482-ad8a-348e891ec25e")
-		)
-		(pin "8"
-			(uuid "1d6753a3-7067-4ac6-985a-954364bbb065")
-		)
-		(pin "2"
-			(uuid "6c4757cb-ecf6-439e-a312-99a95f82653c")
-		)
-		(pin "1"
-			(uuid "161bc734-1ceb-416a-8590-ae0a2af5044a")
-		)
-		(pin "6"
-			(uuid "f0911267-347f-49a5-8369-5b7d16dafe46")
-		)
-		(pin "3"
-			(uuid "4b38d1eb-81b2-4cc9-b19c-a0f33c1f9212")
-		)
-		(pin "4"
-			(uuid "066d25ed-0699-4363-8807-8315da09e1af")
-		)
-		(pin "7"
-			(uuid "da43c1f6-ff0d-4dbd-899f-bd5421196f0c")
-		)
-		(instances
-			(project "RemBrake"
-				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "RN1")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 115.57 152.4 90)
 		(unit 1)
@@ -8348,7 +8348,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "db71fe66-2b63-4f2e-b527-5dd1c7a7778e")
-		(property "Reference" "R39"
+		(property "Reference" "R40"
 			(at 115.57 150.114 90)
 			(effects
 				(font
@@ -8400,7 +8400,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R39")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -8408,15 +8408,15 @@
 	)
 	(symbol
 		(lib_id "Device:R_Pack04_Split")
-		(at 224.79 130.81 180)
+		(at 81.28 57.15 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "de591441-8992-43a1-91f1-f7710c2940a0")
-		(property "Reference" "RN2"
-			(at 222.504 128.27 90)
+		(property "Reference" "RN3"
+			(at 83.566 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8425,7 +8425,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 224.79 129.032 90)
+			(at 81.28 58.928 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8434,7 +8434,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_Array_Convex_4x0603"
-			(at 226.822 130.81 90)
+			(at 79.248 57.15 90)
 			(hide yes)
 			(effects
 				(font
@@ -8443,7 +8443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 130.81 0)
+			(at 81.28 57.15 0)
 			(hide yes)
 			(effects
 				(font
@@ -8452,7 +8452,7 @@
 			)
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
-			(at 224.79 130.81 0)
+			(at 81.28 57.15 0)
 			(hide yes)
 			(effects
 				(font
@@ -8487,7 +8487,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "RN2")
+					(reference "RN3")
 					(unit 4)
 				)
 			)
@@ -8503,7 +8503,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e406aaa6-58a9-4069-a527-da06239fce20")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR054"
 			(at 121.92 36.83 0)
 			(hide yes)
 			(effects
@@ -8553,7 +8553,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR056")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -8638,7 +8638,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8092a20-7e63-4cf6-a912-fa07234d05eb")
-		(property "Reference" "R33"
+		(property "Reference" "R34"
 			(at 51.816 135.89 90)
 			(effects
 				(font
@@ -8690,7 +8690,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R33")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -8773,7 +8773,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edb01acb-7585-4f45-9c13-ccae887e3aa5")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR052"
 			(at 92.71 142.24 0)
 			(hide yes)
 			(effects
@@ -8823,7 +8823,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR054")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -8839,7 +8839,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0d16fda-8504-4b3b-b2f4-0e8ee4207ad0")
-		(property "Reference" "R36"
+		(property "Reference" "R37"
 			(at 67.31 53.086 90)
 			(effects
 				(font
@@ -8891,7 +8891,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "R36")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -8907,7 +8907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fab91cdf-78ee-4d48-9910-26aa38cd649b")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR051"
 			(at 83.82 111.76 0)
 			(hide yes)
 			(effects
@@ -8957,7 +8957,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "#PWR053")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
