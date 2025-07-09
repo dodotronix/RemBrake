@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 2,
-    "active_layer_preset": "",
+    "active_layer": 5,
+    "active_layer_preset": "Front Assembly View",
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [
@@ -10,12 +10,12 @@
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
-      "images": 0.4000000059604645,
-      "pads": 0.5,
-      "shapes": 0.4000000059604645,
+      "images": 1.0,
+      "pads": 1.0,
+      "shapes": 1.0,
       "tracks": 1.0,
-      "vias": 0.30000001192092896,
-      "zones": 0.4099999964237213
+      "vias": 1.0,
+      "zones": 0.6000000238418579
     },
     "prototype_zone_fills": false,
     "selection_filter": {
@@ -39,6 +39,7 @@
       "grid",
       "footprints_front",
       "footprints_back",
+      "footprint_values",
       "footprint_references",
       "tracks",
       "drc_errors",
@@ -49,9 +50,10 @@
       "drc_warnings",
       "drc_exclusions",
       "locked_item_shadows",
-      "conflict_shadows"
+      "conflict_shadows",
+      "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
+    "visible_layers": "00000000_00000000_00000008_82000022",
     "zone_display_mode": 0
   },
   "git": {

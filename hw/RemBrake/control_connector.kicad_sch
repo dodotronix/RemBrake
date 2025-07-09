@@ -1844,27 +1844,6 @@
 		)
 		(uuid "c74af150-c788-4fdf-ac98-f18226a1e962")
 	)
-	(text_box "Try to add ferite beads"
-		(exclude_from_sim no)
-		(at 191.135 48.895 0)
-		(size 26.67 5.08)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 128 63 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 153 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "bfb8bfc3-81dd-4cae-9777-a6fa557b4a32")
-	)
 	(junction
 		(at 217.17 113.03)
 		(diameter 0)

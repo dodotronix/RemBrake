@@ -1733,7 +1733,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "IC"
+			(property "Reference" "U"
 				(at 13.97 13.97 0)
 				(effects
 					(font
@@ -5639,7 +5639,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "793b258c-74fb-435e-9f79-cf487d0c7673")
-		(property "Reference" "IC1"
+		(property "Reference" "U7"
 			(at 83.82 68.58 0)
 			(effects
 				(font
@@ -5764,7 +5764,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "IC1")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -7197,7 +7197,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1d4fe09-821e-4682-a3e8-98ba7d8eaeba")
-		(property "Reference" "U7"
+		(property "Reference" "U8"
 			(at 186.69 62.23 0)
 			(effects
 				(font
@@ -7258,7 +7258,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "U7")
+					(reference "U8")
 					(unit 1)
 				)
 			)
