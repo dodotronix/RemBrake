@@ -61,7 +61,7 @@
       "drc_exclusions": [
         [
           "lib_footprint_mismatch|144218000|104274000|965e5aec-c006-47d7-b755-327f715bed6a|00000000-0000-0000-0000-000000000000",
-          "changed hole diameter to 0.3mm"
+          "hole diameter changed to 0.3 mm"
         ]
       ],
       "meta": {
@@ -129,7 +129,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.3,
+        "min_clearance": 0.2,
         "min_connection": 0.25,
         "min_copper_edge_clearance": 0.4,
         "min_groove_width": 0.0,
