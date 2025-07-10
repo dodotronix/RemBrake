@@ -2784,6 +2784,27 @@
 		)
 		(uuid "d845b886-1444-4d15-9963-0081addc275f")
 	)
+	(text_box "SMA (DO-214AC)"
+		(exclude_from_sim no)
+		(at 126.365 46.355 0)
+		(size 22.86 6.985)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d6ad4b3-6134-41a0-99e0-5f1cc702b023")
+	)
 	(text_box "A delay is added because the MCU\nrequires a few milliseconds to \nboot after power-up."
 		(exclude_from_sim no)
 		(at 67.945 180.975 0)
