@@ -2805,27 +2805,6 @@
 		)
 		(uuid "50dffb60-af23-424c-a566-434a133fe97a")
 	)
-	(text_box "Plug-in the USB cable \nto reset delay capacitor"
-		(exclude_from_sim no)
-		(at 200.66 151.765 0)
-		(size 27.305 6.985)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0.508)
-			(type solid)
-			(color 128 63 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 153 1)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8220006f-c31a-4827-87f6-5c4581044d50")
-	)
 	(text_box "use BD5223 \n(in stock on Farnell)"
 		(exclude_from_sim no)
 		(at 233.045 112.395 0)
