@@ -137,7 +137,10 @@ class Message():
     def charge(self, value: int) -> None:
         low, high = self.config['charge_range']
         self.msg['charge'] = value
-        self.msg['percentage'] = (value - low)/(high - low)
+
+        # limit the value to range <0, 1>
+        normalized = (value - low)/(high - low)
+        self.msg['percentage'] = max(0, min(1, normalized))
 
     @property
     def current(self) -> float:
@@ -419,7 +422,10 @@ class BrakeCore():
         self.brake.deactivate()
 
         sound = self.player(self.msg.sounds["alarm"])
-        animation = self.display("alarm")
+        if self.msg.status == 0x04:
+            animation = self.display("low_battery")
+        else:
+            animation = self.display("alarm")
         await asyncio.gather(sound(), animation())
         return "alarm"
 
@@ -470,11 +476,18 @@ class Display:
         self.animations = {"welcome" : self.welcome,
                            "charging" : self.charging,
                            "indicator" : self.indicator,
+                           "low_battery": self.low_battery,
                            "reset" : self.reset,
                            "alarm" : self.alarm}
 
     def __call__(self, name):
         return self.animations.get(name, self.indicator)
+
+    def ledbar_level(self):
+        if self.msg.percentage:
+            tmp = min(self.msg.percentage + 1/len(self.ledbar), 1)
+            return int(tmp*len(self.ledbar))
+        return 0
 
     async def welcome(self):
         self.ledbar(0)
@@ -485,15 +498,22 @@ class Display:
             await asyncio.sleep(0.15)
     
     async def charging(self):
-        tmp = int(self.msg.percentage*len(self.ledbar))
+        tmp = self.ledbar_level()
         self.ledbar(0)
         for i in range(tmp):
             self.ledbar[i] = self.msg.light
             self.ledbar.refresh()
             await asyncio.sleep(0.1)
 
+    async def low_battery(self):
+        self.ledbar(0)
+        await asyncio.sleep(0.08)
+        self.ledbar[0] = self.msg.light
+        self.ledbar.refresh()
+        await asyncio.sleep(0.08)
+
     async def indicator(self):
-        tmp = int(self.msg.percentage*len(self.ledbar))
+        tmp = self.ledbar_level()
         self.ledbar([self.msg.light]*tmp)
 
     async def reset(self):
@@ -547,7 +567,7 @@ class BatteryMonitor():
                     # the BMS detects undervoltage
                     if (self.msg.status & 0x06):
                         self.msg.alarm = True
-                    elif self.msg.alarm:
+                    elif not (self.msg.status & 0x06) and self.msg.alarm:
                         self.msg.alarm = False
 
                     # NOTE the chinese module does 
