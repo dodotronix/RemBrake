@@ -77,7 +77,9 @@ class LTC2943:
     @voltage_range.setter
     def voltage_range(self, rg):
         def tf(v) -> int:
-            return int(0xffff*v/23.6)
+            tmp = int(0xffff*v/23.6 + 0.5)
+            print(f"setting voltage limit -> {tmp}, {hex(tmp)}")
+            return tmp
 
         low, high = rg
         self._voltage_threshold_low = tf(low)
@@ -135,10 +137,10 @@ class LTC2943:
 
     @charge_range.setter
     def charge_range(self, rg):
-        """Set charge low and high threshold."""
+        """Set charge low and high threshold in percentage."""
         low, high = rg
-        self._charge_threshold_low = low 
-        self._charge_threshold_high = high 
+        self._charge_threshold_low = low
+        self._charge_threshold_high = high
 
     # simulation purpose
     def set_current(self, value):
