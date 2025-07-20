@@ -11877,7 +11877,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "5k1"
 			(at 0 1.65 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -21236,7 +21236,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "5k1"
 			(at 0 -1.65 90)
 			(layer "B.Fab")
 			(hide yes)

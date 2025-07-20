@@ -7519,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "5k1"
 			(at 194.31 124.46 90)
 			(effects
 				(font
@@ -9035,7 +9035,7 @@
 				)
 			)
 		)
-		(property "Value" "5k"
+		(property "Value" "5k1"
 			(at 63.5 67.31 90)
 			(effects
 				(font
