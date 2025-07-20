@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Control Connector")
-		(date "2025-02-23")
-		(rev "2.0")
+		(date "2025-07-20")
+		(rev "3.1")
 		(company "Pacner Bros Tech")
 	)
 	(lib_symbols
@@ -2845,6 +2845,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 92.71 68.58 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "138caf65-4ae2-45bf-9d72-338650d43e53")
 		)
@@ -3001,6 +3010,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 217.17 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "18d6cf87-408a-41df-9958-a0a8c533a0a4")
 		)
@@ -3091,6 +3109,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 92.71 58.42 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "138caf65-4ae2-45bf-9d72-338650d43e50")
 		)
@@ -3169,6 +3196,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 203.2 60.96 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 203.2 60.96 90)
 			(hide yes)
 			(effects
 				(font
@@ -3445,6 +3481,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 96.52 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8b52d490-39bf-4d76-95c9-ff440e051203")
 		)
@@ -3505,6 +3550,15 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 217.17 128.27 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 217.17 128.27 0)
 			(hide yes)
 			(effects
@@ -3719,6 +3773,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 203.2 63.5 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d128d061-3ed7-4404-b16e-de77ebea884c")
 		)
@@ -3848,6 +3911,15 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 217.17 101.6 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 217.17 101.6 0)
 			(hide yes)
 			(effects
@@ -3998,6 +4070,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 175.26 39.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ae7bb2f6-a3f2-4353-aa9c-d183922ade10")
 		)
@@ -4060,6 +4141,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 92.71 63.5 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 92.71 63.5 90)
 			(hide yes)
 			(effects
 				(font
@@ -4148,6 +4238,15 @@
 			)
 		)
 		(property "Description" "test point (alternative probe-style design)"
+			(at 86.36 139.7 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 86.36 139.7 0)
 			(hide yes)
 			(effects

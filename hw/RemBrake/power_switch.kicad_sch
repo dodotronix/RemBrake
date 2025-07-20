@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Power Control")
-		(date "2025-02-23")
-		(rev "2.0")
+		(date "2025-07-20")
+		(rev "3.1")
 		(company "Pacner Bros Tech")
 	)
 	(lib_symbols
@@ -3290,7 +3290,7 @@
 	)
 	(text_box "The TP1 can be connected to Lab power supply \nto test the reaction to sudden undervoltage"
 		(exclude_from_sim no)
-		(at 192.405 13.335 0)
+		(at 191.135 15.24 0)
 		(size 48.895 6.985)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -5854,6 +5854,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 60.96 38.1 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d30a402c-dafe-46e9-9ca7-ea2722c6299f")
 		)
@@ -5919,6 +5928,15 @@
 			)
 		)
 		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, TO-92"
+			(at 76.2 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 76.2 67.31 0)
 			(hide yes)
 			(effects
@@ -5997,6 +6015,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 83.82 97.79 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "45e156b3-4f77-44e0-9521-7cdf92cc7f69")
 		)
@@ -6058,6 +6085,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 194.31 116.84 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 194.31 116.84 90)
 			(hide yes)
 			(effects
 				(font
@@ -6130,6 +6166,15 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 242.57 119.38 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 242.57 119.38 0)
 			(hide yes)
 			(effects
@@ -6412,6 +6457,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 132.08 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cb5fed81-43b4-449e-9847-421e6133f157")
 		)
@@ -6548,6 +6602,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 218.44 44.45 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8e1640bb-ec42-4cae-9439-9809ea84ea3d")
 		)
@@ -6609,6 +6672,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 201.93 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 201.93 111.76 90)
 			(hide yes)
 			(effects
 				(font
@@ -6815,6 +6887,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 119.38 76.2 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "34ac0d16-e532-41a8-a2d0-7252f5816fb0")
 		)
@@ -6880,6 +6961,15 @@
 			)
 		)
 		(property "Description" "0.1A Ic, 45V Vce, NPN Transistor, SOT-23"
+			(at 99.06 66.04 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 99.06 66.04 0)
 			(hide yes)
 			(effects
@@ -6958,6 +7048,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 101.6 44.45 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8500aae7-78f1-41b2-b5bb-72222f4041c6")
 		)
@@ -7020,6 +7119,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 152.4 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 152.4 180.34 90)
 			(hide yes)
 			(effects
 				(font
@@ -7105,6 +7213,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 125.73 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 125.73 44.45 90)
 			(hide yes)
 			(effects
 				(font
@@ -7242,6 +7359,15 @@
 			)
 		)
 		(property "Description" "2A Step-Down Converter with DCS-Control, Adjustable Output Voltage, 3-17V Input Voltage, QFN-16"
+			(at 73.66 170.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 73.66 170.18 0)
 			(hide yes)
 			(effects
@@ -7428,6 +7554,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 194.31 124.46 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3016eff1-714a-4da2-8be8-d3c3453c3934")
 		)
@@ -7554,6 +7689,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 95.25 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 95.25 157.48 90)
 			(hide yes)
 			(effects
 				(font
@@ -7761,6 +7905,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 119.38 67.31 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dbe19fa2-7d79-4039-8854-e341cac4ea29")
 		)
@@ -7832,6 +7985,15 @@
 		)
 		(property "purchase" "https://cz.farnell.com/rohm/bd5230g-tr/voltage-detector-800na-10v-sot/dp/2343012"
 			(at 171.704 84.328 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 170.18 100.33 0)
 			(hide yes)
 			(effects
 				(font
@@ -7919,6 +8081,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 71.12 30.48 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c25076ee-b052-4906-8535-06530199632b")
 		)
@@ -7995,6 +8166,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 151.13 76.2 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f10c9b16-2273-4065-b3b1-cdccfbf0ebac")
 		)
@@ -8055,6 +8235,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 119.38 58.42 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 119.38 58.42 90)
 			(hide yes)
 			(effects
 				(font
@@ -8196,6 +8385,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 194.31 39.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "aa74f5ec-1d3b-497e-9f62-39f0c8c568e0")
 		)
@@ -8272,6 +8470,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 134.62 44.45 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "de0cf3ab-c438-42f3-a8d9-704b023c05fc")
 		)
@@ -8332,6 +8539,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 106.68 158.75 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 106.68 158.75 90)
 			(hide yes)
 			(effects
 				(font
@@ -8473,6 +8689,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 29.21 135.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f569651d-a3d1-41c5-b25e-a64bbe4b1fc1")
 		)
@@ -8601,6 +8826,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 49.53 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 49.53 67.31 90)
 			(hide yes)
 			(effects
 				(font
@@ -8760,6 +8994,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 209.55 111.76 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3f70940c-ca6a-4117-9de6-b1722fddc331")
 		)
@@ -8780,7 +9023,7 @@
 		(at 63.5 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7a897b5d-1037-4bdb-8d6f-e63cee02aea0")
@@ -8820,6 +9063,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 63.5 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 63.5 67.31 90)
 			(hide yes)
 			(effects
 				(font
@@ -8887,6 +9139,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 181.61 144.78 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 181.61 144.78 90)
 			(hide yes)
 			(effects
 				(font
@@ -9029,6 +9290,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 257.81 129.54 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "c325d964-03ea-43f0-943d-6ddc3b2198ff")
 		)
@@ -9114,6 +9384,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 233.68 138.43 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "542082aa-b959-4596-b21c-b315e86c2f92")
 		)
@@ -9174,6 +9453,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 125.73 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 125.73 90.17 90)
 			(hide yes)
 			(effects
 				(font
@@ -9314,6 +9602,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 92.71 85.09 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "df5027e9-bec4-4852-9ba2-ce298e6c0695")
 		)
@@ -9373,6 +9670,15 @@
 			)
 		)
 		(property "Description" "Ideal Diode, Ultra-Low Voltage Drop, 1.5-5.5V, 1A, SOT-23-5"
+			(at 234.95 39.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 234.95 39.37 0)
 			(hide yes)
 			(effects
@@ -9523,6 +9829,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 194.31 80.01 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6b2c0af9-3093-4e03-bed0-1d362a4de75c")
 		)
@@ -9583,6 +9898,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 186.69 87.63 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 186.69 87.63 90)
 			(hide yes)
 			(effects
 				(font
@@ -9657,6 +9981,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 63.5 52.07 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "1af21e3d-a33c-4ee1-9d9e-3c510cf95ca7")
 		)
@@ -9717,6 +10050,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 194.31 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 194.31 138.43 90)
 			(hide yes)
 			(effects
 				(font
@@ -9858,6 +10200,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 100.33 167.64 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fca31300-c61f-40d1-92cf-0153cfb04797")
 		)
@@ -9917,6 +10268,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 162.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 123.19 162.56 0)
 			(hide yes)
 			(effects
@@ -10196,6 +10556,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 156.21 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2faa3b5b-2025-413c-969b-8b64e1f75a1e")
 		)
@@ -10333,6 +10702,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 220.98 149.86 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e138cfc0-e867-4e93-ba8b-c3873987e26c")
 		)
@@ -10458,6 +10836,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 175.26 111.76 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 175.26 111.76 0)
 			(hide yes)
 			(effects
@@ -10605,6 +10992,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 207.01 124.46 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1f2cfa8d-238b-46c2-819c-e590a3481693")
 		)
@@ -10668,6 +11064,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 106.68 180.34 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 106.68 180.34 90)
 			(hide yes)
 			(effects
 				(font
@@ -10874,6 +11279,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 48.26 177.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "92c8f96d-b05f-46ee-a5d4-ecd7cdbaf6f2")
 		)
@@ -10934,6 +11348,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 146.05 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 146.05 171.45 0)
 			(hide yes)
 			(effects
@@ -11004,6 +11427,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 209.55 90.17 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 209.55 90.17 90)
 			(hide yes)
 			(effects
 				(font
@@ -11163,6 +11595,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 63.5 85.09 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a9a6df45-b35e-4539-8ba0-83f4472e3ff2")
 		)
@@ -11297,6 +11738,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 29.21 170.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "73226d06-244a-428f-932d-a7b9d8b7f861")
 		)
@@ -11357,6 +11807,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 171.45 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 171.45 44.45 90)
 			(hide yes)
 			(effects
 				(font
@@ -11498,6 +11957,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 158.75 171.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d99f61f1-51fb-435d-b19c-7c1bc180a557")
 		)
@@ -11623,6 +12091,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 209.55 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 209.55 44.45 0)
 			(hide yes)
 			(effects
@@ -11834,6 +12311,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 214.63 29.21 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "98f6b45f-c51b-438a-8115-cf8e1623401f")
 		)
@@ -11891,6 +12377,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 71.12 44.45 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 71.12 44.45 90)
 			(hide yes)
 			(effects
 				(font

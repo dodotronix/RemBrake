@@ -9,7 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "RemBrake")
-		(rev "2.0")
+		(date "2025-07-20")
+		(rev "3.1")
 		(company "Pacner Bros Tech")
 	)
 	(layers
@@ -266,6 +267,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "44c90571-e323-48e2-bc9d-be40fdbeed3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/9771f203-e6ae-42fa-81e0-701e54205b42")
 		(sheetname "/power_switch/")
@@ -459,6 +473,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ef1bba2-b096-4ea4-ad1b-409ec0bdd1d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -658,6 +685,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eabb82a7-8453-4495-a654-6ed6786da241")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -893,6 +933,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "173e24e8-16d7-4343-ba2e-93010b15aea0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/1898898f-b274-4202-8cdc-6898134de280")
 		(sheetname "/brake_control/")
@@ -1086,6 +1139,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c472c352-13d6-41b1-8add-f9255fa68fbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1456,6 +1522,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bf88335-cb22-4268-b5a8-b09eca3fd2d0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/d3397ddc-c9a2-453f-9a38-504fe5d754ae")
 		(sheetname "/power_switch/")
@@ -1734,6 +1813,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bab7c5f7-7e30-4ba5-b536-5c905452f71c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/b3f7624f-6e1e-456f-84dc-1b27ba5906c1")
 		(sheetname "/brake_control/")
@@ -1927,6 +2019,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f74ee46f-1a5c-40bf-bf99-929b5568734e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2126,6 +2231,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8085b2a3-2411-4296-a34e-efa478b3e2b5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -2349,6 +2467,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5a1b4fc7-252b-422c-b4a6-a2036c36fffa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "*Fuse*")
 		(path "/af70131d-278a-462f-bd9f-059cd7ee73e3")
 		(sheetname "/")
@@ -2545,6 +2676,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b2962d89-f342-44a6-a8f6-7f9d2ca45400")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/226097de-0994-4db9-9be8-38e8c7f9ac2b")
 		(sheetname "/brake_control/")
@@ -2738,6 +2882,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c217c4d3-ca0b-4cd7-8b3d-0508d145e870")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -2939,6 +3096,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "17115074-d357-4be2-83b3-4aae156202cc")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3390,6 +3560,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75ab1dc1-253b-4a5b-8f69-1c6fd2a4320f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/2373ae64-7b91-425d-a67d-c4de0b6c1852")
 		(sheetname "/power_switch/")
@@ -3586,6 +3769,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b804c6c-e8f2-4ad5-a3e6-e94dbc6c04c5")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3809,6 +4005,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "50d9d0fb-d556-4157-8bf3-781bbb163b28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/c349e906-1f94-4cbf-8b9f-42c61fc71f5e")
 		(sheetname "/power_switch/")
@@ -4002,6 +4211,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "573c8a3b-06a5-449a-ac7c-45062c6ac79f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -4202,6 +4424,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d3f4ea0c-23e2-426c-8ad3-377005379610")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -4616,6 +4851,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f5c1bd56-43fe-4331-9b60-2e501ae1915e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/93d9226b-7842-4ec4-a34a-4af507eb7be9")
 		(sheetname "/power_switch/")
@@ -4809,6 +5057,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e82c9e4c-d5b8-46c4-86bf-584e762f77ae")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5008,6 +5269,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "014151e4-eccd-4846-bd77-c88587e35971")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/a19eae45-11df-48c3-b376-23a670a9d95e")
 		(sheetname "/power_manager/")
@@ -5201,6 +5475,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c42aa542-8767-4051-b232-34ea963059b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -5400,6 +5687,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f619d07-27d9-419e-b4dd-6e0396da1dda")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -5623,6 +5923,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8595d9bc-0915-4abe-947f-a3cb866150f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/178dcb83-4f5e-4d9b-9a03-c02c92f512a9")
 		(sheetname "/power_manager/")
@@ -5816,6 +6129,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2146ca82-178a-4823-8c58-a0c864376d7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -6017,6 +6343,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f879b505-f0cc-48de-9576-a7098c3c4e79")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -6400,6 +6739,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d226ece-41a0-4a76-9852-e87162a9bfec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/c3b92c8e-7a5f-467d-8605-0e40062fcfe2")
 		(sheetname "/power_manager/")
@@ -6549,6 +6901,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9f356799-bf16-4dca-8f03-e81d21bd749a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -6748,6 +7113,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d22e5f2d-a8d7-4de2-968c-81c0d5463093")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/ad869519-6e9e-47a5-a14f-1491593047ed")
 		(sheetname "/power_manager/")
@@ -6941,6 +7319,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0fec5f25-c990-4dc9-8d80-172f08d7a04f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7141,6 +7532,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "43910589-0883-456b-9049-52117e8379ae")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7418,6 +7822,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2b08ae68-85c5-4a90-b246-4a2d4e7792ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/ec9eb229-14a5-45f1-95e6-6816a0c7592e")
 		(sheetname "/brake_control/")
@@ -7616,6 +8033,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9b9bae9-bca6-4278-ac99-3dbb20645e40")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -8159,7 +8589,7 @@
 		(property "Reference" "U7"
 			(at 3.048 2.286 180)
 			(layer "F.SilkS")
-			(uuid "c8b0ec1d-f114-44e1-af28-f9f34b7440e2")
+			(uuid "b0444799-9235-4551-b89a-2f12aa7bedb8")
 			(effects
 				(font
 					(size 0.7 0.7)
@@ -8171,7 +8601,7 @@
 			(at 0 2.55 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "46bebe4f-035a-48ae-b377-7cb9177173a6")
+			(uuid "cd573e3d-f7ed-4e48-840d-798b1d560bf7")
 			(effects
 				(font
 					(size 1 1)
@@ -8184,7 +8614,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "96e576c6-ea04-4280-bb79-7caf64a3b3e3")
+			(uuid "29b15f6f-f04d-4773-a292-b5b55b01a6d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8197,7 +8627,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "54b4a50c-cd9c-47a7-87e9-6183bea63dd9")
+			(uuid "38937f04-1e87-4a9d-a1b5-c0405b366c85")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8263,6 +8693,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "189d54df-6fc2-4199-b5a3-b0922aaa3916")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76088203-49d8-4a7a-84da-dc84aa3d38e7")
 			(effects
 				(font
 					(size 1 1)
@@ -8618,6 +9061,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d08a9b8f-7fd0-4366-b5fa-b6ddec6d3010")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/4ef56f12-42b4-44f5-a7b7-c4102e578139")
 		(sheetname "/power_switch/")
@@ -8814,6 +9270,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "13bd82fb-3af2-48af-819a-3e641b003a74")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/59cdcb05-4774-4656-b8e0-42561df439d1")
 		(sheetname "/power_switch/")
@@ -8945,206 +9414,6 @@
 				(back none)
 			)
 			(uuid "ccec1f4b-2557-4da8-bd44-9ec139f3c31b")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-		(layer "F.Cu")
-		(uuid "88ad0720-d5a3-4859-bb18-f34ccc206cbc")
-		(at 136.526 127.554)
-		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-		(tags "resistor handsolder")
-		(property "Reference" "R44"
-			(at -3.064 0 0)
-			(layer "F.SilkS")
-			(uuid "9c10b8bb-bc55-44b5-8d04-52314152f346")
-			(effects
-				(font
-					(size 0.7 0.7)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 0 1.65 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8aa96d4e-ae95-43a5-b1b4-10ce9b24c53b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "26721dd0-04ae-4d2c-aa18-11a63865f04f")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "333d810d-2194-45fd-bf11-5b58fc077255")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "R_*")
-		(sheetname "/brake_control/")
-		(sheetfile "brake_control.kicad_sch")
-		(attr smd exclude_from_bom)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -0.227064 -0.735)
-			(end 0.227064 -0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "e277f42a-687c-4280-a602-a2442dca36e6")
-		)
-		(fp_line
-			(start -0.227064 0.735)
-			(end 0.227064 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c14bca28-960f-4fcc-99fd-99a1b333b56d")
-		)
-		(fp_line
-			(start -1.85 -0.95)
-			(end 1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "d542b73c-9028-41a3-8069-e3c5dfe4b38a")
-		)
-		(fp_line
-			(start -1.85 0.95)
-			(end -1.85 -0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a3f7e5ff-37c6-46ec-8cf6-ce6a8897efef")
-		)
-		(fp_line
-			(start 1.85 -0.95)
-			(end 1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "05672670-5608-4b1b-93b8-f5fe7d841a12")
-		)
-		(fp_line
-			(start 1.85 0.95)
-			(end -1.85 0.95)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "644ce5f2-a110-41e3-a431-d7063b54690c")
-		)
-		(fp_line
-			(start -1 -0.625)
-			(end 1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "28eb3f4c-41fb-4698-b952-3f9c4a9404e7")
-		)
-		(fp_line
-			(start -1 0.625)
-			(end -1 -0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "66289079-a655-4c0b-9c90-bbead34fee63")
-		)
-		(fp_line
-			(start 1 -0.625)
-			(end 1 0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e54ebefb-a6d6-4985-8178-9b38603ef60c")
-		)
-		(fp_line
-			(start 1 0.625)
-			(end -1 0.625)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "6d8be445-e4c6-48f2-8318-8210938ec331")
-		)
-		(pad "1" smd roundrect
-			(at -1 0)
-			(size 1.2 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.208333)
-			(net 1 "GND")
-			(pintype "passive")
-			(tenting
-				(front none)
-				(back none)
-			)
-			(uuid "aed39dec-c256-4a6b-9729-0791a5834ad1")
-		)
-		(pad "2" smd roundrect
-			(at 1 0)
-			(size 1.2 1.4)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.208333)
-			(net 9 "/brake_control/BUZZ")
-			(pintype "passive")
-			(tenting
-				(front none)
-				(back none)
-			)
-			(uuid "5b64317c-03b8-4505-9108-f890a312d2cb")
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.step"
@@ -9410,6 +9679,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b3ea8cc-65e7-4145-8ed7-ce269121dd62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/fef72ba9-0d9e-4f38-9246-a565be4ce1bb")
 		(sheetname "/power_switch/")
@@ -9603,6 +9885,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1c394f3-11c9-418d-b95f-25cc6ecd390e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -9926,7 +10221,7 @@
 		(property "Reference" "U1"
 			(at -1.358 -2.628 180)
 			(layer "F.SilkS")
-			(uuid "24ad6b50-f001-400f-9836-54ab68c1d16d")
+			(uuid "d7074749-d7d4-4062-8f49-45ac78e5a9b2")
 			(effects
 				(font
 					(size 0.7 0.7)
@@ -9939,7 +10234,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "286e67b9-606b-4321-b6ee-1d909a26605c")
+			(uuid "98dfd5f1-2409-4412-adf8-2ef8f620f707")
 			(effects
 				(font
 					(size 1 1)
@@ -9951,7 +10246,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "db73eb5c-cda3-4daf-b1b9-6f7e914f2b32")
+			(uuid "d517fcad-6fc0-4f99-ab69-d2f5e980b3c3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9963,10 +10258,23 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b2661e57-5a56-4339-a962-2628e5ef4dc0")
+			(uuid "0104d2ba-e741-4b39-b438-c25c477087c5")
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f2c76f3-3a16-4555-8e42-e46b5183df16")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -10707,6 +11015,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ade6c46-12a7-4319-9f37-cc6187d0cc90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/4226b2cd-fe8a-4055-8204-dd5d52d63637")
 		(sheetname "/power_manager/")
@@ -10909,6 +11230,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "83568026-bbc4-4cbb-8e14-2486a3393ede")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a2ba05e-514d-4e2e-8092-42e17c28debe")
 			(effects
 				(font
 					(size 1 1)
@@ -11277,6 +11611,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "815307ba-7e19-40f3-b0b2-93971e5143aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/7cf3634a-223d-4899-a354-6fa11a6f55c6")
 		(sheetname "/power_switch/")
@@ -11473,6 +11820,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d121054-e572-416a-b1a9-7791ee14d30d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -11751,11 +12111,24 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "14de9097-217d-4105-949a-8118057620e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/7a897b5d-1037-4bdb-8d6f-e63cee02aea0")
 		(sheetname "/power_switch/")
 		(sheetfile "power_switch.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
@@ -11944,6 +12317,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c28950c-229f-4c10-8600-7406e4df4998")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12140,6 +12526,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec30a9ae-1a1a-45b3-9899-6f3fb7295dbb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12477,6 +12876,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ccc376a-ec45-4100-ac81-6dc56d3263e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/2c6b4c63-1874-4a66-9a83-41d85654c32a")
 		(sheetname "/power_switch/")
@@ -12670,6 +13082,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b83b7c8f-5070-4c52-9d7b-af9402440853")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12869,6 +13294,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d1b0ac6b-81c8-46a9-b52c-c60dc40de650")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/95c0f618-c116-466c-a229-420c8fef144f")
 		(sheetname "/brake_control/")
@@ -13062,6 +13500,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa74ef2c-b2d8-4bc7-81ac-38814c8c6ec9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -13261,11 +13712,24 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d7ce104-32cf-4d9e-8edf-4b216f179e8f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/3fd3c652-2808-4270-be2e-f678c9df4bc9")
 		(sheetname "/power_manager/")
 		(sheetfile "power_manager.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -13454,6 +13918,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0601eaf1-b94c-4a50-a9de-6717527d23c4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -13857,6 +14334,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ba6616a-780e-4557-a38b-4bdc7a7f494d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Vishay*PowerPAK*1212*Single*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/538d593c-b9c4-4f68-8284-2082ad6da1d7")
 		(sheetname "/power_switch/")
@@ -14175,6 +14665,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "64559788-f04c-4ed2-8698-1f8a6f3e085c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??-1MP*")
 		(path "/82822fff-c61a-4f9f-8c6e-a048a15027ac")
 		(sheetname "/")
@@ -14475,6 +14978,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72119c91-ef99-4a00-af69-a50ff2789575")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/c6fda42a-9645-46e5-b66a-57cf8664dccf/ce0ffaaf-b394-4687-a98c-1fabde5d4316")
 		(sheetname "/control_connector/")
@@ -14668,6 +15184,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bf1e0ea-4024-40a7-ba3b-d2ef9ef4c23b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -14868,6 +15397,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "aa4d2a0a-9543-4e5d-94f1-353e293f4f7d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -15241,6 +15783,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d0a7817-0af5-47f8-805a-93501e567044")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/663b4c0e-47ae-477f-b04a-3e2614f0467c")
 		(sheetname "/brake_control/")
@@ -15558,6 +16113,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d5bcebd5-7193-4bb1-b36d-689708ea99b4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/c6fda42a-9645-46e5-b66a-57cf8664dccf/5ac520f4-d582-478b-96e6-5e7b1c7708a7")
 		(sheetname "/control_connector/")
@@ -15707,6 +16275,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20bbc678-80b3-4c01-8b9f-b77383a213ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -15906,6 +16487,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c9d961f6-6669-490b-947a-232d2f38a2f4")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16129,6 +16723,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b2bdb7b-1765-477a-8d61-945bc47c32f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/84f29455-806d-4977-bf04-8a46db0c8456")
 		(sheetname "/power_switch/")
@@ -16325,6 +16932,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b5bb163-68f0-4e29-9c82-a705d1a3361d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/e114ec6e-0138-4f3b-b02a-de9ce8e81946")
 		(sheetname "/power_manager/")
@@ -16518,6 +17138,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "181eb200-59b4-46b6-8740-ebc2379fdd2e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16718,6 +17351,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a058e38e-ec0b-46d1-9d29-da72e7c7ea19")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -16941,6 +17587,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97a93155-593f-4b95-b7e1-8e98420f409b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -17223,6 +17882,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0f06e806-2d68-42f0-bdc8-4764aef179eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/0b6bd244-f487-422e-a814-384775706f44")
 		(sheetname "/power_manager/")
@@ -17416,6 +18088,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8f976ff-9b46-4c6b-abe7-eaab71c25692")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -17615,6 +18300,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f61040d4-dcd4-4cf1-92e3-d668b3fc76e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/dfb3159a-cdbf-448d-b924-aa018b51d7c7")
 		(sheetname "/power_switch/")
@@ -17811,6 +18509,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6682d178-8b5f-4327-a13e-cac61fdceff8")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -18129,6 +18840,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8ab34160-d9f7-47f3-9ee1-782cf74cb15a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/0c54e14b-794d-4b1a-b373-56e3a2f975de")
 		(sheetname "/power_switch/")
@@ -18322,6 +19046,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c26dcf9-1410-4ee8-bd2f-5cac5fd20a35")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -18689,6 +19426,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "560a6869-ad94-41ec-b106-dc88724d57c1")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -19274,6 +20024,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87e8ef38-9cf1-4cf7-b8c0-f1308eca448e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/89e6d990-54d7-4eb2-8f26-75d2e60cb85e")
 		(sheetname "/brake_control/")
@@ -19471,6 +20234,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c8f006cb-145d-46f9-965e-518b0ee73f51")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -19673,6 +20449,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3b7df177-c842-4b9d-ac44-bd48900a9abd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/0fb15ac1-47ec-4fc2-8f0f-109350af3507")
 		(sheetname "/power_manager/")
@@ -19869,6 +20658,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "92118e54-0c4d-4ec7-a703-d2db16ab945d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/137a9508-b06f-4882-bcf2-9169b9405dda")
 		(sheetname "/brake_control/")
@@ -20062,6 +20864,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4121967-80cb-4090-95ab-6cbd6d352a94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -20265,6 +21080,19 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f535764a-2bb5-4223-8a33-37fe1b7576e1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/fd2b3938-c957-49e7-a209-daab947fffc1")
 		(sheetname "/power_switch/")
@@ -20414,6 +21242,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eaf9ace7-05d9-48c6-a867-2d601106fb34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -20617,6 +21458,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ec3615fd-fe84-4bcc-a781-85fea8dc1dc3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/9761780f-c850-481d-9d1b-cf82d705684d")
 		(sheetname "/brake_control/")
@@ -20814,6 +21669,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "27922ddc-fada-45cf-a1d3-36037fe05e0b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21218,6 +22087,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6d0bcad4-174f-4dfa-9ad6-773dcf572d59")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/53e8fe39-1f3f-4f26-b877-7bc9f62080f2")
 		(sheetname "/power_switch/")
@@ -21415,6 +22298,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f5bf601e-7163-4b7e-b136-17ced7373b4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -21626,6 +22523,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "abc688c0-2c29-479b-9ca7-1fa22dc303eb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "64cf0d40-e441-4b30-b305-0dd2610d6d55")
 			(effects
 				(font
 					(size 1 1)
@@ -22000,6 +22911,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9248ef54-df67-4a76-a54c-d5b45b8c4079")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/0e25eff6-c20c-4392-88dd-9dd2e8480e59")
 		(sheetname "/power_switch/")
@@ -22199,6 +23124,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "607607ea-5ea9-453c-9e5b-62fd534ac252")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -22542,6 +23481,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "46e75253-bc92-4f9b-9b56-49938f39a23f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/7fcb6276-9c37-4bb7-9c50-8cab0dbfb7c0")
 		(sheetname "/power_switch/")
@@ -22741,6 +23694,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5abd1300-bd71-4c1e-995c-1ef11d36b84d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -23028,6 +23995,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "31578a7e-098f-40c3-be23-fc9589db1615")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/ef03b650-6a8e-48cb-9691-d96645b5280a")
 		(sheetname "/power_switch/")
@@ -23310,6 +24291,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6f8e03af-7236-41df-a95e-239d1622ec5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/643f081a-9012-46e8-9c4f-74e2dff4d543")
 		(sheetname "/brake_control/")
@@ -23507,6 +24502,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "d2be733f-abe7-4e40-bffd-461a15d7c3cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -23712,6 +24721,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7d367e43-c9f3-43a8-857a-f9e39fe818d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/c9a8f5f2-b04b-40a5-b39a-d9358820bc68")
 		(sheetname "/power_switch/")
@@ -23908,6 +24931,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "08a7a67b-d679-41e8-8f36-e10d991b2543")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -24113,6 +25150,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "f2d4c40a-b4f4-4066-9a66-e2aa67b71ed6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/56387dd8-0322-4b64-8123-0b6b07d57f23")
 		(sheetname "/power_manager/")
@@ -24312,6 +25363,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "da3f9a85-0aae-4bea-83b6-49b8c4d86f2d")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -24656,6 +25721,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "7a6630ab-7558-45f6-958a-a501e1202288")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/c1759214-bf42-4d46-9c1e-d9c4745c5efa")
 		(sheetname "/brake_control/")
@@ -24852,6 +25931,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "25db5eb9-25dd-4c0e-a1c5-01a1316c3a5c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -25056,6 +26149,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "36cf4d88-be32-4d8e-9c8f-7ff304682e96")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/d7d5597d-b95d-485c-b846-c701470b010b")
 		(sheetname "/brake_control/")
@@ -25256,6 +26363,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "11f93840-0f2e-40c3-8e2a-48223ca7a667")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -25606,11 +26727,25 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "bc214731-2ce6-4d91-bfb4-5e5539a89fbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/db71fe66-2b63-4f2e-b527-5dd1c7a7778e")
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 -0.735)
@@ -25803,6 +26938,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "244fc1ab-bd23-4340-bcaf-798614f123c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26008,6 +27157,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e209f7af-91c4-41b3-a45f-c9a65bb290be")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/c4b6d79b-c7ce-475e-89d7-fd29c59c2499")
 		(sheetname "/power_manager/")
@@ -26205,6 +27368,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "87a115df-1e4f-4090-88d4-d896a9104319")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -26547,11 +27724,25 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "43b9775c-1d01-40f6-801a-181def300713")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/d6a51f5e-e148-4c21-80a2-55c2d0f02fa9")
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
-		(attr smd dnp)
+		(attr smd exclude_from_bom dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
@@ -26744,6 +27935,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "e133cd4a-49af-42ff-bb37-74510c031332")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -27086,6 +28291,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "23e1b3c0-327e-4d72-ab74-3be6648f5ed9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/c188a2b3-ac02-4ade-995a-90757c5daa52")
 		(sheetname "/brake_control/")
@@ -27282,6 +28501,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "435afb9d-b757-4f23-b546-2af62eb1d5c0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "1825ed82-3a44-4c7e-a7bf-05789d883e83")
 			(effects
 				(font
 					(size 1 1)
@@ -27612,6 +28845,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "82c4cd7c-2af3-4894-a431-b2a336e1cd16")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/cd587af3-2d57-4d22-b4ee-404f9e38c1d0")
 		(sheetname "/power_switch/")
@@ -27811,6 +29058,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c30420c6-b6d5-4734-bf70-75db46dbc12b")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -28091,6 +29352,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "4fa8322a-7451-4656-8e3f-785400a7363d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28452,6 +29727,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "eb547475-4cbf-4e79-806f-d3b41bf7d415")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "Pin* Test*")
 		(path "/c6fda42a-9645-46e5-b66a-57cf8664dccf/df618a72-84d8-403b-aef8-960b6e2c0367")
 		(sheetname "/control_connector/")
@@ -28604,6 +29893,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b649cf28-2e61-4ea0-9a0e-645636e054a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -28809,6 +30112,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "65cd6a97-535e-495d-abce-29acd2441ff8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/97b6bf74-f3d3-474e-978b-e3585478fe27")
 		(sheetname "/power_switch/")
@@ -29009,6 +30326,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "033cf350-c74a-43dc-8a9b-94fc5f72bd8e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -29372,6 +30703,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "56f2879b-a7c7-426d-8932-5377ffb812ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/93a57697-f907-42d1-9cd4-095f60b11646")
 		(sheetname "/brake_control/")
@@ -29572,6 +30917,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "42f97244-7463-49d4-a58e-417c647b8691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd/77411b36-d466-4378-a822-1e8d020129fb")
 		(sheetname "/power_switch/")
@@ -29768,6 +31127,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "9b51bb49-262f-4a5f-9dcc-5a39cbe58840")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30110,6 +31483,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "5101b5f5-de70-4131-b7ad-f195dfe2903f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/84b3d23a-5bde-4d34-9b0e-3076ee7ef6e7")
 		(sheetname "/power_manager/")
@@ -30307,6 +31694,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "381eb228-b8dc-489f-ba68-7c38df9b94e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30516,6 +31917,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "0a99b997-2b76-4720-8d6a-f4c2b769629b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/cf5aafc1-7ecd-4d07-9981-5c7474e76d3a")
 		(sheetname "/brake_control/")
@@ -30712,6 +32127,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "22f45c4c-17b1-4821-bfb0-f07a46d028a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -30916,6 +32345,20 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ac879d5b-a3dd-4665-9130-596850488048")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/65dd8b54-1c0a-4683-aa46-51c439d49612/3fdacbdb-a6d9-44c5-94c2-488cf27ab058")
 		(sheetname "/power_manager/")
@@ -31115,6 +32558,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8ce577c9-d2b0-4e8d-ae4f-24ede8df0bb6")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 				(justify mirror)
@@ -31394,6 +32851,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "01ea43ca-2bf8-4fad-9879-1462f9cd062c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "6cb87279-7aa1-4b67-addc-f7ea92c0d639")
 			(effects
 				(font
 					(size 1 1)
@@ -31686,6 +33157,20 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Purchase" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "2fa2717c-2c13-432b-88a1-5c8f335bcd80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
 				)
 				(justify mirror)
 			)
@@ -32090,11 +33575,25 @@
 				(justify mirror)
 			)
 		)
+		(property "Purchase" ""
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ffd1c187-bdc3-4e20-8fe0-f74eccaddc3a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/4813b76c-f465-42f9-8515-5ce5d55b4403/f0d16fda-8504-4b3b-b2f4-0e8ee4207ad0")
 		(sheetname "/brake_control/")
 		(sheetfile "brake_control.kicad_sch")
-		(attr smd exclude_from_bom)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
@@ -32967,8 +34466,8 @@
 		(uuid "74a14749-333a-426d-84d5-71f120b20d61")
 	)
 	(gr_rect
-		(start 123.429 107.869)
-		(end 132.192 116.886)
+		(start 123.429 108.123)
+		(end 132.192 117.14)
 		(stroke
 			(width 0.3)
 			(type solid)
@@ -33132,7 +34631,7 @@
 		(uuid "d76df19b-46aa-433f-afa7-fc936991493c")
 	)
 	(gr_text "PB"
-		(at 127.8105 110.536 0)
+		(at 127.8105 110.79 0)
 		(layer "F.SilkS")
 		(uuid "0d6c067c-c999-47b7-9ad2-986c04e745c9")
 		(effects
@@ -33299,7 +34798,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "RemBrake rev. 3.0 (DMY-010725)"
+	(gr_text "RemBrake rev. 3.1 (DMY-200725)"
 		(at 137.414 138.938 0)
 		(layer "F.SilkS")
 		(uuid "c6a9de56-8488-4e70-9483-d30d208a735e")
@@ -33313,7 +34812,7 @@
 		)
 	)
 	(gr_text "Pacner\nBros\nTech"
-		(at 127.8105 116.124 0)
+		(at 127.8105 116.378 0)
 		(layer "F.SilkS")
 		(uuid "ca42b3eb-c4aa-4592-8556-0dbc1345495d")
 		(effects
@@ -37024,12 +38523,20 @@
 		(uuid "0751bf1d-3c53-4e08-80a2-23ebbcef7c7f")
 	)
 	(segment
-		(start 148.829 125.25)
-		(end 145.654 125.25)
+		(start 147.16 125.25)
+		(end 146.797 124.887)
 		(width 1)
 		(layer "F.Cu")
 		(net 15)
-		(uuid "378bc5d6-eab3-4da6-bbf6-143b60bd2b9e")
+		(uuid "2f5d5ae4-d9bb-4ec4-b30f-6bde823ff2fc")
+	)
+	(segment
+		(start 146.37 124.46)
+		(end 146.797 124.887)
+		(width 1)
+		(layer "F.Cu")
+		(net 15)
+		(uuid "31cae069-a21e-41ed-ae58-31b1bb735edc")
 	)
 	(segment
 		(start 149.99 125.25)
@@ -37040,28 +38547,20 @@
 		(uuid "3ddc327f-dc60-4da8-8d9d-1102b6629467")
 	)
 	(segment
+		(start 148.829 125.25)
+		(end 147.16 125.25)
+		(width 1)
+		(layer "F.Cu")
+		(net 15)
+		(uuid "5b900be4-1cf5-401a-a8b3-cb1e8c6c8926")
+	)
+	(segment
 		(start 139.955 124.46)
 		(end 136.2315 124.46)
 		(width 1)
 		(layer "F.Cu")
 		(net 15)
 		(uuid "5d89d5ff-e28d-4a12-8dd2-7bf67b994bed")
-	)
-	(segment
-		(start 144.864 124.46)
-		(end 145.654 125.25)
-		(width 1)
-		(layer "F.Cu")
-		(net 15)
-		(uuid "77468d71-7175-4380-836e-97b990b0b7da")
-	)
-	(segment
-		(start 139.955 124.46)
-		(end 144.864 124.46)
-		(width 1)
-		(layer "F.Cu")
-		(net 15)
-		(uuid "7e59e5d7-9d97-4cd4-832f-950feb415934")
 	)
 	(segment
 		(start 136.2315 124.46)
@@ -37086,6 +38585,14 @@
 		(layer "F.Cu")
 		(net 15)
 		(uuid "bc2ef9b7-0a35-4da5-aada-4649e8d248df")
+	)
+	(segment
+		(start 139.955 124.46)
+		(end 146.37 124.46)
+		(width 1)
+		(layer "F.Cu")
+		(net 15)
+		(uuid "fc94e6b0-1101-43d4-8728-53a312a8487d")
 	)
 	(via
 		(at 139.431 63.038)
@@ -42728,7 +44235,7 @@
 		)
 		(polygon
 			(pts
-				(xy 136.764 128.824) (xy 140.955 128.824) (xy 140.955 127.935) (xy 141.844 127.935) (xy 141.844 130.348)
+				(xy 136.764 128.824) (xy 140.828 128.824) (xy 140.828 127.935) (xy 141.844 127.935) (xy 141.844 130.348)
 				(xy 136.764 130.348)
 			)
 		)
@@ -42738,8 +44245,8 @@
 				(xy 141.787039 127.954685) (xy 141.832794 128.007489) (xy 141.844 128.059) (xy 141.844 130.2125)
 				(xy 141.824315 130.279539) (xy 141.771511 130.325294) (xy 141.72 130.3365) (xy 136.888 130.3365)
 				(xy 136.820961 130.316815) (xy 136.775206 130.264011) (xy 136.764 130.2125) (xy 136.764 128.948)
-				(xy 136.783685 128.880961) (xy 136.836489 128.835206) (xy 136.888 128.824) (xy 140.955 128.824)
-				(xy 140.955 128.059) (xy 140.974685 127.991961) (xy 141.027489 127.946206) (xy 141.079 127.935)
+				(xy 136.783685 128.880961) (xy 136.836489 128.835206) (xy 136.888 128.824) (xy 140.828 128.824)
+				(xy 140.828 128.059) (xy 140.847685 127.991961) (xy 140.900489 127.946206) (xy 140.952 127.935)
 				(xy 141.72 127.935)
 			)
 		)
@@ -43110,7 +44617,7 @@
 		)
 		(polygon
 			(pts
-				(xy 136.764 126.284) (xy 136.764 128.316) (xy 144.638 128.316) (xy 144.638 126.284)
+				(xy 140.828 126.284) (xy 140.828 128.316) (xy 144.638 128.316) (xy 144.638 126.284)
 			)
 		)
 		(filled_polygon
@@ -43123,14 +44630,9 @@
 				(xy 142.063675 127.807429) (xy 142.01792 127.754625) (xy 142.017918 127.754623) (xy 142.017908 127.754612)
 				(xy 141.973192 127.712451) (xy 141.973189 127.712449) (xy 141.973187 127.712447) (xy 141.873111 127.661561)
 				(xy 141.87311 127.66156) (xy 141.873109 127.66156) (xy 141.806078 127.641877) (xy 141.806072 127.641876)
-				(xy 141.72 127.6295) (xy 141.079 127.6295) (xy 141.078991 127.6295) (xy 141.07899 127.629501) (xy 141.014064 127.636481)
-				(xy 141.014052 127.636483) (xy 140.962546 127.647688) (xy 140.924345 127.658644) (xy 140.924341 127.658646)
-				(xy 140.827431 127.715323) (xy 140.827428 127.715325) (xy 140.774623 127.761081) (xy 140.774612 127.761091)
-				(xy 140.732451 127.805807) (xy 140.732445 127.805816) (xy 140.68156 127.90589) (xy 140.661877 127.972921)
-				(xy 140.661876 127.972928) (xy 140.649502 128.05899) (xy 140.6495 128.059002) (xy 140.6495 128.192)
-				(xy 140.629815 128.259039) (xy 140.577011 128.304794) (xy 140.5255 128.316) (xy 136.888 128.316)
-				(xy 136.820961 128.296315) (xy 136.775206 128.243511) (xy 136.764 128.192) (xy 136.764 126.408)
-				(xy 136.783685 126.340961) (xy 136.836489 126.295206) (xy 136.888 126.284) (xy 144.514 126.284)
+				(xy 141.72 127.6295) (xy 140.952 127.6295) (xy 140.884961 127.609815) (xy 140.839206 127.557011)
+				(xy 140.828 127.5055) (xy 140.828 126.408) (xy 140.847685 126.340961) (xy 140.900489 126.295206)
+				(xy 140.952 126.284) (xy 144.514 126.284)
 			)
 		)
 	)
@@ -44122,32 +45624,33 @@
 				(xy 149.857327 124.10019) (xy 149.862034 124.11281) (xy 149.870854 124.122989) (xy 149.874005 124.144906)
 				(xy 149.881744 124.165654) (xy 149.878881 124.178814) (xy 149.880798 124.192147) (xy 149.871598 124.21229)
 				(xy 149.866892 124.233927) (xy 149.853623 124.251652) (xy 149.851773 124.255703) (xy 149.845741 124.262181)
-				(xy 149.694741 124.413181) (xy 149.633418 124.446666) (xy 149.60706 124.4495) (xy 146.03694 124.4495)
-				(xy 145.969901 124.429815) (xy 145.949259 124.413181) (xy 145.374292 123.838213) (xy 145.374288 123.83821)
-				(xy 145.243185 123.750609) (xy 145.243172 123.750602) (xy 145.097501 123.690264) (xy 145.097489 123.690261)
-				(xy 144.942845 123.6595) (xy 144.942842 123.6595) (xy 140.033842 123.6595) (xy 137.1935 123.6595)
-				(xy 137.126461 123.639815) (xy 137.080706 123.587011) (xy 137.0695 123.5355) (xy 137.0695 119.04201)
-				(xy 137.0695 119.042) (xy 137.062518 118.977059) (xy 137.051312 118.925548) (xy 137.040354 118.887342)
-				(xy 136.983675 118.790429) (xy 136.93792 118.737625) (xy 136.937918 118.737623) (xy 136.937908 118.737612)
-				(xy 136.893192 118.695451) (xy 136.893189 118.695449) (xy 136.893187 118.695447) (xy 136.793111 118.644561)
-				(xy 136.79311 118.64456) (xy 136.793109 118.64456) (xy 136.726078 118.624877) (xy 136.726072 118.624876)
-				(xy 136.64 118.6125) (xy 136.639997 118.6125) (xy 136.009632 118.6125) (xy 135.968677 118.605542)
-				(xy 135.916696 118.587353) (xy 135.88627 118.5845) (xy 135.886266 118.5845) (xy 135.477734 118.5845)
-				(xy 135.47773 118.5845) (xy 135.447301 118.587353) (xy 135.393995 118.606006) (xy 135.366296 118.612253)
-				(xy 135.299064 118.619481) (xy 135.299052 118.619483) (xy 135.247546 118.630688) (xy 135.209345 118.641644)
-				(xy 135.209341 118.641646) (xy 135.112431 118.698323) (xy 135.112428 118.698325) (xy 135.059623 118.744081)
-				(xy 135.059612 118.744091) (xy 135.017451 118.788807) (xy 135.017445 118.788816) (xy 134.96656 118.88889)
-				(xy 134.946877 118.955921) (xy 134.946876 118.955928) (xy 134.9345 119.042) (xy 134.9345 124.89)
-				(xy 134.934501 124.890009) (xy 134.941481 124.954935) (xy 134.941483 124.954947) (xy 134.952688 125.006453)
-				(xy 134.963644 125.044654) (xy 134.963646 125.044658) (xy 135.020325 125.141571) (xy 135.044656 125.169651)
-				(xy 135.066081 125.194376) (xy 135.066091 125.194387) (xy 135.110807 125.236548) (xy 135.110809 125.236549)
-				(xy 135.110813 125.236553) (xy 135.210889 125.287439) (xy 135.277928 125.307124) (xy 135.364 125.3195)
-				(xy 135.364003 125.3195) (xy 136.63999 125.3195) (xy 136.64 125.3195) (xy 136.704941 125.312518)
+				(xy 149.694741 124.413181) (xy 149.633418 124.446666) (xy 149.60706 124.4495) (xy 147.54294 124.4495)
+				(xy 147.475901 124.429815) (xy 147.455259 124.413181) (xy 147.307289 124.265211) (xy 146.880292 123.838213)
+				(xy 146.880288 123.83821) (xy 146.749185 123.750609) (xy 146.749172 123.750602) (xy 146.603501 123.690264)
+				(xy 146.603489 123.690261) (xy 146.448845 123.6595) (xy 146.448842 123.6595) (xy 140.033842 123.6595)
+				(xy 137.1935 123.6595) (xy 137.126461 123.639815) (xy 137.080706 123.587011) (xy 137.0695 123.5355)
+				(xy 137.0695 119.04201) (xy 137.0695 119.042) (xy 137.062518 118.977059) (xy 137.051312 118.925548)
+				(xy 137.040354 118.887342) (xy 136.983675 118.790429) (xy 136.93792 118.737625) (xy 136.937918 118.737623)
+				(xy 136.937908 118.737612) (xy 136.893192 118.695451) (xy 136.893189 118.695449) (xy 136.893187 118.695447)
+				(xy 136.793111 118.644561) (xy 136.79311 118.64456) (xy 136.793109 118.64456) (xy 136.726078 118.624877)
+				(xy 136.726072 118.624876) (xy 136.64 118.6125) (xy 136.639997 118.6125) (xy 136.009632 118.6125)
+				(xy 135.968677 118.605542) (xy 135.916696 118.587353) (xy 135.88627 118.5845) (xy 135.886266 118.5845)
+				(xy 135.477734 118.5845) (xy 135.47773 118.5845) (xy 135.447301 118.587353) (xy 135.393995 118.606006)
+				(xy 135.366296 118.612253) (xy 135.299064 118.619481) (xy 135.299052 118.619483) (xy 135.247546 118.630688)
+				(xy 135.209345 118.641644) (xy 135.209341 118.641646) (xy 135.112431 118.698323) (xy 135.112428 118.698325)
+				(xy 135.059623 118.744081) (xy 135.059612 118.744091) (xy 135.017451 118.788807) (xy 135.017445 118.788816)
+				(xy 134.96656 118.88889) (xy 134.946877 118.955921) (xy 134.946876 118.955928) (xy 134.9345 119.042)
+				(xy 134.9345 124.89) (xy 134.934501 124.890009) (xy 134.941481 124.954935) (xy 134.941483 124.954947)
+				(xy 134.952688 125.006453) (xy 134.963644 125.044654) (xy 134.963646 125.044658) (xy 135.020325 125.141571)
+				(xy 135.044656 125.169651) (xy 135.066081 125.194376) (xy 135.066091 125.194387) (xy 135.110807 125.236548)
+				(xy 135.110809 125.236549) (xy 135.110813 125.236553) (xy 135.210889 125.287439) (xy 135.277928 125.307124)
+				(xy 135.364 125.3195) (xy 135.364003 125.3195) (xy 136.63999 125.3195) (xy 136.64 125.3195) (xy 136.704941 125.312518)
 				(xy 136.756452 125.301312) (xy 136.794658 125.290354) (xy 136.816701 125.277461) (xy 136.879302 125.2605)
-				(xy 138.960135 125.2605) (xy 139.876158 125.2605) (xy 144.48106 125.2605) (xy 144.548099 125.280185)
-				(xy 144.568741 125.296819) (xy 145.143707 125.871786) (xy 145.143711 125.871789) (xy 145.274814 125.95939)
-				(xy 145.274818 125.959392) (xy 145.274821 125.959394) (xy 145.420503 126.019738) (xy 145.575153 126.050499)
-				(xy 145.575157 126.0505) (xy 145.575158 126.0505) (xy 150.068844 126.0505) (xy 150.068845 126.050499)
+				(xy 138.960135 125.2605) (xy 139.876158 125.2605) (xy 145.98706 125.2605) (xy 146.0165 125.269144)
+				(xy 146.046487 125.275668) (xy 146.051502 125.279422) (xy 146.054099 125.280185) (xy 146.074741 125.296819)
+				(xy 146.175211 125.397289) (xy 146.649707 125.871786) (xy 146.649711 125.871789) (xy 146.780814 125.95939)
+				(xy 146.780818 125.959392) (xy 146.780821 125.959394) (xy 146.926503 126.019738) (xy 147.081153 126.050499)
+				(xy 147.081157 126.0505) (xy 147.081158 126.0505) (xy 150.068844 126.0505) (xy 150.068845 126.050499)
 				(xy 150.223497 126.019737) (xy 150.369179 125.959394) (xy 150.500289 125.871789) (xy 151.609789 124.762289)
 				(xy 151.626945 124.736613) (xy 151.697394 124.631179) (xy 151.757737 124.485497) (xy 151.764897 124.4495)
 				(xy 151.7885 124.330843) (xy 151.7885 124.173158) (xy 151.7885 118.252714) (xy 151.7885 118.252711)
@@ -44184,15 +45687,19 @@
 				(xy 144.925312 126.291548) (xy 144.914354 126.253342) (xy 144.857675 126.156429) (xy 144.81192 126.103625)
 				(xy 144.811918 126.103623) (xy 144.811908 126.103612) (xy 144.767192 126.061451) (xy 144.767189 126.061449)
 				(xy 144.767187 126.061447) (xy 144.667111 126.010561) (xy 144.66711 126.01056) (xy 144.667109 126.01056)
-				(xy 144.600078 125.990877) (xy 144.600072 125.990876) (xy 144.514 125.9785) (xy 136.888 125.9785)
-				(xy 136.887991 125.9785) (xy 136.88799 125.978501) (xy 136.823064 125.985481) (xy 136.823052 125.985483)
-				(xy 136.771546 125.996688) (xy 136.733345 126.007644) (xy 136.733341 126.007646) (xy 136.636431 126.064323)
-				(xy 136.636428 126.064325) (xy 136.583623 126.110081) (xy 136.583612 126.110091) (xy 136.541451 126.154807)
-				(xy 136.541445 126.154816) (xy 136.49056 126.25489) (xy 136.470877 126.321921) (xy 136.470876 126.321928)
-				(xy 136.4585 126.408) (xy 136.4585 128.192) (xy 136.458501 128.192009) (xy 136.465481 128.256935)
-				(xy 136.465483 128.256947) (xy 136.476688 128.308453) (xy 136.487644 128.346654) (xy 136.487646 128.346658)
-				(xy 136.544323 128.443568) (xy 136.544325 128.443571) (xy 136.582988 128.48819) (xy 136.612013 128.551746)
-				(xy 136.602069 128.620905) (xy 136.579495 128.654459) (xy 136.541451 128.694807) (xy 136.541445 128.694816)
+				(xy 144.600078 125.990877) (xy 144.600072 125.990876) (xy 144.514 125.9785) (xy 140.952 125.9785)
+				(xy 140.951991 125.9785) (xy 140.95199 125.978501) (xy 140.887064 125.985481) (xy 140.887052 125.985483)
+				(xy 140.835546 125.996688) (xy 140.797345 126.007644) (xy 140.797341 126.007646) (xy 140.700431 126.064323)
+				(xy 140.700428 126.064325) (xy 140.647623 126.110081) (xy 140.647612 126.110091) (xy 140.605451 126.154807)
+				(xy 140.605445 126.154816) (xy 140.55456 126.25489) (xy 140.534877 126.321921) (xy 140.534876 126.321928)
+				(xy 140.5225 126.408) (xy 140.5225 127.5055) (xy 140.522501 127.505509) (xy 140.529481 127.570435)
+				(xy 140.529483 127.570447) (xy 140.540688 127.621953) (xy 140.551644 127.660154) (xy 140.551646 127.660158)
+				(xy 140.58586 127.718659) (xy 140.602713 127.786466) (xy 140.589354 127.837462) (xy 140.55456 127.90589)
+				(xy 140.534877 127.972921) (xy 140.5225 128.059002) (xy 140.5225 128.3945) (xy 140.502815 128.461539)
+				(xy 140.450011 128.507294) (xy 140.3985 128.5185) (xy 136.888 128.5185) (xy 136.887991 128.5185)
+				(xy 136.88799 128.518501) (xy 136.823064 128.525481) (xy 136.823052 128.525483) (xy 136.771546 128.536688)
+				(xy 136.733345 128.547644) (xy 136.733341 128.547646) (xy 136.636431 128.604323) (xy 136.636428 128.604325)
+				(xy 136.583623 128.650081) (xy 136.583612 128.650091) (xy 136.541451 128.694807) (xy 136.541445 128.694816)
 				(xy 136.49056 128.79489) (xy 136.470877 128.861921) (xy 136.470876 128.861928) (xy 136.4585 128.948)
 				(xy 136.4585 130.2125) (xy 136.458501 130.212509) (xy 136.465481 130.277435) (xy 136.465483 130.277447)
 				(xy 136.476688 130.328953) (xy 136.487644 130.367154) (xy 136.487646 130.367158) (xy 136.492505 130.375466)

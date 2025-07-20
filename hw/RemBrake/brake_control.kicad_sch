@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Brake Control")
-		(date "2025-02-23")
-		(rev "2.0")
+		(date "2025-07-20")
+		(rev "3.1")
 		(company "Pacner Bros Tech")
 	)
 	(lib_symbols
@@ -2868,6 +2868,27 @@
 		)
 		(uuid "c38c0400-a9c6-4429-9dd4-c19ebd1d0045")
 	)
+	(text_box "On pcb version 3.0 the smd transistor \ncolector is not connected to resistor"
+		(exclude_from_sim no)
+		(at 240.665 38.735 0)
+		(size 40.005 6.985)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f2414719-9bb8-45f9-b8ea-42df97635d7f")
+	)
 	(text_box "If the 3.3V power supply fails or the MCU\nbecomes unresponsive, the system may emit\n an unexpected beeping signal as an \nindicator of fault."
 		(exclude_from_sim no)
 		(at 111.76 136.525 0)
@@ -4915,6 +4936,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 133.35 39.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5589bec2-75fa-4b22-8a05-143da42ea4bc")
 		)
@@ -4983,6 +5013,15 @@
 			)
 		)
 		(property "Description" "0.8A Ic, 45V Vce, NPN Transistor, TO-92"
+			(at 233.68 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 233.68 55.88 0)
 			(hide yes)
 			(effects
@@ -5196,6 +5235,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 123.19 157.48 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "7efd3475-c4fc-4b62-b8fc-9d068d77f6c1")
 		)
@@ -5274,6 +5322,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.37 41.91 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 39.37 41.91 0)
 			(hide yes)
 			(effects
@@ -5367,6 +5424,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 220.98 48.26 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9f67cca0-09d8-4b7b-82a7-bb9777a70312")
 		)
@@ -5427,6 +5493,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 220.98 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 220.98 55.88 90)
 			(hide yes)
 			(effects
 				(font
@@ -5567,6 +5642,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 83.82 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9756edbd-fda3-4b23-9628-5de7b8826ba0")
 		)
@@ -5628,6 +5712,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 67.31 43.18 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 67.31 43.18 90)
 			(hide yes)
 			(effects
 				(font
@@ -5774,6 +5867,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 257.81 55.88 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68d071ad-30db-4577-b219-83dddc1a9fde")
 		)
@@ -5844,6 +5946,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 218.44 124.46 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8d1cd23a-3c17-4d5c-a50e-ca981489e2ba")
 		)
@@ -5904,6 +6015,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 257.81 138.43 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 257.81 138.43 0)
 			(hide yes)
 			(effects
@@ -6039,6 +6159,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 148.59 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 148.59 97.79 0)
 			(hide yes)
 			(effects
@@ -6265,6 +6394,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 224.79 130.81 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "e15d4218-ad6c-4a3d-9cc5-c83303b5d3a5")
 		)
@@ -6482,6 +6620,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 236.22 40.64 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0813e3bd-950b-4d07-a0b6-96370d7ce008")
 		)
@@ -6543,6 +6690,15 @@
 			)
 		)
 		(property "Description" "Timer, 555 compatible, PDIP-8"
+			(at 92.71 157.48 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 92.71 157.48 0)
 			(hide yes)
 			(effects
@@ -6629,6 +6785,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 252.73 67.31 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 252.73 67.31 90)
 			(hide yes)
 			(effects
 				(font
@@ -6901,6 +7066,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 220.98 67.31 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fd44667c-92e7-43e0-8871-291b73c5889c")
 		)
@@ -6973,6 +7147,15 @@
 		)
 		(property "purchase" "https://cz.farnell.com/rohm/bd5230g-tr/voltage-detector-800na-10v-sot/dp/2343012"
 			(at 235.966 122.428 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 237.49 138.43 0)
 			(hide yes)
 			(effects
 				(font
@@ -7056,6 +7239,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 228.6 40.64 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2dda58ca-6c70-4896-b765-fed5619aa003")
 		)
@@ -7115,6 +7307,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 92.71 99.06 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 92.71 99.06 0)
 			(hide yes)
 			(effects
@@ -7184,6 +7385,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 73.66 39.37 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 73.66 39.37 90)
 			(hide yes)
 			(effects
 				(font
@@ -7319,6 +7529,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 139.7 97.79 0)
 			(hide yes)
 			(effects
@@ -7469,6 +7688,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 40.64 97.79 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 40.64 97.79 90)
 			(hide yes)
 			(effects
 				(font
@@ -7808,6 +8036,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 246.38 77.47 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e9cbcfb7-b2cc-4c3f-95a0-da66e9906701")
 		)
@@ -7869,6 +8106,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 73.66 46.99 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 73.66 46.99 90)
 			(hide yes)
 			(effects
 				(font
@@ -7938,6 +8184,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 50.8 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 50.8 91.44 90)
 			(hide yes)
 			(effects
 				(font
@@ -8030,6 +8285,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 49.53 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7b30c77b-cda6-4e01-99f1-b71a6270b971")
 		)
@@ -8051,7 +8315,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "d6a51f5e-e148-4c21-80a2-55c2d0f02fa9")
@@ -8091,6 +8355,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 67.31 35.56 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 67.31 35.56 90)
 			(hide yes)
 			(effects
 				(font
@@ -8231,6 +8504,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 232.41 151.13 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8bd2c69b-8041-46d4-a58c-dce2a263cb26")
 		)
@@ -8251,7 +8533,7 @@
 		(at 115.57 152.4 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "db71fe66-2b63-4f2e-b527-5dd1c7a7778e")
@@ -8291,6 +8573,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 115.57 152.4 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 115.57 152.4 90)
 			(hide yes)
 			(effects
 				(font
@@ -8360,6 +8651,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 81.28 57.15 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 81.28 57.15 90)
 			(hide yes)
 			(effects
 				(font
@@ -8521,6 +8821,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 121.92 46.99 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "768ab84f-1cbe-4605-bbcf-977117fd0362")
 		)
@@ -8581,6 +8890,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 49.53 135.89 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 49.53 135.89 90)
 			(hide yes)
 			(effects
 				(font
@@ -8655,6 +8973,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 63.5 163.83 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "19732071-02bc-42e1-aedf-df61e53e587b")
 		)
@@ -8717,6 +9044,15 @@
 		)
 		(property "Description" "4 resistor network, parallel topology, split"
 			(at 49.53 146.05 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 49.53 146.05 90)
 			(hide yes)
 			(effects
 				(font
@@ -8829,7 +9165,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f0d16fda-8504-4b3b-b2f4-0e8ee4207ad0")
@@ -8869,6 +9205,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 67.31 50.8 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 67.31 50.8 90)
 			(hide yes)
 			(effects
 				(font

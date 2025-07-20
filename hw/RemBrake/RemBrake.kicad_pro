@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|144218000|104274000|965e5aec-c006-47d7-b755-327f715bed6a|00000000-0000-0000-0000-000000000000",
-          "changed vias to 0.3 diameter"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -655,6 +650,12 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "purchase",
+          "name": "purchase",
           "show": false
         }
       ],

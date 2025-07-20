@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Remote Brake Main Board")
-		(date "2025-02-23")
-		(rev "2.0")
+		(date "2025-07-20")
+		(rev "3.1")
 		(company "Pacner Bros Tech")
 	)
 	(lib_symbols
@@ -1805,6 +1805,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 55.88 88.9 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "547e02d2-485f-4e78-b382-c7d44f47db49")
 		)
@@ -1865,6 +1874,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 35.56 59.69 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 35.56 59.69 0)
 			(hide yes)
 			(effects
@@ -1944,6 +1962,15 @@
 				)
 			)
 		)
+		(property "Purchase" ""
+			(at 35.56 91.44 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "d37e670b-824b-445f-b3d4-fe7fe091e703")
 		)
@@ -2011,6 +2038,15 @@
 			)
 		)
 		(property "Description" "Fuse"
+			(at 43.18 71.12 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 43.18 71.12 0)
 			(hide yes)
 			(effects
@@ -2281,6 +2317,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 255.27 54.61 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
 			(at 255.27 54.61 0)
 			(hide yes)
 			(effects
