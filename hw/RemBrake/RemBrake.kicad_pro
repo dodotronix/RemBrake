@@ -58,12 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|144218000|104274000|965e5aec-c006-47d7-b755-327f715bed6a|00000000-0000-0000-0000-000000000000",
-          "changed gnd via's diameter to 0.3mm"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -558,7 +553,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "fabrication/RemBrake_BOM.csv",
+    "bom_export_filename": "assembly/RemBrake.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
