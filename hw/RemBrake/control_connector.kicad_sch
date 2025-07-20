@@ -2660,7 +2660,7 @@
 		(uuid "0795ca86-b741-4e2a-b498-6a08c8a9102b")
 	)
 	(hierarchical_label "LED BLUE"
-		(shape input)
+		(shape output)
 		(at 77.47 63.5 180)
 		(effects
 			(font
@@ -2671,7 +2671,7 @@
 		(uuid "49ecade7-9298-4cf2-8677-ec32ae1a3122")
 	)
 	(hierarchical_label "BUTTON"
-		(shape input)
+		(shape output)
 		(at 77.47 45.72 180)
 		(effects
 			(font
@@ -2682,7 +2682,7 @@
 		(uuid "577dcb7c-c6ba-4815-80da-430e6cd45bee")
 	)
 	(hierarchical_label "BUZZER"
-		(shape input)
+		(shape output)
 		(at 77.47 41.91 180)
 		(effects
 			(font
@@ -2693,7 +2693,7 @@
 		(uuid "675628fa-9ca0-4977-bd7c-5e8d672d6695")
 	)
 	(hierarchical_label "LED GREEN"
-		(shape input)
+		(shape output)
 		(at 77.47 58.42 180)
 		(effects
 			(font
@@ -2715,7 +2715,7 @@
 		(uuid "e82321d4-f8a8-4046-bc2c-6f5825bbfd54")
 	)
 	(hierarchical_label "LED RED"
-		(shape input)
+		(shape output)
 		(at 77.47 68.58 180)
 		(effects
 			(font
@@ -3141,7 +3141,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "0R"
 			(at 203.2 60.96 90)
 			(effects
 				(font
@@ -3684,7 +3684,7 @@
 				)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "0R"
 			(at 203.2 63.5 90)
 			(effects
 				(font

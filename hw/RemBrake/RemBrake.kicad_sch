@@ -2588,7 +2588,7 @@
 				(justify right)
 			)
 		)
-		(pin "CHARGING (BLUE)" output
+		(pin "CHARGING (BLUE)" input
 			(at 109.22 134.62 0)
 			(uuid "98d7542c-fc78-4498-b330-ceeefc23ddf2")
 			(effects
@@ -2598,7 +2598,7 @@
 				(justify right)
 			)
 		)
-		(pin "CHARGED (GREEN)" output
+		(pin "CHARGED (GREEN)" input
 			(at 109.22 88.9 0)
 			(uuid "9eaec0fa-f6d5-4eb6-b3e0-d9ee8b6c82f7")
 			(effects
@@ -2700,7 +2700,7 @@
 				(justify left top)
 			)
 		)
-		(pin "LED GREEN" input
+		(pin "LED GREEN" output
 			(at 120.65 97.79 180)
 			(uuid "6c69b824-6f13-4697-b008-81c1ee9662d6")
 			(effects
@@ -2710,7 +2710,7 @@
 				(justify left)
 			)
 		)
-		(pin "LED RED" input
+		(pin "LED RED" output
 			(at 177.8 95.25 0)
 			(uuid "379b4dc9-9363-4a49-8db7-7b449958cbbc")
 			(effects
@@ -2720,7 +2720,7 @@
 				(justify right)
 			)
 		)
-		(pin "LED BLUE" input
+		(pin "LED BLUE" output
 			(at 120.65 101.6 180)
 			(uuid "2dbc9d55-1734-489e-9445-d9a215ba7586")
 			(effects
@@ -2750,7 +2750,7 @@
 				(justify right)
 			)
 		)
-		(pin "BUTTON" input
+		(pin "BUTTON" output
 			(at 177.8 102.87 0)
 			(uuid "ef9ec29d-ea6d-4e5a-909b-2147aa386a43")
 			(effects
@@ -2760,7 +2760,7 @@
 				(justify right)
 			)
 		)
-		(pin "BUZZER" input
+		(pin "BUZZER" output
 			(at 177.8 99.06 0)
 			(uuid "3371da6c-cf5e-4cba-a93c-1bd00599b714")
 			(effects
