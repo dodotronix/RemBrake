@@ -47,6 +47,13 @@ class BrakeControlTest(IsolatedAsyncioTestCase):
             await animation()
         print("")
 
+    async def test_low_battery(self):
+        # dummy charge value
+        for _ in range(5):
+            animation = self.dut("low_battery")
+            await animation()
+        print("")
+
     async def test_indicator_animation(self):
         # dummy charge value
         for _ in range(5):
