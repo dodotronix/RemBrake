@@ -1093,7 +1093,7 @@
 	)
 	(text "BALANCE\nCONNECTOR"
 		(exclude_from_sim no)
-		(at 35.56 83.82 0)
+		(at 22.86 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1219,6 +1219,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 88.9) (xy 43.18 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "182ad97e-c591-46ae-88f8-34614f8813df")
+	)
+	(wire
+		(pts
 			(xy 246.38 54.61) (xy 250.19 54.61)
 		)
 		(stroke
@@ -1279,7 +1289,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 88.9) (xy 43.18 88.9)
+			(xy 27.94 88.9) (xy 31.75 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1289,7 +1299,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 93.98) (xy 48.26 93.98)
+			(xy 27.94 93.98) (xy 31.75 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1306,16 +1316,6 @@
 			(type default)
 		)
 		(uuid "42d73878-91e9-4ad6-b33c-32543be6bbad")
-	)
-	(wire
-		(pts
-			(xy 48.26 59.69) (xy 48.26 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4561281b-0e1e-4c4b-bb69-53a01f40ccb1")
 	)
 	(bus
 		(pts
@@ -1479,16 +1479,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 88.9) (xy 43.18 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97a61cce-cc63-431c-bfcf-5f1443813c14")
-	)
-	(wire
-		(pts
 			(xy 48.26 93.98) (xy 66.04 93.98)
 		)
 		(stroke
@@ -1537,6 +1527,16 @@
 		)
 		(uuid "a74152b1-7938-4db9-99a6-0d34069ee666")
 	)
+	(wire
+		(pts
+			(xy 48.26 59.69) (xy 48.26 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acbbd03c-5cad-42d7-b1e5-4b2451b52ed7")
+	)
 	(bus
 		(pts
 			(xy 181.61 115.57) (xy 177.8 115.57)
@@ -1579,7 +1579,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 67.31) (xy 43.18 57.15)
+			(xy 43.18 57.15) (xy 43.18 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1639,6 +1639,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 93.98) (xy 48.26 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eba1935e-821c-481c-85ca-a46455e353d9")
+	)
+	(wire
+		(pts
 			(xy 120.65 101.6) (xy 113.03 101.6)
 		)
 		(stroke
@@ -1659,7 +1669,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 91.44) (xy 66.04 91.44)
+			(xy 27.94 91.44) (xy 66.04 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1755,7 +1765,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 55.88 88.9 270)
+		(at 35.56 93.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1763,7 +1773,7 @@
 		(dnp no)
 		(uuid "1abfda37-1708-4409-9105-002c36c86f8c")
 		(property "Reference" "F2"
-			(at 55.88 82.55 90)
+			(at 40.132 92.964 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1771,11 +1781,89 @@
 			)
 		)
 		(property "Value" "10A / 24V"
-			(at 55.88 85.09 90)
+			(at 33.528 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
+			(at 35.56 92.202 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 35.56 93.98 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Purchase" ""
+			(at 35.56 93.98 90)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "547e02d2-485f-4e78-b382-c7d44f47db49")
+		)
+		(pin "2"
+			(uuid "e1d49d2c-c30f-4042-86b7-0859093bbdc7")
+		)
+		(instances
+			(project "RemBrake"
+				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
+					(reference "F2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 55.88 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "26b903bc-bcaa-4e78-9889-d7ed69ddf917")
+		(property "Reference" "F3"
+			(at 55.88 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10A / 24V"
+			(at 63.5 86.106 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
@@ -1806,7 +1894,7 @@
 			)
 		)
 		(property "Purchase" ""
-			(at 55.88 88.9 90)
+			(at 55.88 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -1815,15 +1903,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "547e02d2-485f-4e78-b382-c7d44f47db49")
+			(uuid "9509f01d-2878-4540-9b10-82c6b801f6bc")
 		)
 		(pin "2"
-			(uuid "e1d49d2c-c30f-4042-86b7-0859093bbdc7")
+			(uuid "bb0dbfc1-ca93-4de0-965b-5e57a4373f5b")
 		)
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
-					(reference "F2")
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -1838,7 +1926,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "342b15ea-cd79-481a-96ec-d4602e080b52")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 32.512 58.42 0)
 			(effects
 				(font
@@ -1900,7 +1988,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1908,7 +1996,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic_MountingPin:Conn_01x03_MountingPin")
-		(at 35.56 91.44 0)
+		(at 22.86 91.44 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1916,8 +2004,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82822fff-c61a-4f9f-8c6e-a048a15027ac")
-		(property "Reference" "J2"
-			(at 33.782 91.44 0)
+		(property "Reference" "J1"
+			(at 21.082 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1926,7 +2014,7 @@
 			)
 		)
 		(property "Value" "Conn_01x03_MountingPin"
-			(at 34.29 90.5257 0)
+			(at 21.59 90.5257 0)
 			(hide yes)
 			(effects
 				(font
@@ -1936,7 +2024,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-SM4-TB_1x03-1MP_P2.50mm_Horizontal"
-			(at 35.56 91.44 0)
+			(at 22.86 91.44 0)
 			(hide yes)
 			(effects
 				(font
@@ -1945,7 +2033,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 91.44 0)
+			(at 22.86 91.44 0)
 			(hide yes)
 			(effects
 				(font
@@ -1954,7 +2042,7 @@
 			)
 		)
 		(property "Description" "Generic connectable mounting pin connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 35.56 91.44 0)
+			(at 22.86 91.44 0)
 			(hide yes)
 			(effects
 				(font
@@ -1963,7 +2051,7 @@
 			)
 		)
 		(property "Purchase" ""
-			(at 35.56 91.44 0)
+			(at 22.86 91.44 0)
 			(hide yes)
 			(effects
 				(font
@@ -1986,7 +2074,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75"
-					(reference "J2")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1994,7 +2082,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 43.18 71.12 180)
+		(at 35.56 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2002,7 +2090,7 @@
 		(dnp no)
 		(uuid "af70131d-278a-462f-bd9f-059cd7ee73e3")
 		(property "Reference" "F1"
-			(at 35.306 70.358 0)
+			(at 41.402 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2011,7 +2099,7 @@
 			)
 		)
 		(property "Value" "10A / 24V"
-			(at 30.734 72.644 0)
+			(at 38.608 86.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,7 +2108,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder"
-			(at 44.958 71.12 90)
+			(at 35.56 87.122 90)
 			(hide yes)
 			(effects
 				(font
@@ -2029,7 +2117,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 71.12 0)
+			(at 35.56 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -2038,7 +2126,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 43.18 71.12 0)
+			(at 35.56 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -2047,7 +2135,7 @@
 			)
 		)
 		(property "Purchase" ""
-			(at 43.18 71.12 0)
+			(at 35.56 88.9 0)
 			(hide yes)
 			(effects
 				(font
@@ -2205,7 +2293,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 35.56 99.06 0)
+		(at 22.86 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2214,7 +2302,7 @@
 		(fields_autoplaced yes)
 		(uuid "e3889d54-898e-4832-9250-2640037e043f")
 		(property "Reference" "#PWR01"
-			(at 35.56 105.41 0)
+			(at 22.86 105.41 0)
 			(hide yes)
 			(effects
 				(font
@@ -2223,7 +2311,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 35.56 104.14 0)
+			(at 22.86 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2231,7 +2319,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 99.06 0)
+			(at 22.86 99.06 0)
 			(hide yes)
 			(effects
 				(font
@@ -2240,7 +2328,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 99.06 0)
+			(at 22.86 99.06 0)
 			(hide yes)
 			(effects
 				(font
@@ -2249,7 +2337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 35.56 99.06 0)
+			(at 22.86 99.06 0)
 			(hide yes)
 			(effects
 				(font

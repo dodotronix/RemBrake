@@ -3267,6 +3267,30 @@
 		)
 		(uuid "7ddcd1d4-2c24-4b3a-8e1f-3c1989ac71fb")
 	)
+	(text_box "TODO\nfind better diode with less reverse current leakage,\nright now the forward R = 500 Ohm, reverse R = 70kOhm"
+		(exclude_from_sim no)
+		(at 34.29 130.81 0)
+		(size 60.325 7.62)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "9c26e1b6-fe22-49a1-8af0-220e166bce3f")
+	)
 	(text_box "Isolation from the 3V3 \nLDO on the QT Py RP2040"
 		(exclude_from_sim no)
 		(at 243.205 48.895 0)
@@ -3442,6 +3466,12 @@
 		(uuid "4e9beff2-f98c-4769-b31f-db66ddafb942")
 	)
 	(junction
+		(at 48.26 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53bb2952-3036-43ee-8d96-6f1cca833a4e")
+	)
+	(junction
 		(at 100.33 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3610,12 +3640,6 @@
 		(uuid "e586e067-e6b9-4d46-bccf-b6cb19b6a857")
 	)
 	(junction
-		(at 54.61 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e68be80d-d807-48ca-8068-1d36029c6af2")
-	)
-	(junction
 		(at 125.73 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3664,6 +3688,16 @@
 			(type default)
 		)
 		(uuid "07352ae5-0e2b-4af7-8b3f-77665f74ab2a")
+	)
+	(wire
+		(pts
+			(xy 48.26 165.1) (xy 63.5 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08fb959d-e979-42f9-afd4-d7e1d0922fb7")
 	)
 	(wire
 		(pts
@@ -3734,6 +3768,16 @@
 			(type default)
 		)
 		(uuid "1528daa8-9a38-4358-8a71-66ffd8b93a74")
+	)
+	(wire
+		(pts
+			(xy 48.26 165.1) (xy 48.26 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170db53e-314f-49d1-b97f-2436417c3f0f")
 	)
 	(wire
 		(pts
@@ -3977,16 +4021,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 165.1) (xy 63.5 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "323d3709-c6f5-436c-8b21-c903b829ab89")
-	)
-	(wire
-		(pts
 			(xy 78.74 85.09) (xy 88.9 85.09)
 		)
 		(stroke
@@ -4217,7 +4251,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 148.59) (xy 73.66 148.59)
+			(xy 29.21 148.59) (xy 48.26 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4537,6 +4571,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 148.59) (xy 73.66 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8306cddc-2184-43af-9c44-5bf9754a6b62")
+	)
+	(wire
+		(pts
 			(xy 180.34 41.91) (xy 180.34 52.07)
 		)
 		(stroke
@@ -4567,7 +4611,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 124.46) (xy 181.61 124.46)
+			(xy 29.21 124.46) (xy 181.61 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4907,16 +4951,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 124.46) (xy 54.61 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcf224f3-a5c6-421d-b51c-84666cb424b5")
-	)
-	(wire
-		(pts
 			(xy 201.93 115.57) (xy 201.93 124.46)
 		)
 		(stroke
@@ -5054,16 +5088,6 @@
 			(type default)
 		)
 		(uuid "c66d5306-fd0a-4d5f-a163-da1dc9704ee0")
-	)
-	(wire
-		(pts
-			(xy 29.21 124.46) (xy 54.61 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c81f6c09-63a1-4edc-8f32-075ca8ae4a80")
 	)
 	(wire
 		(pts
@@ -8511,7 +8535,7 @@
 				)
 			)
 		)
-		(property "Value" "536k"
+		(property "Value" "560k"
 			(at 106.68 158.75 90)
 			(effects
 				(font
@@ -9099,9 +9123,9 @@
 		(at 181.61 144.78 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "7b97059a-4bd4-40a0-a10e-2787fcd41ab7")
 		(property "Reference" "R20"
 			(at 179.324 144.526 90)

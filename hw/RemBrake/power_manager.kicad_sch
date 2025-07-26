@@ -2338,6 +2338,30 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "!!! NOTE !!!\nWhen you first assemble the board, it might start beeping immediately. This is likely caused by a malfunctioning LTC2943. Leakage current on the SCL and SDA lines can raise the +3.3 V rail through the pull-up resistors. Since the reset circuit monitors this voltage, it may trigger system startup prematurely. In this case, the chip is likely faulty and should be replaced."
+		(exclude_from_sim no)
+		(at 22.225 163.83 0)
+		(size 76.835 15.24)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.508)
+			(type solid)
+			(color 128 63 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 153 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "1f15d27e-f538-44f2-9801-95e86f4c8da8")
+	)
 	(text_box "BATTERY SoC IC\nI2C address: 0x64 + R/W"
 		(exclude_from_sim no)
 		(at 89.535 37.465 0)
@@ -2359,7 +2383,7 @@
 		)
 		(uuid "8396ada8-6c8f-495a-a7f6-4a4b56c5146f")
 	)
-	(text_box "The ~{ALCC} pin defaults to output mode, \nwhich can cause leakage current into \nthe 3.3V power rail.\nTo prevent this, we manually calibrate \nthe chip by writing the maximum value \nwhen the battery is fully charged, \nusing the pull-up resistor."
+	(text_box "The ~{ALCC} pin defaults to output mode, \nwhich can cause leakage current into \nthe 3.3V power rail.\nTo prevent this, we manually calibrate \nthe chip by writing the maximum value \nwhen the battery is fully charged in the firmware."
 		(exclude_from_sim no)
 		(at 24.13 19.05 0)
 		(size 41.275 17.78)
@@ -4261,7 +4285,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04c21175-62ac-40d6-b463-9ea9e67f9890")
-		(property "Reference" "C13"
+		(property "Reference" "C14"
 			(at 120.396 62.23 90)
 			(effects
 				(font
@@ -4322,7 +4346,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/65dd8b54-1c0a-4683-aa46-51c439d49612"
-					(reference "C13")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -5218,7 +5242,7 @@
 				)
 			)
 		)
-		(property "Value" "5k1"
+		(property "Value" "10k"
 			(at 261.62 67.31 90)
 			(effects
 				(font
@@ -6369,7 +6393,7 @@
 				)
 			)
 		)
-		(property "Value" "5k1"
+		(property "Value" "10k"
 			(at 261.62 57.15 90)
 			(effects
 				(font
@@ -7248,7 +7272,7 @@
 				)
 			)
 		)
-		(property "Value" "5k1"
+		(property "Value" "10k"
 			(at 261.62 48.26 90)
 			(effects
 				(font
