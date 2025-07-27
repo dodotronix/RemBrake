@@ -8686,7 +8686,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 29.21 135.89 0)
 			(hide yes)
 			(effects
