@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250513)
+	(version 20250610)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "2a7ff1cc-957c-43b3-8e70-6249f6aaf056")
@@ -8669,7 +8669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66692cc7-ef32-415b-b1d5-d792aa3b7cf6")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 26.162 135.89 0)
 			(effects
 				(font
@@ -8731,7 +8731,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -11336,7 +11336,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3397ddc-c9a2-453f-9a38-504fe5d754ae")
-		(property "Reference" "D2"
+		(property "Reference" "D3"
 			(at 146.05 174.498 0)
 			(effects
 				(font
@@ -11398,7 +11398,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D2")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -11937,8 +11937,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef03b650-6a8e-48cb-9691-d96645b5280a")
-		(property "Reference" "D3"
-			(at 158.75 168.402 0)
+		(property "Reference" "D4"
+			(at 158.75 174.498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11999,7 +11999,7 @@
 		(instances
 			(project "RemBrake"
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/2d0cc746-3115-4ebf-adba-86e7fd6ac8bd"
-					(reference "D3")
+					(reference "D4")
 					(unit 1)
 				)
 			)

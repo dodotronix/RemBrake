@@ -1,5 +1,5 @@
 (kicad_sch
-	(version 20250513)
+	(version 20250610)
 	(generator "eeschema")
 	(generator_version "9.99")
 	(uuid "6b3dd075-d496-4929-af5f-902e03d500ea")
@@ -8927,7 +8927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5c3e740-6f36-43b2-96cc-4df5fed0a2e7")
-		(property "Reference" "D4"
+		(property "Reference" "D5"
 			(at 117.602 46.99 90)
 			(effects
 				(font
@@ -8991,7 +8991,7 @@
 		(instances
 			(project ""
 				(path "/e6d4ae5b-c9d7-4cbe-b288-c929fdf55a75/4813b76c-f465-42f9-8515-5ce5d55b4403"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
