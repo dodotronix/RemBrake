@@ -10,6 +10,9 @@
 - TODO how to solder the modules on the RemBrake PCB
 - TODO how to connect the wires
 
+## Notes
+* Pay attention that all the connectors are well soldered to the board.
+
 ### Prepare the module 
 1) load the circuitpython to the QT Py RP2040
 2) press and hold BOOT button and then press RST button
@@ -41,3 +44,14 @@
 ## Development
 ![PCB inactive breakout modules](pics/development/assembled_modules_inactive.jpg)
 ![PCB active breakout modules](pics/development/assembled_modules_active.jpg)
+
+# ISSUES 
+## Hardware
+* When the brake power is cut, the display turns off but the shift register
+inside stays powered enough to retain its latched state; as a result, when the
+LED bar is powered again it lights from the old data and continues glowing for
+up to 8s.
+* The transition from charging to running is too slow, so reverse current is
+feeding the base of the state-switching transistor and back-driving it;
+swapping in a Schottky diode (or regular diode) with a higher forward drop
+would block that reverse current and fix the issue.
