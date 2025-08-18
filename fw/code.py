@@ -5,8 +5,8 @@ from RemBrake_Core import BrakeCore
 
 layout = {
     "ready":        "D0",
-    "enable":       "D1",
-    "power":        "D2",
+    "power":        "D1",
+    "enable":       "D2",
     "servo":        "D3",
     "remote":       "TX",
     "buzz":         "MOSI",
