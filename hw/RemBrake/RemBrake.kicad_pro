@@ -61,7 +61,7 @@
       "drc_exclusions": [
         [
           "lib_footprint_mismatch|143749000|104274000|965e5aec-c006-47d7-b755-327f715bed6a|00000000-0000-0000-0000-000000000000",
-          "changed GND via diameter to 0.3mm"
+          "increased diameter of vias to 0.3mm"
         ]
       ],
       "meta": {
