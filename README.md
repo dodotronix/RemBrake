@@ -42,8 +42,8 @@
 - designing custom usb-c charger to avoid the hustle with unprecise power management of the chinese module
 
 ## Development
-![PCB inactive breakout modules](pics/development/assembled_modules_inactive.jpg)
-![PCB active breakout modules](pics/development/assembled_modules_active.jpg)
+![PCB inactive breakout modules](doc/pictures/development/assembled_modules_inactive.jpg)
+![PCB active breakout modules](doc/pictures/development/assembled_modules_active.jpg)
 
 # ISSUES 
 ## Hardware
