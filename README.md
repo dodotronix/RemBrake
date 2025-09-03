@@ -6,7 +6,7 @@
 - TODO explain what the RemBrake, why we decided to create this project
 
 ### Assembling RemBrake
-- TODO explain how to use the kicad data
+- TODO explain how to use the kicad data (use html ibom in web browser)
 - TODO how to solder the modules on the RemBrake PCB
 - TODO how to connect the wires
 
