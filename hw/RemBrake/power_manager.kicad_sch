@@ -4293,8 +4293,8 @@
 				)
 			)
 		)
-		(property "Value" "1uF"
-			(at 120.396 64.77 90)
+		(property "Value" "0.33uF"
+			(at 120.142 67.056 90)
 			(effects
 				(font
 					(size 1.27 1.27)

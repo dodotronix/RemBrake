@@ -8677,7 +8677,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0520"
+		(property "Value" "SS1200"
 			(at 25.4 136.2075 0)
 			(hide yes)
 			(effects
@@ -10265,7 +10265,7 @@
 				)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "10uF"
 			(at 119.888 160.02 0)
 			(effects
 				(font
@@ -11268,7 +11268,7 @@
 				)
 			)
 		)
-		(property "Value" "680pF"
+		(property "Value" "0.1uF"
 			(at 43.942 175.768 0)
 			(effects
 				(font

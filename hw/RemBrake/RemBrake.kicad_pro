@@ -560,7 +560,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "fabrication/RemBrake_BOM.csv",
+    "bom_export_filename": "assembly/RemBrake.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -657,6 +657,12 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "purchase",
+          "name": "purchase",
           "show": false
         }
       ],

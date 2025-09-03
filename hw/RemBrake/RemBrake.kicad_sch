@@ -2084,7 +2084,7 @@
 				)
 			)
 		)
-		(property "Value" "MBR0520"
+		(property "Value" "SS1200"
 			(at 56.1975 92.71 0)
 			(hide yes)
 			(effects
