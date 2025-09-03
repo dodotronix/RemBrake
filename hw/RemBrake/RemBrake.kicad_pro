@@ -549,10 +549,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "fabrication/",
+      "plot": "pcb",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../Downloads/RemBrake.step",
+      "step": ".step",
       "svg": "",
       "vrml": ""
     },
